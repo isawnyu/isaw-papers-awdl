@@ -56,7 +56,6 @@ $('.id_link').hide();
    <div class="section">
     <strong>Links to Definitions of Referenced Entities</strong>
     <p class="textindent0" style="background:#aaa;margin:1em;padding:.3em">As part of the editorial process, ISAW Papers adds links to publicly available descriptions of people, places, documents and other resources that are referenced in the articles it publishes. The purpose of these links is to aid in the searching and organization of all ISAW Papers articles. They are not the responsibility of the authors, nor is ISAW Papers responsible for the content of the linked resources.</p>
-    <p onclick="show_references();" class="textindent0" style="background:#aaa;margin:1em;padding:.3em">Click here to show all links to descriptions of referenced entities in the text of this article. When showing, links are highlighted by a dotted underline.</p>
     
     <h2>Geographic Entities</h2>
     <xsl:if test="//*[@typeof='dcterms:Location']">
