@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div class="isaw_papers_header">
 <center style="background:#aaa;margin:1em;padding:.3em">
-    <p style="width:80%">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/1 as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl" style="text-decoration:underline">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/" style="text-decoration:underline">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers" style="text-decoration:underline">ISAW</a> website. Please note that while the content of this article will not change, its appearance and interaction with other resources will  develop over time.</p>
+    <p style="width:80%">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/1 as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl" >Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/" >Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers" >ISAW</a> website. Please note that while the content of this article will not change, its appearance and interaction with other resources will  develop over time.</p>
     <a href="http://creativecommons.org/licenses/by/3.0/"> 
   <img alt="Creative Commons License" style="border-width:0;margin-top:1em" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /> 
     </a>
-  <p onclick="awld.init();show_id_links()">Click to enable rich linking.</p>
+  <br/>
+  <div onclick="awld.init();show_id_links();this.style.display = 'none'"  onmouseover = "this.style.color = 'red'"
+    onmouseout  = "this.style.color = 'black'">[Click to enable rich linking]</div>
 </center>
 </div>
