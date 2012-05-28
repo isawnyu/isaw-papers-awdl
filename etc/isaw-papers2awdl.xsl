@@ -7,32 +7,28 @@
 	version="1.0"
 	exclude-result-prefixes="h dyn"
 	xmlns:h="http://www.w3.org/1999/xhtml">
- <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" cdata-section-elements=""/>
+ <xsl:output encoding="UTF-8" indent="yes" method="html" omit-xml-declaration="no" cdata-section-elements=""/>
  <xsl:preserve-space elements="h:script"/>
+
 <xsl:template match="/">
- <html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.w3.org/1999/xhtml http://www.w3.org/MarkUp/SCHEMA/xhtml-rdfa-1.xsd"
-  xml:lang="en"
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:bibo="http://purl.org/ontology/bibo/"
-  xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:dcterms="http://purl.org/dc/terms/"
-  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  >
-  <xsl:apply-templates select="//h:head"/>
-	<xsl:apply-templates select="//h:body"/>
- </html>
+ <xsl:apply-templates/>
 </xsl:template>
 
+ <xsl:template match="@*|node()">
+  <xsl:copy>
+   <xsl:apply-templates select="@*|node()"/>
+  </xsl:copy>
+ </xsl:template>
 
  <xsl:template match="h:head">
   <xsl:element name="head">
    <xsl:apply-templates select="@*"/>
-   <xsl:text disable-output-escaping="yes">
-    <![CDATA[<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"> </script>]]>
-   </xsl:text>
+  
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  
+   <script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"></script>
+   
+   <script src="http://isawnyu.github.com/awld-js/awld.js" type="text/javascript"></script>
 
    <script type="text/javascript">
   function show_id_links() {
@@ -44,6 +40,7 @@ $('.id_link').hide();
 
   function show_references() {
  $('.reference').css('border-bottom','thin dotted gray');
+ 
  }
    </script>
    <xsl:apply-templates/>
@@ -52,15 +49,8 @@ $('.id_link').hide();
 
  <xsl:template match="h:body">
   <xsl:element name="body">
-   <xsl:apply-templates select="@*"/>
-   <center style="background:#aaa;margin:1em;padding:.3em">
-    <p style="width:80%">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/1 as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl" style="text-decoration:underline">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/" style="text-decoration:underline">Institute for the Study of the Ancient World</a> (ISAW).  More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers" style="text-decoration:underline">ISAW</a> website. Please note that while the content of this article will not change, its appearance and interaction with other resources will  develop over time.</p>
-    <a href="http://creativecommons.org/licenses/by/3.0/"> 
-  <img alt="Creative Commons License" style="border-width:0;margin-top:1em" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /> 
-    </a>
-    <p onclick="show_id_links();">Click here to show/hide internal links to individual paragraphs, tables, etc.</p>
- </center>
- <xsl:apply-templates/>
+   <xsl:apply-templates select="document('./head.xml')"/>
+   <xsl:apply-templates/>
    
    <hr/>
    <div class="section">
@@ -114,13 +104,6 @@ $('.id_link').hide();
    </div>
  </xsl:element>
 </xsl:template>
-
- <xsl:template match="@*|node()">
-  <xsl:copy>
-   <xsl:apply-templates select="@*|node()"/>
-  </xsl:copy>
- </xsl:template>
-
 
 <xsl:template match="h:a[@class='reference']">
  <xsl:element name="a">
