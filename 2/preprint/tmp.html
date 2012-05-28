@@ -4,7 +4,7 @@
   <!-- W3 Validation link (via SugarSync): http://validator.w3.org/check?uri=https%3A%2F%2Fwww.sugarsync.com%2Fpf%2FD7102992_3402004_68510%3FdirectDownload%3Dtrue&charset=%28detect+automatically%29&doctype=Inline&group=0 -->
   
 <head xmlns="">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"></script><script src="http://isawnyu.github.com/awld-js/awld.js?autoinit" type="text/javascript"></script><script type="text/javascript">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"></script><script src="http://isawnyu.github.com/awld-js/awld.js" type="text/javascript"></script><script type="text/javascript">
   function show_id_links() {
 if ($('.id_link').css('display') == "none")
 $('.id_link').show();
@@ -17,8 +17,9 @@ $('.id_link').hide();
  
  }
    </script>
-  <title xmlns="http://www.w3.org/1999/xhtml">ISAW PapersReview of Ptolemaic Numismatics, 1996-2007</title> 
+  <title xmlns="http://www.w3.org/1999/xhtml">Review of Ptolemaic Numismatics, 1996-2007</title> 
   <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"></meta>
+
   <!-- this conforms to the recommended usage at http://dublincore.org/documents/dc-html/ -->
   <link xmlns="http://www.w3.org/1999/xhtml" rel="schema.DC" href="http://purl.org/dc/elements/1.1/"></link>
   <link xmlns="http://www.w3.org/1999/xhtml" rel="schema.DCTERMS" href="http://purl.org/dc/terms/"></link>
@@ -34,13 +35,14 @@ $('.id_link').hide();
   <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="../isaw-papers.css"></link>
 </head>
 <body xmlns="">
-<div id="isaw_papers_header" onLoad="document.body.onload = awld.init;">
+<div class="isaw_papers_header">
 <center style="background:#aaa;margin:1em;padding:.3em">
     <p style="width:80%">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/2 as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website. Please note that while the content of this article will not change, its appearance and interaction with other resources will  develop over time. Additionally, links to third-party sites have been added as part of the editorial process and do not imply the endorsement of the authors.</p>
     <a href="http://creativecommons.org/licenses/by/3.0/"> 
   <img alt="Creative Commons License" style="border-width:0;margin-top:1em" src="http://i.creativecommons.org/l/by/3.0/88x31.png"> 
     </a>
   <br>
+  <div onclick="awld.init();show_id_links();this.style.display = 'none'" onmouseover="this.style.color = 'red'" onmouseout="this.style.color = 'black'">[<a href="#">Click to enable rich linking</a>]</div>
 </center>
 </div>
 <div xmlns="http://www.w3.org/1999/xhtml" id="front">
@@ -48,7 +50,8 @@ $('.id_link').hide();
  <h1 property="dcterms:title">Review of Ptolemaic Numismatics, 1996 to 2007</h1>
  <h1><span property="dcterms:creator">Catharine Lorber</span> and <span property="dcterms:creator">Andrew Meadows</span></h1>
   
- 
+  <div class="temporary"><strong>About this document:</strong> As part of its work on digital publication and scholarly communication, the <a href="http://nyu.edu/isaw">Institute for the Study of the Ancient World</a> is providing this preprint as a test-bed for its developing HTML-based markup conventions for article and book length scholarly works. While the scholarly content of this article is complete, the final presentation is very much in-progress so that the whole is not yet intended for citation, particularly because the current version is not being hosted from its permanent long-term home. Discussion of the ongoing effort to complete the markup can be found <a href="http://mediterraneanceramics.blogspot.com/search/label/isawdp">here</a>. When this document is finished, it will be published as part of the ISAW Papers series, for which a formal announcement is forthcoming. Questions about ISAW's digital publication efforts can be directed to &lt;sebastian.heath at nyu.edu&gt;.</div>
+
 <p class="keywords"><strong>Keywords:</strong>
  <span class="keyword">Ancient Numismatics</span>,
  <span class="keyword">Ancient Economy</span>,

@@ -28,7 +28,7 @@
   
    <script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"></script>
    
-   <script src="http://isawnyu.github.com/awld-js/awld.js" type="text/javascript"></script>
+   <script src="http://isawnyu.github.com/awld-js/awld.js?{$autoinit}" type="text/javascript"></script>
 
    <script type="text/javascript">
   function show_id_links() {
