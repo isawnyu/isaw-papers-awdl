@@ -7,6 +7,6 @@
     </a>
   <br/>
   <div onclick="awld.init();show_id_links();this.style.display = 'none'"  onmouseover = "this.style.color = 'red'"
-    onmouseout  = "this.style.color = 'black'">[Click to enable rich linking]</div>
+    onmouseout  = "this.style.color = 'black'">[<a href="#">Click to enable rich linking</a>]</div>
 </center>
 </div>
