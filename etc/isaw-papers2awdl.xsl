@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
+	version="1.0"
+        xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:dyn="http://exslt.org/dynamic"
-    xmlns:exsl="http://exslt.org/common"
-    extension-element-prefixes="exsl dyn"
-	version="1.0"
-	exclude-result-prefixes="h dyn"
-	xmlns:h="http://www.w3.org/1999/xhtml">
- <xsl:output encoding="UTF-8" indent="yes" method="html" omit-xml-declaration="no" cdata-section-elements=""/>
+	xmlns:h="http://www.w3.org/1999/xhtml"
+        xmlns:exsl="http://exslt.org/common"
+        extension-element-prefixes="exsl dyn"
+	exclude-result-prefixes="h dyn exsl xsl" >
+
+ <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" cdata-section-elements=""/>
  <xsl:preserve-space elements="h:script"/>
 
 <xsl:template match="/">
