@@ -1,3 +1,5 @@
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
 
 body {
  margin:auto;
@@ -145,7 +147,7 @@ p.figure > img {max-width:90%}
     margin-top:5px;
     }
 
-@namespace xml "http://www.w3.org/XML/1998/namespace"
+
 
 *[xml|lang |= 'grc'] {
 font-family:"New Athena Unicode";
@@ -156,11 +158,13 @@ font-family:Umschrift_TTn;
 }
        
     *:lang(grc){font-family:"New Athena Unicode";}
-    *:lang(egyd){font-family:Umschrift_TTn;}xml:lang(syr) {
- font-family:"Estrangelo Talada";
- }
+    *:lang(egyd){font-family:Umschrift_TTn;}
+ 
 
+*[xml|lang |= 'syr'] {
+   font-family:"Serto Urhoy"; 
+}
 
-*:lang(syr) {
- font-family:"Estrangelo Talada";
+xml:lang(syr) {
+ font-family:"Serto Urhoy";
  }
