@@ -130,10 +130,12 @@ $('.id_link').hide();
    </xsl:element>
  </xsl:template>
 
+<xsl:template match="@rel" mode="enhancer"/>
+
 <xsl:template match="*[@typeof]" mode="enhancer">
  <li>
     <xsl:copy>
-      <xsl:apply-templates select="@*|node()"/>
+      <xsl:apply-templates mode="enhancer"/>
     </xsl:copy>
     <xsl:if test="descendant-or-self::*[@href]"><span style="color:gray"> as defined or described at <a><xsl:attribute name="href"><xsl:value-of select="descendant-or-self::*[@href]/@href"/></xsl:attribute><xsl:attribute name="target">_new</xsl:attribute><xsl:value-of select="descendant-or-self::*[@href]/@href"/></a>.</span></xsl:if>
  </li>
