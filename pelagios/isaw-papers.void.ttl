@@ -8,5 +8,5 @@
     dcterms:license <http://creativecommons.org/licenses/by/3.0/>;
     dcterms:subject <http://dbpedia.org/resource/Annotation>;
     dcterms:title "ISAW Papers";
-    void:dataDump <http://isawnyu.github.com/isaw-papers-awld/pelagiios/isaw-papers-pelagios.rdf> .
+    void:dataDump <http://isawnyu.github.com/isaw-papers-awdl/pelagios/isaw-papers-pelagios.rdf> .
 
