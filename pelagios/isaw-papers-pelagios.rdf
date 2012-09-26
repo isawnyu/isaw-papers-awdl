@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" xml:base="http://isawnyu.github.com/isaw-papers-awdl/pelagios/isaw-papers-pelagios.rdf">
+  <rdf:Description rdf:ID="isaw-papers-2-reference-1">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p4] Ptolemaic coins figure in two new studies of Hellenistic colonization. COHEN [8] includes Ptolemaic coin finds in the documentation for eight settlements and provides references for the Ptolemaic mints at Ptolemais-Akko, Seleucia-Gaza, and Ptolemais-Barce. MUELLER [17], treating Ptolemaic colonization exclusively, mentions coins as the first attestations of Arsinoe-Rithymna on Crete, Ptolemais-Lebedus in Ionia, and Ptolemais-Larissa in the Troad."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Akko".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-2">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687902"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p4] Ptolemaic coins figure in two new studies of Hellenistic colonization. COHEN [8] includes Ptolemaic coin finds in the documentation for eight settlements and provides references for the Ptolemaic mints at Ptolemais-Akko, Seleucia-Gaza, and Ptolemais-Barce. MUELLER [17], treating Ptolemaic colonization exclusively, mentions coins as the first attestations of Arsinoe-Rithymna on Crete, Ptolemais-Lebedus in Ionia, and Ptolemais-Larissa in the Troad."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Seleucia-Gaza".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-3">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373879"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p4] Ptolemaic coins figure in two new studies of Hellenistic colonization. COHEN [8] includes Ptolemaic coin finds in the documentation for eight settlements and provides references for the Ptolemaic mints at Ptolemais-Akko, Seleucia-Gaza, and Ptolemais-Barce. MUELLER [17], treating Ptolemaic colonization exclusively, mentions coins as the first attestations of Arsinoe-Rithymna on Crete, Ptolemais-Lebedus in Ionia, and Ptolemais-Larissa in the Troad."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Barce".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-4">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/590028"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p4] Ptolemaic coins figure in two new studies of Hellenistic colonization. COHEN [8] includes Ptolemaic coin finds in the documentation for eight settlements and provides references for the Ptolemaic mints at Ptolemais-Akko, Seleucia-Gaza, and Ptolemais-Barce. MUELLER [17], treating Ptolemaic colonization exclusively, mentions coins as the first attestations of Arsinoe-Rithymna on Crete, Ptolemais-Lebedus in Ionia, and Ptolemais-Larissa in the Troad."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Arsinoe-Rithymna on Crete".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-5">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599754"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p4] Ptolemaic coins figure in two new studies of Hellenistic colonization. COHEN [8] includes Ptolemaic coin finds in the documentation for eight settlements and provides references for the Ptolemaic mints at Ptolemais-Akko, Seleucia-Gaza, and Ptolemais-Barce. MUELLER [17], treating Ptolemaic colonization exclusively, mentions coins as the first attestations of Arsinoe-Rithymna on Crete, Ptolemais-Lebedus in Ionia, and Ptolemais-Larissa in the Troad."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Lebedus in Ionia".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-6">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/550685"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p4] Ptolemaic coins figure in two new studies of Hellenistic colonization. COHEN [8] includes Ptolemaic coin finds in the documentation for eight settlements and provides references for the Ptolemaic mints at Ptolemais-Akko, Seleucia-Gaza, and Ptolemais-Barce. MUELLER [17], treating Ptolemaic colonization exclusively, mentions coins as the first attestations of Arsinoe-Rithymna on Crete, Ptolemais-Lebedus in Ionia, and Ptolemais-Larissa in the Troad."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Larissa in the Troad".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-7">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707498"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p8] Selected Ptolemaic issues commonly found on Cyprus are featured in TZIAMBAZIS’ catalogue of Cypriot coins [49]. Ptolemaic acquisitions by the Danish National Museum during the years 1942–1996 are included in the supplement to SNG Copenhagen by SCHULZE and ZAHLE [46]. These coins reflect the research interests of Mørkholm, with an especially strong representation of issues connected with the Fifth Syrian War. A single Ptolemaic bronze in the Schledehaus collection in Osnabrück is the occasion for extended comments by CAVAGNA [26]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Cyprus".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-8">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727250"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p9] In 1999–2000 the Archaeological Museum of Heracleion, Crete, displayed an exhibit illustrating the contacts between Crete and Egypt over three millennia, including 36 Ptolemaic coins found on the island and catalogued by STEFANAKIS [48]. GODDIO’S spectacular discovery of another Heracleion, the submerged city of Heracleion-Thonis, inspired a traveling exhibition that included a gold stater of Ptolemy I found in the ruins of Heracleion [30]. In 2006 the Harvard University Art Museums added a permanent exhibit of early Hellenistic coins, including four of Ptolemy I; in the catalogue ARNOLD-BIUCCHI [23] favors Alexandria as the original location of Ptolemy’s mint and attributes to Cyrene a gold stater traditionally assigned to Barce, reading the symbol in the exergue as a silphium plant rather than an apple branch. In 2007 SHEEDY [47] mounted and catalogued an exhibition of Hellenistic coins in Sydney, including fourteen Ptolemaic coins, predominantly issues of Ptolemy I, as satrap and as king."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Heracleion-Thonis".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-9">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/433032"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p10] Hoards containing Ptolemaic coinage have been reported from the following locations. Torraca and Pompeii in Italy: MASTELLONI [183]: 5 AE, Ptol. II); CASTELLONI, OLIVIERO [172]: 1 AE, Ptol. II). Bosanska Krupa and an unknown findspot in Yugoslavia: MIRNIK [184]: 8 AE, Ptols. IV–VIII), UJES, BAKÍC [191]: 9 AE, Ptols. III–VI). Thrace: ARSLAN, LIGHTFOOT [168]: 11 tetradrachms of Ptols. I and II, closing late 260s). Attica and Geraki in Greece: LAGOS [182]: 1 AE, Ptol. II, see below) and VAN DER VIN [192]: 1 AE, Sv. 1000). Vasilika Anogeia on Crete: STEFANAKIS [190]. Söğütlüdere, near Fethiye in Asia Minor: ASHTON, ARSLAN, DERVIŞAĞAOĞLU [170]: 18 Ptolemaic tetradrachms closing c. 256 BC, perhaps in the context of the Second Syrian War; cf. DAVESNE [78]). Eurychon in Cyprus: DESTROOPER-GEORGIADES [174]: 17 AE to Cleopatra VII). Palestine and elsewhere in the Levant: KUSHNIR STEIN, GITLER [181]: 1 AE, Ptol. II); DAVESNE, LEMAIRE [173]: 252+ AE, Ptols. I–II). Elephantine (679 AE, Ptols. II–IV), Xois (123 AE, Ptols. II–IV) and an uncertain location (49 AE, Ptols. II–IV) in Egypt: NOESKE [185]; JENKINS [179] publishes a group of 13 bronze coins and four others, all said to have been found in the Cemetery of the Sacred Rams on Elephantine Island, Aswan. All of the hoard coins and two of the strays were as Sv. 1424, probably to be attributed to Ptolemy V (see below), not the joint reign of Ptolemies VI and VIII. KOVALENKO [180] publishes a hoard now in Moscow, of unknown findspot, containing 32 tetradrachms of Cleopatra VII, years 9–20."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Pompeii".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-10">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/579888"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p10] Hoards containing Ptolemaic coinage have been reported from the following locations. Torraca and Pompeii in Italy: MASTELLONI [183]: 5 AE, Ptol. II); CASTELLONI, OLIVIERO [172]: 1 AE, Ptol. II). Bosanska Krupa and an unknown findspot in Yugoslavia: MIRNIK [184]: 8 AE, Ptols. IV–VIII), UJES, BAKÍC [191]: 9 AE, Ptols. III–VI). Thrace: ARSLAN, LIGHTFOOT [168]: 11 tetradrachms of Ptols. I and II, closing late 260s). Attica and Geraki in Greece: LAGOS [182]: 1 AE, Ptol. II, see below) and VAN DER VIN [192]: 1 AE, Sv. 1000). Vasilika Anogeia on Crete: STEFANAKIS [190]. Söğütlüdere, near Fethiye in Asia Minor: ASHTON, ARSLAN, DERVIŞAĞAOĞLU [170]: 18 Ptolemaic tetradrachms closing c. 256 BC, perhaps in the context of the Second Syrian War; cf. DAVESNE [78]). Eurychon in Cyprus: DESTROOPER-GEORGIADES [174]: 17 AE to Cleopatra VII). Palestine and elsewhere in the Levant: KUSHNIR STEIN, GITLER [181]: 1 AE, Ptol. II); DAVESNE, LEMAIRE [173]: 252+ AE, Ptols. I–II). Elephantine (679 AE, Ptols. II–IV), Xois (123 AE, Ptols. II–IV) and an uncertain location (49 AE, Ptols. II–IV) in Egypt: NOESKE [185]; JENKINS [179] publishes a group of 13 bronze coins and four others, all said to have been found in the Cemetery of the Sacred Rams on Elephantine Island, Aswan. All of the hoard coins and two of the strays were as Sv. 1424, probably to be attributed to Ptolemy V (see below), not the joint reign of Ptolemies VI and VIII. KOVALENKO [180] publishes a hoard now in Moscow, of unknown findspot, containing 32 tetradrachms of Cleopatra VII, years 9–20."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Attica".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-11">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/786021"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p10] Hoards containing Ptolemaic coinage have been reported from the following locations. Torraca and Pompeii in Italy: MASTELLONI [183]: 5 AE, Ptol. II); CASTELLONI, OLIVIERO [172]: 1 AE, Ptol. II). Bosanska Krupa and an unknown findspot in Yugoslavia: MIRNIK [184]: 8 AE, Ptols. IV–VIII), UJES, BAKÍC [191]: 9 AE, Ptols. III–VI). Thrace: ARSLAN, LIGHTFOOT [168]: 11 tetradrachms of Ptols. I and II, closing late 260s). Attica and Geraki in Greece: LAGOS [182]: 1 AE, Ptol. II, see below) and VAN DER VIN [192]: 1 AE, Sv. 1000). Vasilika Anogeia on Crete: STEFANAKIS [190]. Söğütlüdere, near Fethiye in Asia Minor: ASHTON, ARSLAN, DERVIŞAĞAOĞLU [170]: 18 Ptolemaic tetradrachms closing c. 256 BC, perhaps in the context of the Second Syrian War; cf. DAVESNE [78]). Eurychon in Cyprus: DESTROOPER-GEORGIADES [174]: 17 AE to Cleopatra VII). Palestine and elsewhere in the Levant: KUSHNIR STEIN, GITLER [181]: 1 AE, Ptol. II); DAVESNE, LEMAIRE [173]: 252+ AE, Ptols. I–II). Elephantine (679 AE, Ptols. II–IV), Xois (123 AE, Ptols. II–IV) and an uncertain location (49 AE, Ptols. II–IV) in Egypt: NOESKE [185]; JENKINS [179] publishes a group of 13 bronze coins and four others, all said to have been found in the Cemetery of the Sacred Rams on Elephantine Island, Aswan. All of the hoard coins and two of the strays were as Sv. 1424, probably to be attributed to Ptolemy V (see below), not the joint reign of Ptolemies VI and VIII. KOVALENKO [180] publishes a hoard now in Moscow, of unknown findspot, containing 32 tetradrachms of Cleopatra VII, years 9–20."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Elephantine".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-12">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727236"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Tanis".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-13">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727078/"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Athribis".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-14">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727070"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Alexandria".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-15">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373778"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Cyrene".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-16">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Akko".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-17">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687928"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Jerusalem".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-18">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678378"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Beth Shean".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-19">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668262"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Ras Ibn Hani".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-20">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668290"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Latakia (Laodiceia) in Syria".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-21">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/638961"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Limyra in Lycia".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-22">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/638796"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Caunus".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-23">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707519"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Dali on Cyprus".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-24">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599587"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Archegesion on Delos".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-25">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/423080"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Tevere".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-26">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/393382"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p16] From within Ptolemaic dominions, AMANDRY [195] has published 232 Ptolemaic coins (150 identifiable, Ptolemies I–XII) from the French excavations at Tanis in Egypt, MYŚLIWIEC [242] lists coins found at Athribis (2 AR, Ptols. I–II, 4 AE, Ptols. II and IV), PICARD [246] publishes some of the the recent finds from Alexandria, while BUTTREY publishes over 500 Ptolemaic period coins of the Cyrenaic mints from the excavation of the sanctuary of Demeter and Persephone at Cyrene (BUTTREY, MCPHEE [215]. Interestingly, only one Ptolemaic find from this site is from the mint of Alexandria. Buttrey also supplies a brief commentary on the Ptolemaic coinage of this region. SHEEDY (SHEEDY, CARSON, WALMSLEY [250], published the 5 coins (Ptolemies I–VI) found in the Australian excavations at Pella. Numerous sites in Israel have furnished Ptolemaic material: Yodfat (AVIRAM, EDEN-BAJOWITZ [197]); Akko (AVSHALOM-GORNY [205]); Giv’at Yasaf (BERMAN, ARIEL [208]; Jerusalem (GITLER [225]); Ramat Aviv (GORSALSANI [229]); Sasa (SMITLEIN [251]); Haifa-Qr Ha-Orvim (YEIVIN [259]); Beth Shean (TSAFRIR, FOERSTER [257]). In addition coin finds from Ake (the Court House excavations), Dora, Kibbutz Ginosar on the N.W. shore of the Sea of Galilee and other sites in the region are adduced by GITLER and KUSHNIR STEIN [82], and used to date certain issues of Ptolemies IX and X (see below). AUGÉ [196] has discussed (though not fully published) the coin finds from Ras Ibn Hani, c. 5 km to the north of Latakia (Laodiceia) in Syria. The discovery here of c. 170 Ptolemaic coins (Ptols. I–III) is taken to provide evidence for the Ptolemaic occupation of the peninsula, perhaps in the context of the Third Syrian War. Elsewhere in the overseas dependencies, Limyra in Lycia has yielded Ptolemaic finds (GORECKI [227], [228], as have survey work in central Lycia (GREGORY [233] and Caria (KONUK [238], and excavation at Caunus (KELLNER, [235]. DESTROOPER-GEORGIADES [218] publishes an overstrike of Demetrius Poliorcetes (Newell Pl. ii, 9–10) on a bronze of Ptolemy I (Sv. 27) found in excavations at Dali on Cyprus. The same author also publishes the single Ptolemaic coin found in the French excavations at the Archegesion on Delos (DESTROOPER-GEORGIADES [219]. Stefanakis (62a???) has collected the evidence for finds of Ptolemaic coinage on Crete. Meanwhile, the phenomenon of Ptolemaic bronze circulating in the west continues to be reported in finds from Tevere (FREY-KUPPER [220], Puglia (TRAVAGLINI [256] and Este (VISONA [258]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Este".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-27">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/736896"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p17] PARENTE [245] has published the excavation coins from Bakchias in the Fayum. These include an important proportion of Ptolemaic coins, dominated by the second-century double eagle type Svoronos 1424. Interestingly, bronzes were replaced by tetradrachms under Ptolemy XII and Cleopatra VII. FREND [223] reports the coin finds from the 1974 campaign at Qazr Ibrahim; these include five Ptolemaic bronzes, unfortunately misdescribed as coins of Roman Alexandria. Individual coin finds include a bronze of Ptolemy II discovered in excavations of the bath of the Mammisi in Alexandria, reported by SZYMAØSKA AND BRABAJ [254], and a bronze of Ptolemy VI uncovered in the Temple of Hatshepsut at Deir el-Bahri by the Polish-Egyptian excavations in 1982, reported by MYŚLIWIEC [241]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Bakchias in the Fayum".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-28">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678060"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p19] BUTCHER [214] has published the pre-Islamic coin finds from sectors BEY 006 and 045 of the Beirut excavations conducted jointly by the American University of Beirut and the Archaeological Collaboration for Research and Excavations. These sites yielded 70 Ptolemaic bronzes, most of the Alexandria and Tyre mints. The presence of at least three (and perhaps as many as six) examples of Svoronos 838 inspires their tentative reattribution from Sidon to Tyre. The bronze varieties assigned to Berytus by Svoronos were not represented in the excavations, a fact consistent with their reattribution to southwest Asia Minor as proposed by ASHTON [261], [24]. The distribution of the Beirut excavation coins by reign is strongly weighted to Ptolemy II, but Svoronos 706–711 should probably be reattributed to Ptolemy III (as acknowledged p. 46, n.1). In his commentary Butcher compares the bronze denominational systems for Alexandria and Tyre, with the suggestion that they may have corresponded. He also discusses the stratigraphic evidence from BEY 006 indicating that Ptolemaic bronze coins were removed from circulation after the Seleucid conquest of Phoenicia. In a shorter overview of the coin assemblages from BEY 006 and 045 [213], BUTCHER also treats the Seleucid demonetization of Ptolemy currency but mentions that third-century Ptolemaic bronzes sometimes occur in stratigraphic levels of the fifth and sixth centuries A.D."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Beirut".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-29">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678393"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p19] BUTCHER [214] has published the pre-Islamic coin finds from sectors BEY 006 and 045 of the Beirut excavations conducted jointly by the American University of Beirut and the Archaeological Collaboration for Research and Excavations. These sites yielded 70 Ptolemaic bronzes, most of the Alexandria and Tyre mints. The presence of at least three (and perhaps as many as six) examples of Svoronos 838 inspires their tentative reattribution from Sidon to Tyre. The bronze varieties assigned to Berytus by Svoronos were not represented in the excavations, a fact consistent with their reattribution to southwest Asia Minor as proposed by ASHTON [261], [24]. The distribution of the Beirut excavation coins by reign is strongly weighted to Ptolemy II, but Svoronos 706–711 should probably be reattributed to Ptolemy III (as acknowledged p. 46, n.1). In his commentary Butcher compares the bronze denominational systems for Alexandria and Tyre, with the suggestion that they may have corresponded. He also discusses the stratigraphic evidence from BEY 006 indicating that Ptolemaic bronze coins were removed from circulation after the Seleucid conquest of Phoenicia. In a shorter overview of the coin assemblages from BEY 006 and 045 [213], BUTCHER also treats the Seleucid demonetization of Ptolemy currency but mentions that third-century Ptolemaic bronzes sometimes occur in stratigraphic levels of the fifth and sixth centuries A.D."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Sidon".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-30">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/697725"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p20] SIDEBOTHAM [232] reports a Ptolemaic bronze coin recovered from exploratory soundings in the civic center of Petra, conducted by the Hellenistic Petra Project in 2004. The coin was a worn Æ 26 without central cavities, thus an issue of Ptolemy I or Ptolemy II before the currency reform of the 260s, countermarked with an incuse trident. Sidebotham compares the countermark to the Seleucid anchor countermark of the second century and inexplicably cites the vertical die axis as atypical of Alexandria. He consequently proposes a Phoenician mint (Tyre or Sidon) and submits that the worn state of the coin points to a century or more of circulation before its deposit at Petra. The goal of the Hellenistic Petra Project is to discover evidence of settlement at Petra before 100 B.C., the date at which the Nabataeans are assumed to have abandoned their nomadic lifestyle (following Diod. 19.94.10). The Ptolemaic coin is thus significant because it, together with two third-century Aradian bronzes from the same trench, helps to define Hellenistic strata, as did Aradian and Ptolemaic coins found in the British excavations of 1955/6. Sidebotham undertakes an overview of the association of Aradian and Ptolemaic coins with “Nabataean” sites along the caravan route, citing much information provided by the Israel Antiquities Authority. He also draws attention to the association of Ptolemaic and Aradian coins at Ras Ibn Hani and hypothesizes commercial exchanges between the Ptolemaic kingdom and Aradus after the end of the Third Syrian War."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Petra".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-31">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668197"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p20] SIDEBOTHAM [232] reports a Ptolemaic bronze coin recovered from exploratory soundings in the civic center of Petra, conducted by the Hellenistic Petra Project in 2004. The coin was a worn Æ 26 without central cavities, thus an issue of Ptolemy I or Ptolemy II before the currency reform of the 260s, countermarked with an incuse trident. Sidebotham compares the countermark to the Seleucid anchor countermark of the second century and inexplicably cites the vertical die axis as atypical of Alexandria. He consequently proposes a Phoenician mint (Tyre or Sidon) and submits that the worn state of the coin points to a century or more of circulation before its deposit at Petra. The goal of the Hellenistic Petra Project is to discover evidence of settlement at Petra before 100 B.C., the date at which the Nabataeans are assumed to have abandoned their nomadic lifestyle (following Diod. 19.94.10). The Ptolemaic coin is thus significant because it, together with two third-century Aradian bronzes from the same trench, helps to define Hellenistic strata, as did Aradian and Ptolemaic coins found in the British excavations of 1955/6. Sidebotham undertakes an overview of the association of Aradian and Ptolemaic coins with “Nabataean” sites along the caravan route, citing much information provided by the Israel Antiquities Authority. He also draws attention to the association of Ptolemaic and Aradian coins at Ras Ibn Hani and hypothesizes commercial exchanges between the Ptolemaic kingdom and Aradus after the end of the Third Syrian War."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Aradus".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-32">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373778"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p22] The excavations at Gan Soreq have yielded a bronze of Ptolemy VIII from the Cyrene mint, the first securely identified and provenanced Cyrenaican found in Israel (personal communication from Donald T. Ariel)."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Cyrene".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-33">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678378"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p23] Coin finds at two Israeli sites have clarified the history of Hellenistic city foundations. In analyzing the stamped amphora handles from the Bet Shean excavations, ARIEL [201] recalls a hoard of tetradrachms of Ptolemy II, found in the University of Pennsylvania excavations of Tel el Husn between 1921 and 1933. These finds, together with the distribution of excavation coins, point to the conclusion that Hellenistic Nysa-Scythopolis was founded in the Ptolemaic period at Tel el Husn and relocated to Tel Istabbah in the Seleucid period. EVANS [222] observes that the excavations at Caesarea Maritima have yielded only three Ptolemaic bronzes but numerous Seleucid coins. Consequently she argues against an early date for the foundation of Strato’s Tower, preferring a date after the Seleucid conquest."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Bet Shean".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-34">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678401"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p23] Coin finds at two Israeli sites have clarified the history of Hellenistic city foundations. In analyzing the stamped amphora handles from the Bet Shean excavations, ARIEL [201] recalls a hoard of tetradrachms of Ptolemy II, found in the University of Pennsylvania excavations of Tel el Husn between 1921 and 1933. These finds, together with the distribution of excavation coins, point to the conclusion that Hellenistic Nysa-Scythopolis was founded in the Ptolemaic period at Tel el Husn and relocated to Tel Istabbah in the Seleucid period. EVANS [222] observes that the excavations at Caesarea Maritima have yielded only three Ptolemaic bronzes but numerous Seleucid coins. Consequently she argues against an early date for the foundation of Strato’s Tower, preferring a date after the Seleucid conquest."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Caesarea Maritima".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-35">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/589824"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p24] STEFANAKIS [253] reviews recent research on Ptolemaic coinage (as of 2000) and surveys the evidence for its circulation in Crete. Numerous didrachms of Ptolemaic Cyrenaica were hoarded in Crete or overstruck by Cretan cities; the influx of Cyrenean coins can probably be explained by the involvement of Cretan mercenaries in the campaigns of Ophellas and Magas, and/or treaties of Magas with Gortyna and the confederacy of the Oreioi. Ptolemaic royal coinage found in Crete is dominated by issues of Ptolemy II, perhaps to be associated with the Ptolemaic garrison established at Itanos by Patroclus. The Lagid substitution of bronze for silver coinage is reflected in the finds for Ptolemy III and his successors."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Itanos".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-36">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/579888"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p25] CHRYSSANTHAKI [217] provides a detailed account of Ptolemaic coin circulation in Greece and the Aegean. Along the Thracian coast and in the Aegean Ptolemaic coinage is quite scarce and its presence does not correlate with areas under Ptolemaic control, an indication that the Ptolemies did not impose the use of their coinage. Ptolemaic coinage in Greece reflects the dynasty’s policy of intervention in Greek affairs, both through direct military action and through subsidies and donations. Silver subsidies from Ptolemy I and II enabled Athens to strike the series of tetradrachms of the style called quadridigité, which financed the Chremonidian War. The extensive military operations of the Ptolemaic admiral Patroclus in Attica during that war are attested by bronzes of Ptolemy II marked with a shield and monograms. Portrait bronzes of Ptolemy III have been found at sites throughout the Peloponnesus; at Corinth they were officially accepted into the city’s monetary system, without countermarking, and circulated for nearly a century until the destruction of Corinth in 146. Publication of the excavation coins from Methana-Arsinoe in Greece provides an occasion for GILL [224] to outline the city’s coinage. BIRGE, KRAYNAK, AND MILLER [212] allude to Ptolemaic coin finds in the Nemea excavations."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Attica".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-37">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570577"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p25] CHRYSSANTHAKI [217] provides a detailed account of Ptolemaic coin circulation in Greece and the Aegean. Along the Thracian coast and in the Aegean Ptolemaic coinage is quite scarce and its presence does not correlate with areas under Ptolemaic control, an indication that the Ptolemies did not impose the use of their coinage. Ptolemaic coinage in Greece reflects the dynasty’s policy of intervention in Greek affairs, both through direct military action and through subsidies and donations. Silver subsidies from Ptolemy I and II enabled Athens to strike the series of tetradrachms of the style called quadridigité, which financed the Chremonidian War. The extensive military operations of the Ptolemaic admiral Patroclus in Attica during that war are attested by bronzes of Ptolemy II marked with a shield and monograms. Portrait bronzes of Ptolemy III have been found at sites throughout the Peloponnesus; at Corinth they were officially accepted into the city’s monetary system, without countermarking, and circulated for nearly a century until the destruction of Corinth in 146. Publication of the excavation coins from Methana-Arsinoe in Greece provides an occasion for GILL [224] to outline the city’s coinage. BIRGE, KRAYNAK, AND MILLER [212] allude to Ptolemaic coin finds in the Nemea excavations."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Peloponnesus".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-38">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570182"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p25] CHRYSSANTHAKI [217] provides a detailed account of Ptolemaic coin circulation in Greece and the Aegean. Along the Thracian coast and in the Aegean Ptolemaic coinage is quite scarce and its presence does not correlate with areas under Ptolemaic control, an indication that the Ptolemies did not impose the use of their coinage. Ptolemaic coinage in Greece reflects the dynasty’s policy of intervention in Greek affairs, both through direct military action and through subsidies and donations. Silver subsidies from Ptolemy I and II enabled Athens to strike the series of tetradrachms of the style called quadridigité, which financed the Chremonidian War. The extensive military operations of the Ptolemaic admiral Patroclus in Attica during that war are attested by bronzes of Ptolemy II marked with a shield and monograms. Portrait bronzes of Ptolemy III have been found at sites throughout the Peloponnesus; at Corinth they were officially accepted into the city’s monetary system, without countermarking, and circulated for nearly a century until the destruction of Corinth in 146. Publication of the excavation coins from Methana-Arsinoe in Greece provides an occasion for GILL [224] to outline the city’s coinage. BIRGE, KRAYNAK, AND MILLER [212] allude to Ptolemaic coin finds in the Nemea excavations."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Corinth".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-39">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570482"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p25] CHRYSSANTHAKI [217] provides a detailed account of Ptolemaic coin circulation in Greece and the Aegean. Along the Thracian coast and in the Aegean Ptolemaic coinage is quite scarce and its presence does not correlate with areas under Ptolemaic control, an indication that the Ptolemies did not impose the use of their coinage. Ptolemaic coinage in Greece reflects the dynasty’s policy of intervention in Greek affairs, both through direct military action and through subsidies and donations. Silver subsidies from Ptolemy I and II enabled Athens to strike the series of tetradrachms of the style called quadridigité, which financed the Chremonidian War. The extensive military operations of the Ptolemaic admiral Patroclus in Attica during that war are attested by bronzes of Ptolemy II marked with a shield and monograms. Portrait bronzes of Ptolemy III have been found at sites throughout the Peloponnesus; at Corinth they were officially accepted into the city’s monetary system, without countermarking, and circulated for nearly a century until the destruction of Corinth in 146. Publication of the excavation coins from Methana-Arsinoe in Greece provides an occasion for GILL [224] to outline the city’s coinage. BIRGE, KRAYNAK, AND MILLER [212] allude to Ptolemaic coin finds in the Nemea excavations."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Methana-Arsinoe".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-40">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570504"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p25] CHRYSSANTHAKI [217] provides a detailed account of Ptolemaic coin circulation in Greece and the Aegean. Along the Thracian coast and in the Aegean Ptolemaic coinage is quite scarce and its presence does not correlate with areas under Ptolemaic control, an indication that the Ptolemies did not impose the use of their coinage. Ptolemaic coinage in Greece reflects the dynasty’s policy of intervention in Greek affairs, both through direct military action and through subsidies and donations. Silver subsidies from Ptolemy I and II enabled Athens to strike the series of tetradrachms of the style called quadridigité, which financed the Chremonidian War. The extensive military operations of the Ptolemaic admiral Patroclus in Attica during that war are attested by bronzes of Ptolemy II marked with a shield and monograms. Portrait bronzes of Ptolemy III have been found at sites throughout the Peloponnesus; at Corinth they were officially accepted into the city’s monetary system, without countermarking, and circulated for nearly a century until the destruction of Corinth in 146. Publication of the excavation coins from Methana-Arsinoe in Greece provides an occasion for GILL [224] to outline the city’s coinage. BIRGE, KRAYNAK, AND MILLER [212] allude to Ptolemaic coin finds in the Nemea excavations."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Nemea".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-41">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/314921"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p26] The coin finds from the excavations at the Decumanus Maximus in Carthage, published by BALDUS [204], include one bronze coin of Ptolemaic Cyrenaica."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Carthage".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-42">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/991353"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p27] MANGANARO [239] surveys the Ptolemaic coins found in Sicily, the majority of which are bronzes with a shield symbol, ostensibly of Ptolemy II (for reattribution of this coinage, see WOLF AND LORBER [287]. STANNARD [252] reports that Ammon/Isis headdress bronzes account for 2.6% of all coins found at Liri in Italy and are also overstruck with local imitative Roman types, mostly quadrantes."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Sicily".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-43">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/991398"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p40] Other specific aspects of Ptolemaic taxation received attention in our period. In a study of tax receipts from early Ptolemaic Thebes, MUHS [105] reports a great increase in the number and extent of money taxes before year 22 of Ptolemy II, with most receipts for the yoke tax, levied on males only, probably at the rate of 4 kite (8 drachms) annually, and replaced by the salt tax in 264. The proliferation of money taxes led to the introduction of tax farming, first documented in a demotic contract dated year 14 of Ptolemy I. Muhs provides a detailed account of the processes involved in tax farming and describes the numerous taxes, including the amounts of money paid. His discussions of the coinage trace exchange rates, weight reductions, the development of bronze coinage and its face values, the introduction of the “copper standard,” and demotic accounting, relying especially on Hazzard and Reekmans. Documents pertaining to Ptolemaic taxation are far more rare outside of Egypt. MEADOWS [101] reinterprets an inscription at Argos that records donations by the coregents Ptolemy VI, Ptolemy VIII, and Cleopatra II, and by several Cypriot cities. He suggests that the latter may represent the apomoira, and that these donations to Argos could be related to the service of Polycrates of Argos to Ptolemy V, father of the three rulers."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Thebes".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-44">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570106"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p40] Other specific aspects of Ptolemaic taxation received attention in our period. In a study of tax receipts from early Ptolemaic Thebes, MUHS [105] reports a great increase in the number and extent of money taxes before year 22 of Ptolemy II, with most receipts for the yoke tax, levied on males only, probably at the rate of 4 kite (8 drachms) annually, and replaced by the salt tax in 264. The proliferation of money taxes led to the introduction of tax farming, first documented in a demotic contract dated year 14 of Ptolemy I. Muhs provides a detailed account of the processes involved in tax farming and describes the numerous taxes, including the amounts of money paid. His discussions of the coinage trace exchange rates, weight reductions, the development of bronze coinage and its face values, the introduction of the “copper standard,” and demotic accounting, relying especially on Hazzard and Reekmans. Documents pertaining to Ptolemaic taxation are far more rare outside of Egypt. MEADOWS [101] reinterprets an inscription at Argos that records donations by the coregents Ptolemy VI, Ptolemy VIII, and Cleopatra II, and by several Cypriot cities. He suggests that the latter may represent the apomoira, and that these donations to Argos could be related to the service of Polycrates of Argos to Ptolemy V, father of the three rulers."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Argos".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-45">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678393"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p46] WHEATLEY [125] returns to the problem of the chronology of events in the eastern Mediterranean in the period 315–311, and the role of numismatic material in fixing points in the chronology. A tetradrachm of Ptolemy I with types Alexander hd./Athena st. from the mint of Sidon dated year 22 (X) indicates that the city was in Ptolemaic hands for at least part of 312/1. Since no Ptolemaic issue is known from the previous year (Φ: 313/2), he argues that the battle of Gaza must have been fought late in that year (312)."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Sidon".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-46">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p50] Three studies have brought the evidence of Ptolemaic gold and silver to bear on the matter of wartime expenditure under Philadelphus. DAVESNE [78] has assembled the numismatic evidence for Ptolemaic activity during the Second Syrian War, including hoards, the opening of mints at Ake, Joppa and Gaza and the legend change on Ptolemaic silver to ΠΤΟΛΕΜΑΙΟΥ ΣΩΤΗΡΟΣ (which he sees as programmatic). He reasserts his view that Sv. 894–8, attributed by Svoronos to Ephesus, were minted at Aradus during the period of Ptolemaic control of the city and reassigns the Ptolemaic issues of the Tarsus mint (Sv.  910–911) from the reign of Euergetes to that of Philadelphus in the context of the Second Syrian War. Elsewhere, DAVESNE [79] also suggests that the well-attested spate of countermarking of Ptolemaic issues by the city of Byzantium is the result of the subvention of Philadelphus to the city known from Dion. Byz. 41 and that this occurred during the same war (the generally acccepted date of 280/79 for this episode would rule out such a connection, however: see BRINGMANN, VON STEUBEN [6], p. 271). In fact, a more systematic treatment of the evidence by NOESKE [18] reveals that a sequence of 10 countermarks was used, the earliest appearing on a Ptolemaic issue of 280, the latest on an issue of 246. Noeske notes that the first example of the countermark may be connected with Demetrius’ testimonium, but suggests that Ptolemaic aid must have been ongoing. However, it may well be questioned whether the countermarks have anything to do with Ptolemaic benefactions at all. In general, DAVESNE [79] finds no particular links between the other Syrian Wars fought by Philadelphus (the hypothesised conflict of 281–79 BC, and so-called First Syrian War of 274–1) and reform of or unusual activity at the Ptolemaic mints.  Indeed the major monetary reform dated by Davesne to c. 265 BC is taken to be the reason that Philadelphus could not involve himself in the Chremonidean War in 265/4. Drawing on Davesne’s figures for coin production by the first three Ptolemies (revisited by DAVESNE himself [79], [77]), RODRIGUEZ [108] comes to essentially the opposite conclusion regarding the year 266/5. The spike on Davesne’s graph of Ptolemaic emissions that occurs in this year is taken by Rodriguez as evidence of Philadelphus’ gearing for the conflict. However, caution is required here. This spike is produced in large part by Davesne’s attribution of many undated Ptolemaic issues of the Tyre and Sidon mints to a single year on the basis of their perceived weight loss in the Meydancikkale hoard. (To the material gathered by Rodriguez may now be added the hoard from Attica apparently of Chremonidean War date published by LAGOS [123], which contained one specimen of Sv. class Z, series B.)"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Ake".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-47">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687902"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p50] Three studies have brought the evidence of Ptolemaic gold and silver to bear on the matter of wartime expenditure under Philadelphus. DAVESNE [78] has assembled the numismatic evidence for Ptolemaic activity during the Second Syrian War, including hoards, the opening of mints at Ake, Joppa and Gaza and the legend change on Ptolemaic silver to ΠΤΟΛΕΜΑΙΟΥ ΣΩΤΗΡΟΣ (which he sees as programmatic). He reasserts his view that Sv. 894–8, attributed by Svoronos to Ephesus, were minted at Aradus during the period of Ptolemaic control of the city and reassigns the Ptolemaic issues of the Tarsus mint (Sv.  910–911) from the reign of Euergetes to that of Philadelphus in the context of the Second Syrian War. Elsewhere, DAVESNE [79] also suggests that the well-attested spate of countermarking of Ptolemaic issues by the city of Byzantium is the result of the subvention of Philadelphus to the city known from Dion. Byz. 41 and that this occurred during the same war (the generally acccepted date of 280/79 for this episode would rule out such a connection, however: see BRINGMANN, VON STEUBEN [6], p. 271). In fact, a more systematic treatment of the evidence by NOESKE [18] reveals that a sequence of 10 countermarks was used, the earliest appearing on a Ptolemaic issue of 280, the latest on an issue of 246. Noeske notes that the first example of the countermark may be connected with Demetrius’ testimonium, but suggests that Ptolemaic aid must have been ongoing. However, it may well be questioned whether the countermarks have anything to do with Ptolemaic benefactions at all. In general, DAVESNE [79] finds no particular links between the other Syrian Wars fought by Philadelphus (the hypothesised conflict of 281–79 BC, and so-called First Syrian War of 274–1) and reform of or unusual activity at the Ptolemaic mints.  Indeed the major monetary reform dated by Davesne to c. 265 BC is taken to be the reason that Philadelphus could not involve himself in the Chremonidean War in 265/4. Drawing on Davesne’s figures for coin production by the first three Ptolemies (revisited by DAVESNE himself [79], [77]), RODRIGUEZ [108] comes to essentially the opposite conclusion regarding the year 266/5. The spike on Davesne’s graph of Ptolemaic emissions that occurs in this year is taken by Rodriguez as evidence of Philadelphus’ gearing for the conflict. However, caution is required here. This spike is produced in large part by Davesne’s attribution of many undated Ptolemaic issues of the Tyre and Sidon mints to a single year on the basis of their perceived weight loss in the Meydancikkale hoard. (To the material gathered by Rodriguez may now be added the hoard from Attica apparently of Chremonidean War date published by LAGOS [123], which contained one specimen of Sv. class Z, series B.)"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Gaza".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-48">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599612"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p50] Three studies have brought the evidence of Ptolemaic gold and silver to bear on the matter of wartime expenditure under Philadelphus. DAVESNE [78] has assembled the numismatic evidence for Ptolemaic activity during the Second Syrian War, including hoards, the opening of mints at Ake, Joppa and Gaza and the legend change on Ptolemaic silver to ΠΤΟΛΕΜΑΙΟΥ ΣΩΤΗΡΟΣ (which he sees as programmatic). He reasserts his view that Sv. 894–8, attributed by Svoronos to Ephesus, were minted at Aradus during the period of Ptolemaic control of the city and reassigns the Ptolemaic issues of the Tarsus mint (Sv.  910–911) from the reign of Euergetes to that of Philadelphus in the context of the Second Syrian War. Elsewhere, DAVESNE [79] also suggests that the well-attested spate of countermarking of Ptolemaic issues by the city of Byzantium is the result of the subvention of Philadelphus to the city known from Dion. Byz. 41 and that this occurred during the same war (the generally acccepted date of 280/79 for this episode would rule out such a connection, however: see BRINGMANN, VON STEUBEN [6], p. 271). In fact, a more systematic treatment of the evidence by NOESKE [18] reveals that a sequence of 10 countermarks was used, the earliest appearing on a Ptolemaic issue of 280, the latest on an issue of 246. Noeske notes that the first example of the countermark may be connected with Demetrius’ testimonium, but suggests that Ptolemaic aid must have been ongoing. However, it may well be questioned whether the countermarks have anything to do with Ptolemaic benefactions at all. In general, DAVESNE [79] finds no particular links between the other Syrian Wars fought by Philadelphus (the hypothesised conflict of 281–79 BC, and so-called First Syrian War of 274–1) and reform of or unusual activity at the Ptolemaic mints.  Indeed the major monetary reform dated by Davesne to c. 265 BC is taken to be the reason that Philadelphus could not involve himself in the Chremonidean War in 265/4. Drawing on Davesne’s figures for coin production by the first three Ptolemies (revisited by DAVESNE himself [79], [77]), RODRIGUEZ [108] comes to essentially the opposite conclusion regarding the year 266/5. The spike on Davesne’s graph of Ptolemaic emissions that occurs in this year is taken by Rodriguez as evidence of Philadelphus’ gearing for the conflict. However, caution is required here. This spike is produced in large part by Davesne’s attribution of many undated Ptolemaic issues of the Tyre and Sidon mints to a single year on the basis of their perceived weight loss in the Meydancikkale hoard. (To the material gathered by Rodriguez may now be added the hoard from Attica apparently of Chremonidean War date published by LAGOS [123], which contained one specimen of Sv. class Z, series B.)"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Ephesus".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-49">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/648789"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p50] Three studies have brought the evidence of Ptolemaic gold and silver to bear on the matter of wartime expenditure under Philadelphus. DAVESNE [78] has assembled the numismatic evidence for Ptolemaic activity during the Second Syrian War, including hoards, the opening of mints at Ake, Joppa and Gaza and the legend change on Ptolemaic silver to ΠΤΟΛΕΜΑΙΟΥ ΣΩΤΗΡΟΣ (which he sees as programmatic). He reasserts his view that Sv. 894–8, attributed by Svoronos to Ephesus, were minted at Aradus during the period of Ptolemaic control of the city and reassigns the Ptolemaic issues of the Tarsus mint (Sv.  910–911) from the reign of Euergetes to that of Philadelphus in the context of the Second Syrian War. Elsewhere, DAVESNE [79] also suggests that the well-attested spate of countermarking of Ptolemaic issues by the city of Byzantium is the result of the subvention of Philadelphus to the city known from Dion. Byz. 41 and that this occurred during the same war (the generally acccepted date of 280/79 for this episode would rule out such a connection, however: see BRINGMANN, VON STEUBEN [6], p. 271). In fact, a more systematic treatment of the evidence by NOESKE [18] reveals that a sequence of 10 countermarks was used, the earliest appearing on a Ptolemaic issue of 280, the latest on an issue of 246. Noeske notes that the first example of the countermark may be connected with Demetrius’ testimonium, but suggests that Ptolemaic aid must have been ongoing. However, it may well be questioned whether the countermarks have anything to do with Ptolemaic benefactions at all. In general, DAVESNE [79] finds no particular links between the other Syrian Wars fought by Philadelphus (the hypothesised conflict of 281–79 BC, and so-called First Syrian War of 274–1) and reform of or unusual activity at the Ptolemaic mints.  Indeed the major monetary reform dated by Davesne to c. 265 BC is taken to be the reason that Philadelphus could not involve himself in the Chremonidean War in 265/4. Drawing on Davesne’s figures for coin production by the first three Ptolemies (revisited by DAVESNE himself [79], [77]), RODRIGUEZ [108] comes to essentially the opposite conclusion regarding the year 266/5. The spike on Davesne’s graph of Ptolemaic emissions that occurs in this year is taken by Rodriguez as evidence of Philadelphus’ gearing for the conflict. However, caution is required here. This spike is produced in large part by Davesne’s attribution of many undated Ptolemaic issues of the Tyre and Sidon mints to a single year on the basis of their perceived weight loss in the Meydancikkale hoard. (To the material gathered by Rodriguez may now be added the hoard from Attica apparently of Chremonidean War date published by LAGOS [123], which contained one specimen of Sv. class Z, series B.)"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Tarsus".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-50">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/648781"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p53] On the basis of control marks shared with later Seleucid issues, LORBER and KOVACS [95] have attributed certain Serapis and Isis/eagle on thunderbolt tetradrachms (as Sv. 1136 and var.) to the mint of Soli in Cilicia. Soli thus apparently became a royal mint under Ptolemy V, probably during the Fifth Syrian War, before being employed by Antiochus III after his conquest of the region in 197 BC.  Interestingly, two of the controls in question also appear on standard Paphian silver of Ptolemy V (Sv. 1302–5)."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Soli in Cilicia".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-51">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727192"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p55] The so-called ‘coins of an uncertain era’ continue, unnecessarily, to cause confusion. Mørkholm (NNÅ 1975–6, pp. 23–58) brilliantly reattributed these to the civic mint of Aradus. More recently Hazzard (see eg. Ptolemaic Coins (Toronto 1995) has suggested again that they are official Ptolemaic issues produced at a hitherto unattested mint at Pelusium, and dated according to a hitherto unattested era of ‘Soter’. The findspots alone of these coins strongly suggest that Mørkholm was correct and Le Rider (BCH 119 (1995) pp.  391-404) has given a clear exposition of the prevailing monetary system of the region which would have given rise to such imitations at Aradus.  Nonetheless confusion now reigns. CACCAMO CALTABIANO [69] has returned to the notion that the era is Ptolemaic (beginning in 311).  PITCHFORK [43], nos. 34 and 73) has them as royal issues produced at Aradus. NOESKE [41], nos. 395–406) has them as civic issues of Aradus.  LE RIDER [72] sits on the fence, but is attracted by the re-reading of the earliest dated issue by LORBER [300] as year 42, which coincides on Hazzard’s Soter era with the accession year of Ptolemy IV.  LORBER [300] has rightly cast doubt upon Hazzard’s thesis."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Pelusium".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-52">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/736963?"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p57] The coinage of Ptolemy I has attracted the interest of various scholars. LE RIDER [273] and LORBER [275] both find that the Demanhur hoard implies a date of 324/3 for the opening of the Egyptian mint, though they disagree about its location, Le Rider favoring Alexandria and Lorber Memphis. COHEN [8] vacillates on the location of the mint but uses a long footnote to review the scholarship and ancient sources relevant to interpreting the coin legends ΑΛΕΞΑΔΝΡΕΙΟΝ ΠΤΟΛΕΜΑΙΟΥ and ΑΛΕΞΑΝΔΡΕΙΟΝ. DAHMEN [274] notes that the gold staters with Alexander’s portrait and a prow reverse were the only Ptolemaic coins of their time to circulate outside Egypt and suggests a connection with the Ptolemaic successes on Cyprus. LORBER [275] cites control links between silver and bronze coinage to fix the first reduction of the tetradrachm to 306/5, with subsequent dates lowered accordingly; the weight reduction thus appears as an emergency response to the catastrophic losses in the battle of Salamis. RODRIGUEZ [283] reconstructs Ptolemy’s military assets and correlates changes in his coinage with his military policy, emphasizing iconographic appeals to Macedonian mercenaries but also associating the revival of gold coinage with the necessity of rebuilding the Lagid fleet after the disaster at Salamis. In a paper on the closing of the Ptolemaic monetary economy, DE CALLATAŸ [265] envisions a two-stage reform of the coinage, with a brief reduction of the tetradrachm to c. 14.90 g around 300, followed by a final reduction to c. 14.25 g around 295. His reexamination of the Alexandrian tetradrachms of Ptolemy I in the Meydancikkale hoard reveals that the number of obverse dies has been overestimated and identifies numerous obverse die links between coins with different control marks. He estimates that ten emissions of tetradrachms were produced within a short period of time, perhaps as little as two years."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Memphis".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-53">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/737072"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p73] PICARD [281] reports a second-century bronze hoard from excavations at Tebtynis replicating the contents of the earlier Tebtynis hoard IGCH 1705 and other hoards from the Fayum to Lower Egypt. On the basis of these hoards he submits that bronzes with the double eagle reverse remained in circulation over many reigns, filling the period between Isis head bronzes and the coinage of Cleopatra VII, though the absolute chronology remains uncertain. A second-century hoard from Kom Truga, consisting of double eagle bronzes of the type discussed by Picard, is reconstructed by SHAHIN [189]."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Tebtynis".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-54">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707586"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p106] A study of the Egyptian pictorial elements in the Ptolemaic seal impressions from Nea Paphos prompts KYRIELEIS [145] to comment on various symbols that also occur as subsidiary symbols on coins. Among his more interesting suggestions: symbols of the Dioscuri appear on coins intended for the military, but since the Dioscuri were Theoi Soteres, their symbols could also refer to the Theoi Soteres in royal cult, either Cleopatra III and Ptolemy IX or Cleopatra III and Ptolemy X."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Nea Paphos".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-55">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570685"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p108] As always, coins serve as important comparanda in the study of Ptolemaic portraits in other media. LARONDE [146] identifies a portrait head of Ptolemy III from Apollonia in Cyrenaica, citing that king’s bronze portrait coins and the tetradrachm Svoronos 996 from the Sophikon hoard. This identification must be treated with caution because of the perfunctory artistic quality of the bronze coins cited and especially because the Sophikon tetradrachm may well represent Ptolemy II rather than Ptolemy III, based on its iconographic similarity to the Tarsian tetradrachms reattributed from Euergetes to Philadelphus by DAVESNE (“La Deuxième Guerre de Syrie (ca. 261–255 avant J.C.) et les témoignages numismatiques,” in M. Amandry and S.  Hurter, eds., Travaux de numismatique grecque offerts à Georges Le Rider (London, 1999), pp. 129–131). PALAGIA [153] identifies a marble head with wings in the Sparta Museum as a portrait of Ptolemy III assimilated to Hermes. As supporting evidence she mentions, inter alia, bronze coins of Abdera that may portray the winged head of a Ptolemy and second-century bronze coins of Marathus allegedly showing Ptolemy III with a caduceus over his shoulder. That the Abderite coins portray a Ptolemy has been questioned most recently by CHRYSSANTHAKI [217], who asserts that Abdera lay outside the area of Ptolemaic control, identifies the winged head as Perseus, and dates the coins to the time of Philip V. The evidentiary value of the Marathus bronzes is also dubious. In her monographic study of Aradus and its peraia [266], DUYRAT emphasizes the strong ties of loyalty to the Seleucids despite formal autonomy, and elsewhere she has described the Marathian coin type simply as Hermes (“Les ateliers monétaires de Phénicie du Nord à l’époque hellénistique,” in C. Augé and F. Duyrat, eds., Les monnayages syriens: Quel apport pour l’histoire du Proche-Orient hellénistique et romain? (Beirut, 2002), pp. 30, 32). In a separate study identifying portrait heads of Berenice II [154], PALAGIA takes a critical view of numismatic evidence, arguing that coin portraits showing the queen with the melon coiffure do not preclude other hairstyles in sculpture, especially if Berenice is portrayed in the guise of a goddess such as Isis or Aphrodite. ASHTON [151] briefly mentions the coin portraits of Ptolemy VI in connection with the possibility of shared sources for statues of Ptolemy VI in Egyptian and Greek style. JOHANSEN [141] emphasizes the value of coins as a source for the iconography of Cleopatra VII and contrasts the style of her portraits on denarii and tetradrachms (where Antony is described, wrongly, as occupying the obverse). FERROUKHI [137] uses coins of Cleopatra VII and Cleopatra Selene as comparanda in identifying portraits in the round but submits that sculptural style trumps comparisons with numismatic iconography, concluding that one of the Cherchell heads found at Caesarea, Mauretania, must depict Cleopatra Selene rather than Cleopatra VII."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Sparta".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-56">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/501323"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p108] As always, coins serve as important comparanda in the study of Ptolemaic portraits in other media. LARONDE [146] identifies a portrait head of Ptolemy III from Apollonia in Cyrenaica, citing that king’s bronze portrait coins and the tetradrachm Svoronos 996 from the Sophikon hoard. This identification must be treated with caution because of the perfunctory artistic quality of the bronze coins cited and especially because the Sophikon tetradrachm may well represent Ptolemy II rather than Ptolemy III, based on its iconographic similarity to the Tarsian tetradrachms reattributed from Euergetes to Philadelphus by DAVESNE (“La Deuxième Guerre de Syrie (ca. 261–255 avant J.C.) et les témoignages numismatiques,” in M. Amandry and S.  Hurter, eds., Travaux de numismatique grecque offerts à Georges Le Rider (London, 1999), pp. 129–131). PALAGIA [153] identifies a marble head with wings in the Sparta Museum as a portrait of Ptolemy III assimilated to Hermes. As supporting evidence she mentions, inter alia, bronze coins of Abdera that may portray the winged head of a Ptolemy and second-century bronze coins of Marathus allegedly showing Ptolemy III with a caduceus over his shoulder. That the Abderite coins portray a Ptolemy has been questioned most recently by CHRYSSANTHAKI [217], who asserts that Abdera lay outside the area of Ptolemaic control, identifies the winged head as Perseus, and dates the coins to the time of Philip V. The evidentiary value of the Marathus bronzes is also dubious. In her monographic study of Aradus and its peraia [266], DUYRAT emphasizes the strong ties of loyalty to the Seleucids despite formal autonomy, and elsewhere she has described the Marathian coin type simply as Hermes (“Les ateliers monétaires de Phénicie du Nord à l’époque hellénistique,” in C. Augé and F. Duyrat, eds., Les monnayages syriens: Quel apport pour l’histoire du Proche-Orient hellénistique et romain? (Beirut, 2002), pp. 30, 32). In a separate study identifying portrait heads of Berenice II [154], PALAGIA takes a critical view of numismatic evidence, arguing that coin portraits showing the queen with the melon coiffure do not preclude other hairstyles in sculpture, especially if Berenice is portrayed in the guise of a goddess such as Isis or Aphrodite. ASHTON [151] briefly mentions the coin portraits of Ptolemy VI in connection with the possibility of shared sources for statues of Ptolemy VI in Egyptian and Greek style. JOHANSEN [141] emphasizes the value of coins as a source for the iconography of Cleopatra VII and contrasts the style of her portraits on denarii and tetradrachms (where Antony is described, wrongly, as occupying the obverse). FERROUKHI [137] uses coins of Cleopatra VII and Cleopatra Selene as comparanda in identifying portraits in the round but submits that sculptural style trumps comparisons with numismatic iconography, concluding that one of the Cherchell heads found at Caesarea, Mauretania, must depict Cleopatra Selene rather than Cleopatra VII."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Abdera".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-57">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668306"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#[☞ p108] As always, coins serve as important comparanda in the study of Ptolemaic portraits in other media. LARONDE [146] identifies a portrait head of Ptolemy III from Apollonia in Cyrenaica, citing that king’s bronze portrait coins and the tetradrachm Svoronos 996 from the Sophikon hoard. This identification must be treated with caution because of the perfunctory artistic quality of the bronze coins cited and especially because the Sophikon tetradrachm may well represent Ptolemy II rather than Ptolemy III, based on its iconographic similarity to the Tarsian tetradrachms reattributed from Euergetes to Philadelphus by DAVESNE (“La Deuxième Guerre de Syrie (ca. 261–255 avant J.C.) et les témoignages numismatiques,” in M. Amandry and S.  Hurter, eds., Travaux de numismatique grecque offerts à Georges Le Rider (London, 1999), pp. 129–131). PALAGIA [153] identifies a marble head with wings in the Sparta Museum as a portrait of Ptolemy III assimilated to Hermes. As supporting evidence she mentions, inter alia, bronze coins of Abdera that may portray the winged head of a Ptolemy and second-century bronze coins of Marathus allegedly showing Ptolemy III with a caduceus over his shoulder. That the Abderite coins portray a Ptolemy has been questioned most recently by CHRYSSANTHAKI [217], who asserts that Abdera lay outside the area of Ptolemaic control, identifies the winged head as Perseus, and dates the coins to the time of Philip V. The evidentiary value of the Marathus bronzes is also dubious. In her monographic study of Aradus and its peraia [266], DUYRAT emphasizes the strong ties of loyalty to the Seleucids despite formal autonomy, and elsewhere she has described the Marathian coin type simply as Hermes (“Les ateliers monétaires de Phénicie du Nord à l’époque hellénistique,” in C. Augé and F. Duyrat, eds., Les monnayages syriens: Quel apport pour l’histoire du Proche-Orient hellénistique et romain? (Beirut, 2002), pp. 30, 32). In a separate study identifying portrait heads of Berenice II [154], PALAGIA takes a critical view of numismatic evidence, arguing that coin portraits showing the queen with the melon coiffure do not preclude other hairstyles in sculpture, especially if Berenice is portrayed in the guise of a goddess such as Isis or Aphrodite. ASHTON [151] briefly mentions the coin portraits of Ptolemy VI in connection with the possibility of shared sources for statues of Ptolemy VI in Egyptian and Greek style. JOHANSEN [141] emphasizes the value of coins as a source for the iconography of Cleopatra VII and contrasts the style of her portraits on denarii and tetradrachms (where Antony is described, wrongly, as occupying the obverse). FERROUKHI [137] uses coins of Cleopatra VII and Cleopatra Selene as comparanda in identifying portraits in the round but submits that sculptural style trumps comparisons with numismatic iconography, concluding that one of the Cherchell heads found at Caesarea, Mauretania, must depict Cleopatra Selene rather than Cleopatra VII."/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "Marathus".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-58">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/501323"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/501323".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-59">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678010".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-60">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678010".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-61">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727070"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/727070".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-62">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668197"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/668197".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-63">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599587"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/599587".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-64">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570106"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/570106".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-65">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/590028"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/590028".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-66">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727078/"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/727078/".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-67">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/579888"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/579888".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-68">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/579888"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/579888".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-69">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/736896"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/736896".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-70">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678060"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678060".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-71">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678378"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678378".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-72">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678378"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678378".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-73">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678401"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678401".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-74">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/314921"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/314921".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-75">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/638796"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/638796".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-76">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570182"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/570182".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-77">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707498"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/707498".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-78">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373778"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/373778".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-79">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373778"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/373778".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-80">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707519"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/707519".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-81">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/786021"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/786021".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-82">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599612"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/599612".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-83">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/393382"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/393382".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-84">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687902"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/687902".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-85">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727250"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/727250".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-86">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/589824"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/589824".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-87">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687928"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/687928".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-88">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668290"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/668290".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-89">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/638961"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/638961".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-90">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668306"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/668306".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-91">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/736963?"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/736963?".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-92">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570482"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/570482".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-93">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707586"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/707586".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-94">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570504"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/570504".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-95">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570577"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/570577".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-96">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727192"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/727192".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-97">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/697725"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/697725".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-98">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/433032"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/433032".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-99">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678010".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-100">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373879"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/373879".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-101">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/550685"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/550685".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-102">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599754"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/599754".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-103">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668262"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/668262".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-104">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687902"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/687902".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-105">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/991353"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/991353".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-106">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678393"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678393".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-107">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678393"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/678393".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-108">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/648781"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/648781".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-109">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570685"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/570685".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-110">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727236"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/727236".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-111">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/648789"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/648789".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-112">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/737072"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/737072".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-113">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/423080"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/423080".</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:ID="isaw-papers-2-reference-114">
+    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/991398"/>
+    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2#"/>
+    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+    <dcterms:title>Reference in ISAW Papers 2 to "http://pleiades.stoa.org/places/991398".</dcterms:title>
+  </rdf:Description>
+</rdf:RDF>

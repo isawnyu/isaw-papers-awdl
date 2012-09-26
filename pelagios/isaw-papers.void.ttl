@@ -4,19 +4,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 : a void:Dataset;
-    dcterms:description "Pleiades URIs appearing in Nomisma.org";
+    dcterms:description "Pleiades URIs appearing in ISAW Papers articles.";
     dcterms:license <http://creativecommons.org/licenses/by/3.0/>;
     dcterms:subject <http://dbpedia.org/resource/Annotation>;
-    dcterms:title "Pelagios Annotations from Nomisma.org";
-    void:subset <http://nomisma.org/nomisma.org.pelagios.rdf#hoard>;
-    void:subset <http://nomisma.org/nomisma.org.pelagios.rdf#mint>;
-    void:dataDump <http://nomisma.org/nomisma.org.pelagios.rdf> .
+    dcterms:title "ISAW Papers";
+    void:dataDump <http://isawnyu.github.com/isaw-papers-awld/pelagiios/isaw-papers-pelagios.rdf> .
 
-<http://nomisma.org/nomisma.org.pelagios.rdf#hoard> a void:Dataset;
- void:uriSpace "http://nomisma.org/nomisma.org.pelagios.rdf#hoard";
- dcterms:title "Links between Nomisma.org hoards and Pleiades places.".
-
-
-<http://nomisma.org/nomisma.org.pelagios.rdf#mint> a void:Dataset;
- void:uriSpace "http://nomisma.org/nomisma.org.pelagios.rdf#mint";
- dcterms:title "Links between Nomisma.org mints and Pleiades places.".
