@@ -1,4 +1,4 @@
-@prefix : <http://nomisma.org/nomisma.org.pelagios.rdf>.
+@prefix : <http://nomisma.org/isaw-papers-pelagios.rdf>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix void: <http://rdfs.org/ns/void#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
