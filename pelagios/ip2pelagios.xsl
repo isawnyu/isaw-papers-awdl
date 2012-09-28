@@ -20,7 +20,7 @@
 <rdf:Description rdf:ID="isaw-papers-{$ipnum}-reference-{position()}">
  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
  <oac:hasBody rdf:resource="{@href}"/>
- <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/{$ipnum}#{ancestor::h:p/@id}"/>
+ <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/{$ipnum}/#{ancestor::h:p/@id}"/>
  <dcterms:creator rdf:resource="http://isaw.nyu.edu/" />
  <dcterms:title>Reference in ISAW Papers <xsl:value-of select="$ipnum"/> to "<xsl:apply-templates/>".</dcterms:title>
 </rdf:Description>
