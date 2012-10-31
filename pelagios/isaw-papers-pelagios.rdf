@@ -1,402 +1,383 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" xml:base="http://isawnyu.github.com/isaw-papers-awdl/pelagios/isaw-papers-pelagios.rdf">
-  <rdf:Description rdf:ID="isaw-papers-2-reference-1">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Akko".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-2">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687902"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Seleucia-Gaza".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-3">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373879"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Barce".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-4">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/590028"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Arsinoe-Rithymna on Crete".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-5">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599754"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Lebedus in Ionia".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-6">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/550685"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Larissa in the Troad".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-7">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707498"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p8"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Cyprus".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-8">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727250"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p9"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Heracleion-Thonis".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-9">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/433032"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p10"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Pompeii".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-10">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/579888"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p10"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Attica".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-11">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/786021"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p10"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Elephantine".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-12">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727236"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Tanis".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-13">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727078/"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Athribis".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-14">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727070"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Alexandria".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-15">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373778"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Cyrene".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-16">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Akko".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-17">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687928"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Jerusalem".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-18">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678378"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Beth Shean".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-19">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668262"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Ras Ibn Hani".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-20">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668290"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Latakia (Laodiceia) in Syria".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-21">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/638961"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Limyra in Lycia".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-22">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/638796"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Caunus".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-23">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707519"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Dali on Cyprus".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-24">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599587"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Archegesion on Delos".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-25">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/423080"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Tevere".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-26">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/393382"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Este".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-27">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/736896"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p17"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Bakchias in the Fayum".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-28">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678060"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p19"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Beirut".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-29">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678393"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p19"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Sidon".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-30">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/697725"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p20"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Petra".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-31">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668197"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p20"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Aradus".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-32">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373778"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p22"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Cyrene".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-33">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678378"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p23"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Bet Shean".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-34">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678401"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p23"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Caesarea Maritima".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-35">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/589824"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p24"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Itanos".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-36">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/579888"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Attica".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-37">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570577"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Peloponnesus".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-38">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570182"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Corinth".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-39">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570482"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Methana-Arsinoe".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-40">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570504"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Nemea".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-41">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/314921"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p26"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Carthage".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-42">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/991353"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p27"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Sicily".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-43">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/991398"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p40"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Thebes".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-44">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570106"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p40"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Argos".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-45">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678393"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p46"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Sidon".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-46">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p50"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Ake".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-47">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687902"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p50"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Gaza".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-48">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599612"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p50"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Ephesus".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-49">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/648789"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p50"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Tarsus".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-50">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/648781"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p53"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Soli in Cilicia".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-51">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727192"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p55"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Pelusium".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-52">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/736963?"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p57"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Memphis".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-53">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/737072"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p73"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Tebtynis".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-54">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707586"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p106"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Nea Paphos".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-55">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570685"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p108"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Sparta".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-56">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/501323"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p108"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Abdera".</dcterms:title>
-  </rdf:Description>
-  <rdf:Description rdf:ID="isaw-papers-2-reference-57">
-    <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
-    <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668306"/>
-    <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p108"/>
-    <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
-    <dcterms:title>Reference in ISAW Papers 2 to "Marathus".</dcterms:title>
-  </rdf:Description>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://isawnyu.github.com/isaw-papers-awdl/pelagios/isaw-papers-pelagios.rdf">
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-1">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Akko".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-2">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687902"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Seleucia-Gaza".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-3">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373879"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Barce".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-4">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/590028"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Arsinoe-Rithymna on Crete".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-5">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599754"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Lebedus in Ionia".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-6">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/550685"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p4"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Ptolemais-Larissa in the Troad".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-7">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707498"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p8"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Cyprus".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-8">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727250"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p9"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Heracleion-Thonis".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-9">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/433032"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p10"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Pompeii".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-10">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/579888"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p10"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Attica".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-11">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/786021"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p10"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Elephantine".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-12">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727236"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Tanis".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-13">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727078/"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Athribis".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-14">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727070"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Alexandria".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-15">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373778"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Cyrene".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-16">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Akko".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-17">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687928"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Jerusalem".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-18">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678378"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Beth Shean".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-19">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668262"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Ras Ibn Hani".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-20">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668290"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Latakia (Laodiceia) in Syria".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-21">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/638961"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Limyra in Lycia".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-22">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/638796"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Caunus".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-23">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707519"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Dali on Cyprus".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-24">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599587"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Archegesion on Delos".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-25">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/423080"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Tevere".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-26">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/393382"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p16"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Este".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-27">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/736896"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p17"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Bakchias in the Fayum".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-28">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678060"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p19"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Beirut".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-29">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678393"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p19"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Sidon".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-30">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/697725"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p20"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Petra".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-31">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668197"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p20"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Aradus".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-32">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/373778"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p22"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Cyrene".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-33">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678378"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p23"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Bet Shean".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-34">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678401"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p23"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Caesarea Maritima".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-35">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/589824"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p24"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Itanos".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-36">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/579888"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Attica".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-37">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570577"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Peloponnesus".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-38">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570182"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Corinth".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-39">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570482"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Methana-Arsinoe".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-40">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570504"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p25"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Nemea".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-41">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/314921"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p26"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Carthage".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-42">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/991353"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p27"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Sicily".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-43">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/991398"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p40"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Thebes".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-44">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570106"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p40"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Argos".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-45">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678393"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p46"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Sidon".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-46">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p50"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Ake".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-47">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/687902"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p50"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Gaza".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-48">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599612"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p50"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Ephesus".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-49">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/648789"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p50"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Tarsus".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-50">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/648781"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p53"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Soli in Cilicia".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-51">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/727192"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p55"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Pelusium".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-52">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/736963?"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p57"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Memphis".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-53">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/737072"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p73"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Tebtynis".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-54">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/707586"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p106"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Nea Paphos".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-55">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/570685"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p108"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Sparta".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-56">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/501323"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p108"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Abdera".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-57">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/668306"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/2/#p108"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 2 to "Marathus".</dcterms:title>
+</rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-1">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/1043"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p1"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Mediterranean".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-2">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/423025"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p6"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Rome".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-3">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/609307"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p22"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Antioch in Pisidia".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-4">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/423025"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p22"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Rome".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-5">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/629035"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p50"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Caesarea in Cappadocia".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-6">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/432815"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p70"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Puteoli".</dcterms:title>
+</rdf:Description>
 </rdf:RDF>

@@ -8,12 +8,14 @@
  xmlns:oac="http://www.openannotation.org/ns/"
  xmlns:dcterms="http://purl.org/dc/terms/"
  >
- <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" />
+ <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="yes" />
 
  <xsl:template match="/">
-  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://isawnyu.github.com/isaw-papers-awdl/pelagios/isaw-papers-pelagios.rdf"> 
+<!--  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://isawnyu.github.com/isaw-papers-awdl/pelagios/isaw-papers-pelagios.rdf"> -->
   <xsl:apply-templates select="//h:a[contains(@href,'http://pleiades.stoa.org/places')]"/>
+<!--
  </rdf:RDF>
+-->
 </xsl:template>
 
 <xsl:template match="h:a">
