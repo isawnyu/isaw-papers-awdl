@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://isawnyu.github.com/isaw-papers-awdl/pelagios/isaw-papers-pelagios.rdf">
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-1-reference-1">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/893951"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/1/#p1"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 1 to "Babylon".</dcterms:title>
+</rdf:Description>
 <rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-2-reference-1">
   <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
   <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/678010"/>
@@ -379,5 +386,29 @@
   <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p70"/>
   <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
   <dcterms:title>Reference in ISAW Papers 3 to "Puteoli".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-7">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/433032"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p116"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Pompeii".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-8">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/413149"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p130"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Forum Sempronii".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-9">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/383811"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p131"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Veleia".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-10">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/187290"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#endnote69"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Aquileia".</dcterms:title>
 </rdf:Description>
 </rdf:RDF>
