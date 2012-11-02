@@ -406,6 +406,18 @@
   <dcterms:title>Reference in ISAW Papers 3 to "Veleia".</dcterms:title>
 </rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-10">
   <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/550496"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p179"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Chios".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-11">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
+  <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/599612"/>
+  <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p180"/>
+  <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
+  <dcterms:title>Reference in ISAW Papers 3 to "Ephesus".</dcterms:title>
+</rdf:Description><rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:oac="http://www.openannotation.org/ns/" xmlns:dcterms="http://purl.org/dc/terms/" rdf:ID="isaw-papers-3-reference-12">
+  <rdf:type rdf:resource="http://www.openannotation.org/ns/Annotation"/>
   <oac:hasBody rdf:resource="http://pleiades.stoa.org/places/187290"/>
   <oac:hasTarget rdf:resource="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#endnote69"/>
   <dcterms:creator rdf:resource="http://isaw.nyu.edu/"/>
