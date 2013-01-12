@@ -109,7 +109,7 @@ $('.id_link').hide();
 <xsl:template match="h:a[@class='reference']">
  <xsl:element name="a">
   <xsl:apply-templates select="@*"/>
-  <xsl:attribute name="target" >_new</xsl:attribute>
+  <xsl:attribute name="target" >_blank</xsl:attribute>
   <xsl:apply-templates/>
  </xsl:element>
 </xsl:template>
@@ -117,7 +117,7 @@ $('.id_link').hide();
 <xsl:template match="h:a[@class='subject']">
  <xsl:element name="a">
   <xsl:apply-templates select="@*"/>
-  <xsl:attribute name="target" >_new</xsl:attribute>
+  <xsl:attribute name="target" >_blank</xsl:attribute>
   <xsl:apply-templates/>
  </xsl:element>
 </xsl:template>
@@ -137,7 +137,7 @@ $('.id_link').hide();
     <xsl:copy>
       <xsl:apply-templates mode="enhancer"/>
     </xsl:copy>
-    <xsl:if test="descendant-or-self::*[@href]"><span style="color:gray"> as defined or described at <a><xsl:attribute name="href"><xsl:value-of select="descendant-or-self::*[@href]/@href"/></xsl:attribute><xsl:attribute name="target">_new</xsl:attribute><xsl:value-of select="descendant-or-self::*[@href]/@href"/></a>.</span></xsl:if>
+    <xsl:if test="descendant-or-self::*[@href]"><span style="color:gray"> as defined or described at <a><xsl:attribute name="href"><xsl:value-of select="descendant-or-self::*[@href]/@href"/></xsl:attribute><xsl:attribute name="target">_blank</xsl:attribute><xsl:value-of select="descendant-or-self::*[@href]/@href"/></a>.</span></xsl:if>
  </li>
 </xsl:template>
 
