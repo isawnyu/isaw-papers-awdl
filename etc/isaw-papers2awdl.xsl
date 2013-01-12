@@ -9,11 +9,11 @@
         extension-element-prefixes="exsl dyn"
 	exclude-result-prefixes="h dyn exsl xsl" >
 
- <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" cdata-section-elements=""/>
+ <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" cdata-section-elements="" doctype-public = "" />
  <xsl:preserve-space elements="h:script"/>
 
 <xsl:template match="/">
-<xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]></xsl:text>
+<!-- <xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]></xsl:text> -->
  <xsl:apply-templates/>
 </xsl:template>
 
