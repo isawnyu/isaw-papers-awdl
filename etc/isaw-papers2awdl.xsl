@@ -13,6 +13,7 @@
  <xsl:preserve-space elements="h:script"/>
 
 <xsl:template match="/">
+<xsl:text disable-output-escaping="yes"><![CDATA[<!DOCTYPE html>]]></xsl:text>
  <xsl:apply-templates/>
 </xsl:template>
 
