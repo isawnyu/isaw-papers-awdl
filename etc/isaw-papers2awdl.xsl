@@ -9,7 +9,7 @@
         extension-element-prefixes="exsl dyn"
 	exclude-result-prefixes="h dyn exsl xsl" >
 
- <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" cdata-section-elements=""/>
+ <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" cdata-section-elements="" doctype-public = "" />
  <xsl:preserve-space elements="h:script"/>
 
 <xsl:template match="/">
