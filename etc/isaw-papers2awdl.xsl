@@ -55,6 +55,7 @@ $('.id_link').hide();
    <xsl:apply-templates select="document('./head.xml')"/>
    <xsl:apply-templates/>
    
+   <xsl:if test="not($noentities)">
    <hr/>
    <div class="section">
     <strong>Links to Definitions of Referenced Entities</strong>
@@ -104,6 +105,7 @@ $('.id_link').hide();
     </xsl:if>
     
    </div>
+   </xsl:if>
  </xsl:element>
 </xsl:template>
 
