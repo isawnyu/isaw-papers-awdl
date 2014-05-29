@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#  dcterms: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  rdfs: http://www.w3.org/2000/01/rdf-schema#">
+<head><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"/><script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"/><script src="http://isawnyu.github.com/awld-js/awld.js?autoinit" type="text/javascript"/><script type="text/javascript">
+  function show_id_links() {
+if ($('.id_link').css('display') == "none")
+$('.id_link').show();
+else
+$('.id_link').hide();
+}
+
+  function show_references() {
+ $('.reference').css('border-bottom','thin dotted gray');
+ 
+ }
+   </script>
+ <title>ISAW Papers: Towards a Journal as Linked Open Data</title>
+ <link rel="stylesheet" href="../isaw-papers-7.css"/>
+ <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/"/>
+ <link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/heath/"/>
+</head>
+
+<body><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/heath/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/heath/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Sebastian Heath; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0;margin-top:1em;align:center" src="http://i.creativecommons.org/l/by/3.0/88x31.png"/></a></p></div>
+<article>
+ <header>
+  <h2><a rel="toc" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7.8</a> (2014)</h2>
+  <h1 property="dcterms:title">ISAW Papers: Towards a Journal as Linked Open Data</h1>
+  <h2 rel="dcterms:creator"><a rel="dcterms:identifier" href="http://viaf.org/viaf/220831018" property="foaf:name">Sebastian Heath</a></h2>
+</header>
+
+<section id="section1">
+<h2>Introduction</h2>
+<p id="p1" class="textindent0"><a class="id_link" style="color:aaa;display:none" href="#p1">[☞ p1]</a> The present contribution to this collection of essays being published under the rubric of “<i>ISAW Papers 7</i>” is necessarily self-referential. <i>ISAW Papers</i>, the Institute for the Study of the Ancient World’s digital scholarly journal, is both its topic and its venue. These overlapping roles will prove useful as they allow this preliminary discussion to illustrate directly the current progress ISAW has made in implementing the goals with which the journal was initiated. By way of high-level overview, those goals are to publish article-length scholarship that is available at no-cost to readers, that can be reused and redistributed under a Creative Commons license, and which is stored in formats that are very likely to be readable into the far future. Additionally, articles in <i>ISAW Papers</i> should link to stable resources similarly available on the public Internet. This last goal is intended to increase the discoverability and utility of any individual article as well as of the growing network of digital resources available for investigating the ancient world.</p>
+
+<p id="p2"><a class="id_link" style="color:aaa;display:none" href="#p2">[☞ p2]</a> In describing progress to date, the following paragraphs will not shy away from raising technical issues. They do not, however, offer complete instructions for deploying Linked Open Data in a journal context or detailed introductions to the technologies described. The discussion is practice oriented and so makes reference to the articles published to date. This approach and the movement from overview to specifics is intended to introduce readers to some of the opportunities <i>ISAW Papers</i> has recognized and acted upon as well as to the challenges it faces.</p>
+
+<p id="p3"><a class="id_link" style="color:aaa;display:none" href="#p3">[☞ p3]</a> To start broadly, the editorial scope of <i>ISAW Papers</i> is as wide as ISAW’s intellectual mission, which itself embraces “the development of cultures and civilizations around the Mediterranean basin, and across central Asia to the Pacific Ocean.” (ISAW n.d.) Temporally, ISAW is mainly concerned with complex cultures before the advent of early Modern globalization. Though it is important to note that ISAW does not try to impose strict limits on what falls within its intellectual purview. Indeed, the origins, development and reception of all phases of the Ancient World are fair game at ISAW.</p>
+</section>
+
+<section id="section2">
+<h2>Review and Licensing</h2>
+<p id="p4" class="textindent0"><a class="id_link" style="color:aaa;display:none" href="#p4">[☞ p4]</a> Two additional concerns of a scholarly journal - review and licensing - can also be addressed efficiently. <i>ISAW Papers</i> publishes anonymously peer-reviewed articles as well as articles read and forwarded for publication by members of the ISAW faculty. This aspect of the editorial process is made clear for each article. The goal here is to provide a balance between the many benefits that peer review can provide to an author while similarly ensuring that it is neither a barrier to new work nor an impediment to timely publication. In terms of licensing, ISAW asks authors to agree to distribution of their text under a Creative Commons Attribution (CC-BY) license. The same applies to images authors have created on their own or which ISAW creates during the editorial process. We consider such open distribution to be an important component of a robust approach to future accessibility. It is, however, the case that authors have needed to include images whose copyright is held by others. This situation remains a fact of public scholarly discourse. Accordingly, we ask that authors obtain permission for ISAW to publish such images in digital form but do not require explicit agreement to a CC license. As with peer-review, a reasonable balance of current realities and future possibilities is the goal.</p>
+</section>
+
+<section id="section3">
+<h2>Partnership with the NYU Library</h2>
+<p id="p5" class="textindent0"><a class="id_link" style="color:aaa;display:none" href="#p5">[☞ p5]</a> Initial public availability takes place in partnership with the New York University (NYU) Library. So for example, the article you are reading will be accessible via the URI “<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/heath/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/heath/</a>”. While ISAW has complete responsibility for the editorial process, that is for shepherding an author’s intellectual content into a form that enables both long-term accessibility and immediate distribution, we rely on the Library to provide the infrastructure for such long-term preservation and for current access. Each party in this relationship brings its institutional strengths to the endeavor. In particular, it is very useful that the library assigns a Handle to each article (CNRI n.d.). For example, the URL “<a href="http://hdl.handle.net/2333.1/k98sf96r">http://hdl.handle.net/2333.1/k98sf96r</a>” will redirect to whichever URL the NYU Library is using to host <i>ISAW Papers</i>’ first article (Jones and Steele 2011). If a reader follows that link within a few years of the publication of this current discussion, it is likely she or he will be redirected to “<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/1/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/1/</a>.” Further out into the future, the handle may resolve to a different address. But we at ISAW are confident that an institution such as the NYU Library offers a very strong likelihood of ongoing availability. And it is of course the case that we encourage readers and other institutions to download and re-distribute any and all <i>ISAW Papers</i> articles. Such third-party use and archiving, enabled through initial distribution by the Library, will also contribute to the long-term preservation of this content.</p>
+
+<p id="p6"><a class="id_link" style="color:aaa;display:none" href="#p6">[☞ p6]</a> An additional result of collaboration with NYU Library staff, particularly my colleagues in the ISAW library, is the creation of individual records in the NYU Bobcat library catalog for each article. This local initiative leads in turn and automatically to the creation of a Worldcat record for each article. Accordingly, “<a href="http://www.worldcat.org/oclc/811756919">http://www.worldcat.org/oclc/811756919</a>” is the Worldcat “permalink” for the record describing C. Lorber and A. Meadow’s 2012 review of Ptolemaic numismatics. The journal itself has a Library of Congress issued International Standard Serial Number (2164-1471) as well as its own Worldcat record at “<a href="http://www.worldcat.org/oclc/756047783">http://www.worldcat.org/oclc/756047783</a>”.</p>
+</section>
+
+<section id="section4">
+<h2>Broad Strokes and Specific Citations</h2>
+<p id="p7" class="textindent0"><a class="id_link" style="color:aaa;display:none" href="#p7">[☞ p7]</a> There is a future point at which the following short list will describe the main components of a born-digital article published in <i>ISAW Papers</i>:</p>
+
+<ul id="ul1">
+<li>An archival version in well-crafted XHTML5 that is available through the NYU Faculty Digital Archive (<a href="http://archive.nyu.edu">http://archive.nyu.edu</a>).</li>
+
+<li>Links to stable external resources encoded using RDFa, a widely supported standard that is discussed below.</li>
+
+<li>The NYU Library will provide access to a version of the document formatted for reading and with additional User Interface (UI) elements that encourage engagement with the content.</li>
+</ul>
+
+<p id="p8"><a class="id_link" style="color:aaa;display:none" href="#p8">[☞ p8]</a> The two new abbreviations in the above list - XHTML and RDFa - can bear further explanation. As is probably well-known to many readers, HTML, specifically its 5th version HTML5, is the standard published by the Worldwide Web Consortium (W3C) that specifies the format of text intended for transmission from Internet servers to web browsers. As a simple description,  HTML allows content-creators to specify the visible aspect of a text: that titles and headings are in bold, that paragraphs are visually distinct by indentation or spacing, and other aspects such as italic or bold spans. For its part, the W3C has quickly become a standards-setting body with global impact. At this moment, HTML5 documents can be directly read - that is rendered into human readable form on screen - by many applications running on many different forms of computing devices ranging from desktops and notebook computers to tablets and phones. It is likely that this easy readability of HTML documents will continue far into the future and ISAW believes some degree of readability for such content is guaranteed in perpetuity to the extent that that can be reasonably foreseen.</p>
+
+<p id="p9"><a class="id_link" style="color:aaa;display:none" href="#p9">[☞ p9]</a> XHTML is the variant of HTML that adheres strictly to the requirements of the Extensible Markup Language (XML). XML is in turn a standard that provides more explicit indications of the structure of a text than does HTML. For example, an item in a list in HTML can be indicated by “&lt;li&gt;An item in a list”, whereas XHTML requires that the markup be “&lt;li&gt;An item in a list&lt;/li&gt;”. Note the terminating “&lt;/li&gt;”, which is required in XML. While a full discussion of XML and XHTML would take up excessive room here, it is fair to say that their added requirements are geared towards enabling more reliable processing by automated agents, meaning the manipulation of the text and rendering of results by computer programs.</p>
+
+<p id="p10"><a class="id_link" style="color:aaa;display:none" href="#p10">[☞ p10]</a> At this point in the discussion it is worth highlighting one particular aspect of XHTML that <i>ISAW Papers</i> utilizes extensively. On the public internet, the presence of a “pound sign” or “#” in a web address often indicates a reference to a particular part of a document. When used in this way, the exact part referenced is indicated in the HTML document itself by the presence of an ‘id’ attribute. Meaning that HTML’s ‘p’ element, which is used to mark paragraphs, can be identified by mark up of the form ‘&lt;p id=”p10”&gt; … &lt;/p&gt;’. In <i>ISAW Papers</i>, all paragraphs in the main body of an article have such an id and can therefore be directly referenced via URLs. For example “<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/6/#p3">http://dlib.nyu.edu/awdl/isaw/isaw-papers/6/#p3</a>” is a direct link to the third paragraph of M. Zarmakoupi’s (2013) article on urban development in Hellenistic Delos.</p>
+</section>
+
+<section id="section5">
+<h2>Towards Linked Open Data</h2>
+<p id="p11" class="textindent0"><a class="id_link" style="color:aaa;display:none" href="#p11">[☞ p11]</a> Most of the discussion so far should be considered as preliminary to a focus on ISAW Paper’s implementation of the principles of Linked Open Data (LOD), principles that were summarized in the Introduction to this set of articles. With that description in mind, <i>ISAW Papers</i> can make some claim to being “5 Star” linked data as defined in Berners-Lee’s fundamental note of 2006. Its articles are available at stable URLs that can be considered URI-based identifiers and XHTML is a machine readable and non-proprietary format. Furthermore, and as only suggested by the list of “main components,” <i>ISAW Papers</i> does provide RDF. That is, each article has embedded within it statements in the form of ‘triples’ that describe particular aspects of that article’s content. An example will make this aspect of the journal more clear.</p>
+
+<p id="p12"><a class="id_link" style="color:aaa;display:none" href="#p12">[☞ p12]</a> The URL “<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p70">http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/#p70</a>” is a link to the 70th paragraph of G. Bransbourg’s article on market integration in the Roman economy during the imperial period. Looking at the source of that text shows the following XHTML markup:</p>
+
+<blockquote id="blockquote">… the presence of a Tyrian colony in &lt;span class="reference" rel="dcterms:references" typeof="dcterms:Location"&gt;&lt;a rel="rdfs:isDefinedBy" href="<a href="http://pleiades.stoa.org/places/432815">http://pleiades.stoa.org/places/432815</a>" property="rdfs:label"&gt;Puteoli&lt;/a&gt;&lt;/span&gt; …</blockquote>
+
+<p id="p13"><a class="id_link" style="color:aaa;display:none" href="#p13">[☞ p13]</a> The ‘&lt;a href="..."&gt;’ component of that markup is “plain old” HTML that allows the text of Puteoli to be highlighted in a browser so that a user can follow the link to the Pleiades page. That is standard functionality on the world-wide web. It is the additional markup that makes the meaning of that link machine readable. In English, the semantics indicated here can be stated as, “<i>ISAW Papers</i> 3 makes reference to a location. That location is, in turn, defined at the webpage “<a href="http://pleiades.stoa.org/places/432815">http://pleiades.stoa.org/places/432815</a>”, and has the label “Puteoli” in the context of this article.” Similar markup for references appears in this article and in other <i>ISAW Papers</i> articles. For example, the first paragraph of A. McCollum’s note on Syriac geographic knowledge - accessible via “<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/5/#p1">http://dlib.nyu.edu/awdl/isaw/isaw-papers/5/#p1</a>” - contains a reference to the scholar Gregory bar ‘Ebrāyā, with a definition of that individual provided by a link to Wikipedia.</p>
+
+<p id="p14"><a class="id_link" style="color:aaa;display:none" href="#p14">[☞ p14]</a> And while the following is beyond the scope of this discussion, it should be noted that the link between Puteoli in this text and the Pleides URI is entered by hand. It is hoped, even assumed, that such named entity recognition will become more automated in the futuure.</p>
+</section>
+
+<section id="section6">
+<h2>RDFa and Triples</h2>
+<p id="p15" class="textindent0"><a class="id_link" style="color:aaa;display:none" href="#p15">[☞ p15]</a> Fundamental to the design principles of <i>ISAW Papers</i> is that the markup used here conforms to an existing W3C standard, specifically “HTML+RDFa 1.1” (Sporny 2013), which is itself part of the RDFa 1.1 group of standards (Adida et al. 2013). For its part, “RDFa” is the second abbreviation given in the brief list of “Main Components” above. It stands for “Resource Description Format in Attributes.” As a very short description, RDFa allows discrete machine-readable statements to be embedded in XHTML. These statements are called “triples” and take the form of:</p>
+<ul id="ul2">
+<li>A <i>subject</i>, in this case <i>ISAW Papers</i> 3.</li>
+<li>A <i>predicate</i> or type of information being represented, in this case a relationship between the article and a website that represents a “reference”.</li>
+<li>An <i>object</i>, in this case a Location.</li>
+</ul>
+
+<p id="p16"><a class="id_link" style="color:aaa;display:none" href="#p16">[☞ p16]</a> To summarize and repeat, the triples indicated by the markup above read “<i>ISAW Papers</i> 3 references a Location” and further specifies that “The Location is defined at “<a href="http://pleiades.stoa.org/places/432815">http://pleiades.stoa.org/places/432815</a>”. Furthermore, these triples use publicly defined vocabularies. In the snippet above, “dcterms:references” indicates that <i>ISAW Papers</i> uses the vocabulary published by the “Dublin Core Metadata Initiative”. For a definition of the term “references” see “<a href="http://dublincore.org/documents/dcmi-terms/#terms-references">http://dublincore.org/documents/dcmi-terms/#terms-references</a>”.</p>
+
+<p id="p17"><a class="id_link" style="color:aaa;display:none" href="#p17">[☞ p17]</a> It is not the goal of this discussion to provide a full explanation of RDFa or triples. But it is worth stressing the strategic goal that the use of RDFa forwards. To state that goal simply, <i>ISAW Papers</i> articles intends to represent links to stable resources in such a way that the meaning of those links can be read and used by automated agents. That progress towards this goal is actually being made is indicated by the ability of current tools to read and query the data inherent in the articles published to date. For example, the W3C tool titled, “RDFa 1.1 Distiller and Parser” and available at the time of writing this at “<a href="http://www.w3.org/2012/pyRdfa/Overview.html">http://www.w3.org/2012/pyRdfa/Overview</a>.html” will recognize the triples in “<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/</a>”. Readers can try this themselves by pasting the article’s URI into the W3C Distiller’s “URI:” field. Doing so will show a large number of links to stable resources. In particular, using any such tool to list the triples in that article will reveal machine readable information related to authorship and subject in addition to clear specification of links to geographic entities beyond Puteoli. Additionally, bibliographic information is shown to be specified using the BibliographicResource and bibliographicCitation terms of the Dublin Core.</p>
+</section>
+
+<section id="section7">
+<h2>Issues in the Implementation of Linked Open Data</h2>
+<p id="p18" class="textindent0"><a class="id_link" style="color:aaa;display:none" href="#p18">[☞ p18]</a> The word "towards" in the title of this contribution is intended to communicate to readers that the process of defining how <i>ISAW Papers</i> will implement LOD is not yet finished. Articles are available at stable URIs and do provide machine-readable links to other URIs. Nonetheless, this “Linked Open Data” has not reached a final form.</p>
+
+<p id="p19"><a class="id_link" style="color:aaa;display:none" href="#p19">[☞ p19]</a> Take for example the markup surrounding the reference to Puteoli in G. Bransbourg’s article. That was given as RDFa above, with the semantics of that RDFa “translated” into, admittedly stulted, English. Rendering that RDFa as turtle - another common format for commnuncating triples - gives the following excerpted sequence:</p>
+
+<pre>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/&gt; dcterms:references [
+     a dcterms:Location;
+     rdfs:isDefinedBy &lt;<a href="http://pleiades.stoa.org/places/432815">http://pleiades.stoa.org/places/432815</a>&gt;;
+     rdfs:label "Puteoli"@en
+   ] .
+</pre>
+
+<p id="p20"><a class="id_link" style="color:aaa;display:none" href="#p20">[☞ p20]</a> It is possible that no deep expertise in reading turtle is necessary for readers to see that this is an alternate rendering of the English, “<i>ISAW Papers</i> 3 makes reference to a location. That location is, in turn, defined at the webpage “<a href="http://pleiades.stoa.org/places/432815">http://pleiades.stoa.org/places/432815</a>”, and has the label “Puteoli” in the context of this article.” There are strengths here. No suggestion is made that the webpage <a href="http://pleiades.stoa.org/places/432815">http://pleiades.stoa.org/places/432815</a> is in fact the site of Puteoli. When you go to the page, you get information about the site, a “definition” as it were, which is why the predicate rdfs:isDefinedBy is used. And again, that a W3C sponsored tool can render the information in an <i>ISAW Papers</i> article is a demonstration of progress towards interoperability.</p>
+
+<p id="p21"><a class="id_link" style="color:aaa;display:none" href="#p21">[☞ p21]</a> But it is very important to note that this specific use of the the Dublin Core vocabulary in combination with the RDF Schema vocabulary published at http://www.w3.org/2000/01/rdf-schema# is idiosyncratic. And it is idiosyncratic because there is no universally accepted standard for deploying public vocabularies to describe relationships between documents. There are a number of vocabularies that could be used - some readers will be familiar with Bibo and Cito terms - but their use is not fully standardized.</p>
+
+<p id="p22"><a class="id_link" style="color:aaa;display:none" href="#p22">[☞ p22]</a> There is also room for progress on the creation of stable URIs for named entities, although many solutions are appearing. It is clear that VIAF (OCLC 2010-13) will be the publisher of identifiers for authors. Pleiades provides URIs for geographic entities. The Perseus Catalog (Perseus Digital Library n.d.) will provide URIs for many ancient texts, particularly those drawn from Greco-Roman culture. Likewise, <i>ISAW Papers</i> will continue to link to identifiers for numismatic concepts established by Nomisma.org (Meadows and Gruber 2014) and welcome progress being made by disciplines such as Syriac studies with its developing portal at <a href="http://syriaca.org">http://syriaca.org</a>.</p>
+
+<p id="p23"><a class="id_link" style="color:aaa;display:none" href="#p23">[☞ p23]</a> The exact form of references to all such resources should be standardized across projects, or rather, variation in form should be reduced. It is certainly the case that many of the papers in this collection show excellent progress towards that goal.  And it is hoped that <i>ISAW Papers</i> can contribute to the development of such standards by highlighting the need for them with usable data. From the particular perspective of this one born-digital journal, agreement on basic issues such as how to specify the semantics of links to well known resources will be a large step towards enabling the deposition of archival versions of all <i>ISAW Papers</i> articles into NYU’s Digital Archive.</p>
+</section>
+
+<section id="section8">
+<h2>Conclusion</h2>
+<p id="p24" class="textindent0"><a class="id_link" style="color:aaa;display:none" href="#p24">[☞ p24]</a> That last point can stand as a conclusion to this discussion, intended as it is to capture a particular moment in an ongoing process. <i>ISAW Papers</i> is achieving its motivating goal of distributing high-quality scholarship relevant to the Ancient World. While there is much more work to do, particularly on the experience of reading an article online, it is fundamental that readers have access to this scholarship at no cost and that it is made available in such a way that ongoing access is likely. Those aspects of the journal themselves adhere to the principles of Linked Open Data. To the extent that articles provide machine-readable data, the specific patterns used should be considered models and suggestions. Their utility will come clear as the data is consumed and as the data conforms more fully to best-practices developed by the wider Linked Open Data community, particularly those parts of that community focused on the Ancient World.</p>
+</section>
+
+<section id="works-cited">
+<h2>Works Cited</h2>
+<p id="work-cited-1" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-1">[☞ work-cited-1]</a> <span property="dcterms:bibliographicCitation">Adida, B., M. Birkbeck, S. McCarron and I. Herman (2013). RDFa Core 1.1 - Second Edition.</span> &lt;<a href="http://www.w3.org/TR/rdfa-syntax">http://www.w3.org/TR/rdfa-syntax/</a>&gt;</p>
+
+<p id="work-cited-2" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-2">[☞ work-cited-2]</a> <span property="dcterms:bibliographicCitation">Bransbourg, G. (2012). Rome and the Economic Integration of Empire. <i>ISAW Papers, 3</i>.</span> &lt;<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/3/</a>&gt;</p>
+
+<p id="work-cited-3" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-3">[☞ work-cited-3]</a> <span property="dcterms:bibliographicCitation">ISAW (n.d.). Institute for the Study of the Ancient World.</span> &lt;<a href="http://isaw.nyu.edu">http://isaw.nyu.edu</a>&gt;.</p>
+
+<p id="work-cited-4" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-4">[☞ work-cited-4]</a> <span property="dcterms:bibliographicCitation">Jones, A. and Steele, J. (2011). A New Discovery of a Component of Greek Astrology in Babylonian Tablets: The “Terms.” <i>ISAW Papers, 1</i>.</span>  &lt;<a rel="dcterms:identifier" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/1/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/1/</a>&gt;</p>
+
+<p id="work-cited-5" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-5">[☞ work-cited-5]</a> <span property="dcterms:bibliographicCitation">McCollum, A. (2012). A Syriac Fragment from The Cause of All Causes on the Pillars of Hercules. <i>ISAW Papers, 5</i>.</span> &lt;<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/5/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/5/</a>&gt;</p>
+
+<p id="work-cited-6" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-6">[☞ work-cited-6]</a> <span property="dcterms:bibliographicCitation">Meadows, A. and E. Gruber (2014). Coinage and Numismatic Methods. A Case Study of Linking a Discipline. <i>ISAW Papers, 7</i>.</span> &lt;<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/meadows-gruber/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/meadows-gruber/</a>&gt;</p>
+
+<p id="work-cited-7" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-7">[☞ work-cited-7]</a> <span property="dcterms:bibliographicCitation">OCLC (2010-2013). VIAF: Virtual International Authority File.</span> &lt;<a href="http://viaf.org">http://viaf.org</a>&gt;.</p>
+
+<p id="work-cited-8" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-8">[☞ work-cited-8]</a> <span property="dcterms:bibliographicCitation">Perseus Digital Library (n.d.). The Perseus Catalog.</span> &lt;<a href="http://catalog.perseus.org">http://catalog.perseus.org</a>&gt;.</p>
+
+<p id="work-cited-9" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-9">[☞ work-cited-9]</a> <span property="dcterms:bibliographicCitation">Sporny, M., Ed. (2013). HTML+RDFa 1.1.</span> &lt;<a href="http://www.w3.org/TR/rdfa-in-html/">http://www.w3.org/TR/rdfa-in-html/</a>&gt;.</p>
+
+<p id="work-cited-10" class="work-cited" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-10">[☞ work-cited-10]</a> <span property="dcterms:bibliographicCitation">Zarmakoupi, M. (2013). The Quartier du Stade on late Hellenistic Delos: a case study of rapid urbanization (fieldwork seasons 2009-2010). ISAW Papers, 6.</span> &lt;<a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/6/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/6/</a>&gt;</p>
+</section>
+<footer>
+<p>©2014 <span property="cc:attributionName">Sebastian Heath</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
+<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+</footer>
+</article>
+</body>
+</html>
