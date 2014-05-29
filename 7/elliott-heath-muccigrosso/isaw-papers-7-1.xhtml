@@ -5,7 +5,7 @@
  foaf: http://xmlns.com/foaf/0.1/
  rdfs: http://www.w3.org/2000/01/rdf-schema#">
 <head>
- <title>ISAW Papers: Towards a Journal as Linked Open Data</title>
+ <title>Prologue and Introduction</title>
  <link rel="stylesheet" href="../isaw-papers-7.css" />
  <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" />
  <link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/elliott-heath-muccigrosso/" />
@@ -15,20 +15,46 @@
 <article>
  <header>
   <h2><a rel="contents" href="../isaw-papers-7.xhtml">ISAW Papers 7.1</a> (2014)</h2>
-  <h1 property="dcterms:title">Prolog and Introduction</h1>
+  <h1 property="dcterms:title">Prologue and Introduction</h1>
   <h2><span rel="dcterms:creator"><a rel="dcterms:identifier" href="http://viaf.org/viaf/258676042" property="foaf:name">Tom Elliott</a></span>, <span rel="dcterms:creator"><a rel="dcterms:identifier" href="http://viaf.org/viaf/220831018" property="foaf:name">Sebastian Heath</a></span> and <span rel="dcterms:creator"><span property="foaf:name">John Muccigrosso</span></span></h2>
 </header>
 
 <section id="section1">
+<h2>Prologue</h2>
 <p class="textindent0">The articles published collectively as <i>ISAW Papers 7</i> are the result of the two meetings held at New York University's Institute for the Study of the Ancient World and at Drew University in early summer of 2012 and 2013 respectively. Both had the title "Linked Ancient World Data Institute" and came to be known by the acronym LAWDI. Organized by the present authors, the meetings were  generously funded by the Office of Digital Humanities of the National Endowment of the Humanities. We are very grateful to the NEH and to our home institutions for their support of the events.</p>
 
 <p>We would also like to thank all the LAWDI participants and all the contributors to this collection. At the LAWDI meetings, we strove for a combination of structured presentation and informal exchange, and here in the publication we intend to offer a forum for description of ongoing work. Different authors have made different use of the opportunity. A common thread is the willingness to make digital resources available on the public internet. But beyond that there is great diversity. Personal perspectives mix with brief reports and with technical discussions. Because all the contributions are informed more or less explicitly by the principles of Linked Open Data (LOD) it will be useful to review those here.</p>
+</section>
 
-<p>The foundational text for LOD is Tim Berners-Lee's "Linked Data" of 2009, which is online at <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a>. The ideas outlined there were described in much greater detail by Tom Heath and Christian Bizer in their 2011 book <i>Linked Data: Evolving the Web into a Global Data Space</i>, which is also available online at <a href="http://linkeddatabook.com/">http://linkeddatabook.com/</a>.</p>
+<section id="section2">
+<h2>Introduction</h2>
+<p class="textindent0">Linked Open Data is a set of best practices for sharing digital resources. Among the foundational texts that helped define and promote LOD's principles is Tim Berners-Lee's "Linked Data" of 2006, which is online at <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a>. Reaching further back into the history of the web, the same author's "Cool URIs Don't Change," online at <a href="http://www.w3.org/Provider/Style/URI">http://www.w3.org/Provider/Style/URI</a>, offers simple suggestions that are still useful today. Also influential is Sauerman et al. (2008) W3C Interest Group Note entitled "Cool URIs for the Semantic Web," for which see <a href="http://www.w3.org/TR/cooluris/">http://www.w3.org/TR/cooluris/</a>. The ideas outlined in these three relatively brief discussions were described in much greater detail by Tom Heath and Christian Bizer in their 2011 book <i>Linked Data: Evolving the Web into a Global Data Space</i>, which is also available online at <a href="http://linkeddatabook.com/">http://linkeddatabook.com/</a>. Readers wanting to explore further approaches to LOD will be well served by "clicking through" on those links and also be investigating the resources at <a href="http://linkeddata.org">http://linkeddata.org</a>.</p>
 
-<p>Berners-Lee gave a list of four principles of Linked Data and offered a five-star scale for assessing linked data resources. At LAWDI
+<p>Each session of LAWDI was only three days long so required considerable compression of technical details. We will do the same (and more) in this introduction. The one point that was stressed at LAWDI was stability, particularly of published URIs (and for discussion of the difference between URIs and URLs see Sauerman et al. [2008]). The fundamental practice of giving individual URIs to all discrete resources that a project published was energetically endorsed. Among the types of URIs often used as examples within the study of the ancient world were Pleiades URIs for ancient places (e.g. <a href="http://pleiades.stoa.org/places/59672">http://pleiades.stoa.org/places/59672</a>) and the Worldcat catalog stood out as providing common identifiers with impact beyond any single discipline (e.g. <a href="http://www.worldcat.org/oclc/768969647">http://www.worldcat.org/oclc/768969647</a>). Beyond stability, the faculty and participants at LAWDI both stressed and searched for common vocabularies that can be used to encourage machine readability of the information available at the stable URIs that currently exist and that will become available. The Pelagios Project (Isaksen et al. 2014), which is aggregating disparate uses of Pleiades identifiers, has shown the utility of expressing links between resources in such a way that they can be automatically harvested. <a href="http://nomisma.org">Nomisma.org</a> has also made progress in this direction. Putting aside specific examples, the articles published here often express the desire for greater clarity on how to refer to people, places, and events, in addition to such abstract concepts as periods and typologies. That common practice is desirable was a clear outcome of the 2012 LAWDI session (Elliot, Heath and Muccigrosso 2012) and remained a topic of discussion in 2013.</p>
 
-<p>Items 1, 2 and 4 are easily rephrased in more colloquial language. 
+<p>Despite an avoidance of excessively technical presentations, LAWDI did not shy away from presenting the “RDF Triple” as an important concept for participants to understand. We likewise note that readers of these essays may want to be familiar with this fundamental concept in the publication of re-usable data on the public internet. Meaning that we offer here a very brief answer to the question, "What is a Triple?".</p>
+
+<p>A triple is a statement in three parts. Using colloquial language, those three parts can be defined in the following way:</p>
+
+<ol>
+ <li><i>The Subject:</i> The thing being talked about.</li>
+ <li><i>The Predicate:</i> The category of statement one is making about the subject.</li>
+<li><i>The Object:</i> The content of the statement that one is making about the subject.</li>
+</ol>
+
+<p class="textindent0">For example, the English sentence "Athens is located in Attica" has the subject "Athens", the predicate "located in", and the object "Attica".</p>
+
+<p>It is best practice in LOD to use URIs for all three elements of a triple so that the following three URIs are a machine readable version of the same sentence:</p>
+<ul>
+ <li><a href="http://pleiades.stoa.org/places/579885">http://pleiades.stoa.org/places/579885</a></li>
+ <li><a href="http://www.geonames.org/ontology#locatedIn">http://www.geonames.org/ontology#locatedIn</a></li>
+ <li><a href="http://www.geonames.org/6692632">http://www.geonames.org/6692632</a></li>
+</ul>
+
+<p>Using the triple terminology, clicking on the "subject," or first URI in the list, will bring up the Pleiades record for Athens. Clicking on the "object" will bring up the geonames.org record for Attica. And clicking on the predicate will bring up a human-readable introduction to the geonames vocabulary.</p>
+
+<p>It isn't possible for this introduction to present fully the role of triples in LOD. Further discussion is available in Heath and Bizer's online book. See section "<a href="http://linkeddatabook.com/editions/1.0/#htoc16">2.4.1 The RDF Data Model</a>". Examples and discussion triples appear in this collection in the contributions by <a href="../heath/">Heath</a>, <a href="../kansa/">Kansa</a> and <a href="../romanello/">Romanello</a>.</p>
+ 
 </section>
 <footer>
 <p>©2014 <span property="cc:attributionName">Tom Elliott, Sebastian Heath and John Muccigrosso</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
