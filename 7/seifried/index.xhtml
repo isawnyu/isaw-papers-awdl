@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#  dcterms: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  rdfs: http://www.w3.org/2000/01/rdf-schema#">
+    <head><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"/><script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"/><script src="http://isawnyu.github.com/awld-js/awld.js?autoinit" type="text/javascript"/><script type="text/javascript">
+  function show_id_links() {
+if ($('.id_link').css('display') == "none")
+$('.id_link').show();
+else
+$('.id_link').hide();
+}
+
+  function show_references() {
+ $('.reference').css('border-bottom','thin dotted gray');
+ 
+ }
+   </script>
+        <title>Linked Open Data for the Uninitiated</title>
+        <link rel="stylesheet" href="../isaw-papers-7.css"/>
+        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/"/>
+        <link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/seifried/"/>
+    </head>
+
+<body><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/seifried/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/seifried/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Rebecca M. Seifried; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0;margin-top:1em;align:center" src="http://i.creativecommons.org/l/by/3.0/88x31.png"/></a></p></div>
+<article>
+<header>
+<h2><a rel="toc" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7.26</a> (2014)</h2>
+<h1 property="dcterms:title">Linked Open Data for the Uninitiated</h1>
+<h2 rel="dcterms:creator"><span property="foaf:name">Rebecca M. Seifried</span></h2>
+</header>
+<section>
+
+<p class="textindent0" id="p1"><a class="id_link" style="color:aaa;display:none" href="#p1">[☞ p1]</a> Concepts like “linked” and “open” data are old hat for a handful of specialists working with archaeological data, but for the rest of us – those scholars who have never built a web page or coined a URI – the world of linked open data seems a shadowy and impenetrable veil. The data I encounter on a weekly basis violate so many best practice guidelines that it is frightening to even consider publishing the data online, let alone connecting it to the semantic web. Nevertheless, the amazing things that can be done with linked open data, the connections and meaningful relationships, the benefits to the public and scholars alike, are reason enough to encourage us “uninitiated” archaeologists to reconsider how we create, manage, and publish our data.</p>
+
+<p id="p2"><a class="id_link" style="color:aaa;display:none" href="#p2">[☞ p2]</a> This short essay represents the personal musings of a non-technical web user, who sees the benefits of publishing archaeological data in a linked, open way, but who cannot (yet) speak the language of HTML or SPARQL. I have worked with born-digital data existing in different levels of technical sophistication, from projects as large and well funded as the Körös Regional Archaeological Project in Hungary, to my own ongoing dissertation research project in Greece, the Byzantine and Ottoman Settlement Study. While many of the contributors to this online volume demonstrate the wealth and variety of linked open data, my focus is turned toward the initial difficulties that will inevitably face the uninitiated, who see the potential for disseminating their data to a worldwide community but simply don’t know how to begin.</p>
+
+<p id="p3"><a class="id_link" style="color:aaa;display:none" href="#p3">[☞ p3]</a> Although data recording has almost entirely shifted from a manual process to a digital one, many of the uninitiated fail to live up to best practice guidelines for born-digital data (e.g., [ADS and DA 2011]). It is imperative that even if we have no intention of coding RDF triples ourselves (see [RDF Working Group 2013]), we prepare for data to be archived in an online, open-access format. The issue isn’t just about using the proper file format; it is also about determining which specific types of data will be relevant to a broader audience. A file may contain thousands of entries, but oftentimes metadata is recorded for the entire file, rather than for individual records. Wouldn’t it be nice to know when each individual record is modified, and by whom? Aside from thinking ahead toward potential online publication, the uninitiated should try their best to understand the basic premises of linked open data. While we may not be skilled enough to created linked open data on our own, we can structure our datasets so that later on, specialists can do so in a relatively easy and painless process.</p>
+
+<h2>Present Options for Disseminating Archaeological Datasets</h2>
+
+<p id="p4"><a class="id_link" style="color:aaa;display:none" href="#p4">[☞ p4]</a> For case studies, I will mention a few specific archaeological projects and how they are currently disseminating their data. Information about the Körös Regional Archaeological Project is disseminated primarily on a subsidiary webpage of The Field Museum ([The Field Museum 2013]), although a more significant site is planned for the future. The current site includes blog entries, photos, and videos, but almost no original data. The project hasn’t even earned itself one star, according to the Berners-Lee ([Berners-Lee 2006]) framework, although there is potential to use the server to publish the FileMaker Pro databases (to earn 2 stars) or non-proprietary versions of the data (to earn 3 stars). Online data depositories are a second option for archaeologists who do not have access to institution servers. The Shala Valley Project provides an excellent example of online data dissemination, using the Archaeology Data Service ([Galaty et al. 2009]), although the Digital Archaeological Record ([Digital Antiquity 2013]) is another depository for projects to consider. Shala Valley data are available in the form of images, non-proprietary database files, scanned field notes and drawings, and an interactive GIS. A third option is to secure a non-institutional, non-depository, but reliable website of one’s own, such as a domain powered through WordPress. Data hosting is limited on these sites, but interactive maps can be powered through third-party software like MapsMarker and TileMill. A great example of this type of site is the Documenting Cappadocia project ([McMichael 2013]).</p>
+
+<p id="p5"><a class="id_link" style="color:aaa;display:none" href="#p5">[☞ p5]</a> The type of online data hosting offered in these examples is a good way for the uninitiated to disseminate archaeological data; by and large, someone else does the work of website-building, allowing archaeologists to make their data somewhat accessible without getting lost in an utterly foreign world of languages they don’t know. The drawback of this approach is that the data can remain stagnant and isolated, unconnected from the myriad sources on the web that could highlight relevant and meaningful relationships – if only they were linked.</p>
+
+<p id="p6"><a class="id_link" style="color:aaa;display:none" href="#p6">[☞ p6]</a> As I structure the databases for my own dissertation research and think ahead to the ideal way to publish them online as linked open data, I see two alternatives for achieving the coveted “5 stars” of Berners-Lee’s Linked Open Data guidelines. The first is to use a data depository, like OpenContext.org ([OpenContext 2013]), that issues individual URIs for each item within a dataset (see [Kansa 2013], this volume). This option would give me peace of mind to know that, so long as I follow best practice guidelines for data acquisition and compilation, a technical expert will be able to help me later on to get my data online in a meaningful way. The second option is to create my own website using RDF triples and cool URIs ([W3C 2008]). At the 2013 LAWDI gathering, a number of individuals – many of whom were never formally trained in web languages – showed off their successes after attempting this task on their own. As one of the many archaeologists foreign to HTML coding and the like, the experience tore down the veil that made linked open data seem obscure and impenetrable. I came away realizing that linked open data is not only possible, but that it is, in fact, the future of archaeological research and data dissemination.</p>
+
+</section>
+
+<section id="works-cited">
+<h2>Works Cited</h2>
+<p class="work-cited" id="work-cited-1" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-1">[☞ work-cited-1]</a> <span property="dcterms:bibliographicCitation">[ADS and DA 2011] Archaeology Data Service and Digital Antiquity. <i>Guides to Good Practice</i>. 2011. Available at: <a href="http://guides.archaeologydataservice.ac.uk/">http://guides.archaeologydataservice.ac.uk/</a></span></p>
+
+<p class="work-cited" id="work-cited-2" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-2">[☞ work-cited-2]</a> <span property="dcterms:bibliographicCitation">[Berners-Lee 2006] Berners-Lee, Tim. “Linked Data.” <i>Design Issues</i>. 27 July 2006. Available at: <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a></span></p>
+
+<p class="work-cited" id="work-cited-3" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-3">[☞ work-cited-3]</a> <span property="dcterms:bibliographicCitation">[Digital Antiquity 2013] Digital Antiquity. “The Digital Archaeological Record.” tDAR.org. Accessed 22 October 2013. Available at: <a href="http://www.tdar.org/">http://www.tdar.org/</a></span></p>
+
+<p class="work-cited" id="work-cited-4" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-4">[☞ work-cited-4]</a> <span property="dcterms:bibliographicCitation">[The Field Museum 2013] The Field Museum. “Neolithic Archaeology: Körös Region, Hungary.” Expeditions at The Field Museum. Accessed 22 October 2013. Available at: <a href="http://expeditions.fieldmuseum.org/neolithic-archaeology/">http://expeditions.fieldmuseum.org/neolithic-archaeology/</a></span></p>
+
+<p class="work-cited" id="work-cited-5" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-5">[☞ work-cited-5]</a> <span property="dcterms:bibliographicCitation">[Galaty et al. 2009] Galaty, Michael L., Ols Lafe, Zamir Tafilica, Charles Watkinson, Wayne E. Lee, Mentor Mustafa, Robert Schon, and Antonia Young. The Shala Valley Project [data-set]. York: Archaeology Data Service [distributor] (doi:10.5284/1000103). Available at: <a href="http://archaeologydataservice.ac.uk/archives/view/svp_mellon_2009/">http://archaeologydataservice.ac.uk/archives/view/svp_mellon_2009/</a></span></p>
+
+<p class="work-cited" id="work-cited-6" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-6">[☞ work-cited-6]</a> <span property="dcterms:bibliographicCitation">[Kansa 2013] Kansa, Eric C. “Open Context and Linked Data.” Forthcoming: LAWDI 2013.</span></p>
+
+<p class="work-cited" id="work-cited-7" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-7">[☞ work-cited-7]</a> <span property="dcterms:bibliographicCitation">[McMichael 2013] McMichael, A. L. “Cappadocia Landscape.” Documenting Cappadocia. Accessed 22 October 2013. Available at: <a href="http://www.nml.cuny.edu/documentingcappadocia/view/">http://www.nml.cuny.edu/documentingcappadocia/view/</a></span></p>
+
+<p class="work-cited" id="work-cited-8" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-8">[☞ work-cited-8]</a> <span property="dcterms:bibliographicCitation">[OpenContext 2013] OpenContext. “OpenContext’s Technologies.” OpenContext.org. Accessed 22 October 2013. Available at: <a href="http://opencontext.org/about/technology">http://opencontext.org/about/technology</a></span></p>
+
+<p class="work-cited" id="work-cited-9" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-9">[☞ work-cited-9]</a> <span property="dcterms:bibliographicCitation">[RDF Working Group 2013] RDF Working Group. “Resource Description Framework (RDF).” W3C Semantic Web. Published 10 February 2004. Modified 22 March 2013. Available at: <a href="http://www.w3.org/RDF/">http://www.w3.org/RDF/</a></span></p>
+
+<p class="work-cited" id="work-cited-10" rel="dcterms:references" typeof="dcterms:BibliographicResource"><a class="id_link" style="color:aaa;display:none" href="#work-cited-10">[☞ work-cited-10]</a> <span property="dcterms:bibliographicCitation">[W3C 2008] W3C. “Cool URIs for the Semantic Web.” W3C Interest Group Note. 3 December 2008. Available at: <a href="http://www.w3.org/TR/cooluris/">http://www.w3.org/TR/cooluris/</a></span></p>
+</section>
+<footer>
+<p>©2014 <span property="cc:attributionName">Rebecca M. Seifried</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
+<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+</footer>
+</article>
+</body>
+</html>

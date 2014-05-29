@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ rdfs: http://www.w3.org/2000/01/rdf-schema#">
+<head>
+ <title>Open Context and Linked Data</title>
+        <link rel="stylesheet" href="../isaw-papers-7.css" />
+        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" />
+        <link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/kansa" />
+ </head>
+ <body>
+ <article>
+ <header>
+ <h2><a rel="contents" href="../isaw-papers-7.xhtml">ISAW Papers 7.10</a> (2014)</h2>
+<h1 property="dcterms:title">Open Context and Linked Data</h1>
+<h2 rel="dcterms:creator"><a rel="dcterms:identifier" href="http://viaf.org/viaf/39051639" property="foaf:name">Eric C. Kansa</a></h2>
+</header>
+
+<section id="section1">
+<h2>Introduction</h2>
+
+<p class="textindent0" id="p1">Archaeologists have long grappled with the challenges inherent in data sharing. They have traditionally relied on monographs and site reports to communicate, in detail, the results of excavations and surveys. However, growing dependence on digital technologies has eroded the utility of these traditional dissemination strategies. Archaeologists now collect far more (digital) documentation than can be feasibly and cost-effectively shared in print. There is also more to digital data than sheer quantity. Archaeologists routinely organize data into structures (usually tables or relational databases) in order to use software to search, query, analyze, summarize, and visualize data. As interest in structured data grows, archaeologists need new venues to access and share structured data.</p>
+
+<p id="p2">“Data sharing” usually means sharing structured data in formats that can be easily loaded into data management software (ranging from Excel, to a GIS, to something more specialized), queried, visualized and analyzed. New rules imposed by granting agencies, especially “data management plans”, as well as changing professional expectations are all converging to make data dissemination a regular aspect of their scholarly communications. Archaeologists increasingly recognize the need to preserve the documented archaeological record by accessioning data into preservation repositories. At the same time, more researchers regard data sharing an aspect of good professional practice, so that data underlying interpretations and narratives of the past are available available for independent reinterpretation.</p>
+
+<p id="p3">The following discussion outlines Open Context’s current approach to publishing archaeological data. The discussion explores ways Open Context attempts to situate data dissemination in professional practice, particularly with respect to Linked Data approaches toward making data easier to understand and use.</p>
+</section>
+
+<section id="section2">
+<h2>Why a “Publishing” Metaphor for Data?</h2>
+
+<p id="p4">While we currently see increasing interest in the management, preservation and sharing of structured data, we still do not have well-established venues and processes to support these activities (Faniel et al 2013). Many researchers focus on the need to preserve these data, especially because of the destructive nature of many archaeological field methods. Though data archiving is of critical importance, data management needs extend well beyond preservation for the sake of preservation. To be understood and useful in the future, and to be comparable to other datasets, datasets usually need rich documentation and alignment to standards and vocabularies used by other data sources. Though researchers often see integration as a desirable goal in data sharing, the challenges inherent in documenting and describing data for reuse, especially reuse that involves integrating data from multiple projects, need to be better understood.</p>
+
+<p id="p5">Preparing data for reuse, especially integration with other data, can involve significant effort and special skills and expertise. Most archaeologists are not familiar with RDF, ontologies, controlled vocabularies, SPARQL or a whole host of other Web related technologies and standards. While wider appreciation and fluency in these technologies will be most welcome, not every archaeologist needs to become an expert Web technologist. Just as we do not expect every archaeologist to personally develop all of the expertise needed to run a print publication venue, a neutron activation analysis lab, or other specialization, we should not expect every archaeologist to become a Web technology guru. In other words, data dissemination can often benefit from collaboration with specialists that dedicate themselves to exploring informatics issues.</p>
+
+<p id="p6">Collaborating with “informatics specialists” can take multiple forms. With Open Context, an open access data dissemination venue for archaeology, we are adapting a “publishing” model to help set expectations about what is involved in meaningful data dissemination involving the support of people specializing data issues (Kansa and Kansa 2013). The phrase “data sharing as publication” helps to encapsulate and communicate the investment and skills needed to make data easier to reuse. It conveys the idea that data dissemination can be a collaborative undertaking, where data “authors” and specialized “editors” work together contributing different elements of expertise and taking on different responsibilities. A publishing metaphor also helps communicate the effort and expertise involved in data sharing in a metaphor that is widely understood by the research community. It helps to convey the idea that data publishing implies efforts and outcomes similar to conventional publishing. Ideally, offering a more formalized approach to data sharing can also promote professional recognition, helping to create the reward structures that make data reuse less costly and more rewarding, both in terms career benefits and in terms of opening new research opportunities in reusing shared data.</p>
+</section>
+
+<section id="section3">
+<h2>Publishing Linkable and Linked Data</h2>
+<p id="p7">We initially launched Open Context in 2007 and the site has gone through a number of iterations reflecting both our growing understanding of researcher needs and reflecting larger changes on how scholars use the Web. Over the past few years, we have moved to a model of “data sharing as publication” in order to publish higher-quality and more usable data. Similar to the services conventional journals provide to improve the quality of papers, we provide data editing and annotation services to improve the quality of the data researchers share. Part of our shift toward greater formalism in sharing data centers on increasing our participation in the world of “Linked Open Data”.</p>
+
+<p id="p8">Linked Open Data represents an approach to publishing data on the Web in a manner that makes it easier to combine data from different sources. It is an inherently distributed approach to promote the wider interoperability and integration of structured (meaning easily computable) data. Open Context contributes the larger body of Linked Open Data resources in two main ways (see also Kansa 2012):</p>
+
+<ul id="ul1">
+
+<li>First, Open Context mints a unique and stable Web identifier for every individual item contributors describe in their of data. This “one URL per artifact” approach facilitates research by removing any ambiguity about exactly which item is being referenced. Because Open Context uses Web identifiers, readily recognizable by beginning with “http://”, users and software will have little trouble in retrieving information associated with Open Context identifiers. To readers familiar with relational databases, Open Context’s Web identifiers make it easier for others to “join” data from any source around the Web to Open Context records. This approach toward Web identifiers represents a fundamental aspect of Open Context’s participation in a larger information ecosystem.</li>
+
+<li id="li1.1">Secondly, Open Context references Linked Data published by other expert communities. Like many of the projects discussed at the LAWDI meetings, Open Context references the Pleiades gazetteer (Elliot and Gillies 2009; <a href="http://pleiades.stoa.org/">http://pleiades.stoa.org/</a>). This helps remove ambiguity about ancient places that may be referenced in data published by Open Context. Referencing Pleiades also makes it easier to relate Open Context content with content from other sources that also reference Pleiades. However, because of the nature of the content Open Context publishes, relatively few records link to Pleiades. Most of the data in Open Context comes from excavations focusing on prehistoric periods, or on subdomains of archaeology where Pleiades has less relevance. Besides Pleiades, Open Context increasingly references the British Museum’s controlled vocabulary and the Wikipeida (for stable identifiers to relevent concepts), as demonstrated in this example of an object from Poggio Civitate (<a href="http://opencontext.org/subjects/AF3090B0-301C-41A0-D290-3F616AC074EF">http://opencontext.org/subjects/AF3090B0-301C-41A0-D290-3F616AC074EF</a>). In addition, Open Context has published several zooarchaeological datasets from prehistoric sites. To make these datasets more intelligible and more interoperable, Open Context references natural history vocabularies and ontologies, particularly the Encyclopedia of Life (<a href="http://eol.org">http://eol.org</a> to annotate biological taxa classifications) and UBERON (<a href="http://uberon.org">http://uberon.org</a> to annotate anatomy classifications). This simple vocabulary alignment enables Open Context to offer simple map-based visualizations features, such as Figure 1’s map of EOL-linked cattle.</li>
+</ul>
+
+<figure id="figure1">
+<img id="img1" src="figure1.png" alt="Figure 1: EOL-Linked Cattle Distribution Map"/>
+<figcaption>Figure 1: EOL-Linked Cattle</figcaption>
+</figure>
+
+<p id="p9">See: <a href="http://opencontext.org/sets/?map=1&amp;geotile=1&amp;geodeep=7&amp;eol=http%3A%2F%2Feol.org%2Fpages%2F34548">http://opencontext.org/sets/?map=1&amp;geotile=1&amp;geodeep=7&amp;eol=http%3A%2F%2Feol.org%2Fpages%2F34548</a></p>
+</section>
+
+<section id="section4">
+<h2>Ontology and Schema Mapping and the CIDOC-CRM</h2>
+<p id="p10">A last area where Open Context participates in Linked Open Data centers on referencing shared schemas (models for organizing data). We are currently experimenting with mapping data published by Open Context with the CIDOC-CRM (see: <a href="http://opencontext.org/about/services#rdf">http://opencontext.org/about/services#rdf</a>) Open Context started in 2007 and we initially chose “ArchaeoML” (the Archaeological Markup Language) developed by David Schloen (2001) with the OCHRE project (formerly XSTAR). We chose ArchaeoML because it provided a simple and very general organizational schema that we could readily apply with very diverse forms of archaeological data. The fact that Open Context now successfully publishes more than 35 different projects of wide geographic, chronological and thematic scope illustrates the utility of ArchaeoML. For our purposes, ArchaeoML worked and continues to work. Also, in 2007 when we first launched Open Context, we found XML technologies to be relatively straightforward and easy deploy, whereas RDF based technologies seemed more experimental and challenging at the time. </p>
+
+<p id="p11">However, since 2007 the landscape has changed dramatically. ArchaeoML never saw widespread adoption. The OCHRE project itself has since deprecated ArchaeoML, so its usefulness as a data interchange format was never realized. At the same time, more and more cultural heritage information systems began adopting the CIDOC-CRM as a standard for organizing data. The CIDOC-CRM became enshrined as an ISO standard, and is all but required by many funding agencies, particularly in the European Union. CIDOC-CRM therefore seems like a natural choice for the publication of archaeological data according to widely accepted standards.</p>
+
+<p id="p12">Over the past two years, Open Context began experimenting with publishing RDF data organized according to the CIDOC-CRM. Our experience in doing so has made us somewhat ambivalent about the effort and returns involved in aligning data to a complex ontology like the CIDOC-CRM, at least at this stage. The CIDOC-CRM represents a tremendous intellectual achievement. It results from a great amount of effort and thought by leading experts in cultural heritage informatics. Recent archaeology extensions of the CIDOC-CRM, led by English Heritage (Tudhope et al. 2011), also represent important informatics contributions.</p>
+
+<p id="p13">However, to paraphrase a famous meme, “one does not simply map to the CRM.” The CIDOC-CRM’s sophistication also makes it difficult to use in practice. For example, we recently had a discussion with a librarian trying to use the CIDOC-CRM to organize some archaeological data from a survey for publication in Open Context. The librarian used the CIDOC-CRM property “P3 has_note” as a predicate for use with Munsell color readings of potsherds. This raised some interesting issues. It is probably debatable if a Munsell color reading is simply a descriptive “note” or if a Munsell color reading is more of a measurement. If the latter, then the CIDOC-CRM property “P43F has_dimension” would probably be a more appropriate predicate. In theory, Munsell can be seen as an objective measurement. In practice, many researchers take Munsell readings because they vaguely think they should, and then they do not adequately control for all sorts of issues (lighting conditions, dampness, color blindness, etc.) that may impact a Munsell reading. The example above illustrate how difficult the CIDOC-CRM can be to use in practice. The CIDOC-CRM contains many conceptual nuances that can lead to different potential mappings. In addition, mapping to the CIDOC-CRM, or any other vocabulary or ontology for that matter, carries with it interpretive decisions. One has to make a judgement call if a Munsell reading measures a dimension or if it is simply a note. Finally, in many cases, one may not have sufficient information about a dataset to make these judgement calls. Sebastian Heath (<a href="https://github.com/lawdi/LAWD/issues/3#issuecomment-18934276">https://github.com/lawdi/LAWD/issues/3#issuecomment-18934276</a>) raised similar issues with respect to modeling archaeological contexts, especially from legacy excavations where the tacit knowledge behind excavation documentation may be lost.</p>
+
+<p id="p14">These issues would be easier to navigate if one could refer to established practice, and look at other examples of the CIDOC-CRM in use as a guide. However, despite the prominence of the CIDOC-CRM, it is surprisingly hard to find actual CIDOC-CRM organized datasets to use as examples, at least in archaeology. More real-world implementations of the CIDOC-CRM would provide invaluable guidance. Part of the value of referencing Pleiades comes from Pelagios (see Simon et al. 2012), a system that aggregates Pleiades annotations. The services provided by Pelagios make investing in Pleiades annotations worthwhile. Unfortunately, the CIDOC-CRM has no clear analog to Pelagios. We currently need to wait for mandarins of the CIDOC-CRM to review our mappings in order to get feedback, and even if this happens, our efforts would seem only relevant and noticed by a narrow audience of CIDOC-CRM aficionados. Systems that aggregate CIDOC-CRM content would be ideal, since such systems could help provide feedback about which mappings make sense and which do not. Without implementations that give such feedback, our experiments with mapping Open Context data to the CIDOC-CRM will go untested and mainly have theoretical value. In other words, right now, Open Context’s mappings to the CIDOC-CRM feel a little bit like eating spinach: in theory, it is good for us, but in practice, it is hard to identify its tangible benefits.</p>
+</section>
+
+<section id="section5">
+<h2>Lessons on Linking Data in Practice</h2>
+<p id="p15">Our struggles with the CIDOC-CRM illustrate some of the tensions behind different visions of “Linked Data” and the “Semantic Web.” In my view, the CIDOC-CRM represents an approach that seems very much at home with the Semantic Web. I see the Semantic Web as much more of a totalizing vision that emphasizes ontology and schema alignment between datasets across the Web. By reference to common conceptual models, the Semantic Web could enable powerful inference capabilities that draw upon logical relationships between data and ontologies. The problem with this vision is that non-trivial ontologies like the CIDOC-CRM can be hard to use in practice. They can be also be used inconsistently (as illustrated with the example about Munsell values above). Beyond these practical problems, the research community has yet to really grapple with the theoretical implications of ontology standards. Is the CIDOC-CRM really universally appropriate for all cultural heritage data? Should there be room for alternative ontologies that reflect different research priorities and assumptions? In enshrining the CIDOC-CRM as an ISO standard, are we enshrining and privileging one particular (and contingent) perspective on the past without first adequately exploring other options?</p>
+
+<p id="p16">Again, to my knowledge, nobody has harvested CIDOC-CRM mapped data from Open Context. So I lack feedback about the quality of our implementation of the CIDOC-CRM and I lack examples of inferences made using the CIDOC-CRM and Open Context data. Thus, realizing the benefits of a Semantic Web vision of ontology aligned data seems remote in the areas of archaeology Open Context serves. Archaeological excavation data typically has relevance for very narrow research interests and communities. The highly specialized nature of excavation data makes it harder to build a critical mass of relevant data that would benefit from integration and comparative analysis.</p>
+
+<p id="p17">It is only in a few cases where Open Context has published enough relevant data to make “data integration” useful. Open Context recently published zooarchaeological datasets from 13 sites in Turkey that help document the transitions between hunting / gathering and agriculture / pastoralism in Anatolia between the Epipaleolithic through the Chalcolithic. The Encyclopedia of Life (EOL) sponsored the publication, integration and shared analyses of these data through a Computational Data Challenge ward (see Table 1 below):</p>
+
+
+
+
+<table id="table1">
+<caption style="caption-side:bottom">Table 1: EOL Computational Data Challenge Projects</caption>
+<tbody>
+
+<tr style="vertical-align:top;text-align:left">
+<th>Site</th>
+<th>Data Contributor / Key Project Participant</th>
+<th>Project DOI</th>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>BarÇin Höyük</td>
+<td>Alfred Galik</td>
+<td><a href="http://dx.doi.org/10.6078/M78G8HM0">http://dx.doi.org/10.6078/M78G8HM0</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Çatalhöyük (East and West Mounds)</td>
+<td >David Orton</td>
+<td><a  href="http://dx.doi.org/10.6078/M7G15XSF">http://dx.doi.org/10.6078/M7G15XSF</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Çatalhöyük (TP area)</td>
+<td>Arek Marciniak</td>
+<td><a href="http://dx.doi.org/10.6078/M7B8562H">http://dx.doi.org/10.6078/M7B8562H</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Cukurici Hoyuk</td>
+<td>Alfred Galik</td>
+<td><a href="http://dx.doi.org/10.6078/M7D798BQ">http://dx.doi.org/10.6078/M7D798BQ</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Domuztepe</td>
+<td>Sarah Whitcher Kansa</td>
+<td><a href="http://dx.doi.org/10.6078/M7SB43PP">http://dx.doi.org/10.6078/M7SB43PP</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Erbaba Höyük</td>
+<td>Ben Arbuckle</td>
+<td><a href="http://dx.doi.org/10.6078/M70Z715B">http://dx.doi.org/10.6078/M70Z715B</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Ilipinar</td>
+<td>Hijlke Buitenhuis</td>
+<td>
+<a href="http://dx.doi.org/10.6078/M76H4FB">http://dx.doi.org/10.6078/M76H4FB</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Karain Cave</td>
+<td>Levent Atici</td>
+<td><a href="http://dx.doi.org/10.6078/M7CC0XMT">http://dx.doi.org/10.6078/M7CC0XMT</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Kösk Höyük</td>
+<td>Ben Arbuckle</td>
+<td><a href="http://dx.doi.org/10.6078/M74Q7RW8">http://dx.doi.org/10.6078/M74Q7RW8</a></td>
+</tr>
+
+<tr>
+<td>Okuzini Cave</td>
+<td>Levent Atici</td>
+<td><a href="http://dx.doi.org/10.6078/M73X84KX">http://dx.doi.org/10.6078/M73X84KX</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Pinarbasi (1994)</td>
+<td>Denise Carruthers</td>
+<td><a href="http://dx.doi.org/10.6078/M7X34VD1">http://dx.doi.org/10.6078/M7X34VD1</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Suberde</td>
+<td>Ben Arbuckle</td>
+<td><a href="http://dx.doi.org/10.6078/M70Z715B">http://dx.doi.org/10.6078/M70Z715B</a></td>
+</tr>
+
+<tr style="vertical-align:top;text-align:left">
+<td>Ulucak Höyük</td>
+<td>Canan Cakirlar</td>
+<td><a href="http://dx.doi.org/10.6078/M7KS6PHV">http://dx.doi.org/10.6078/M7KS6PHV</a></td>
+</tr>
+</tbody>
+</table>
+
+<p id="p18">Open Context’s editors, in collaboration with the authors of the datasets, spent four months decoding and editing over records of 294,000 bone specimens from the twelve archaeological sites, and linked the data to Encyclopedia of Life and UBERON concepts. Incorporating Linked Data into editorial practices is not unique to Open Context. Sebastian Heath similarly includes Linked Data annotation into editorial work for the ISAW Papers publications, and Shaw and Buckland (2012) note similar editorial approaches in other humanities applications. In order to facilitate citation as well as search, browse, and retrieval features on Open Context, each dataset needed additional metadata documentation (Table 3). This documentation included authorship and credit information, basic project and site descriptions, keywords, relevant chronological ranges, and geospatial information needed for basic mapping (site latitude / longitude coordinates). Open Context editors also asked contributing researchers to include information on data collection methods and sampling protocols and provide documentation on each field (meaning of the field, units of measure, how determinations were made, etc.) of their submitted dataset.</p>
+
+<p id="p19">Rather than having all participants in this study analyze the entire corpus of data, each participant addressed a specific research topic using a sub-set of the data. Participants met in April 2013 at the International Open Workshop at Kiel University<sup><a class="footnote-reference" id="footnote-reference-1" href="#footnote-1">1</a></sup> to present their analytic results on the integrated data. Project Director Arbuckle assigned each participant a topic related to taxon and methodology. Participants presented on topics such as “sheep and goat age data” and “cattle biometrics” (see Table 2). Following the presentations, participants discussed the results and the implications of the presented analyses for addressing the potential research topics. These presentations formed the basis of the data and discussion presented in the forthcoming collaborative research publication (Arbuckle et al. forthcoming). We will also publish a more in depth discussion of the editorial workflow behind the project (Kansa et al. forthcoming).</p>
+
+<p id="p20">The semantic issues inherent to schema mapping and the CIDOC-CRM seemed largely irrelevant to making the analysis and interpretation of these aggregated zooarchaeological datasets. Instead, more prosaic issues about vocabulary control became more important. We mainly used the EOL and UBERON as controlled vocabularies. Even though UBERON is a sophisticated ontology that can support powerful inferences, including inferences relating bone elements to developmental biology, embryology and genetics, making such inferences remained outside the scope of this particular study. Instead, linking these different zooarchaeological datasets to common controlled vocabularies formed the basis for aggregation and comparison.</p>
+
+<p id="p21">Open Context’s experience with zoooarchaeology suggests that vocabulary alignment can help researchers more, at least in the near-term, than aligning datasets to elaborate semantic models (via CIDOC-CRM). Furthermore, the zooarchaeologists participating in the EOL Computational Data Challenge worked with their shared data using the most simple and widely understood of data analysis technologies. Open Context simply made the vocabulary aligned data available as downloadable tables in CSV format. CSV is a very simple and rigid format that lacks the power of XML or RDF formats to express sophisticated models or schemas. Nevertheless, one can easily open a CSV file in a spreadsheet application like Excel, so it greatly simplifies use of shared data by researchers that lack sophisticated programming skills. In the case of the EOL Computational Data Challenge project, CSV’s ease of use trumped its modeling limitations.</p>
+</section>
+
+<section id="section6">
+<h2>Summary</h2>
+<p id="p22">The point of this discussion is not to dismiss the CIDOC-CRM or the need for intellectual investment in semantic modeling. Again, the CIDOC-CRM represents a tremendous intellectual achievement and informatics researchers need to thoughtfully engage with it (rather than blindly accept it). However, many of the benefits and applications that can come with elaborate semantic modeling are thus far aspirational, especially in the context of distributed systems deployed by many different organizations and people with different backgrounds and priorities. To aspire to certain goals, even if not readily achievable today, is perfectly acceptable.</p>
+
+<p id="p22">However, long-term aspirational goals typically need to be complemented by shorter term objectives that can be realized with more incremental progress. This discussion suggests that there may be some lower-hanging, easier to reach fruit in our efforts to make distributed data work better together. The distinctions I see between the shared modeling emphasis of the “Semantic Web” and simpler cross-referencing approach of “Linked Data” can help identify the low hanging fruit. In Open Context’s case, we are currently using Linked Data to annotate datasets using shared controlled vocabularies. For now, that seems to meet more immediate research needs. And since applying any standard or technology involves time and effort, we see that the most cost-effective strategy to making more usable data centers on editorial practices that cross-reference Open Context data with vocabularies like EOL, UBERON and Pleiades.</p>
+
+<p id="p23">The above discussion explores our response to how we see the current information environment. For the past six years, Open Context has worked to make data dissemination a more normal and expected aspect of scholarly practice. During this time, we’ve changed our approach to emphasis more formalism and editorial processes to promote quality. At the same time, the technology landscape and expectations of researchers has continually changed. I have no doubt that our approach toward Linked Open Data and semantic modeling will continue to evolve as expectations and needs evolve.</p>
+</section>
+
+<section id="notes">
+<h2>Notes</h2>
+<p class="footnote" id="footnote-1"><sup><a href="#footnote-reference-1">1</a></sup> International Open Workshop: Socio-Environmental Dynamics over the Last 12,000 Years: The Creation of Landscapes III, April 16-19, 2013, Kiel University. These presentations took place in the session “Into New Landscapes: Subsistence Adaptation and Social Change during the Neolithic Expansion in Central and Western Anatolia.” The session, which was chaired by Benjamin Arbuckle (Department of Anthropology, Baylor University) and Cheryl Makarewicz (Institute of Pre- and Protohistoric Archaeology, CAU Kiel), included a panel of presentations followed by an open discussion.</p>
+</section>
+
+<section id="works-cited">
+<h2>Works Cited</h2>
+<p class="work-cited" id="work-cited-1" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Elliot, Tom, and Sean Gillies (2009). Digital Geography and Classics. <i>Digital Humanities Quarterly 3</i>(1). Available at <a href="http://digitalhumanities.org/dhq/vol/3/1/000031.html">http://digitalhumanities.org/dhq/vol/3/1/000031.html</a>, accessed January 6, 2010.</span></p>
+
+<p class="work-cited" id="work-cited-2" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Faniel, Ixchel, Eric Kansa, Sarah Whitcher Kansa, Julianna Barrera-Gomez, and Elizabeth Yakel (2013). The Challenges of Digging Data: a Study of Context in Archaeological Data Reuse. In <i>Proceedings of the 13th ACM/IEEE-CS Joint Conference on Digital Libraries</i> JCDL  ’13 (295–304).  New York, NY, USA: ACM. <a href="http://doi.acm.org/10.1145/2467696.2467712">http://doi.acm.org/10.1145/2467696.2467712</a>, Open Access Preprint: <a href="http://www.oclc.org/content/dam/research/publications/library/2013/faniel-archae-data.pdf">http://www.oclc.org/content/dam/research/publications/library/2013/faniel-archae-data.pdf</a>,  accessed September 30, 2013.</span></p>
+
+<p class="work-cited" id="work-cited-3" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Kansa, Eric (2012). Openness and Archaeology’s Information Ecosystem. <i>World Archaeology 44</i>(4), 498–520.</span> Open Access Preprint: <a href="http://alexandriaarchive.org/blog/wp-content/uploads/2012/Kansa-Open-Archaeology-Self-Archive-Draft.pdf">http://alexandriaarchive.org/blog/wp-content/uploads/2012/Kansa-Open-Archaeology-Self-Archive-Draft.pdf</a></p>
+
+<p class="work-cited" id="work-cited-4" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Kansa, Eric C., and Sarah Whitcher Kansa (2013). We All Know That a 14 Is a Sheep: Data Publication and Professionalism in Archaeological Communication. <i>Journal of Eastern Mediterranean Archaeology and Heritage Studies 1</i>(1), 88–97.</span> Open Access Preprint: <a href="http://escholarship.org/uc/item/9m48q1ff">http://escholarship.org/uc/item/9m48q1ff</a></p>
+
+<p class="work-cited" id="work-cited-5" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Schloen, J. David (2001). Archaeological Data Models and Web Publication Using XML. <i>Computers and the Humanities 35</i>(2), 123–152.</span></p>
+
+<p class="work-cited" id="work-cited-6" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Shaw, Ryan, and Michael Buckland (2011). Editorial Control over Linked Data. <i>Proceedings of the American Society for Information Science and Technology 48</i>(1), 1–4.</span></p>
+
+
+<p class="work-cited" id="work-cited-7" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Simon, Rainer, Elton Barker, and Leif Isaksen (2012). “Exploring Pelagios: a Visual Browser for Geo-tagged Datasets.” International workshop on supporting users' exploration of digital libraries [conference]. Paphos, Cyprus. 27 Sep. 2012.</span> <a href="http://ixa2.si.ehu.es/suedl/index.php?option=com_content&amp;view=article&amp;id=53:program&amp;catid=36:categoryhome&amp;Itemid=63">http://ixa2.si.ehu.es/suedl/index.php?option=com_content&amp;view=article&amp;id=53:program&amp;catid=36:categoryhome&amp;Itemid=63</a>, accessed September 30, 2013.</p>
+
+<p class="work-cited" id="work-cited-8" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Tudhope, Douglas, Ceri Binding, Stuart Jeffrey, Keith May, and Andreas Vlachidis (2011). A STELLAR Role for Knowledge Organization Systems in Digital Archaeology. <i>Bulletin of the American Society for Information Science and Technology 37</i>(4), 15–18.</span></p>
+</section>
+
+<footer>
+<p>©2014 <span property="cc:attributionName">Eric Kansa</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
+<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+</footer>
+</article>
+</body>
+</html>
