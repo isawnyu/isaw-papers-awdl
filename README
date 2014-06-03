@@ -1,16 +1,7 @@
 ISAW PAPERS (AWDL VERSION)
 -----------------------
-ISAW Papers is a online journal of article length scholarship. This repository simulates the delivery of the content as found in NYU Library's Ancient World Digital Library.
+ISAW Papers is a online journal of article length scholarship. This repository tests the delivery of the content as found in NYU Library's Ancient World Digital Library. DO NOT FORK. THESE FILES ARE AUTOMATICALLY GENERATED. As in, "This is not the repo you are looking for..."
 
 Unless otherwise noted all content is distributed under a 
-Creative Commons Atribution license. See http://creativecommons.org/licenses/by/3.0/ .
+Creative Commons Atribution license. See http://creativecommons.org/licenses/by/4.0/ .
 
-The articles in this repo are deployed on a test basis to 
-
-http://isawnyu.github.com/isaw-papers-awdl/1
-
-http://isawnyu.github.com/isaw-papers-awdl/2/preprint
-
-http://isawnyu.github.com/isaw-papers-awdl/3/preprint
-
-http://isawnyu.github.com/isaw-papers-awdl/4/preprint
