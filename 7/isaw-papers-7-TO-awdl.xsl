@@ -88,7 +88,7 @@ $('.id_link').hide();
    <xsl:attribute name="onmouseleave">document.getElementById('<xsl:value-of select="@id"/>anchor').style.display='none'</xsl:attribute>
    <xsl:apply-templates select="@*"/>
 
-   <a id="{@id}anchor" class="id_link" style="color:aaa;display:none" href="#{@id}">[☞<xsl:text> </xsl:text> <xsl:value-of select="@id"/>]</a><xsl:text> </xsl:text><xsl:apply-templates/>
+   <a id="{@id}anchor" class="id_link" style="color:aaa;display:none" href="#{@id}">[#<xsl:value-of select="@id"/>]</a><xsl:apply-templates/>
    </xsl:element>
  </xsl:template>
 
