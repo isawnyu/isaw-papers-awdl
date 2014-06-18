@@ -29,7 +29,7 @@
 <p id="p4">Important for our present purpose, is that the core semantic layer of EDM includes the “related works” element:</p>
 
 <ul id="ul1">
- <li><code>&lt;"http://purl.org/dc/terms/isReferencedBy"&gt;</code></li>
+ <li><code>&lt;<a href="http://purl.org/dc/terms/isReferencedBy">http://purl.org/dc/terms/isReferencedBy</a>&gt;</code></li>
 </ul>
 
 <p id="p5">This is an adequate predicate for linking cited resources from the museum database to citing resources in the library system - and thus produce RDF triples. At least, that’s the general idea. There are of course practical obstacles.</p>
@@ -38,7 +38,7 @@
 
 <p id="p7">As a side note here, but essential for the adoption of Linked Data, we would also want to improve the “permalinks” for the objects the museum system produces, e.g.</p>
 
-<blockquote id="blockquote1"><code>&lt;http://194.176.109.154/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=84853&amp;viewType=detailView&gt;</code></blockquote>
+<blockquote id="blockquote1"><code>&lt;<a href="http://194.176.109.154/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=84853&amp;viewType=detailView&gt;">http://194.176.109.154/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=84853&amp;viewType=detailView</a>&gt;</code></blockquote>
 
 <p id="p8">It would be better to have all implementation-specific data removed and have our IP address substituted by the museum domain name, thus transforming the application dependent permalinks into standard HTTP URIs (Heath &amp; Bizer 2011), e.g.</p>
 
@@ -51,7 +51,7 @@
 <p id="p10">On the library side, identifiers pose the additional difficulty of having to decide which one(s) to use, both locally and globally. As we are part of a large library network and the “permalinks” produced on our library OPAC are actually queries into the shared database, they will change for every library "view”. Therefore, a publication will have a different permalink when accessed depending on whether access is through the general catalog of the network or through our local library “view”, e.g.</p>
 
 <ul id="ul3">
- <li><code>http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_ base=OPAC01</code></li>
+ <li><code><a href="http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_base=OPAC01">http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_base=OPAC01</a></code></li>
  <li><code>http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_base=KMKG</code></li>
 </ul>
 
