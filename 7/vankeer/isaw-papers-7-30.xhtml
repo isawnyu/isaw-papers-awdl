@@ -52,19 +52,19 @@
 
 <ul id="ul3">
  <li><code><a href="http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_base=OPAC01">http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_base=OPAC01</a></code></li>
- <li><code>http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_base=KMKG</code></li>
+ <li><code><a href="http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_base=KMKG">http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927&amp;local_base=KMKG</a></code></li>
 </ul>
 
 <p id="p10">Still, we can easily extract a better URI automatically by stripping after the last ampersand which gives us</p>
 
 <ul id="ul4">
- <li><code>http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927</code></li>
+ <li><code><a href="http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927">http://opac.libis.be:80/F/?func=direct&amp;doc_number=007483927</a></code></li>
 </ul>
 
 <p id="p11">But additionally, the newly implemented library discovery tool LIMO produces again different sets of "permalinks" for the same publication, which we cannot refine manually, e.g.</p>
 
-<ul id="ul5"> <li><code>https://services.libis.be/query?query=sys:LBS01007483927&amp;view=LIBISnet&amp;institution=LIBISNET&amp;builder=primo_opensearch&amp;host=limo.libis.be</code></li>
- <li><code>https://services.libis.be/query?query=sys:LBS01007483927&amp;view=KMKG&amp;institution=KMKG&amp;builder=primo_opensearch&amp;host=limo.libis.be</code></li>
+<ul id="ul5"> <li><code><a href="https://services.libis.be/query?query=sys:LBS01007483927&amp;view=LIBISnet&amp;institution=LIBISNET&amp;builder=primo_opensearch&amp;host=limo.libis.be">https://services.libis.be/query?query=sys:LBS01007483927&amp;view=LIBISnet&amp;institution=LIBISNET&amp;builder=primo_opensearch&amp;host=limo.libis.be</a></code></li>
+ <li><code><a href="https://services.libis.be/query?query=sys:LBS01007483927&amp;view=KMKG&amp;institution=KMKG&amp;builder=primo_opensearch&amp;host=limo.libis.be">https://services.libis.be/query?query=sys:LBS01007483927&amp;view=KMKG&amp;institution=KMKG&amp;builder=primo_opensearch&amp;host=limo.libis.be</a></code></li>
 </ul>
 
 <p id="p12">However, this last link will lead our users directly to our local LIMO “view”, with customized new features such as user-recommendations and access to locally licensed e-content.<sup><a class="footnote-reference" id="footnote-reference-9" href="#footnote-9">9</a></sup>  For this practical reason, we will deploy it as our primarily linking source. Nevertheless, we would also want users in the rest of the network and, ideally, the entire world to be able to discover objects from our collections through citing publications they have access to. LIMO should be able to achieve this functionality through server-side enrichment of related records. Moreover, this new tool is based on Ex-Libris' Primo service and the company is working on producing persistent LOD-friendly URI's that will return RDF for all Primo PNX records (Koster &amp; Harper 2013).</p>
@@ -81,15 +81,15 @@
 <p id="p14">Moreover, in producing a scholarly bibliography of our museum objects, linking to a specific edition of a publication in another library is just not an option. Library systems serve traditionally primarily as tools for locating physical copies (FRBR "items") of publications, but object citations are content disclosure and operate on a more general level. However, larger-scaled projects are increasingly trying to serve more globally scoped and content oriented (FRBR "manifestation/expression") identifiers, which suit our purpose better (Gatenby e.a. 2012).</p>
 
 <ul id="ul7">
- <li><code>https://www.worldcat.org/title/elkab-and-beyond-studies-in-honour-of-luc limme/oclc/476143033/editions?</code></li>
+ <li><code><a href="https://www.worldcat.org/title/elkab-and-beyond-studies-in-honour-of-luc limme/oclc/476143033/editions">https://www.worldcat.org/title/elkab-and-beyond-studies-in-honour-of-luc limme/oclc/476143033/editions</a></code></li>
 </ul>
 
 <p id="p15">And in the end, the development and implementation of RDA is intended as a remedy, since it (ideally) enables referencing entities on all four levels of FRBR group 1.<sup><a class="footnote-reference" id="footnote-reference-10" href="#footnote-10">10</a></sup>  Digital libraries as well have this advantage of being independent of the physical item, but they proliferate the identity crisis further (Hull e.a. 2008). Through publisher DOI's, commercial services such as Jstor, Open Access repositories such as OpenDOAR, and bibliographic or subject-related databases such as Zotero, APh, OEB, papyri.info... many additional sets and types of permalinks and URI's (often closed but nevertheless useful for researchers) can be assigned to the same publication or some part of it, e.g.</p>
 
 <ul id="ul8">
- <li><code>http://www.peeters-leuven.be/boekoverz.asp?nr=8662</code></li>
-<li><code>http://papyri.info/biblio/20718?q=elkab+and+beyond</code></li>
-<li><code>http://orbi.ulg.ac.be//handle/2268/23962</code></li>
+ <li><code><a href="http://www.peeters-leuven.be/boekoverz.asp?nr=8662">http://www.peeters-leuven.be/boekoverz.asp?nr=8662</a></code></li>
+<li><code><a href="http://papyri.info/biblio/20718?q=elkab+and+beyond">http://papyri.info/biblio/20718?q=elkab+and+beyond</a></code></li>
+<li><code><a href="http://orbi.ulg.ac.be//handle/2268/23962">http://orbi.ulg.ac.be//handle/2268/23962</a></code></li>
 </ul>
 
 <p id="p16">It is clearly impossible to trace, add and check all co-references of citing publications in all these systems manually. Implementing web-based systems and semantic technologies should allow automating this procedure in the future and addressing the issue on a larger scale.</p>
@@ -102,7 +102,7 @@
 <h2>Notes</h2>
 <p class="footnote" id="footnote-1"><sup><a href="#footnote-reference-1">1</a></sup> <a href="http://www.kmkg-mrah.be">http://www.kmkg-mrah.be</a>.</p>
 
-<p class="footnote" id="footnote-2"><sup><a href="#footnote-reference-2">2</a></sup> <a href="http://www.belspo.be/belspo/fedra/proj.asp?l=en&amp;COD=AG/LL/167">http://www.belspo.be/belspo/fedra/proj.asp?l=en&amp;COD=AG/LL/167</a>. The project is coordinated by Wouter Claes, chief librarian of the RMAH. It is partnered by LIBIS, http://www.libis.be, the central IT service for libraries, museums and archives of KULeuven.</p>
+<p class="footnote" id="footnote-2"><sup><a href="#footnote-reference-2">2</a></sup> <a href="http://www.belspo.be/belspo/fedra/proj.asp?l=en&amp;COD=AG/LL/167">http://www.belspo.be/belspo/fedra/proj.asp?l=en&amp;COD=AG/LL/167</a>. The project is coordinated by Wouter Claes, chief librarian of the RMAH. It is partnered by LIBIS, <a href="http://www.libis.be">http://www.libis.be</a>, the central IT service for libraries, museums and archives of KULeuven.</p>
 
 <p class="footnote" id="footnote-3"><sup><a href="#footnote-reference-3">3</a></sup> <a href="http://pro.europeana.eu/datasets">http://pro.europeana.eu/datasets</a>.</p>
 
