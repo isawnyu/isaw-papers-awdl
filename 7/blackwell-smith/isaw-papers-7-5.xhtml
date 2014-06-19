@@ -30,9 +30,9 @@
 <section id="section2">
 <h2>Separation of Concerns</h2>
 
-<p id="p2">Integrating a large, diverse, and evolving body of data, under development by a widely distributed group of scholars at many stages of their career, from first-year students of Greek to tenured Professors at major universities, requires rigorous attention to separation of concerns. We have tried to separate scholarly activities cleanly, and associate with each activity an archival data format most appropriate for it. </p>
+<p id="p3">Integrating a large, diverse, and evolving body of data, under development by a widely distributed group of scholars at many stages of their career, from first-year students of Greek to tenured Professors at major universities, requires rigorous attention to separation of concerns. We have tried to separate scholarly activities cleanly, and associate with each activity an archival data format most appropriate for it. </p>
 
-<p id="p3">For example, it is most convenient to edit a transcription of a Greek texts as a valid TEI-XML document.  Subsequent analysis of that document, however, is made considerably more difficult by the arbitrarily deep hierarchical structure of any non-trivial XML text; for many kinds of analysis, processing a flattened, tabular format is preferable. For serving, querying, and sharing the archival material, an RDF triplestore is most efficient and broadly useful. For presentation of data delivered to web browsers for human or machine consumption, a combination of XML, XSLT, and CSS is most convenient. Since 2012, much of the development on the CITE architecture has focused on a test-driven environment for a publication cycle of edit, test, integrate, compile, serve, and format.</p>
+<p id="p4">For example, it is most convenient to edit a transcription of a Greek texts as a valid TEI-XML document.  Subsequent analysis of that document, however, is made considerably more difficult by the arbitrarily deep hierarchical structure of any non-trivial XML text; for many kinds of analysis, processing a flattened, tabular format is preferable. For serving, querying, and sharing the archival material, an RDF triplestore is most efficient and broadly useful. For presentation of data delivered to web browsers for human or machine consumption, a combination of XML, XSLT, and CSS is most convenient. Since 2012, much of the development on the CITE architecture has focused on a test-driven environment for a publication cycle of edit, test, integrate, compile, serve, and format.</p>
 
 <table>
 <colgroup>
@@ -111,28 +111,28 @@
 <section id="section3">
 <h2>URN Citation</h2>
 
-<p id="p4">Every object in the HMT can be cited by a URN—CTS URNs for texts, CITE URNs for objects and images.<sup><a href="#footnote-1" id="footnote-reference-1"  class="footnote-reference">1</a></sup></p>
+<p id="p5">Every object in the HMT can be cited by a URN—CTS URNs for texts, CITE URNs for objects and images.<sup><a href="#footnote-1" id="footnote-reference-1"  class="footnote-reference">1</a></sup></p>
 
 <h2 id="amodeloftext">A Model of “Text”</h2>
 
-<p id="p5">The most complex data in the HMT are the texts, and for this separation of concerns to work we have to be working with a conceptual model of “text” that allows us to move from hierarchical XML to tabular data to RDF <em>and back to hiearchical XML</em> without loss. </p>
+<p id="p6">The most complex data in the HMT are the texts, and for this separation of concerns to work we have to be working with a conceptual model of “text” that allows us to move from hierarchical XML to tabular data to RDF <em>and back to hiearchical XML</em> without loss. </p>
 
-<p id="p6">For our purposes, we define a “text” as an “ordered hierarchy of citation objects”, following the <em>OHCO<sup>2</sup></em> defined by Neel Smith and Gabriel Weaver.<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup> By prioritizing <em>units of citation</em> over any other hierarchy, we can guarantee the most important scholarly activity: citation and retrieval. Any other content elements or orthogonal views of a text can be accomodated by this model, to a greater or lesser degree of granularity, depending on editorial decisions about citation.</p>
+<p id="p7">For our purposes, we define a “text” as an “ordered hierarchy of citation objects”, following the <em>OHCO<sup>2</sup></em> defined by Neel Smith and Gabriel Weaver.<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup> By prioritizing <em>units of citation</em> over any other hierarchy, we can guarantee the most important scholarly activity: citation and retrieval. Any other content elements or orthogonal views of a text can be accomodated by this model, to a greater or lesser degree of granularity, depending on editorial decisions about citation.</p>
 
-<p id="p7"><em>OHCO<sup>2</sup></em> is implemented in the CITE architecture through the Canonical Text Services protocol, which defines a structure for a catalog, a small number of valid requests for discovery and retrieval, and the format of responses to those requests. </p>
+<p id="p8"><em>OHCO<sup>2</sup></em> is implemented in the CITE architecture through the Canonical Text Services protocol, which defines a structure for a catalog, a small number of valid requests for discovery and retrieval, and the format of responses to those requests. </p>
 </section>
 
 <section id="section4">
 <h2>Collections and Images</h2>
 
-<p id="p8">CITE defines a “collection” as a group of data objects sharing a defined set of fields. Each object has a URN, and named fields defined in a catalog. Collections may be ordered or unordered; in an ordered collection each object has one field that defines its place in a sequence with an integer value. </p>
+<p id="p9">CITE defines a “collection” as a group of data objects sharing a defined set of fields. Each object has a URN, and named fields defined in a catalog. Collections may be ordered or unordered; in an ordered collection each object has one field that defines its place in a sequence with an integer value. </p>
 
 </section>
 
 <section id="section5">
 <h2 id="sub-referencestourns">Sub-references to URNs</h2>
 
-<p id="p9">CITE and CTS URNs define texts, collections, or images. Because scholarship demands citation to specific parts of objects—passages of text, regions-of-interest on objects, particular fields of a data-object—all CITE URNs may include a sub-reference, providing arbitary granularity, specific to the object defined by the URN. </p>
+<p id="p10">CITE and CTS URNs define texts, collections, or images. Because scholarship demands citation to specific parts of objects—passages of text, regions-of-interest on objects, particular fields of a data-object—all CITE URNs may include a sub-reference, providing arbitary granularity, specific to the object defined by the URN. </p>
 
 <table id="table1">
 <colgroup>
@@ -204,19 +204,19 @@
 <section id="section6.1">
 <h3>Validation and Testing</h3>
 
-<p id="p10">We use <a href="http://www.gradle.org">Gradle</a> to build our <code>.ttl</code> file, compiling XML texts, and collections and indices saved as <code>.csv</code> or <code>.tsv</code> files. Our build-scripts perform validation on XML files as well as other domain-specific tests. <code>HMT-MOM</code> (for “Mandatory Ongoing Maintanance”) includes scripts that enforce a specified canon of legitimate Unicode characters for Greek texts, ensure the referential integrity of URN values in indices and CITE Collection data structures, and support further manual review by providing visualizations of the state of completion for each folio our collaborators edit. <code>HMT-MOM</code> also does linguistic checking, matching each word-token against the Morpheus morphological parser; words that fail to match must be identified as non-standard forms actually present on a manuscript, non-lexical strings (numbers, case-endings, etc.), or new Greek vocabulary to be entered (ultimately) into a new lexicon of the language.</p>
+<p id="p11">We use <a href="http://www.gradle.org">Gradle</a> to build our <code>.ttl</code> file, compiling XML texts, and collections and indices saved as <code>.csv</code> or <code>.tsv</code> files. Our build-scripts perform validation on XML files as well as other domain-specific tests. <code>HMT-MOM</code> (for “Mandatory Ongoing Maintanance”) includes scripts that enforce a specified canon of legitimate Unicode characters for Greek texts, ensure the referential integrity of URN values in indices and CITE Collection data structures, and support further manual review by providing visualizations of the state of completion for each folio our collaborators edit. <code>HMT-MOM</code> also does linguistic checking, matching each word-token against the Morpheus morphological parser; words that fail to match must be identified as non-standard forms actually present on a manuscript, non-lexical strings (numbers, case-endings, etc.), or new Greek vocabulary to be entered (ultimately) into a new lexicon of the language.</p>
 </section>
 
 <section id="section6.2">
 <h3>Inferencing</h3>
 
-<p id="p11">The URN-syntax of all CITE citations captures hierarchical relationships between group/work/edition/citation (for texts) or namespace/collection/object (for data objects and images). The citations show us that <code>urn:cts:greekLit:tlg0012.tlg001.msA:1.11</code> (Homer, <em>Iliad</em>, MS. A edition, Book 1, line 11), <em>belongs to</em> <code>urn:cts:greekLit:tlg0012.tlg001</code> (Homer, <em>Iliad</em>), and so forth. </p>
+<p id="p12">The URN-syntax of all CITE citations captures hierarchical relationships between group/work/edition/citation (for texts) or namespace/collection/object (for data objects and images). The citations show us that <code>urn:cts:greekLit:tlg0012.tlg001.msA:1.11</code> (Homer, <em>Iliad</em>, MS. A edition, Book 1, line 11), <em>belongs to</em> <code>urn:cts:greekLit:tlg0012.tlg001</code> (Homer, <em>Iliad</em>), and so forth. </p>
 
-<p id="p12">Earlier versions of our CITE services—perl, Cocoon, eXist, AppEngine—were processor-intensive, sorting out hiearchical relationships a N-levels of depth on the fly. Some of the solutions to implementing a generic architecture for complex data were clever.</p>
+<p id="p13">Earlier versions of our CITE services—perl, Cocoon, eXist, AppEngine—were processor-intensive, sorting out hiearchical relationships a N-levels of depth on the fly. Some of the solutions to implementing a generic architecture for complex data were clever.</p>
 
-<p id="p13">In the current implementation of CITE/CTS services, we take advantage of RDF to avoid cleverness at all costs. The <a href="http://www.gradle.org">Gradle</a> build <code>citemgr</code> that processes our XML texts, tab-delimited and comma-delimited collections and indices, and their catalogues, and makes explicit at build-time every relationship necessary to capture the model of a text or collection-object.</p>
+<p id="p14">In the current implementation of CITE/CTS services, we take advantage of RDF to avoid cleverness at all costs. The <a href="http://www.gradle.org">Gradle</a> build <code>citemgr</code> that processes our XML texts, tab-delimited and comma-delimited collections and indices, and their catalogues, and makes explicit at build-time every relationship necessary to capture the model of a text or collection-object.</p>
 
-<p id="p14">A complete list of the RDF verbs used to describe the Homer Multitext data is available <a href="http://beta.hpcc.uh.edu:3030/ds/query?query=select+distinct+%3Fv+where+%7B%0D%0A%0D%0A%3Fs+%3Fv+%3Fo+.%0D%0A%0D%0A%7D&amp;output=text&amp;stylesheet=%2Fxml-to-html.xsl">through this query</a>:</p>
+<p id="p15">A complete list of the RDF verbs used to describe the Homer Multitext data is available <a href="http://beta.hpcc.uh.edu:3030/ds/query?query=select+distinct+%3Fv+where+%7B%0D%0A%0D%0A%3Fs+%3Fv+%3Fo+.%0D%0A%0D%0A%7D&amp;output=text&amp;stylesheet=%2Fxml-to-html.xsl">through this query</a>:</p>
 
 
 <table>
@@ -244,15 +244,15 @@
 </tbody>
 </table>
 
-<p id="p15">Building the CITE Services, then, is an exercise in constructing sufficient SPARQL queries to retrieve triples, based on their URN subjects.</p>
+<p id="p16">Building the CITE Services, then, is an exercise in constructing sufficient SPARQL queries to retrieve triples, based on their URN subjects.</p>
 
-<p id="p16">We have found this to accelerate our speed of developing and exposing HMT data, using a CITE service written as a Java Servlet, with a Fuseki triple-store. The build-process that constructs a <code>.ttl</code> file of 443,000 lines, containing all of our HMT data (texts, objects, images), currently takes one minute, 13 seconds, on a three-year-old Mac Pro.</p>
+<p id="p17">We have found this to accelerate our speed of developing and exposing HMT data, using a CITE service written as a Java Servlet, with a Fuseki triple-store. The build-process that constructs a <code>.ttl</code> file of 443,000 lines, containing all of our HMT data (texts, objects, images), currently takes one minute, 13 seconds, on a three-year-old Mac Pro.</p>
 
-<p id="p17">With this system, we have a very clean separation of concerns between archival data, served data, the network service, and end-user applications, with each standing entirely on their own. The archival texts and data are complete, of course, and end-users can retrieve them by resolving citations through the CITE service, and our RDF storage captures and makes explicit all intrinsic relationships among objects in our digital library. This strikes us a a clean, open, and forward-looking approach.</p>
+<p id="p18">With this system, we have a very clean separation of concerns between archival data, served data, the network service, and end-user applications, with each standing entirely on their own. The archival texts and data are complete, of course, and end-users can retrieve them by resolving citations through the CITE service, and our RDF storage captures and makes explicit all intrinsic relationships among objects in our digital library. This strikes us a a clean, open, and forward-looking approach.</p>
 
-<p id="p18">The cost is the time spent building the <code>.ttl</code> file (which is inconsiderabe), and inefficiency in the middle layers, between the CITE Service and the SPARQL endpoint. It takes 10 SPARQL queries to retrieve and re-assemble one citation-node of a text, in response to a CTS <code>GetPassagePlus</code> query.</p>
+<p id="p19">The cost is the time spent building the <code>.ttl</code> file (which is inconsiderabe), and inefficiency in the middle layers, between the CITE Service and the SPARQL endpoint. It takes 10 SPARQL queries to retrieve and re-assemble one citation-node of a text, in response to a CTS <code>GetPassagePlus</code> query.</p>
 
-<p id="p19">This approach may not scale. In our ongoing collaboration with the Department of Informatik at Leipzig University, which is working toward implementing a CTS library containing tens of thousands of books, we are finding that the computing cost of making an averge of 10 SPARQL queries for each requested citation-node, when the SPARQL server is hosting millions of statements, might require a more efficient, more clever, solution that works directly with URNs at query time. Alternatively, a client that connects to a SPARQL end point using web sockets may solve what is primarily an I/O bottleneck.  In either case, the value of having cleanly separated concerns—data, integration, storage, services, applications—will be even more apparent.</p>
+<p id="p20">This approach may not scale. In our ongoing collaboration with the Department of Informatik at Leipzig University, which is working toward implementing a CTS library containing tens of thousands of books, we are finding that the computing cost of making an averge of 10 SPARQL queries for each requested citation-node, when the SPARQL server is hosting millions of statements, might require a more efficient, more clever, solution that works directly with URNs at query time. Alternatively, a client that connects to a SPARQL end point using web sockets may solve what is primarily an I/O bottleneck.  In either case, the value of having cleanly separated concerns—data, integration, storage, services, applications—will be even more apparent.</p>
 </section>
 </section>
 
@@ -260,7 +260,7 @@
 
 <h2>Sourcecode and Data</h2>
 
-<p id="p20">All data for the Homer Multitext is freely available.</p>
+<p id="p21">All data for the Homer Multitext is freely available.</p>
 
 <table>
 <colgroup>
