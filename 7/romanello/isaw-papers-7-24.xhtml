@@ -23,7 +23,7 @@
 <p id="p3">Another possible use of the system is to display related bibliographic references within a reading environment for ancient texts. The examples that are used in this paper are taken from work that has been done to provide the GapVis interface of the Hellespont project<sup><a href="#footnote-1" class="footnote-reference" id="footnote-reference-1">1</a></sup> with such a functionality (see Fig. 1). One of the goals of the project is to create an enhanced virtual reading environment for one specific section of Thucydides’ <em>Histories</em>, the so-called “Pentecontaetia” (Thuc. 1,89 to 1,118). The references that are displayed in the secondary literature view of the reading interface are mined automatically from JSTOR and are shown together with links to the full text of the journal article as well as to the cited passage in the Perseus digital library <span class="citation">(Romanello and Thomas 2012)</span>.</p>
 
 <figure id="figure1">
-<img id="img1" src="figure1.png"/>
+<img id="img1" src="figure1.png" />
 <figcaption>Figure 1: Secondary literature view of the GapVis-based reading interface of the Hellespont project.</figcaption>
 </figure>
 
@@ -51,32 +51,64 @@ domain applications-->. To support the disambiguation of canonical citations suc
 <p id="p8">The content in the knowledge base is structured mostly using a combination of CIDOC-CRM and FRBRoo ontologies<sup><a href="#footnote-3" class="footnote-reference" id="footnote-reference-3">3</a></sup>: the Functional Requirements for Bibliographic Records (FRBR) model, in particular, is suitable for modelling information related to Classical (canonical) texts, as was showed by <span class="citation">Babeu et al. (2007, ref)</span>, and has influenced substantially the design of the CTS protocol. In those few cases where these ontologies did not suffice to model the data we have extended some of the classes they provide in what we called the HUmanities CITation Ontology (HuCit)<sup><a href="#footnote-4" class="footnote-reference" id="footnote-4">4</a></sup>.</p>
 
 <figure id="figure3">
-<pre><code>@prefix ecrm: &lt;http://erlangen-crm.org/current/&gt; .
-@prefix efrbroo: &lt;http://erlangen-crm.org/efrbroo/&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+<pre><code><span style="color:green">@prefix</span> ecrm: <span style="color:blue">&lt;http://erlangen-crm.org/current/&gt;</span> .
+<span style="color:green">@prefix</span> efrbroo: <span style="color:blue">&lt;http://erlangen-crm.org/efrbroo/&gt;</span> .
+<span style="color:green">@prefix</span> rdfs: <span style="color:blue">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span> .
 
-&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001&gt; a efrbroo:F1_Work;
-    ecrm:P131_is_identified_by &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#cts_urn&gt;;
-    efrbroo:P102_has_title &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#title&gt;;
-    owl:sameAs &lt;http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0003.tlg001&gt; .
+<span style="color:blue;font-weight:bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001&gt;</span> a efrbroo:F1_Work;
+    <span style="color:blue">ecrm:P131_is_identified_by</span> &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#cts_urn&gt;;
+    <span style="color:blue">efrbroo:P102_has_title</span> &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#title&gt;;
+    <span style="color:blue">owl:sameAs</span> &lt;http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0003.tlg001&gt; .
 
-&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#creation_event&gt; a efrbroo:F27_Work_Conception;
-    efrbroo:R16_initiated &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001&gt; .
+<span style="color:blue;font-weight:bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#creation_event&gt;</span> a efrbroo:F27_Work_Conception;
+    <span style="color:blue">efrbroo:R16_initiated</span> &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001&gt; .
 
-&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#cts_urn&gt; a ecrm:E42_Identifier;
-    rdfs:label &quot;urn:cts:greekLit:tlg0003.tlg001&quot;;
-    ecrm:P2_has_type &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#type_CTS_URN&gt; .
+<span style="color:blue;font-weight:bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#cts_urn&gt;</span> a ecrm:E42_Identifier;
+    <span style="color:blue">rdfs:label</span> <span style="color:red">&quot;urn:cts:greekLit:tlg0003.tlg001&quot;</span>;
+    <span style="color:blue">ecrm:P2_has_type</span> &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#type_CTS_URN&gt; .
 
-&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#title&gt; a efrbroo:E35_Title;
-    ecrm:P139_has_alternative_form &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#abbr1&gt; .
-    rdfs:label &quot;Der Peloponnesische Krieg&quot;@ger,
-        &quot;History of the Peloponnesian War&quot;@eng,
-        &quot;La Guerra del Peloponneso&quot;@ita,
-        &quot;l’Histoire de la guerre du Péloponnèse&quot;@fre .  
+<span style="color:blue;font-weight:bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#title&gt;</span> a efrbroo:E35_Title;
+    <span style="color:blue">ecrm:P139_has_alternative_form</span> &lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#abbr1&gt; .
+    <span style="color:blue;font-weight:bold">rdfs:label</span> <span style="color:red">&quot;Der Peloponnesische Krieg&quot;</span>@ger,
+        <span style="color:red">&quot;History of the Peloponnesian War&quot;</span>@eng,
+        <span style="color:red">&quot;La Guerra del Peloponneso&quot;</span>@ita,
+        <span style="color:red">&quot;l’Histoire de la guerre du Péloponnèse&quot;</span>@fre .  
 
-&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#abbr1&gt; a ecrm:E41_Appellation;
-    rdfs:label &quot;Thuc.&quot;;
-    ecrm:P2_has_type &lt;http://data.mr56k.info/type_abbreviation&gt; .</code></pre>
+<span style="color:blue;font-weight:bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#abbr1&gt;</span> a ecrm:E41_Appellation;
+    <span style="color:blue">rdfs:label</span> <span style="color:red">&quot;Thuc.&quot;</span>;
+    <span style="color:blue">ecrm:P2_has_type</span> &lt;http://data.mr56k.info/type_abbreviation&gt; .</code></pre>
+
+<!--
+<svg xmlns="http://www.w3.org/2000/svg">
+<g font-family="monospace" font-size="14px">
+<text x="0" y="14" xml:space="preserve"><tspan fill="#008000" font-weight="bold">@prefix&#160;</tspan><tspan fill="#19177C">ecrm:&#160;</tspan><tspan fill="#0000FF" font-weight="bold">&lt;http://erlangen-crm.org/current/&gt;&#160;.</tspan></text>
+<text x="0" y="33" xml:space="preserve"><tspan fill="#008000" font-weight="bold">@prefix&#160;</tspan><tspan fill="#19177C">efrbroo:&#160;</tspan><tspan fill="#0000FF" font-weight="bold">&lt;http://erlangen-crm.org/efrbroo/&gt;&#160;.</tspan></text>
+<text x="0" y="52" xml:space="preserve"><tspan fill="#008000" font-weight="bold">@prefix&#160;</tspan><tspan fill="#19177C">rdfs:&#160;</tspan><tspan fill="#0000FF" font-weight="bold">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;&#160;.</tspan></text>
+<text x="0" y="71" xml:space="preserve"></text>
+<text x="0" y="90" xml:space="preserve"><tspan fill="#0000FF" font-weight="bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001&gt;</tspan>&#160;<tspan fill="#666666">a</tspan>&#160;<tspan fill="#7D9029">efrbroo:F1_Work</tspan>;</text>
+<text x="0" y="109" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">ecrm:P131_is_identified_by</tspan>&#160;<tspan fill="#7D9029">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#cts_urn&gt;</tspan>;</text>
+<text x="0" y="128" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">efrbroo:P102_has_title</tspan>&#160;<tspan fill="#7D9029">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#title&gt;</tspan>;</text>
+<text x="0" y="147" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">owl:sameAs</tspan>&#160;<tspan fill="#7D9029">&lt;http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0003.tlg001&gt;</tspan>&#160;.</text>
+<text x="0" y="166" xml:space="preserve"></text>
+<text x="0" y="185" xml:space="preserve"><tspan fill="#0000FF" font-weight="bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#creation_event&gt;</tspan>&#160;<tspan fill="#666666">a</tspan>&#160;<tspan fill="#7D9029">efrbroo:F27_Work_Conception</tspan>;</text>
+<text x="0" y="204" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">efrbroo:R16_initiated</tspan>&#160;<tspan fill="#7D9029">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001&gt;</tspan>&#160;.</text>
+<text x="0" y="223" xml:space="preserve"></text>
+<text x="0" y="242" xml:space="preserve"><tspan fill="#0000FF" font-weight="bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#cts_urn&gt;</tspan>&#160;<tspan fill="#666666">a</tspan>&#160;<tspan fill="#7D9029">ecrm:E42_Identifier</tspan>;</text>
+<text x="0" y="261" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">rdfs:label</tspan>&#160;<tspan fill="#BA2121">&quot;urn:cts:greekLit:tlg0003.tlg001&quot;</tspan>;</text>
+<text x="0" y="280" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">ecrm:P2_has_type</tspan>&#160;<tspan fill="#7D9029">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#type_CTS_URN&gt;</tspan>&#160;.</text>
+<text x="0" y="299" xml:space="preserve"></text>
+<text x="0" y="318" xml:space="preserve"><tspan fill="#0000FF" font-weight="bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#title&gt;</tspan>&#160;<tspan fill="#666666">a</tspan>&#160;<tspan fill="#7D9029">efrbroo:E35_Title</tspan>;</text>
+<text x="0" y="337" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">ecrm:P139_has_alternative_form</tspan>&#160;<tspan fill="#7D9029">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#abbr1&gt;</tspan>&#160;.</text>
+<text x="0" y="356" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF" font-weight="bold">rdfs:label</tspan>&#160;<tspan fill="#BA2121">&quot;Der&#160;Peloponnesische&#160;Krieg&quot;</tspan><tspan fill="#7D9029">@ger</tspan>,</text>
+<text x="0" y="375" xml:space="preserve">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan fill="#BA2121">&quot;History&#160;of&#160;the&#160;Peloponnesian&#160;War&quot;</tspan><tspan fill="#7D9029">@eng</tspan>,</text>
+<text x="0" y="394" xml:space="preserve">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan fill="#BA2121">&quot;La&#160;Guerra&#160;del&#160;Peloponneso&quot;</tspan><tspan fill="#7D9029">@ita</tspan>,</text>
+<text x="0" y="413" xml:space="preserve">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<tspan fill="#BA2121">&quot;l’Histoire&#160;de&#160;la&#160;guerre&#160;du&#160;Péloponnèse&quot;</tspan><tspan fill="#7D9029">@fre</tspan>&#160;.&#160;&#160;</text>
+<text x="0" y="432" xml:space="preserve"></text>
+<text x="0" y="451" xml:space="preserve"><tspan fill="#0000FF" font-weight="bold">&lt;http://data.mr56k.info/urn:cts:greekLit:tlg0003.tlg001#abbr1&gt;</tspan>&#160;<tspan fill="#666666">a</tspan>&#160;<tspan fill="#7D9029">ecrm:E41_Appellation</tspan>;</text>
+<text x="0" y="470" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">rdfs:label</tspan>&#160;<tspan fill="#BA2121">&quot;Thuc.&quot;</tspan>;</text>
+<text x="0" y="489" xml:space="preserve">&#160;&#160;&#160;&#160;<tspan fill="#0000FF">ecrm:P2_has_type</tspan>&#160;<tspan fill="#7D9029">&lt;http://data.mr56k.info/type_abbreviation&gt;</tspan>&#160;.</text>
+</g></svg>
+-->
 <figcaption>Figure 3: The knowledge-base record for Thucydides’ <em>Histories</em> serialized as RDF/Turtle.</figcaption>
 </figure>
 
@@ -129,19 +161,19 @@ release --></p>
 
 <section id="footnotes">
 <h2>Notes</h2>
-<p class="footnote" id="footnote-1"><sup><a href="#footnote-reference-1">1</a></sup> The Hellespont Project: Integrating Arachne and Perseus, http://hellespont.dainst.org/.</p>
+<p class="footnote" id="footnote-1"><sup><a href="#footnote-reference-1">1</a></sup> The Hellespont Project: Integrating Arachne and Perseus, <a href="http://hellespont.dainst.org/">http://hellespont.dainst.org/</a>.</p>
 
-<p class="footnote" id="footnote-2"><sup><a href="#footnote-reference-2">2</a></sup> To date one of the main adopters of this technology is the Perseus project that has built on top of it to provide several functionalities of its digital library and catalog [internal ref?].</p>
+<p class="footnote" id="footnote-2"><sup><a href="#footnote-reference-2">2</a></sup> To date one of the main adopters of this technology is the Perseus project that has built on top of it to provide several functionalities of its digital library and catalog (see <a href="../almas-babeu-krohn/">Almas et al. this volume</a>).</p>
 
 <p class="footnote" id="footnote-3"><sup><a href="#footnote-reference-3">3</a></sup> The Erlangen OWL implementations of both CIDOC-CRM and FRBRoo were used: they are available respectively at <a href="http://erlangen-crm.org/"><code class="url">http://erlangen-crm.org/</code></a> and <a href="http://erlangen-crm.org/efrbroo"><code class="url">http://erlangen-crm.org/efrbroo</code></a>.</p>
 
 <p class="footnote" id="footnote-4"><sup><a href="#footnote-reference-4">4</a></sup> The HuCit namespace is <a href="http://purl.org/net/hucit"><code class="url">http://purl.org/net/hucit</code></a>; the source code and some examples can be found in the code repository at <a href="https://bitbucket.org/56k/hucit/"><code class="url">https://bitbucket.org/56k/hucit/</code></a>.</p>
 
-<p class="footnote" id="footnote-5"><sup><a href="#footnote-reference-5">5</a></sup> Pelagios: Enable Linked Ancient Geodata In Open Systems, http://pelagios-project.blogspot.com.</p>
+<p class="footnote" id="footnote-5"><sup><a href="#footnote-reference-5">5</a></sup> Pelagios: Enable Linked Ancient Geodata In Open Systems, <a href="http://pelagios-project.blogspot.com">http://pelagios-project.blogspot.com</a>.</p>
 
-<p class="footnote" id="footnote-6"><sup><a href="#footnote-reference-6">6</a></sup> Open Annotation Data Model, http://www.openannotation.org/spec/core/.<a href="#fnref6">↩</a></p>
+<p class="footnote" id="footnote-6"><sup><a href="#footnote-reference-6">6</a></sup> Open Annotation Data Model, <a href="http://www.openannotation.org/spec/core/">http://www.openannotation.org/spec/core/</a>.</p>
 
-<p class="footnote" id="footnote-7"><sup><a href="#footnote-reference-7">7</a></sup> For further details about the design of HuCit see <span class="citation">Romanello and Pasin (2013)</span>.</p>
+<p class="footnote" id="footnote-7"><sup><a href="#footnote-reference-7">7</a></sup> For further details about the design of HuCit see Romanello and Pasin (2013).</p>
 </section>
 
 <section id="works-cited">
