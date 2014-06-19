@@ -29,7 +29,7 @@
 
 <p id="p3">Once we completed the step of defining our URI schemes, our next priority has been to embark on publishing stable URIs for the various pre-existing resources in the library. Once we have completed this step for all of the major resource types in the library, we will begin to alter the way in which the resource content is represented to advertise its linkable features via RDF-A.</p> 
 
-<p id="p4">We decided upon this incremental approach because, given the large volume of resources in the Perseus Library, and the limited amount of manpower to get the work done, we felt it would be most beneficial to our own work, and our community of users, to publish our URIs as we go, and not wait until delivery of all the underling resources could also be made compliant.</p>
+<p id="p4">We decided upon this incremental approach because, given the large volume of resources in the Perseus Library, and the limited amount of manpower to get the work done, we felt it would be most beneficial to our own work, and our community of users, to publish our URIs as we go, and not wait until delivery of all the underlying resources could also be made compliant.</p>
 </section>
 
 <section id="section2">           
@@ -68,7 +68,7 @@ texts and citations. This is maybe best illustrated by example.</p>
 
 <blockquote><code>urn:cts:greekLit:tlg0012.tlg001.perseus-grc1</code></blockquote>
 
-<p id="p15">The next URN identifies Book 1 Line 100 of the notional work the Iliad:</p>
+<p id="p15">The next URN identifies Book 1 Line 100 of the notional work the <i>Iliad</i>:</p>
 
 <blockquote><code>urn:cts:greekLit:tlg0012.tlg001:1.100</code></blockquote> 
 
@@ -140,7 +140,7 @@ texts and citations. This is maybe best illustrated by example.</p>
 
 <h3>HTTP Responses</h3>
 
-<p id="p29">The default response for any URI request whose HTTP Headers indicates that the calling client accepts text/html is a redirect, specifying the HTTP 302 response code, to the HTML display for the page for the requested resource in the corresponding Perseus user interface. As discussed above, requests for specific supported formats (currently xml for citations, atom for catalog records can be made by appending a path element for the format to the resource URI. The response for these requests will typically be the resource contents in the requested format, and an HTTP 200 response code.</p>  
+<p id="p29">The default response for any URI request whose HTTP Headers indicates that the calling client accepts text/html is a redirect, specifying the HTTP 302 response code, to the HTML display for the page for the requested resource in the corresponding Perseus user interface. As discussed above, requests for specific supported formats (currently xml for citations, atom for catalog records) can be made by appending a path element for the format to the resource URI. The response for these requests will typically be the resource contents in the requested format, and an HTTP 200 response code.</p>  
 
 <p id="p30">In order to enable people to cite textual resources which have CTS URNs assigned, but which are not currently digitized in the Perseus Digital Library, we redirect URIs referencing these resources to the Perseus Catalog. The response code for these redirects is HTTP 303 (See Other). If we have a catalog record for the requested resource, the target of the redirect is that catalog record, which may contain links to other locations at which you can find the actual text (such as the Internet Archive or Google Books, etc.). Although not yet implemented, in the future, if a resource <em>not found</em> in the Catalog is requested, we plan to redirect to an interface through which data for the resource can be submitted for inclusion in the catalog.</p>
 
