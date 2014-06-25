@@ -8,6 +8,6 @@
      </a>
     </p>
 
-  <p class="textindent0" style="text-align:center" onclick="awld.init();show_id_links();this.style.display = 'none'"  onmouseover = "this.style.color = 'red'"
-    onmouseout  = "this.style.color = 'black'">[<a href="#">Click to enable contextual popups</a>]</p>
+  <!-- <p class="textindent0" style="text-align:center" onclick="awld.init();show_id_links();this.style.display = 'none'"  onmouseover = "this.style.color = 'red'"
+    onmouseout  = "this.style.color = 'black'">[<a href="#">Click to enable contextual popups</a>]</p> -->
 </div>
