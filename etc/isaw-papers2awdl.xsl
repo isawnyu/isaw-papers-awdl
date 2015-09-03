@@ -128,11 +128,11 @@ $('.id_link').hide();
  <xsl:template match="h:p[@id]">
   
   <xsl:element name="p">
-   <xsl:attribute name="onmouseover">document.getElementById('<xsl:value-of select="@id"/>anchor').style.display=''</xsl:attribute>
-   <xsl:attribute name="onmouseleave">document.getElementById('<xsl:value-of select="@id"/>anchor').style.display='none'</xsl:attribute>
+   <xsl:attribute name="onmouseover">document.getElementById('<xsl:value-of select="@id"/>anchor').style.display='';document.getElementById('<xsl:value-of select="@id"/>anchor_label').style.display='';</xsl:attribute>
+   <xsl:attribute name="onmouseleave">document.getElementById('<xsl:value-of select="@id"/>anchor').style.display='none';document.getElementById('<xsl:value-of select="@id"/>anchor_label').style.display='none';</xsl:attribute>
    <xsl:apply-templates select="@*"/>
 
-   <xsl:apply-templates/><a id="{@id}anchor" class="id_link" style="color:aaa;display:none; float:right" href="#{@id}">[#<xsl:value-of select="@id"/>]</a>
+   <xsl:apply-templates/><a id="{@id}anchor" class="id_link" style="color:aaa;display:none" href="#{@id}">↩</a><span id="{@id}anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#{@id}">#<xsl:value-of select="@id"/>&#160;&#160;</span>
    </xsl:element>
  </xsl:template>
 
