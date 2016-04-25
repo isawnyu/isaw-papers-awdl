@@ -18,6 +18,10 @@ body {
  width:70%;
 }
 
+.edition-line {
+ tab-size: 8;
+}
+
 .editorial-note {
  font-style:italic;
  margin-top:5px;
@@ -97,6 +101,7 @@ p {
  margin: 0;
  line-height:1.4em;
  text-align: justify;
+ tab-size: 8;
  }
  
 .subjects,#subjects {
