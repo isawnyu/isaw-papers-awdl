@@ -24,60 +24,60 @@
 <section id="section1">
 <h2>Overview</h2>
 
-<p class="textindent0" id="p1">The Perseus Digital Library is currently working towards making all of its data available according to the best practices outlined by Heath and Bizer (<a href="#work-cited-1">2011</a>).</p>
+<p class="textindent0" id="p1" rel="dcterms:hasPart" resource="#p1">The Perseus Digital Library is currently working towards making all of its data available according to the best practices outlined by Heath and Bizer (<a href="#work-cited-1">2011</a>).</p>
 
-<p id="p2">We started by thinking carefully about the URIs that we are using to name and address the Perseus texts, catalog metadata, and other data objects from the Perseus Digital Library, so that we could feel reasonably confident in ensuring that these URIs will be stable and properly dereferenceable. We solicited and took into account feedback from members of the digital classics community on our approach to the definition of our URIs.</p>  
+<p id="p2" rel="dcterms:hasPart" resource="#p2">We started by thinking carefully about the URIs that we are using to name and address the Perseus texts, catalog metadata, and other data objects from the Perseus Digital Library, so that we could feel reasonably confident in ensuring that these URIs will be stable and properly dereferenceable. We solicited and took into account feedback from members of the digital classics community on our approach to the definition of our URIs.</p>  
 
-<p id="p3">Once we completed the step of defining our URI schemes, our next priority has been to embark on publishing stable URIs for the various pre-existing resources in the library. Once we have completed this step for all of the major resource types in the library, we will begin to alter the way in which the resource content is represented to advertise its linkable features via RDF-A.</p> 
+<p id="p3" rel="dcterms:hasPart" resource="#p3">Once we completed the step of defining our URI schemes, our next priority has been to embark on publishing stable URIs for the various pre-existing resources in the library. Once we have completed this step for all of the major resource types in the library, we will begin to alter the way in which the resource content is represented to advertise its linkable features via RDF-A.</p> 
 
-<p id="p4">We decided upon this incremental approach because, given the large volume of resources in the Perseus Library, and the limited amount of manpower to get the work done, we felt it would be most beneficial to our own work, and our community of users, to publish our URIs as we go, and not wait until delivery of all the underlying resources could also be made compliant.</p>
+<p id="p4" rel="dcterms:hasPart" resource="#p4">We decided upon this incremental approach because, given the large volume of resources in the Perseus Library, and the limited amount of manpower to get the work done, we felt it would be most beneficial to our own work, and our community of users, to publish our URIs as we go, and not wait until delivery of all the underlying resources could also be made compliant.</p>
 </section>
 
 <section id="section2">           
 
 <h2>URIs in the Perseus Digital Library</h2>
 
-<p id="p5">As of this writing, we have released URIs for texts, citations and bibliographic catalog records. Work is in progress on authors, names and place entities, Greek and Latin lexical entities, and artifacts and images. Future efforts will include a variety of annotation types.</p>
+<p id="p5" rel="dcterms:hasPart" resource="#p5">As of this writing, we have released URIs for texts, citations and bibliographic catalog records. Work is in progress on authors, names and place entities, Greek and Latin lexical entities, and artifacts and images. Future efforts will include a variety of annotation types.</p>
 
-<p id="p6">All Perseus data URIs are published under the <em>http://data.perseus.org</em> URI prefix, followed by one or more path components indicating the resource type, then a unique identifier for the resources, and an optional path component identifying a specific output format for the resource.</p>
+<p id="p6" rel="dcterms:hasPart" resource="#p6">All Perseus data URIs are published under the <em>http://data.perseus.org</em> URI prefix, followed by one or more path components indicating the resource type, then a unique identifier for the resources, and an optional path component identifying a specific output format for the resource.</p>
 
 
 <h3>Citations and Texts</h3>
 
-<p id="p7">The Perseus stable URIs for citations and texts leverage Canonical Text Services (CTS) URNs (<a class="work-cited-reference" href="#work-cited-1">Blackwell and Smith</a>), enabling us to take advantage of the CTS data model while still supporting Linked Data standards.</p>
+<p id="p7" rel="dcterms:hasPart" resource="#p7">The Perseus stable URIs for citations and texts leverage Canonical Text Services (CTS) URNs (<a class="work-cited-reference" href="#work-cited-1">Blackwell and Smith</a>), enabling us to take advantage of the CTS data model while still supporting Linked Data standards.</p>
 
-<p id="p8">Individual passage citations can be retrieved at URIs which adhere to the following syntax:</p>
+<p id="p8" rel="dcterms:hasPart" resource="#p8">Individual passage citations can be retrieved at URIs which adhere to the following syntax:</p>
 
 <blockquote><code>http://data.perseus.org/citations/&lt;CTS PASSAGE URN&gt;[/format]</code></blockquote>
 
-<p id="p9">Currently supported data formats for citations are HTML and XML. In the future RDF/XML and JSON-LD may also be supported.</p>
+<p id="p9" rel="dcterms:hasPart" resource="#p9">Currently supported data formats for citations are HTML and XML. In the future RDF/XML and JSON-LD may also be supported.</p>
 
-<p id="p10">The URI syntax for an entire text, without a passage citation is:</p>
+<p id="p10" rel="dcterms:hasPart" resource="#p10">The URI syntax for an entire text, without a passage citation is:</p>
 <blockquote><code>http://data.perseus.orgs/texts/&lt;CTS TEXT URN&gt;[/format]</code></blockquote>
 
-<p id="p11">HTML is the only currently supported format for full text URIs, but the XML format will be available soon.</p>
+<p id="p11" rel="dcterms:hasPart" resource="#p11">HTML is the only currently supported format for full text URIs, but the XML format will be available soon.</p>
 
 <h3>Combining CTS and URI standards</h3>
 
-<p id="p12">By combining the CTS and URI standards we produce semantically meaningful URIs for 
+<p id="p12" rel="dcterms:hasPart" resource="#p12">By combining the CTS and URI standards we produce semantically meaningful URIs for 
 texts and citations. This is maybe best illustrated by example.</p>
 
-<p id="p13">The following URN identifies the notional work, Homer's <i>Iliad</i>, without reference to a specific edition or translation of that work:</p>
+<p id="p13" rel="dcterms:hasPart" resource="#p13">The following URN identifies the notional work, Homer's <i>Iliad</i>, without reference to a specific edition or translation of that work:</p>
 <blockquote><code>urn:cts:greekLit:tlg0012.tlg001</code></blockquote>
 
-<p id="p14">We can append an edition identifier to the above URN to specify the unique resource which is Perseus' TEI XML version of Homer's <i>Iliad</i> that is identified in the Perseus CTS inventory as 'perseus-grc1'.</p>
+<p id="p14" rel="dcterms:hasPart" resource="#p14">We can append an edition identifier to the above URN to specify the unique resource which is Perseus' TEI XML version of Homer's <i>Iliad</i> that is identified in the Perseus CTS inventory as 'perseus-grc1'.</p>
 
 <blockquote><code>urn:cts:greekLit:tlg0012.tlg001.perseus-grc1</code></blockquote>
 
-<p id="p15">The next URN identifies Book 1 Line 100 of the notional work the <i>Iliad</i>:</p>
+<p id="p15" rel="dcterms:hasPart" resource="#p15">The next URN identifies Book 1 Line 100 of the notional work the <i>Iliad</i>:</p>
 
 <blockquote><code>urn:cts:greekLit:tlg0012.tlg001:1.100</code></blockquote> 
 
-<p id="p16">And this one identifies that line in the specific Perseus edition:</p>
+<p id="p16" rel="dcterms:hasPart" resource="#p16">And this one identifies that line in the specific Perseus edition:</p>
 
 <blockquote><code>urn:cts:greekLit:tlg0012.tlg001.perseus-grc1:1.100</code></blockquote> 
 
-<p id="p17">Any of these URNs can be resolved at a stable URI by prefixing them with the <em>http://data.perseus.org</em> URI prefix and path which identifies the resource type (i.e. in this case '<em>text</em>' or '<em>citations</em>'):</p>
+<p id="p17" rel="dcterms:hasPart" resource="#p17">Any of these URNs can be resolved at a stable URI by prefixing them with the <em>http://data.perseus.org</em> URI prefix and path which identifies the resource type (i.e. in this case '<em>text</em>' or '<em>citations</em>'):</p>
 
 <blockquote>
 <a href="http://data.perseus.org/texts/urn:cts:greekLit:tlg0012.tlg001">http://data.perseus.org/texts/urn:cts:greekLit:tlg0012.tlg001</a><br/>
@@ -86,21 +86,21 @@ texts and citations. This is maybe best illustrated by example.</p>
 <a href="http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg001.perseus-grc1:1.100">http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg001.perseus-grc1:1.100</a><br/>
 </blockquote>
 
-<p id="p19">Note that, per the CTS standard, if you request a URN for a notional work without including an edition or translation specifier, then we return the default edition for that work in our repository, which in this case happens to be the perseus-grc1 edition.</p>
+<p id="p19" rel="dcterms:hasPart" resource="#p19">Note that, per the CTS standard, if you request a URN for a notional work without including an edition or translation specifier, then we return the default edition for that work in our repository, which in this case happens to be the perseus-grc1 edition.</p>
 
-<p id="p20">Although not yet implemented, in the future we will take advantage of the subreference feature of CTS URNs to support URIs for every word or contiguous sequence of words in a text, for example:</p>
+<p id="p20" rel="dcterms:hasPart" resource="#p20">Although not yet implemented, in the future we will take advantage of the subreference feature of CTS URNs to support URIs for every word or contiguous sequence of words in a text, for example:</p>
 
 <blockquote>
 <code>http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg001.perseus-grc1:1.1@μῆνιν[1]</code>
 </blockquote>
 
-<p id="p21">You can explicity link to the TEI XML format for the citation, rather than the default HTML display, by appending the optional format path to the URI:</p>
+<p id="p21" rel="dcterms:hasPart" resource="#p21">You can explicity link to the TEI XML format for the citation, rather than the default HTML display, by appending the optional format path to the URI:</p>
 
 <blockquote><a href="http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg001.perseus-grc1:1.100/xml">http://data.perseus.org/citations/urn:cts:greekLit:tlg0012.tlg001.perseus-grc1:1.100/xml</a></blockquote>        
 
 <h4>Catalog Records</h4>
 
-<p id="p22">We currently publish URIs for work and edition/translation level records, as well as the CTS textgroup. URIs for authors, editors and translators are forthcoming. We leverage the CTS URNs for the texts in the catalog record URIs. The URI for a catalog record can be distinguished from that of the text itself by the 'catalog' path element:</p>
+<p id="p22" rel="dcterms:hasPart" resource="#p22">We currently publish URIs for work and edition/translation level records, as well as the CTS textgroup. URIs for authors, editors and translators are forthcoming. We leverage the CTS URNs for the texts in the catalog record URIs. The URI for a catalog record can be distinguished from that of the text itself by the 'catalog' path element:</p>
 
 <blockquote>
 <code>http://data.perseus.org/catalog/&lt;textgroup urn&gt;[/format]</code><br/>
@@ -109,7 +109,7 @@ texts and citations. This is maybe best illustrated by example.</p>
 <code>http://data.perseus.org/catalog/&lt;translation urn&gt;[/format]</code>
 </blockquote>
 
-<p id="p23">So for example, the following are the canonical URIs for objects in the CTS hierarchy for Homer's <i>Iliad</i>:</p>
+<p id="p23" rel="dcterms:hasPart" resource="#p23">So for example, the following are the canonical URIs for objects in the CTS hierarchy for Homer's <i>Iliad</i>:</p>
 
 <blockquote>
 <a title="Textgroup URI for Homer" href="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012">http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012</a><br/>
@@ -118,41 +118,41 @@ texts and citations. This is maybe best illustrated by example.</p>
 <a title="Translation URI for The Iliad" href="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001.perseus-eng1"> http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001.perseus-eng1</a>
 </blockquote>
 
-<p id="p24">You can explicity link to an ATOM feed, rather than the default HTML interface, of the catalog metadata for a textgroup, work or edition/translation by appending the optional format path to the URI:</p>
+<p id="p24" rel="dcterms:hasPart" resource="#p24">You can explicity link to an ATOM feed, rather than the default HTML interface, of the catalog metadata for a textgroup, work or edition/translation by appending the optional format path to the URI:</p>
 
 <blockquote>           
 <a title="atom feed for The Iliad" href="http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001/atom"> http://data.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001/atom</a><br/>
 </blockquote>
 
-<p id="p25">Support for alternate formats of RDF and JSON for catalog records is forthcoming.</p>
+<p id="p25" rel="dcterms:hasPart" resource="#p25">Support for alternate formats of RDF and JSON for catalog records is forthcoming.</p>
 
 <h4>Publication</h4>
 
-<p id="p26">The URIs themselves are currently published in the user interfaces of the Perseus Digital Library.  For texts and citations, they are included in the <em>"Data Identifiers"</em> widget which appears on any text display:</p>
+<p id="p26" rel="dcterms:hasPart" resource="#p26">The URIs themselves are currently published in the user interfaces of the Perseus Digital Library.  For texts and citations, they are included in the <em>"Data Identifiers"</em> widget which appears on any text display:</p>
 <figure id="figure1">
 <img id="img1" src="figure1.png" alt="Data Identifiers Widget"/><br/>
 </figure>
-<p id="p27">For the catalog records, they appear on the top of each catalog display:</p>
+<p id="p27" rel="dcterms:hasPart" resource="#p27">For the catalog records, they appear on the top of each catalog display:</p>
 <figure id="figure2">
 <img id="img2" src="figure2.png" alt="Catalog Record Display"/><br/>
 </figure>
 
-<p id="p28">VoID files for all URIs are forthcoming.</p>
+<p id="p28" rel="dcterms:hasPart" resource="#p28">VoID files for all URIs are forthcoming.</p>
 
 <h3>HTTP Responses</h3>
 
-<p id="p29">The default response for any URI request whose HTTP Headers indicates that the calling client accepts text/html is a redirect, specifying the HTTP 302 response code, to the HTML display for the page for the requested resource in the corresponding Perseus user interface. As discussed above, requests for specific supported formats (currently xml for citations, atom for catalog records) can be made by appending a path element for the format to the resource URI. The response for these requests will typically be the resource contents in the requested format, and an HTTP 200 response code.</p>  
+<p id="p29" rel="dcterms:hasPart" resource="#p29">The default response for any URI request whose HTTP Headers indicates that the calling client accepts text/html is a redirect, specifying the HTTP 302 response code, to the HTML display for the page for the requested resource in the corresponding Perseus user interface. As discussed above, requests for specific supported formats (currently xml for citations, atom for catalog records) can be made by appending a path element for the format to the resource URI. The response for these requests will typically be the resource contents in the requested format, and an HTTP 200 response code.</p>  
 
-<p id="p30">In order to enable people to cite textual resources which have CTS URNs assigned, but which are not currently digitized in the Perseus Digital Library, we redirect URIs referencing these resources to the Perseus Catalog. The response code for these redirects is HTTP 303 (See Other). If we have a catalog record for the requested resource, the target of the redirect is that catalog record, which may contain links to other locations at which you can find the actual text (such as the Internet Archive or Google Books, etc.). Although not yet implemented, in the future, if a resource <em>not found</em> in the Catalog is requested, we plan to redirect to an interface through which data for the resource can be submitted for inclusion in the catalog.</p>
+<p id="p30" rel="dcterms:hasPart" resource="#p30">In order to enable people to cite textual resources which have CTS URNs assigned, but which are not currently digitized in the Perseus Digital Library, we redirect URIs referencing these resources to the Perseus Catalog. The response code for these redirects is HTTP 303 (See Other). If we have a catalog record for the requested resource, the target of the redirect is that catalog record, which may contain links to other locations at which you can find the actual text (such as the Internet Archive or Google Books, etc.). Although not yet implemented, in the future, if a resource <em>not found</em> in the Catalog is requested, we plan to redirect to an interface through which data for the resource can be submitted for inclusion in the catalog.</p>
 
 <h4>Resource Contents</h4>
 
-<p id="p31">As mentioned previously, currently the resources served at the Perseus URIs do not advertise any linked/linkable data contained within them via RDF. This is essential for full compliance to linked data best practices and is on our roadmap for future releases of the Perseus interfaces to the data.</p>
+<p id="p31" rel="dcterms:hasPart" resource="#p31">As mentioned previously, currently the resources served at the Perseus URIs do not advertise any linked/linkable data contained within them via RDF. This is essential for full compliance to linked data best practices and is on our roadmap for future releases of the Perseus interfaces to the data.</p>
 </section>
 <section id="section3">
 <h2>Data Sharing Initiatives</h2>
 
-<p id="p32">In our efforts to connect with other groups in the scholarly and library communities, the Perseus Digital Library has made our authority record data for classical authors available to the <a href="http://viaf.org">Virtual International Authority File</a>.  The contribution of names from our author records will expand the VIAF name clusters, adding different forms of a given author’s name, and assist in VIAF’s goal of building truly international authorities that are useful to libraries and scholars. This relationship will also help the catalog to provide links to the VIAF clusters so as to make as much information about an author available and forward the further development of the Semantic Web.</p>
+<p id="p32" rel="dcterms:hasPart" resource="#p32">In our efforts to connect with other groups in the scholarly and library communities, the Perseus Digital Library has made our authority record data for classical authors available to the <a href="http://viaf.org">Virtual International Authority File</a>.  The contribution of names from our author records will expand the VIAF name clusters, adding different forms of a given author’s name, and assist in VIAF’s goal of building truly international authorities that are useful to libraries and scholars. This relationship will also help the catalog to provide links to the VIAF clusters so as to make as much information about an author available and forward the further development of the Semantic Web.</p>
 </section>
 
 <section id="works-cited">
