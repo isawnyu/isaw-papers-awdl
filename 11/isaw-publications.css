@@ -104,6 +104,11 @@ p {
  tab-size: 8;
  }
  
+.doi {
+ text-align:center;
+ padding: 10px;
+}
+
 .subjects,#subjects {
  text-indent:0;
   margin-left:3em;

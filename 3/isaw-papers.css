@@ -55,6 +55,10 @@ p {
    font-size:1.5em;
    text-align:center
   }
+
+header > h2 {
+ text-align: center;
+ }
  
   h2 {
    margin-top:1em;
