@@ -15,6 +15,12 @@ with open("10/index.xhtml", "r") as article :
 	soup = BeautifulSoup(article, "lxml")
 images = soup.find_all("img", {"src" : re.compile("images/*")}) 
 
+with open("10/isaw-papers.css", "r") as css_file :
+	css = css_file.read()
+
+soup.head.append(soup.new_tag("style"))
+soup.head.style.append(css)
+
 
 for i in range(0, len(images)):
 	source = images[i]["src"]
