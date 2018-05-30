@@ -92,7 +92,7 @@ def js_p(soup) :
 			span.append("#"+ids)
 			p.append(span)
 
-def header(head, soup):
+def header(head, soup, download_link):
 	"""Adds the content of the external file head.xml in the html file of an article and includes link to download the file
    
     :param head: content of head.xml
@@ -101,9 +101,9 @@ def header(head, soup):
     :type soup: BeautifulSoup object
     """
 	div_head = ""
-	head = BeautifulSoup(head, "html.parser")
+	
 	download_message = head.new_tag("p", style="text-align:center;margin-top:1em")
-	download_link = head.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/isaw-papers-"+str(j)+"-offprint.xhtml")
+	
 	download_link.append("single file")
 	download_message.append("This article can be downloaded as a ")
 	download_message.append(download_link)
@@ -149,6 +149,7 @@ for j in range(1, 14) :
 		soup = BeautifulSoup(article,"html.parser")
 	images = soup.find_all("img", {"src" : re.compile("images/*")}) 
 	path = "isaw-papers/isaw-papers-"+str(j)+"/"
+	
 	image64(images, path, soup)
 	css(soup)
 	js_p(soup)
@@ -156,27 +157,33 @@ for j in range(1, 14) :
 	video(soup)
 
 	with open(str(j)+"/head.xml", "r") as head:
-		header(head, soup)
+		head = BeautifulSoup(head, "html.parser")
+		download_link = head.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/isaw-papers-"+str(j)+"-offprint.xhtml")
+		header(head, soup, download_link)
 
 	# Collection of articles ISAW Papers 7 (other numbers can be added if future articles are collections)
 	if j == 7 : 
 		for element in os.listdir('isaw-papers/isaw-papers-'+str(j)):
 			if os.path.isdir('isaw-papers/isaw-papers-'+str(j)+ '/'+str(element)):
 				for el in os.listdir('isaw-papers/isaw-papers-'+ str(j)+ '/'+ str(element)):
+					
 					if re.match("isaw-papers-"+str(j)+"-*", str(el)):
 						with open ('isaw-papers/isaw-papers-'+str(j)+'/'+ str(element) + '/'+ str(el), "r") as article : 
 							soup_7 = BeautifulSoup(article, "html.parser")
 						if soup_7.img :
-							images = soup_7.find_all("img") 
+							images = soup_7.find_all("img") 			
 							path = "isaw-papers/isaw-papers-"+str(j)+"/"+str(element) + "/"
 							if element != "meadows-gruber" and element != "pett" :
 								image64(images, path, soup)
+						el = el.replace('.xhtml', '')
 						css(soup_7)
 						js_figures(soup_7)
 						js_p(soup_7)
 						video(soup_7)
 						with open(str(j)+'/'+ str(element) + "/head.xml", "r") as head:
-							header(head, soup_7)
+							head = BeautifulSoup(head, "html.parser")
+							download_link = head.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/"+str(element)+"/"+str(el)+"-offprint.xhtml")
+							header(head, soup_7, download_link)
 
 						paragraphs_footer = soup_7.footer.find_all("p")
 
@@ -188,8 +195,8 @@ for j in range(1, 14) :
 
 						if not os.path.exists(str(j)+'/'+ str(element)):
 							os.makedirs(str(j)+'/'+ str(element))
-
-						with open (str(j)+'/'+ str(element) + '/'+ str(el), "w") as article : 
+						print(el)
+						with open (str(j)+'/'+ str(element) + '/'+ str(el)+"-offprint.xhtml", "w") as article : 
 							article.write(str(soup_7))
 						with open (str(j)+'/'+ str(element) + "/index.xhtml", "w") as article : 
 							article.write(str(soup_7))
