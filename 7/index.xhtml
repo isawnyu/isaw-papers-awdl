@@ -23,13 +23,26 @@
 <link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
 <style>@media print {
 
-@page{ padding: 2cm; }
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
 
-  ul {
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
   page-break-inside: avoid;
 }
 
-h1, h2, h3, h4{
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
   page-break-after:avoid;
   page-break-inside:avoid
 }
@@ -37,16 +50,14 @@ h1, h2, h3, h4{
 img {
   page-break-inside:avoid;
   page-break-after:avoid;
-   max-width: 100% !important;
+  max-width: 100% !important;
 }
 
-
 header:before {
-   display: block;
-   text-align: center;
-   font-weight:bold;
-   content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
-
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
 }
 
 #isaw_papers_header {
@@ -54,231 +65,223 @@ header:before {
 }
 }
 
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
 
 .work-cited {
   text-align:left;
   margin-top:.125em;
   margin-left:.25in;
   text-indent:-.25in
-  }
+}
 
 .abstract {
-
   text-indent:0;
   margin-left:3em;
   margin-right:3em;
   margin-top:2em;
- }
-
-body {
- margin:auto;
- width:70%;
 }
 
+body {
+  margin:auto;
+  width:70%;
+}
 
 .edition-line {
- tab-size: 8;
+  tab-size: 8;
 }
 
 .editorial-note {
- font-style:italic;
- margin-top:5px;
- margin-top:5px;
- }
-
-figcaption {
- 
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
 }
 
+
 footer {
- text-indent:0;
- border-style-top:dotted;
- margin-top:1em;
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
 }
 
 footer p {
- text-indent:0;
+  text-indent:0;
 }
 
-#front { 
- margin-top:2em;
- }
+#front {
+  margin-top:2em;
+}
 
 h1 {
-   font-size:1.5em;
-   text-align:center
-  }
- 
+  font-size:1.5em;
+  text-align:center
+}
+
 h2 {
-   margin-top:1em;
-   margin-bottom:.2em;
-   font-size:1em;
-   font-weight:bold;
-   text-align:left;
-   padding:0;
-  }
- 
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
 
 h3,h4 {
-   margin-top:1em;
-   margin-bottom:0;
-   font-size:1em;
-   font-weight:normal;
-   font-style:italic;
-   text-align:left;
-   padding:0;
-  }
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
 
 header {
- margin-top: 2em;
- margin-bottom:1em;
+  margin-top: 2em;
+  margin-bottom:1em;
 }
 
 header > h2 {
- text-align: center;
- }
-
-
+  text-align: center;
+}
 
 .keywords,#keywords {
   margin-left:3em;
   margin-right:3em;
   margin-top:2em;
   margin-bottom:2em;
- }
+}
 
-li { text-align: justify }
+li { 
+  text-align: justify 
+}
 
 .author,#author {
- text-align:center;
+  text-align:center;
 }
- 
+
 p {
- text-indent:1em;
- padding:0;
- margin: 0;
- line-height:1.4em;
- text-align: justify;
- tab-size: 8;
- }
- 
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
 .doi {
- text-align:center;
- padding: 10px;
+  text-align:center;
+  padding: 10px;
 }
 
 .subjects,#subjects {
- text-indent:0;
+  text-indent:0;
   margin-left:3em;
   margin-right:3em;
   margin-top:2em;
   margin-bottom:2em;
- }
+}
 
 #tableofcontents {
-   margin-top:2em;
-   margin-bottom:2em;
-   margin-left:3em;
-   font-style:italic;
-   }
- 
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
 #tableofcontents li {
-   font-style:italic;
-   text-indent:0;
-   padding-left:0;
-   margin-top:.5em;
-   }
- 
-   
- 
-  
- .textindent0 {
-   text-indent:0;
-  }
-  
- .margintop15em {
-    margin-top:1.5em;
-    }
-    
- .indentedblock {
-   text-indent:0;
-   margin:1.5em 2em 1em 2em;
-   padding:0;
-   }
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
 
 blockquote {
- text-align: justify;
+  text-align: justify;
 }
 
 a {
-    border-bottom:thin dotted gray;
-    color:black;
-    text-decoration:none;
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
 }
-
 
 sup {
-    line-height:0;
-    color:black;
+  line-height:0;
+  color:black;
 }
-  
+
 table
-{ 
-width:90%;
-margin-left: auto;
-margin-right: auto;
-margin-top:1em;
-margin-bottom:1em;
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
 }
 
 table caption {
-margin-top:1em;
+  margin-top:1em;
 }
 
 figure {
- margin-left: auto;
- margin-right: auto
+  margin-left: auto;
+  margin-right: auto
 }
 
 figcaption {
- width:90%;
- margin: 0 auto;
- margin-top:.4em;
- margin-bottom:.6em;
- text-align:center
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
 }
-
 
 img {
- display: block;
- max-width:500px;
- max-height: 500px;
-margin-left: auto;
- margin-right: auto
-} 
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
 
 img.img-wide {
- max-width: 750px;
- max-height: 750px;
+  max-width: 750px;
+  max-height: 750px;
 }
- 
+
 .endnote,.footnote {
- text-indent:0;
- margin-top:.125em;
- }
-  
+  text-indent:0;
+  margin-top:.125em;
+}
+
 #works-cited a {
- border-bottom:thin dotted gray;
- color:gray;
- }
+  border-bottom:thin dotted gray;
+  color:gray;
+}
 
 .work-cited-links {
- color:gray;
- }
-    
-     
-
-</style></head>
+  color:gray;
+}</style></head>
 <body>
 <header><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 The authors; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/></a></p><p style="text-align:center;margin-top:1em">This article can be downloaded as a <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/isaw-papers-7-offprint.xhtml">single file</a></p></div>
 <h2>ISAW Papers 7 (2014)</h2>
