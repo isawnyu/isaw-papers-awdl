@@ -1,58 +1,298 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html >
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#  dcterms: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  rdfs: http://www.w3.org/2000/01/rdf-schema#">
-    <head><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"/><script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"/><script src="http://isawnyu.github.com/awld-js/awld.js?autoinit" type="text/javascript"/><script type="text/javascript">
-  function show_id_links() {
-if ($('.id_link').css('display') == "none")
-$('.id_link').show();
-else
-$('.id_link').hide();
+<!DOCTYPE html>
+
+<html prefix="cc: http://creativecommons.org/ns#
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ rdfs: http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pelagios</title>
+
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/simon-barker-desoto-isaksen/" rel="canonical"/>
+<style>@media print {
+
+@page{ padding: 2cm; }
+
+  ul {
+  page-break-inside: avoid;
 }
 
-  function show_references() {
- $('.reference').css('border-bottom','thin dotted gray');
- 
+h1, h2, h3, h4{
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+   max-width: 100% !important;
+}
+
+
+header:before {
+   display: block;
+   text-align: center;
+   font-weight:bold;
+   content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+  }
+
+.abstract {
+
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
  }
-   </script>
-        <title>Pelagios</title>
-        <link rel="stylesheet" href="../isaw-papers-7.css"/>
-        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/"/>
- <link rel="dcterms:isPartOf" href="http://isaw.nyu.edu/publications/isaw-papers"/>
-        <link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/simon-barker-desoto-isaksen/"/>
-    </head>
 
-<body><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/simon-barker-desoto-isaksen/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/simon-barker-desoto-isaksen/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Rainer Simon, Elton Barker, Pau de Soto, and Leif Isaksen; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0;margin-top:1em;align:center" src="http://i.creativecommons.org/l/by/3.0/88x31.png"/></a></p></div>
+body {
+ margin:auto;
+ width:70%;
+}
+
+
+.edition-line {
+ tab-size: 8;
+}
+
+.editorial-note {
+ font-style:italic;
+ margin-top:5px;
+ margin-top:5px;
+ }
+
+figcaption {
+ 
+}
+
+footer {
+ text-indent:0;
+ border-style-top:dotted;
+ margin-top:1em;
+}
+
+footer p {
+ text-indent:0;
+}
+
+#front { 
+ margin-top:2em;
+ }
+
+h1 {
+   font-size:1.5em;
+   text-align:center
+  }
+ 
+h2 {
+   margin-top:1em;
+   margin-bottom:.2em;
+   font-size:1em;
+   font-weight:bold;
+   text-align:left;
+   padding:0;
+  }
+ 
+
+h3,h4 {
+   margin-top:1em;
+   margin-bottom:0;
+   font-size:1em;
+   font-weight:normal;
+   font-style:italic;
+   text-align:left;
+   padding:0;
+  }
+
+header {
+ margin-top: 2em;
+ margin-bottom:1em;
+}
+
+header > h2 {
+ text-align: center;
+ }
+
+
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+ }
+
+li { text-align: justify }
+
+.author,#author {
+ text-align:center;
+}
+ 
+p {
+ text-indent:1em;
+ padding:0;
+ margin: 0;
+ line-height:1.4em;
+ text-align: justify;
+ tab-size: 8;
+ }
+ 
+.doi {
+ text-align:center;
+ padding: 10px;
+}
+
+.subjects,#subjects {
+ text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+ }
+
+#tableofcontents {
+   margin-top:2em;
+   margin-bottom:2em;
+   margin-left:3em;
+   font-style:italic;
+   }
+ 
+#tableofcontents li {
+   font-style:italic;
+   text-indent:0;
+   padding-left:0;
+   margin-top:.5em;
+   }
+ 
+   
+ 
+  
+ .textindent0 {
+   text-indent:0;
+  }
+  
+ .margintop15em {
+    margin-top:1.5em;
+    }
+    
+ .indentedblock {
+   text-indent:0;
+   margin:1.5em 2em 1em 2em;
+   padding:0;
+   }
+
+blockquote {
+ text-align: justify;
+}
+
+a {
+    border-bottom:thin dotted gray;
+    color:black;
+    text-decoration:none;
+}
+
+
+sup {
+    line-height:0;
+    color:black;
+}
+  
+table
+{ 
+width:90%;
+margin-left: auto;
+margin-right: auto;
+margin-top:1em;
+margin-bottom:1em;
+}
+
+table caption {
+margin-top:1em;
+}
+
+figure {
+ margin-left: auto;
+ margin-right: auto
+}
+
+figcaption {
+ width:90%;
+ margin: 0 auto;
+ margin-top:.4em;
+ margin-bottom:.6em;
+ text-align:center
+}
+
+
+img {
+ display: block;
+ max-width:500px;
+ max-height: 500px;
+margin-left: auto;
+ margin-right: auto
+} 
+
+img.img-wide {
+ max-width: 750px;
+ max-height: 750px;
+}
+ 
+.endnote,.footnote {
+ text-indent:0;
+ margin-top:.125em;
+ }
+  
+#works-cited a {
+ border-bottom:thin dotted gray;
+ color:gray;
+ }
+
+.work-cited-links {
+ color:gray;
+ }
+    
+     
+
+</style></head>
+<body>
 <article>
-<header>
-<h2><a rel="toc" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7.27</a> (2014)</h2>
+<header><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/simon-barker-desoto-isaksen/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/simon-barker-desoto-isaksen/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Rainer Simon, Elton Barker, Pau de Soto, and Leif Isaksen; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/></a></p><p style="text-align:center;margin-top:1em">This article can be downloaded as a <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/isaw-papers-7-offprint.xhtml">single file</a></p></div>
+<h2><a href="../isaw-papers-7.xhtml" rel="contents">ISAW Papers 7.27</a> (2014)</h2>
 <h1 property="dcterms:title">Pelagios</h1>
-<h2 class="author"><span rel="dcterms:creator"><span property="foaf:name">Rainer Simon</span></span>, <span rel="dcterms:creator"><a rel="dcterms:identifier" href="http://viaf.org/viaf/78894303" property="foaf:name">Elton Barker</a></span>, <span rel="dcterms:creator"><span property="foaf:name">Pau de Soto</span></span>, and <span rel="dcterms:creator"><span property="foaf:name">Leif Isaksen</span></span></h2>
+<h2 class="author"><span rel="dcterms:creator"><span property="foaf:name">Rainer Simon</span></span>, <span rel="dcterms:creator"><a href="http://viaf.org/viaf/78894303" property="foaf:name" rel="dcterms:identifier">Elton Barker</a></span>, <span rel="dcterms:creator"><span property="foaf:name">Pau de Soto</span></span>, and <span rel="dcterms:creator"><span property="foaf:name">Leif Isaksen</span></span></h2>
 </header>
-
 <section id="section1">
-<p onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" class="textindent0" id="p1">Pelagios is a community-driven initiative with the goal to facilitate better linking between online resources documenting the past, based on the places that they refer to. It is open to online content of any type and format: it currently connects data as diverse as text corpora, image archives, archaeological databases, museum collections, publication series, and online resources produced by specific research projects. By addressing the problems of discovery and reuse, Pelagios aims to help digital humanists in making their data more discoverable, and to empower real-world users – scholars as well as the general public – to find information about particular ancient places and visualize it in meaningful ways. At the time of writing, the Pelagios network incorporates more than 830,000 place references in datasets from 27 partners. Users can start exploring it by searching for a place in the map interface<sup><a class="footnote-reference" id="footnote-reference-1" href="#footnote-1">1</a></sup>, or by browsing the list of currently available datasets<sup><a class="footnote-reference" id="footnote-reference-2" href="#footnote-2">2</a></sup>.<a id="p1anchor" class="id_link" style="color:aaa;display:none" href="#p1">↩</a><span id="p1anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p1">#p1  </span></p>
-
-<p onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" id="p2">The key to connectivity in Pelagios is the use of a common vocabulary when referring to places, combined with a set of lightweight conventions on how to publish these place references as Linked Data. The common vocabulary is formed by the <i>Pleiades Gazetteer of the Ancient World</i><sup><a class="footnote-reference" id="footnote-reference-3" href="#footnote-3">3</a></sup>, which provides unique URI identifiers for places in the Greco-Roman world. For example, <a href="https://pleiades.stoa.org/places/59672">https://pleiades.stoa.org/places/59672</a> is a unique URI for Alexandria Eschate in modern Tajikistan. It can serve as the basis for aggregating references to that site and for ensuring that it is not confused with the more  famous <a href="https://pleiades.stoa.org/places/727070">Alexandria</a> in <a href="https://pleiades.stoa.org/places/766">Egypt</a>. The publishing conventions established by the Pelagios community are based on an annotation paradigm: no matter what type or format a data resource is in, as long as it is available on the Web, under a stable URI, one can, from a conceptual point of view, annotate (or “tag”) it with a reference to one or more Pleiades identifiers. The collected set of annotations is then published as RDF according to the Open Annotation ontology<sup><a class="footnote-reference" id="footnote-reference-4" href="#foonote-4">4</a></sup>, and made available under an open license, chosen individually by each partner. Technically, the data is published as a simple dump file, hosted on each partner’s own Website. There is no need to set up specific infrastructure such as a triple store or a dedicated API.<a id="p2anchor" class="id_link" style="color:aaa;display:none" href="#p2">↩</a><span id="p2anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p2">#p2  </span></p>
-
-<p onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" id="p3">Previously funded by JISC, the UK’s digital education and research charity, Pelagios has entered its third stage of development (Pelagios 3), with generous support from the Andrew W. Mellon Foundation. While the focus of the project has so far been on classical antiquity, this new phase will significantly expand the scope of Pelagios in both space and time by annotating Early Geospatial Documents – documents that use written or visual representation to describe geographic space prior to the European discovery of the Americas in 1492. They include ancient and medieval geographic descriptions (geographiae, chorographiae and itineraries), world maps (mappaemundi) and sea charts, and are products of Greek, Roman, Christian, Islamic and Chinese traditions.<a id="p3anchor" class="id_link" style="color:aaa;display:none" href="#p3">↩</a><span id="p3anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p3">#p3  </span></p>
-
-<p onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" id="p4">What makes Pelagios 3 different is not only the scope of the documents to be brought into the network but also the fact that we are now annotating documents ourselves. This means that a significant part of Pelagios 3 is being devoted to developing new tools and infrastructure, which will: create a semi-automatic annotation workflow for extracting place name data from digitized texts and maps; produce minimal requirements for enabling the linking and interoperability of multiple, domain-specific gazetteers; and provide useful analytics and visualizations for enabling the search and discovery of data within the growing Pelagios network.<a id="p4anchor" class="id_link" style="color:aaa;display:none" href="#p4">↩</a><span id="p4anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p4">#p4  </span></p>
-
-<p onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" id="p5">Phase 3 of Pelagios runs from September 2013 until August 2015.<a id="p5anchor" class="id_link" style="color:aaa;display:none" href="#p5">↩</a><span id="p5anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p5">#p5  </span></p>
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';">Pelagios is a community-driven initiative with the goal to facilitate better linking between online resources documenting the past, based on the places that they refer to. It is open to online content of any type and format: it currently connects data as diverse as text corpora, image archives, archaeological databases, museum collections, publication series, and online resources produced by specific research projects. By addressing the problems of discovery and reuse, Pelagios aims to help digital humanists in making their data more discoverable, and to empower real-world users – scholars as well as the general public – to find information about particular ancient places and visualize it in meaningful ways. At the time of writing, the Pelagios network incorporates more than 830,000 place references in datasets from 27 partners. Users can start exploring it by searching for a place in the map interface<sup><a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">1</a></sup>, or by browsing the list of currently available datasets<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';">The key to connectivity in Pelagios is the use of a common vocabulary when referring to places, combined with a set of lightweight conventions on how to publish these place references as Linked Data. The common vocabulary is formed by the <i>Pleiades Gazetteer of the Ancient World</i><sup><a class="footnote-reference" href="#footnote-3" id="footnote-reference-3">3</a></sup>, which provides unique URI identifiers for places in the Greco-Roman world. For example, <a href="https://pleiades.stoa.org/places/59672">https://pleiades.stoa.org/places/59672</a> is a unique URI for Alexandria Eschate in modern Tajikistan. It can serve as the basis for aggregating references to that site and for ensuring that it is not confused with the more  famous <a href="https://pleiades.stoa.org/places/727070">Alexandria</a> in <a href="https://pleiades.stoa.org/places/766">Egypt</a>. The publishing conventions established by the Pelagios community are based on an annotation paradigm: no matter what type or format a data resource is in, as long as it is available on the Web, under a stable URI, one can, from a conceptual point of view, annotate (or “tag”) it with a reference to one or more Pleiades identifiers. The collected set of annotations is then published as RDF according to the Open Annotation ontology<sup><a class="footnote-reference" href="#foonote-4" id="footnote-reference-4">4</a></sup>, and made available under an open license, chosen individually by each partner. Technically, the data is published as a simple dump file, hosted on each partner’s own Website. There is no need to set up specific infrastructure such as a triple store or a dedicated API.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';">Previously funded by JISC, the UK’s digital education and research charity, Pelagios has entered its third stage of development (Pelagios 3), with generous support from the Andrew W. Mellon Foundation. While the focus of the project has so far been on classical antiquity, this new phase will significantly expand the scope of Pelagios in both space and time by annotating Early Geospatial Documents – documents that use written or visual representation to describe geographic space prior to the European discovery of the Americas in 1492. They include ancient and medieval geographic descriptions (geographiae, chorographiae and itineraries), world maps (mappaemundi) and sea charts, and are products of Greek, Roman, Christian, Islamic and Chinese traditions.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';">What makes Pelagios 3 different is not only the scope of the documents to be brought into the network but also the fact that we are now annotating documents ourselves. This means that a significant part of Pelagios 3 is being devoted to developing new tools and infrastructure, which will: create a semi-automatic annotation workflow for extracting place name data from digitized texts and maps; produce minimal requirements for enabling the linking and interoperability of multiple, domain-specific gazetteers; and provide useful analytics and visualizations for enabling the search and discovery of data within the growing Pelagios network.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';">Phase 3 of Pelagios runs from September 2013 until August 2015.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
 </section>
-
 <section id="foonotes">
 <h2>Notes</h2>
-<p onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" class="footnote" id="footnote-1"><sup><a href="#footnote-reference-1">1</a></sup> <a href="http://pelagios.github.io/pelagios-heatmap/">"http://pelagios.github.io/pelagios-heatmap/</a>.<a id="footnote-1anchor" class="id_link" style="color:aaa;display:none" href="#footnote-1">↩</a><span id="footnote-1anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#footnote-1">#footnote-1  </span></p>
-<p onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" class="footnote" id="footnote-2"><sup><a href="#footnote-reference-2">2</a></sup> <a href="http://pelagios.org/api">http://pelagios.org/api</a>.<a id="footnote-2anchor" class="id_link" style="color:aaa;display:none" href="#footnote-2">↩</a><span id="footnote-2anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#footnote-2">#footnote-2  </span></p>
-<p onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" class="footnote" id="footnote-3"><sup><a href="#footnote-reference-3">3</a></sup> <a href="http://pleiades.stoa.org/">http://pleiades.stoa.org/</a>.<a id="footnote-3anchor" class="id_link" style="color:aaa;display:none" href="#footnote-3">↩</a><span id="footnote-3anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#footnote-3">#footnote-3  </span></p>
-<p onmouseover="document.getElementById('footnote-4anchor').style.display='';document.getElementById('footnote-4anchor_label').style.display='';" onmouseleave="document.getElementById('footnote-4anchor').style.display='none';document.getElementById('footnote-4anchor_label').style.display='none';" class="footnote" id="footnote-4"><sup><a href="#footnote-reference-4">4</a></sup> <a href="http://www.openannotation.org/spec/core/">http://www.openannotation.org/spec/core/</a>.<a id="footnote-4anchor" class="id_link" style="color:aaa;display:none" href="#footnote-4">↩</a><span id="footnote-4anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#footnote-4">#footnote-4  </span></p>
-
+<p class="footnote" id="footnote-1" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';"><sup><a href="#footnote-reference-1">1</a></sup> <a href="http://pelagios.github.io/pelagios-heatmap/">"http://pelagios.github.io/pelagios-heatmap/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-1" id="footnote-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-1</span></p>
+<p class="footnote" id="footnote-2" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';"><sup><a href="#footnote-reference-2">2</a></sup> <a href="http://pelagios.org/api">http://pelagios.org/api</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-2" id="footnote-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-2</span></p>
+<p class="footnote" id="footnote-3" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';"><sup><a href="#footnote-reference-3">3</a></sup> <a href="http://pleiades.stoa.org/">http://pleiades.stoa.org/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-3" id="footnote-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-3</span></p>
+<p class="footnote" id="footnote-4" onmouseleave="document.getElementById('footnote-4anchor').style.display='none';document.getElementById('footnote-4anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-4anchor').style.display='';document.getElementById('footnote-4anchor_label').style.display='';"><sup><a href="#footnote-reference-4">4</a></sup> <a href="http://www.openannotation.org/spec/core/">http://www.openannotation.org/spec/core/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-4" id="footnote-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-4</span></p>
 </section>
-
 <footer>
-<p>©2014 <span property="cc:attributionName">Rainer Simon, Elton Barker, Pau de Soto, and Leif Isaksen</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
-<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+<p style="margin-top:1em;text-align:center;color:gray">©2014 <span property="cc:attributionName">Rainer Simon, Elton Barker, Pau de Soto, and Leif Isaksen</span>. Published under the <a href="http://creativecommons.org/licenses/by/4.0/" rel="license" style="color:gray">Creative Commons Attribution 4.0</a> license.</p>
+<p style="margin-top:1em;text-align:center;color:gray">This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" style="color:gray">ISAW Papers 7</a></i>.</p>
 </footer>
 </article>
 </body>

@@ -1,143 +1,346 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#
+
+<html prefix="cc: http://creativecommons.org/ns#
  dcterms: http://purl.org/dc/terms/
  foaf: http://xmlns.com/foaf/0.1/
- rdfs: http://www.w3.org/2000/01/rdf-schema#">
+ rdfs: http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/1999/xhtml">
 <head>
- <title>The Europeana Network of Ancient Greek and Latin Epigraphy (EAGLE)</title>
-<link rel="stylesheet" href="../isaw-papers-7.css" />
-        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" />
- <link rel="dcterms:isPartOf" href="http://isaw.nyu.edu/publications/isaw-papers" />
-        <link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/liuzzo" />
-</head>
-<body>
+<title>The Europeana Network of Ancient Greek and Latin Epigraphy (EAGLE)</title>
 
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/liuzzo" rel="canonical"/>
+<style>@media print {
+
+@page{ padding: 2cm; }
+
+  ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4{
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+   max-width: 100% !important;
+}
+
+
+header:before {
+   display: block;
+   text-align: center;
+   font-weight:bold;
+   content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+  }
+
+.abstract {
+
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+ }
+
+body {
+ margin:auto;
+ width:70%;
+}
+
+
+.edition-line {
+ tab-size: 8;
+}
+
+.editorial-note {
+ font-style:italic;
+ margin-top:5px;
+ margin-top:5px;
+ }
+
+figcaption {
+ 
+}
+
+footer {
+ text-indent:0;
+ border-style-top:dotted;
+ margin-top:1em;
+}
+
+footer p {
+ text-indent:0;
+}
+
+#front { 
+ margin-top:2em;
+ }
+
+h1 {
+   font-size:1.5em;
+   text-align:center
+  }
+ 
+h2 {
+   margin-top:1em;
+   margin-bottom:.2em;
+   font-size:1em;
+   font-weight:bold;
+   text-align:left;
+   padding:0;
+  }
+ 
+
+h3,h4 {
+   margin-top:1em;
+   margin-bottom:0;
+   font-size:1em;
+   font-weight:normal;
+   font-style:italic;
+   text-align:left;
+   padding:0;
+  }
+
+header {
+ margin-top: 2em;
+ margin-bottom:1em;
+}
+
+header > h2 {
+ text-align: center;
+ }
+
+
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+ }
+
+li { text-align: justify }
+
+.author,#author {
+ text-align:center;
+}
+ 
+p {
+ text-indent:1em;
+ padding:0;
+ margin: 0;
+ line-height:1.4em;
+ text-align: justify;
+ tab-size: 8;
+ }
+ 
+.doi {
+ text-align:center;
+ padding: 10px;
+}
+
+.subjects,#subjects {
+ text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+ }
+
+#tableofcontents {
+   margin-top:2em;
+   margin-bottom:2em;
+   margin-left:3em;
+   font-style:italic;
+   }
+ 
+#tableofcontents li {
+   font-style:italic;
+   text-indent:0;
+   padding-left:0;
+   margin-top:.5em;
+   }
+ 
+   
+ 
+  
+ .textindent0 {
+   text-indent:0;
+  }
+  
+ .margintop15em {
+    margin-top:1.5em;
+    }
+    
+ .indentedblock {
+   text-indent:0;
+   margin:1.5em 2em 1em 2em;
+   padding:0;
+   }
+
+blockquote {
+ text-align: justify;
+}
+
+a {
+    border-bottom:thin dotted gray;
+    color:black;
+    text-decoration:none;
+}
+
+
+sup {
+    line-height:0;
+    color:black;
+}
+  
+table
+{ 
+width:90%;
+margin-left: auto;
+margin-right: auto;
+margin-top:1em;
+margin-bottom:1em;
+}
+
+table caption {
+margin-top:1em;
+}
+
+figure {
+ margin-left: auto;
+ margin-right: auto
+}
+
+figcaption {
+ width:90%;
+ margin: 0 auto;
+ margin-top:.4em;
+ margin-bottom:.6em;
+ text-align:center
+}
+
+
+img {
+ display: block;
+ max-width:500px;
+ max-height: 500px;
+margin-left: auto;
+ margin-right: auto
+} 
+
+img.img-wide {
+ max-width: 750px;
+ max-height: 750px;
+}
+ 
+.endnote,.footnote {
+ text-indent:0;
+ margin-top:.125em;
+ }
+  
+#works-cited a {
+ border-bottom:thin dotted gray;
+ color:gray;
+ }
+
+.work-cited-links {
+ color:gray;
+ }
+    
+     
+
+</style></head>
+<body>
 <article>
-<header>
-<h2><a rel="contents" href="../isaw-papers-7.xhtml">ISAW Papers 7.12</a> (2014)</h2>
+<header><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/liuzzo">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/liuzzo</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Pietro Maria Liuzzo; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/></a></p><p style="text-align:center;margin-top:1em">This article can be downloaded as a <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/isaw-papers-7-offprint.xhtml">single file</a></p></div>
+<h2><a href="../isaw-papers-7.xhtml" rel="contents">ISAW Papers 7.12</a> (2014)</h2>
 <h1 property="dcterms:title">The Europeana Network of Ancient Greek and Latin Epigraphy (EAGLE)</h1>
 <h2 rel="dcterms:creator"><span property="foaf:name">Pietro Maria Liuzzo</span></h2>
 </header>
-
 <section id="section1">
-<p id="p1" rel="dcterms:hasPart" resource="#p1" class="textindent0">EAGLE is a Best Practice Network (BPN) that brings together several European institutions<sup><a class="footnote-reference" id="footnote-reference-1" href="#footnote-1">1</a></sup> and archives in the field of Classical Latin and Greek epigraphy.<sup><a class="footnote-reference" id="footnote-reference-2" href="#footnote-2">2</a></sup> This is a different Eagle from that of the Electronic Archive of Greek and Latin Epigraphy, although all members of this Eagle are also in the project.</p>
-
-<p id="p2" rel="dcterms:hasPart" resource="#p2">The “E” in EAGLE project stands for Europeana,<sup><a class="footnote-reference" id="footnote-reference-3" href="#footnote-3">3</a></sup> the “european catalyst for change in the world of cultural heritage” brought to us by The Europeana Foundation. Europeana is a Network, and so is Eagle, sharing a vision which is:</p>
-
-<blockquote id="blockquote1">“making cultural heritage openly accessible in a digital way, to promote the exchange of ideas and information”<sup><a class="footnote-reference" id="footnote-reference-4" href="#footnote-4">4</a></sup></blockquote>
-
-<p id="p3" rel="dcterms:hasPart" resource="#p3">This Eagle is therefore The Europeana Network of Ancient Greek and Latin Epigraphy and its main aim is to provide Europeana with a broad collection of inscriptions, which are a specific type of content currently only sparsely present. By the end of the project Eagle will supply inscriptions coming from 25 EU countries, providing more than 1.5 M sets of metadata regarding images of inscriptions, inscriptions, contextual material (monuments and materials) and translations (of a selected group of inscriptions).</p>
-
-<p id="p4" rel="dcterms:hasPart" resource="#p4">Through a careful mapping of existing data models in use by the Content Providers, <sup><a class="footnote-reference" id="footnote-reference-5" href="#footnote-5">5</a></sup> EAGLE will implement an inscription-specific metadata model. This will be based on Epidoc Guidelines<sup><a class="footnote-reference" id="footnote-reference-6" href="#footnote-6">6</a></sup> for the editions of texts and on existing standards in use at Arachne<sup><a class="footnote-reference" id="footnote-reference-7" href="#footnote-7">7</a></sup> for metadata of photographs, while following recommendations developed through sister Europeana projects. All edited texts and all images will be available in XML and be interoperable with other epigraphic projects, and will then be represented in EDM (Europeana Data Model)<sup><a class="footnote-reference" id="footnote-reference-8" href="#footnote-8">8</a></sup> to enter in the Linked Open Data World.<sup><a class="footnote-reference" id="footnote-reference-9" href="#footnote-9">9</a></sup></p>
-
-<p id="p5" rel="dcterms:hasPart" resource="#p5">EAGLE is thus an aggregator<sup><a class="footnote-reference" id="footnote-reference-10" href="#footnote-10">10</a></sup> and will have for the same reason also a platform to search and browse inscriptions. On the side of what Eagle would like to link with, there is certainly the possible collaboration in the future,<sup><a class="footnote-reference" id="footnote-reference-11" href="#footnote-11">11</a></sup> to develop an editing tool for inscriptions which will allow further contributors and participant to join the BPN.<sup><a class="footnote-reference" id="footnote-reference-12" href="#footnote-12">12</a></sup></p>
-
-<p id="p6" rel="dcterms:hasPart" resource="#p6">Eagle will also develop two Applications:</p>
-
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">EAGLE is a Best Practice Network (BPN) that brings together several European institutions<sup><a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">1</a></sup> and archives in the field of Classical Latin and Greek epigraphy.<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup> This is a different Eagle from that of the Electronic Archive of Greek and Latin Epigraphy, although all members of this Eagle are also in the project.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">The “E” in EAGLE project stands for Europeana,<sup><a class="footnote-reference" href="#footnote-3" id="footnote-reference-3">3</a></sup> the “european catalyst for change in the world of cultural heritage” brought to us by The Europeana Foundation. Europeana is a Network, and so is Eagle, sharing a vision which is:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<blockquote id="blockquote1">“making cultural heritage openly accessible in a digital way, to promote the exchange of ideas and information”<sup><a class="footnote-reference" href="#footnote-4" id="footnote-reference-4">4</a></sup></blockquote>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">This Eagle is therefore The Europeana Network of Ancient Greek and Latin Epigraphy and its main aim is to provide Europeana with a broad collection of inscriptions, which are a specific type of content currently only sparsely present. By the end of the project Eagle will supply inscriptions coming from 25 EU countries, providing more than 1.5 M sets of metadata regarding images of inscriptions, inscriptions, contextual material (monuments and materials) and translations (of a selected group of inscriptions).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">Through a careful mapping of existing data models in use by the Content Providers, <sup><a class="footnote-reference" href="#footnote-5" id="footnote-reference-5">5</a></sup> EAGLE will implement an inscription-specific metadata model. This will be based on Epidoc Guidelines<sup><a class="footnote-reference" href="#footnote-6" id="footnote-reference-6">6</a></sup> for the editions of texts and on existing standards in use at Arachne<sup><a class="footnote-reference" href="#footnote-7" id="footnote-reference-7">7</a></sup> for metadata of photographs, while following recommendations developed through sister Europeana projects. All edited texts and all images will be available in XML and be interoperable with other epigraphic projects, and will then be represented in EDM (Europeana Data Model)<sup><a class="footnote-reference" href="#footnote-8" id="footnote-reference-8">8</a></sup> to enter in the Linked Open Data World.<sup><a class="footnote-reference" href="#footnote-9" id="footnote-reference-9">9</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">EAGLE is thus an aggregator<sup><a class="footnote-reference" href="#footnote-10" id="footnote-reference-10">10</a></sup> and will have for the same reason also a platform to search and browse inscriptions. On the side of what Eagle would like to link with, there is certainly the possible collaboration in the future,<sup><a class="footnote-reference" href="#footnote-11" id="footnote-reference-11">11</a></sup> to develop an editing tool for inscriptions which will allow further contributors and participant to join the BPN.<sup><a class="footnote-reference" href="#footnote-12" id="footnote-reference-12">12</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">Eagle will also develop two Applications:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
 <ul id="ul1">
- <li>a mobile application to enable users to get metadata about inscriptions they find on location by sending in a picture to the EAGLE portal.</li>
- 
- <li>a storytelling application to allow users to assemble epigraphy-based narratives (mostly for the benefit of non professional users).<sup><a class="footnote-reference" id="footnote-reference-13" href="#footnote-13">13</a></sup></li>
-
+<li>a mobile application to enable users to get metadata about inscriptions they find on location by sending in a picture to the EAGLE portal.</li>
+<li>a storytelling application to allow users to assemble epigraphy-based narratives (mostly for the benefit of non professional users).<sup><a class="footnote-reference" href="#footnote-13" id="footnote-reference-13">13</a></sup></li>
 </ul>
- 
-<p id="p7" rel="dcterms:hasPart" resource="#p7">Finally, Eagle is proud to work in partnership with Wikimedia Italia<sup><a class="footnote-reference" id="footnote-reference-14" href="#footnote-14">14</a></sup> with which will set up a Wikibase<sup><a class="footnote-reference" id="footnote-reference-15" href="#footnote-15">15</a></sup> MediaWiki for the enrichment and curation of epigraphic images and texts, with special emphasis on translations. This will allow wikipedia users to link images and metadata of inscriptions from authoritative sources, and will make references in wikipedia much richer, providing a basis for a future collaborative effort towards translations of all inscriptions in many languages.</p>
+<p id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">Finally, Eagle is proud to work in partnership with Wikimedia Italia<sup><a class="footnote-reference" href="#footnote-14" id="footnote-reference-14">14</a></sup> with which will set up a Wikibase<sup><a class="footnote-reference" href="#footnote-15" id="footnote-reference-15">15</a></sup> MediaWiki for the enrichment and curation of epigraphic images and texts, with special emphasis on translations. This will allow wikipedia users to link images and metadata of inscriptions from authoritative sources, and will make references in wikipedia much richer, providing a basis for a future collaborative effort towards translations of all inscriptions in many languages.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
 </section>
-
 <section id="section2">
-
-<p id="p8" rel="dcterms:hasPart" resource="#p8">EAGLE will make connections within its BPN, being part of Europeana and being part of Wikidata and Wikisource, with different kinds of users and with all those people, institutions and projects who will decide to join. But EAGLE main concern is to link within its data to the Linked Ancient World Data, to enrich the possibility to discover scholarly significant connections among scientific databases.  EAGLE will take inscriptions out of isolations opening them up for relations and connections.</p>
-
-<p id="p9" rel="dcterms:hasPart" resource="#p9">One first way to do this will be to provide one stable Trismegistos URI<sup><a class="footnote-reference" id="footnote-reference-16" href="#footnote-16">16</a></sup> to each inscription, the value of which is not only that of providing a stable link and identifier, but also to give a clear and univocal reference which can be used in printed publications, linking in this way also outside the web.</p>
-
-<p id="p10" rel="dcterms:hasPart" resource="#p10">A second way will be to have all Geographical informations converge to Trismegistos Places, to find inconsistencies and get a stable ID<sup><a class="footnote-reference" id="footnote-reference-17" href="#footnote-17">17</a></sup> which will be then linked following the Pelagios Cookbook<sup><a class="footnote-reference" id="footnote-reference-18" href="#footnote-18">18</a></sup> to Pleiades,<sup><a class="footnote-reference" id="footnote-reference-19" href="#footnote-19">19</a></sup> which will in turn make the richness of possible links to geographical information exponential.</p>
-
-<p id="p11" rel="dcterms:hasPart" resource="#p11">The third main way among others will be the definition of common structured thesauri.<sup><a class="footnote-reference" id="footnote-reference-20" href="#footnote-20">20</a></sup> EAGLE is already taking up a major task of alignment and definition of each term in use by the BPN in five different fields of information: Type of Inscription; Object Type; Material;<sup><a class="footnote-reference" id="footnote-reference-21" href="#footnote-21">21</a></sup> Writing technique; Decoration.<sup><a class="footnote-reference" id="footnote-reference-22" href="#footnote-22">22</a></sup> Each term will be associated with the values in use by each other content provider and will be given definitions with examples. This is because there is a shared need for an alignment and full definitions, as vocabularies in use in different projects often differ not only in their names and number, but in definitions, attribution to a specific field, not to mention translations of values which are often not univocal at all, and might create ambiguities and problems. EAGLE will develop these thesauri<sup><a class="footnote-reference" id="footnote-reference-23" href="#footnote-23">23</a></sup> and will keep them exposed and accessible all the way long with stable URIs.<sup><a class="footnote-reference" id="footnote-reference-24" href="#footnote-24">24</a></sup></p>
-
-<p id="p12" rel="dcterms:hasPart" resource="#p12">EAGLE has a main focus on images for two reasons. The first is that to achieve the functions of the application described above, CNR-ISTI will also develop within EAGLE a full image recognition system which will enable people to get more information from all these networks of data via a smartphone while enriching the database of photographs of inscriptions.</p>
-
-<p id="p13" rel="dcterms:hasPart" resource="#p13">Secondly, according to the DEA all metadata (including all the EPIDOC-XML editions of texts) will by licensed under Creative Commons CC0 licence (1.0 Universal Public Domain Dedication),<sup><a class="footnote-reference" id="footnote-reference-25" href="#footnote-25">25</a></sup> but for images it is not always the case that owners are willing to “give them up”. Most of the images in EAGLE are already licensed under CC BY-SA and EAGLE will put effort in renegotiating current permissions to foster the CC-BY-SA or CC0 licensing for the images of its BPN and in any case provide clear labelling for all materials according to Europeana guidelines and requirements.<sup><a class="footnote-reference" id="footnote-reference-26" href="#footnote-26">26</a></sup> EAGLE BPN believes that open licensing is a very powerful tool, together with LOD to guarantee the continuous increase of openly accessible and reusable material.<sup><a class="footnote-reference" id="footnote-reference-27" href="#footnote-27">27</a></sup></p>
+<p id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p8">EAGLE will make connections within its BPN, being part of Europeana and being part of Wikidata and Wikisource, with different kinds of users and with all those people, institutions and projects who will decide to join. But EAGLE main concern is to link within its data to the Linked Ancient World Data, to enrich the possibility to discover scholarly significant connections among scientific databases.  EAGLE will take inscriptions out of isolations opening them up for relations and connections.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
+<p id="p9" onmouseleave="document.getElementById('p9anchor').style.display='none';document.getElementById('p9anchor_label').style.display='none';" onmouseover="document.getElementById('p9anchor').style.display='';document.getElementById('p9anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p9">One first way to do this will be to provide one stable Trismegistos URI<sup><a class="footnote-reference" href="#footnote-16" id="footnote-reference-16">16</a></sup> to each inscription, the value of which is not only that of providing a stable link and identifier, but also to give a clear and univocal reference which can be used in printed publications, linking in this way also outside the web.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p9" id="p9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p9</span></p>
+<p id="p10" onmouseleave="document.getElementById('p10anchor').style.display='none';document.getElementById('p10anchor_label').style.display='none';" onmouseover="document.getElementById('p10anchor').style.display='';document.getElementById('p10anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p10">A second way will be to have all Geographical informations converge to Trismegistos Places, to find inconsistencies and get a stable ID<sup><a class="footnote-reference" href="#footnote-17" id="footnote-reference-17">17</a></sup> which will be then linked following the Pelagios Cookbook<sup><a class="footnote-reference" href="#footnote-18" id="footnote-reference-18">18</a></sup> to Pleiades,<sup><a class="footnote-reference" href="#footnote-19" id="footnote-reference-19">19</a></sup> which will in turn make the richness of possible links to geographical information exponential.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p10" id="p10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p10</span></p>
+<p id="p11" onmouseleave="document.getElementById('p11anchor').style.display='none';document.getElementById('p11anchor_label').style.display='none';" onmouseover="document.getElementById('p11anchor').style.display='';document.getElementById('p11anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p11">The third main way among others will be the definition of common structured thesauri.<sup><a class="footnote-reference" href="#footnote-20" id="footnote-reference-20">20</a></sup> EAGLE is already taking up a major task of alignment and definition of each term in use by the BPN in five different fields of information: Type of Inscription; Object Type; Material;<sup><a class="footnote-reference" href="#footnote-21" id="footnote-reference-21">21</a></sup> Writing technique; Decoration.<sup><a class="footnote-reference" href="#footnote-22" id="footnote-reference-22">22</a></sup> Each term will be associated with the values in use by each other content provider and will be given definitions with examples. This is because there is a shared need for an alignment and full definitions, as vocabularies in use in different projects often differ not only in their names and number, but in definitions, attribution to a specific field, not to mention translations of values which are often not univocal at all, and might create ambiguities and problems. EAGLE will develop these thesauri<sup><a class="footnote-reference" href="#footnote-23" id="footnote-reference-23">23</a></sup> and will keep them exposed and accessible all the way long with stable URIs.<sup><a class="footnote-reference" href="#footnote-24" id="footnote-reference-24">24</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p11" id="p11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p11</span></p>
+<p id="p12" onmouseleave="document.getElementById('p12anchor').style.display='none';document.getElementById('p12anchor_label').style.display='none';" onmouseover="document.getElementById('p12anchor').style.display='';document.getElementById('p12anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p12">EAGLE has a main focus on images for two reasons. The first is that to achieve the functions of the application described above, CNR-ISTI will also develop within EAGLE a full image recognition system which will enable people to get more information from all these networks of data via a smartphone while enriching the database of photographs of inscriptions.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p12" id="p12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p12</span></p>
+<p id="p13" onmouseleave="document.getElementById('p13anchor').style.display='none';document.getElementById('p13anchor_label').style.display='none';" onmouseover="document.getElementById('p13anchor').style.display='';document.getElementById('p13anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p13">Secondly, according to the DEA all metadata (including all the EPIDOC-XML editions of texts) will by licensed under Creative Commons CC0 licence (1.0 Universal Public Domain Dedication),<sup><a class="footnote-reference" href="#footnote-25" id="footnote-reference-25">25</a></sup> but for images it is not always the case that owners are willing to “give them up”. Most of the images in EAGLE are already licensed under CC BY-SA and EAGLE will put effort in renegotiating current permissions to foster the CC-BY-SA or CC0 licensing for the images of its BPN and in any case provide clear labelling for all materials according to Europeana guidelines and requirements.<sup><a class="footnote-reference" href="#footnote-26" id="footnote-reference-26">26</a></sup> EAGLE BPN believes that open licensing is a very powerful tool, together with LOD to guarantee the continuous increase of openly accessible and reusable material.<sup><a class="footnote-reference" href="#footnote-27" id="footnote-reference-27">27</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p13" id="p13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p13</span></p>
 </section>
-
 <section id="works_cited">
 <h2>Works Cited</h2>
-
-<p class="work-cited" id="work-cited-1" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">ATHENA 2009: ATHENA project (2009), “Overview of IPR legislation in relation to the objectives of Europeana (1 November 2008 – 30 April 2009)”.</span></p>
-
-<p class="work-cited" id="work-cited-2" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Bodard 2010: Bodard, EpiDoc: Epigraphic Documents in XML for Publication and Interchange, in Latin on stone ed. Francisca Feraudi-Gruénais 2010, 101f.</span></p>
-
-<p class="work-cited" id="work-cited-3" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Cayless, Roueché, Elliott, Bodard 2009: Hugh Cayless, Charlotte Roueché, Tom Elliott, Gabriel Bodard, Epigraphy in 2017, Digital Humanities Quarterly 3.1 (2009), <a href="http://www.digitalhumanities.org/dhq/vol/3/1/000030/000030.html">http://www.digitalhumanities.org/dhq/vol/3/1/000030/000030.html</a>.</span></p>
-
-<p class="work-cited" id="work-cited-3" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Evangelisti 2010: Evangelisti Silvia, EDR history, Purpose, and Structure, in Latin on stone ed. Francisca Feraudi-Gruénais,  2010, 127f.</span></p>
-
-<p class="work-cited" id="work-cited-3" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Felle 2012: A.E. Felle 2012 Esperienze diverse e complementari nel trattamento digitale delle fonti epigrafiche. Il caso di Eagle ed EpiDoc in Diritto romano e scienze antichistiche nell’era digitale. Convegno di studio (Firenze, 12-13 settembre 2011), Torino 2012 [Collectanea Graeco-Romana. Studi e strumenti per la ricerca storico-giuridica, 10], 117-130.</span></p>
-
-<p class="work-cited" id="work-cited-3" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Harping 2010: Harping Introduction to Controlled Vocabularies: Terminology for Art, Architecture, and Other Cultural Works 2010 (<a href="http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/what.html">http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/what.html</a>)</span></p>
-
-<p class="work-cited" id="work-cited-3" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Vincent Wickham 2013: N. Vincent and C. Wickham, Debating Open Access <a href="http://www.britac.ac.uk/openaccess/debatingopenaccess.cfm">http://www.britac.ac.uk/openaccess/debatingopenaccess.cfm</a>. June 2013.</span></p>
-
+<p class="work-cited" id="work-cited-1" onmouseleave="document.getElementById('work-cited-1anchor').style.display='none';document.getElementById('work-cited-1anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-1anchor').style.display='';document.getElementById('work-cited-1anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">ATHENA 2009: ATHENA project (2009), “Overview of IPR legislation in relation to the objectives of Europeana (1 November 2008 – 30 April 2009)”.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-1" id="work-cited-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-1</span></p>
+<p class="work-cited" id="work-cited-2" onmouseleave="document.getElementById('work-cited-2anchor').style.display='none';document.getElementById('work-cited-2anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-2anchor').style.display='';document.getElementById('work-cited-2anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Bodard 2010: Bodard, EpiDoc: Epigraphic Documents in XML for Publication and Interchange, in Latin on stone ed. Francisca Feraudi-Gruénais 2010, 101f.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-2" id="work-cited-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-2</span></p>
+<p class="work-cited" id="work-cited-3" onmouseleave="document.getElementById('work-cited-3anchor').style.display='none';document.getElementById('work-cited-3anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-3anchor').style.display='';document.getElementById('work-cited-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Cayless, Roueché, Elliott, Bodard 2009: Hugh Cayless, Charlotte Roueché, Tom Elliott, Gabriel Bodard, Epigraphy in 2017, Digital Humanities Quarterly 3.1 (2009), <a href="http://www.digitalhumanities.org/dhq/vol/3/1/000030/000030.html">http://www.digitalhumanities.org/dhq/vol/3/1/000030/000030.html</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-3" id="work-cited-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-3</span></p>
+<p class="work-cited" id="work-cited-3" onmouseleave="document.getElementById('work-cited-3anchor').style.display='none';document.getElementById('work-cited-3anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-3anchor').style.display='';document.getElementById('work-cited-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Evangelisti 2010: Evangelisti Silvia, EDR history, Purpose, and Structure, in Latin on stone ed. Francisca Feraudi-Gruénais,  2010, 127f.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-3" id="work-cited-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-3</span></p>
+<p class="work-cited" id="work-cited-3" onmouseleave="document.getElementById('work-cited-3anchor').style.display='none';document.getElementById('work-cited-3anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-3anchor').style.display='';document.getElementById('work-cited-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Felle 2012: A.E. Felle 2012 Esperienze diverse e complementari nel trattamento digitale delle fonti epigrafiche. Il caso di Eagle ed EpiDoc in Diritto romano e scienze antichistiche nell’era digitale. Convegno di studio (Firenze, 12-13 settembre 2011), Torino 2012 [Collectanea Graeco-Romana. Studi e strumenti per la ricerca storico-giuridica, 10], 117-130.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-3" id="work-cited-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-3</span></p>
+<p class="work-cited" id="work-cited-3" onmouseleave="document.getElementById('work-cited-3anchor').style.display='none';document.getElementById('work-cited-3anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-3anchor').style.display='';document.getElementById('work-cited-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Harping 2010: Harping Introduction to Controlled Vocabularies: Terminology for Art, Architecture, and Other Cultural Works 2010 (<a href="http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/what.html">http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/what.html</a>)</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-3" id="work-cited-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-3</span></p>
+<p class="work-cited" id="work-cited-3" onmouseleave="document.getElementById('work-cited-3anchor').style.display='none';document.getElementById('work-cited-3anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-3anchor').style.display='';document.getElementById('work-cited-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Vincent Wickham 2013: N. Vincent and C. Wickham, Debating Open Access <a href="http://www.britac.ac.uk/openaccess/debatingopenaccess.cfm">http://www.britac.ac.uk/openaccess/debatingopenaccess.cfm</a>. June 2013.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-3" id="work-cited-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-3</span></p>
 </section>
-
 <section>
 <h2>Notes</h2>
-<p class="footnote" id="footnote-1"><sup><a href="#footnote-reference-1">1</a></sup>  Please see the temporary project website for more informations: <a href="http://www.eagle-network.eu/about/partners/">http://www.eagle-network.eu/about/partners/</a> for a complete list of initial members of the BPN and <a href="http://www.eagle-network.eu/about/get-involved/">http://www.eagle-network.eu/about/get-involved/</a> if you would like to join EAGLE.</p>
-
-<p class="footnote" id="footnote-2"><sup><a href="#footnote-reference-2">2</a></sup> <span class="T1">The coordinator of the project is Silvia Orlandi (</span><a href="http://viaf.org/viaf/24736430">http://viaf.org/viaf/24736430</a> Sapienza Università di Roma), and the technical coordinator is Claudio Prandoni (<a href="http://www.digitalmeetsculture.net/people/claudio-prandoni/">http://www.digitalmeetsculture.net/people/claudio-prandoni/</a>  Promoter Srl).</p>
-
-<p class="footnote" id="footnote-3"><sup><a href="#footnote-reference-3">3</a></sup> <a href="http://www.europeana.eu/"><span class="Internet_20_link">http://www.europeana.eu</span></a> </p>
-
-<p class="footnote" id="footnote-4"><sup><a href="#footnote-reference-4">4</a></sup> See <a href="http://pro.europeana.eu/documents/900548/a03b2598-a3b2-4cb8-8cc5-33eeadbc7aa8">http://pro.europeana.eu/documents/900548/a03b2598-a3b2-4cb8-8cc5-33eeadbc7aa8</a>.</p>
-
-<p class="footnote" id="footnote-5"><sup><a href="#footnote-reference-5">5</a></sup> Thanks mainly to the work of the University of Alcalà de Henares (task leader) and of the Cyprus Institute (work package leader). It is to be noted that some partners in the EAGLE BPN already have their data in EPIDOC XML, namely PETRAE <a href="http://petrae.tge-adonis.fr/"><span class="Internet_20_link">http://petrae.tge-adonis.fr/</span></a> and the British School at Rome.</p>
-
-<p class="footnote" id="footnote-6"><sup><a href="#footnote-reference-6">6</a></sup> <a href="http://www.stoa.org/epidoc/gl/dev/"><span class="Internet_20_link">http://www.stoa.org/epidoc/gl/dev/</span></a> for history, philosophy and introduction to Epidoc, see <span class="T30">Cayless, Roueché, Elliott, Bodard, 2009 and</span> Bodard 2010 </p>
-
-<p class="footnote" id="footnote-7"><sup><a href="#footnote-reference-7">7</a></sup> <a href="http://arachne.uni-koeln.de/"><span class="Internet_20_link">http://arachne.uni-koeln.de/</span></a> </p>
-
-<p class="footnote" id="footnote-8"><sup><a href="#footnote-reference-8">8</a></sup> <span class="T3">More details and documentation can be found at </span><a href="http://pro.europeana.eu/edm-documentation"><span class="Internet_20_link"><span class="T3">http://pro.europeana.eu/edm-documentation</span></span></a><span class="T3">. EDM refers to major vocabularies and namespaces, including CIDOC-CRM. </span></p>
-
-<p class="footnote" id="footnote-9"><sup><a href="#footnote-reference-9">9</a></sup> <span class="T3">See also </span><a href="http://pro.europeana.eu/linked-open-data"><span class="Internet_20_link"><span class="T3">http://pro.europeana.eu/linked-open-data</span></span></a><span class="T3"> </span></p>
-
-<p class="footnote" id="footnote-1"><sup><a href="#footnote-reference-10">10</a></sup> The structure of which is being des<span class="T4">igned by the Consiglio Nazionale delle Ricerche - </span><span class="T32">Istituto di Scienza e Tecnologie dell’Informazione.</span> </p>
-
-<p class="footnote" id="footnote-11"><sup><a href="#footnote-reference-11">11</a></sup> Perhaps with Perseus projects on Epigraphy (see <a href="http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/digital-humanities-in-the-classroom-introducing-a-new-editing-platform-for-source-documents-in-classics/"><span class="Internet_20_link"><span class="T6">http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/digital-humanities-in-the-classroom-introducing-a-new-editing-platform-for-source-documents-in-classics/</span></span></a>) and with the Papyrological Navigator (<a href="http://papyri.info/"><span class="Internet_20_link">http://papyri.info</span></a>)?</p>
-
-<p class="footnote" id="footnote-12"><sup><a href="#footnote-reference-12">12</a></sup> An approach which should guarantee and integration of different approaches to the study of epigraphy: the inscription as text or as inscribed monument. Cfr. Felle 2012.</p>
-
-<p class="footnote" id="footnote-13"><sup><a href="#footnote-reference-13">13</a></sup> Using tools as <a href="https://storify.com/"><span class="Internet_20_link">https://storify.com/</span></a> </p>
-
-<p class="footnote" id="footnote-14"><sup><a href="#footnote-reference-14">14</a></sup> <a href="http://www.wikimedia.it/"><span class="Internet_20_link"><span class="T3">http://www.wikimedia.it/</span></span></a><span class="T3"> </span></p>
-
-<p class="footnote" id="footnote-15"><sup><a href="#footnote-reference-15">15</a></sup> <span class="T3">The software used by Wikidata (</span><a href="https://www.wikidata.org/wiki/Wikidata:Pagina_principale"><span class="Internet_20_link"><span class="T3">https://www.wikidata.org/wiki/Wikidata:Pagina_principale</span></span></a><span class="T3">) which is actually an extension of MediaWiki developing on Semantic Media Wiki (</span><a href="http://www.semantic-mediawiki.org/"><span class="Internet_20_link"><span class="T3">http://www.semantic-mediawiki.org/</span></span></a><span class="T3">) to improve it and solve several of its existing issues (</span><a href="http://semantic-mediawiki.org/wiki/Wikidata_to_Bring_Semantic_Data_to_Wikipedia"><span class="Internet_20_link"><span class="T3">http://semantic-mediawiki.org/wiki/Wikidata_to_Bring_Semantic_Data_to_Wikipedia</span></span></a><span class="T3">).</span></p>
-
-<p class="footnote" id="footnote-16"><sup><a href="#footnote-reference-16">16</a></sup> <a href="http://www.trismegistos.org/about"><span class="Internet_20_link"><span class="T3">http://www.trismegistos.org/about</span></span></a><span class="T3"> </span></p>
-
-<p class="footnote" id="footnote-17"><sup><a href="#footnote-reference-17">17</a></sup> And a thorough work of cleaning and harmonization.</p>
-
-<p class="footnote" id="footnote-18"><sup><a href="#footnote-reference-18">18</a></sup> <a href="https://github.com/pelagios/pelagios-cookbook/wiki"><span class="Internet_20_link">https://github.com/pelagios/pelagios-cookbook/wiki</span></a> </p>
-
-<p class="footnote" id="footnote-19"><sup><a href="#footnote-reference-19">19</a></sup> <a href="http://pleiades.stoa.org/"><span class="Internet_20_link">http://pleiades.stoa.org/</span></a> </p>
-
-<p class="footnote" id="footnote-20"><sup><a href="#footnote-reference-20">20</a></sup> According to the definition in Harping 2010<span class="T3">. I call them all thesauri according to the more specific definition by the same author although some EAGLE thesauri will be flat lists with synonyms ring lists based on other current uses in the BPN, others poly-hierarchical lists. Some general concepts will be also defined which might perhaps find their place in LAWD. There is no intention to provide arbitrary translations of terms, but consistency of translations from content provider will be harmonized and checked by native speakers. For example of translations and definitions see Evangelisti 2010 and  </span><a href="http://edh-www.adw.uni-heidelberg.de/hilfe/liste/inschrifttraeger"><span class="Internet_20_link"><span class="T3">http://edh-www.adw.uni-heidelberg.de/hilfe/liste/inschrifttraeger</span></span></a><span class="T3"> or </span><span class="Internet_20_link"><span class="T3">http://edh-www.adw.uni-heidelberg.de/hilfe/liste/inschriftgattung</span></span></p>
-
-<p class="footnote" id="footnote-21"><sup><a href="#footnote-reference-21">21</a></sup> <span class="T3">The petrology section of the material vocabulary will mostly refer to the “Simplified Petrography” of the University of Salzburg, an highly accurate thesaurus developed by natural scientists and classicist which is already available with documentation at </span><a href="http://chc.sbg.ac.at/sri/thesaurus/"><span class="Internet_20_link"><span class="T3">http://chc.sbg.ac.at/sri/thesaurus/</span></span></a><span class="T3"> </span></p>
-
-<p class="footnote" id="footnote-22"><sup><a href="#footnote-reference-22">22</a></sup> <span class="T31">EAGLE will also put effort in harmonizing the</span><span class="T38"> dating criteria in use, with precise guidelines for controlled format of date mark-up. </span><span class="T3">This as the previously mentioned vocabularies will be defined and publicly accessible.</span> </p>
-
-<p class="footnote" id="footnote-23"><sup><a href="#footnote-reference-23">23</a></sup> Although the testing phase is not yet finished, there is a very strong likelihood that tematres will be used to develop these vocabularies <a href="http://www.vocabularyserver.com/">http://www.vocabularyserver.com/</a>.</p>
-
-<p class="footnote" id="footnote-24"><sup><a href="#footnote-reference-24">24</a></sup> The website and technology will be maintained by PROMOTER srl and by Consiglio Nazionale delle Ricerche - Istituto di Scienza e Tecnologie dell’Informazione.</p>
-
-<p class="footnote" id="footnote-25"><sup><a href="#footnote-reference-25">25</a></sup> A full description can be found at <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</a></p>
-
-<p class="footnote" id="footnote-26"><sup><a href="#footnote-reference-26">26</a></sup> A useful overview can be found by the ATHENA 2009 p.6 with definitions from <a href="http://www.wipo.int/about-ip/en/">http://www.wipo.int/about-ip/en/</a>. Useful “calculators” are available at <a href="http://www.europeanaconnect.eu/">http://www.europeanaconnect.eu/</a>, <a href="http://www.outofcopyright.eu/">http://www.outofcopyright.eu/</a> and now also at <a href="http://www.digitalmeetsculture.net/article/specialized-ipr-support-from-europeana-photography/">http://www.digitalmeetsculture.net/article/specialized-ipr-support-from-europeana-photography/</a>.</p>
-
-<p class="footnote" id="footnote-27"><sup><a href="#footnote-reference-27">27</a></sup> An issue related but basically distinct from the one faced in <i>Vincent and Wickham 2013</i>.</p>
+<p class="footnote" id="footnote-1" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';"><sup><a href="#footnote-reference-1">1</a></sup>  Please see the temporary project website for more informations: <a href="http://www.eagle-network.eu/about/partners/">http://www.eagle-network.eu/about/partners/</a> for a complete list of initial members of the BPN and <a href="http://www.eagle-network.eu/about/get-involved/">http://www.eagle-network.eu/about/get-involved/</a> if you would like to join EAGLE.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-1" id="footnote-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-1</span></p>
+<p class="footnote" id="footnote-2" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';"><sup><a href="#footnote-reference-2">2</a></sup> <span class="T1">The coordinator of the project is Silvia Orlandi (</span><a href="http://viaf.org/viaf/24736430">http://viaf.org/viaf/24736430</a> Sapienza Università di Roma), and the technical coordinator is Claudio Prandoni (<a href="http://www.digitalmeetsculture.net/people/claudio-prandoni/">http://www.digitalmeetsculture.net/people/claudio-prandoni/</a>  Promoter Srl).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-2" id="footnote-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-2</span></p>
+<p class="footnote" id="footnote-3" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';"><sup><a href="#footnote-reference-3">3</a></sup> <a href="http://www.europeana.eu/"><span class="Internet_20_link">http://www.europeana.eu</span></a> <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-3" id="footnote-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-3</span></p>
+<p class="footnote" id="footnote-4" onmouseleave="document.getElementById('footnote-4anchor').style.display='none';document.getElementById('footnote-4anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-4anchor').style.display='';document.getElementById('footnote-4anchor_label').style.display='';"><sup><a href="#footnote-reference-4">4</a></sup> See <a href="http://pro.europeana.eu/documents/900548/a03b2598-a3b2-4cb8-8cc5-33eeadbc7aa8">http://pro.europeana.eu/documents/900548/a03b2598-a3b2-4cb8-8cc5-33eeadbc7aa8</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-4" id="footnote-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-4</span></p>
+<p class="footnote" id="footnote-5" onmouseleave="document.getElementById('footnote-5anchor').style.display='none';document.getElementById('footnote-5anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-5anchor').style.display='';document.getElementById('footnote-5anchor_label').style.display='';"><sup><a href="#footnote-reference-5">5</a></sup> Thanks mainly to the work of the University of Alcalà de Henares (task leader) and of the Cyprus Institute (work package leader). It is to be noted that some partners in the EAGLE BPN already have their data in EPIDOC XML, namely PETRAE <a href="http://petrae.tge-adonis.fr/"><span class="Internet_20_link">http://petrae.tge-adonis.fr/</span></a> and the British School at Rome.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-5" id="footnote-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-5</span></p>
+<p class="footnote" id="footnote-6" onmouseleave="document.getElementById('footnote-6anchor').style.display='none';document.getElementById('footnote-6anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-6anchor').style.display='';document.getElementById('footnote-6anchor_label').style.display='';"><sup><a href="#footnote-reference-6">6</a></sup> <a href="http://www.stoa.org/epidoc/gl/dev/"><span class="Internet_20_link">http://www.stoa.org/epidoc/gl/dev/</span></a> for history, philosophy and introduction to Epidoc, see <span class="T30">Cayless, Roueché, Elliott, Bodard, 2009 and</span> Bodard 2010 <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-6" id="footnote-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-6</span></p>
+<p class="footnote" id="footnote-7" onmouseleave="document.getElementById('footnote-7anchor').style.display='none';document.getElementById('footnote-7anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-7anchor').style.display='';document.getElementById('footnote-7anchor_label').style.display='';"><sup><a href="#footnote-reference-7">7</a></sup> <a href="http://arachne.uni-koeln.de/"><span class="Internet_20_link">http://arachne.uni-koeln.de/</span></a> <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-7" id="footnote-7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-7</span></p>
+<p class="footnote" id="footnote-8" onmouseleave="document.getElementById('footnote-8anchor').style.display='none';document.getElementById('footnote-8anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-8anchor').style.display='';document.getElementById('footnote-8anchor_label').style.display='';"><sup><a href="#footnote-reference-8">8</a></sup> <span class="T3">More details and documentation can be found at </span><a href="http://pro.europeana.eu/edm-documentation"><span class="Internet_20_link"><span class="T3">http://pro.europeana.eu/edm-documentation</span></span></a><span class="T3">. EDM refers to major vocabularies and namespaces, including CIDOC-CRM. </span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-8" id="footnote-8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-8</span></p>
+<p class="footnote" id="footnote-9" onmouseleave="document.getElementById('footnote-9anchor').style.display='none';document.getElementById('footnote-9anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-9anchor').style.display='';document.getElementById('footnote-9anchor_label').style.display='';"><sup><a href="#footnote-reference-9">9</a></sup> <span class="T3">See also </span><a href="http://pro.europeana.eu/linked-open-data"><span class="Internet_20_link"><span class="T3">http://pro.europeana.eu/linked-open-data</span></span></a><span class="T3"> </span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-9" id="footnote-9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-9</span></p>
+<p class="footnote" id="footnote-1" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';"><sup><a href="#footnote-reference-10">10</a></sup> The structure of which is being des<span class="T4">igned by the Consiglio Nazionale delle Ricerche - </span><span class="T32">Istituto di Scienza e Tecnologie dell’Informazione.</span> <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-1" id="footnote-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-1</span></p>
+<p class="footnote" id="footnote-11" onmouseleave="document.getElementById('footnote-11anchor').style.display='none';document.getElementById('footnote-11anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-11anchor').style.display='';document.getElementById('footnote-11anchor_label').style.display='';"><sup><a href="#footnote-reference-11">11</a></sup> Perhaps with Perseus projects on Epigraphy (see <a href="http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/digital-humanities-in-the-classroom-introducing-a-new-editing-platform-for-source-documents-in-classics/"><span class="Internet_20_link"><span class="T6">http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/digital-humanities-in-the-classroom-introducing-a-new-editing-platform-for-source-documents-in-classics/</span></span></a>) and with the Papyrological Navigator (<a href="http://papyri.info/"><span class="Internet_20_link">http://papyri.info</span></a>)?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-11" id="footnote-11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-11</span></p>
+<p class="footnote" id="footnote-12" onmouseleave="document.getElementById('footnote-12anchor').style.display='none';document.getElementById('footnote-12anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-12anchor').style.display='';document.getElementById('footnote-12anchor_label').style.display='';"><sup><a href="#footnote-reference-12">12</a></sup> An approach which should guarantee and integration of different approaches to the study of epigraphy: the inscription as text or as inscribed monument. Cfr. Felle 2012.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-12" id="footnote-12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-12</span></p>
+<p class="footnote" id="footnote-13" onmouseleave="document.getElementById('footnote-13anchor').style.display='none';document.getElementById('footnote-13anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-13anchor').style.display='';document.getElementById('footnote-13anchor_label').style.display='';"><sup><a href="#footnote-reference-13">13</a></sup> Using tools as <a href="https://storify.com/"><span class="Internet_20_link">https://storify.com/</span></a> <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-13" id="footnote-13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-13</span></p>
+<p class="footnote" id="footnote-14" onmouseleave="document.getElementById('footnote-14anchor').style.display='none';document.getElementById('footnote-14anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-14anchor').style.display='';document.getElementById('footnote-14anchor_label').style.display='';"><sup><a href="#footnote-reference-14">14</a></sup> <a href="http://www.wikimedia.it/"><span class="Internet_20_link"><span class="T3">http://www.wikimedia.it/</span></span></a><span class="T3"> </span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-14" id="footnote-14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-14</span></p>
+<p class="footnote" id="footnote-15" onmouseleave="document.getElementById('footnote-15anchor').style.display='none';document.getElementById('footnote-15anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-15anchor').style.display='';document.getElementById('footnote-15anchor_label').style.display='';"><sup><a href="#footnote-reference-15">15</a></sup> <span class="T3">The software used by Wikidata (</span><a href="https://www.wikidata.org/wiki/Wikidata:Pagina_principale"><span class="Internet_20_link"><span class="T3">https://www.wikidata.org/wiki/Wikidata:Pagina_principale</span></span></a><span class="T3">) which is actually an extension of MediaWiki developing on Semantic Media Wiki (</span><a href="http://www.semantic-mediawiki.org/"><span class="Internet_20_link"><span class="T3">http://www.semantic-mediawiki.org/</span></span></a><span class="T3">) to improve it and solve several of its existing issues (</span><a href="http://semantic-mediawiki.org/wiki/Wikidata_to_Bring_Semantic_Data_to_Wikipedia"><span class="Internet_20_link"><span class="T3">http://semantic-mediawiki.org/wiki/Wikidata_to_Bring_Semantic_Data_to_Wikipedia</span></span></a><span class="T3">).</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-15" id="footnote-15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-15</span></p>
+<p class="footnote" id="footnote-16" onmouseleave="document.getElementById('footnote-16anchor').style.display='none';document.getElementById('footnote-16anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-16anchor').style.display='';document.getElementById('footnote-16anchor_label').style.display='';"><sup><a href="#footnote-reference-16">16</a></sup> <a href="http://www.trismegistos.org/about"><span class="Internet_20_link"><span class="T3">http://www.trismegistos.org/about</span></span></a><span class="T3"> </span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-16" id="footnote-16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-16</span></p>
+<p class="footnote" id="footnote-17" onmouseleave="document.getElementById('footnote-17anchor').style.display='none';document.getElementById('footnote-17anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-17anchor').style.display='';document.getElementById('footnote-17anchor_label').style.display='';"><sup><a href="#footnote-reference-17">17</a></sup> And a thorough work of cleaning and harmonization.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-17" id="footnote-17anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-17anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-17</span></p>
+<p class="footnote" id="footnote-18" onmouseleave="document.getElementById('footnote-18anchor').style.display='none';document.getElementById('footnote-18anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-18anchor').style.display='';document.getElementById('footnote-18anchor_label').style.display='';"><sup><a href="#footnote-reference-18">18</a></sup> <a href="https://github.com/pelagios/pelagios-cookbook/wiki"><span class="Internet_20_link">https://github.com/pelagios/pelagios-cookbook/wiki</span></a> <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-18" id="footnote-18anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-18anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-18</span></p>
+<p class="footnote" id="footnote-19" onmouseleave="document.getElementById('footnote-19anchor').style.display='none';document.getElementById('footnote-19anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-19anchor').style.display='';document.getElementById('footnote-19anchor_label').style.display='';"><sup><a href="#footnote-reference-19">19</a></sup> <a href="http://pleiades.stoa.org/"><span class="Internet_20_link">http://pleiades.stoa.org/</span></a> <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-19" id="footnote-19anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-19anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-19</span></p>
+<p class="footnote" id="footnote-20" onmouseleave="document.getElementById('footnote-20anchor').style.display='none';document.getElementById('footnote-20anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-20anchor').style.display='';document.getElementById('footnote-20anchor_label').style.display='';"><sup><a href="#footnote-reference-20">20</a></sup> According to the definition in Harping 2010<span class="T3">. I call them all thesauri according to the more specific definition by the same author although some EAGLE thesauri will be flat lists with synonyms ring lists based on other current uses in the BPN, others poly-hierarchical lists. Some general concepts will be also defined which might perhaps find their place in LAWD. There is no intention to provide arbitrary translations of terms, but consistency of translations from content provider will be harmonized and checked by native speakers. For example of translations and definitions see Evangelisti 2010 and  </span><a href="http://edh-www.adw.uni-heidelberg.de/hilfe/liste/inschrifttraeger"><span class="Internet_20_link"><span class="T3">http://edh-www.adw.uni-heidelberg.de/hilfe/liste/inschrifttraeger</span></span></a><span class="T3"> or </span><span class="Internet_20_link"><span class="T3">http://edh-www.adw.uni-heidelberg.de/hilfe/liste/inschriftgattung</span></span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-20" id="footnote-20anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-20anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-20</span></p>
+<p class="footnote" id="footnote-21" onmouseleave="document.getElementById('footnote-21anchor').style.display='none';document.getElementById('footnote-21anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-21anchor').style.display='';document.getElementById('footnote-21anchor_label').style.display='';"><sup><a href="#footnote-reference-21">21</a></sup> <span class="T3">The petrology section of the material vocabulary will mostly refer to the “Simplified Petrography” of the University of Salzburg, an highly accurate thesaurus developed by natural scientists and classicist which is already available with documentation at </span><a href="http://chc.sbg.ac.at/sri/thesaurus/"><span class="Internet_20_link"><span class="T3">http://chc.sbg.ac.at/sri/thesaurus/</span></span></a><span class="T3"> </span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-21" id="footnote-21anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-21anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-21</span></p>
+<p class="footnote" id="footnote-22" onmouseleave="document.getElementById('footnote-22anchor').style.display='none';document.getElementById('footnote-22anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-22anchor').style.display='';document.getElementById('footnote-22anchor_label').style.display='';"><sup><a href="#footnote-reference-22">22</a></sup> <span class="T31">EAGLE will also put effort in harmonizing the</span><span class="T38"> dating criteria in use, with precise guidelines for controlled format of date mark-up. </span><span class="T3">This as the previously mentioned vocabularies will be defined and publicly accessible.</span> <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-22" id="footnote-22anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-22anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-22</span></p>
+<p class="footnote" id="footnote-23" onmouseleave="document.getElementById('footnote-23anchor').style.display='none';document.getElementById('footnote-23anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-23anchor').style.display='';document.getElementById('footnote-23anchor_label').style.display='';"><sup><a href="#footnote-reference-23">23</a></sup> Although the testing phase is not yet finished, there is a very strong likelihood that tematres will be used to develop these vocabularies <a href="http://www.vocabularyserver.com/">http://www.vocabularyserver.com/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-23" id="footnote-23anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-23anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-23</span></p>
+<p class="footnote" id="footnote-24" onmouseleave="document.getElementById('footnote-24anchor').style.display='none';document.getElementById('footnote-24anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-24anchor').style.display='';document.getElementById('footnote-24anchor_label').style.display='';"><sup><a href="#footnote-reference-24">24</a></sup> The website and technology will be maintained by PROMOTER srl and by Consiglio Nazionale delle Ricerche - Istituto di Scienza e Tecnologie dell’Informazione.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-24" id="footnote-24anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-24anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-24</span></p>
+<p class="footnote" id="footnote-25" onmouseleave="document.getElementById('footnote-25anchor').style.display='none';document.getElementById('footnote-25anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-25anchor').style.display='';document.getElementById('footnote-25anchor_label').style.display='';"><sup><a href="#footnote-reference-25">25</a></sup> A full description can be found at <a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</a><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-25" id="footnote-25anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-25anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-25</span></p>
+<p class="footnote" id="footnote-26" onmouseleave="document.getElementById('footnote-26anchor').style.display='none';document.getElementById('footnote-26anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-26anchor').style.display='';document.getElementById('footnote-26anchor_label').style.display='';"><sup><a href="#footnote-reference-26">26</a></sup> A useful overview can be found by the ATHENA 2009 p.6 with definitions from <a href="http://www.wipo.int/about-ip/en/">http://www.wipo.int/about-ip/en/</a>. Useful “calculators” are available at <a href="http://www.europeanaconnect.eu/">http://www.europeanaconnect.eu/</a>, <a href="http://www.outofcopyright.eu/">http://www.outofcopyright.eu/</a> and now also at <a href="http://www.digitalmeetsculture.net/article/specialized-ipr-support-from-europeana-photography/">http://www.digitalmeetsculture.net/article/specialized-ipr-support-from-europeana-photography/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-26" id="footnote-26anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-26anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-26</span></p>
+<p class="footnote" id="footnote-27" onmouseleave="document.getElementById('footnote-27anchor').style.display='none';document.getElementById('footnote-27anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-27anchor').style.display='';document.getElementById('footnote-27anchor_label').style.display='';"><sup><a href="#footnote-reference-27">27</a></sup> An issue related but basically distinct from the one faced in <i>Vincent and Wickham 2013</i>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-27" id="footnote-27anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-27anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-27</span></p>
 </section>
 <footer>
-<p>©2014 <span property="cc:attributionName">Pietro Maria Liuzzo</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
-<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+<p style="margin-top:1em;text-align:center;color:gray">©2014 <span property="cc:attributionName">Pietro Maria Liuzzo</span>. Published under the <a href="http://creativecommons.org/licenses/by/4.0/" rel="license" style="color:gray">Creative Commons Attribution 4.0</a> license.</p>
+<p style="margin-top:1em;text-align:center;color:gray">This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" style="color:gray">ISAW Papers 7</a></i>.</p>
 </footer>
 </article>
 </body>
