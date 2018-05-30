@@ -1,62 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html >
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#  dcterms: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  rdfs: http://www.w3.org/2000/01/rdf-schema#">
-    <head><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"/><script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"/><script src="http://isawnyu.github.com/awld-js/awld.js?autoinit" type="text/javascript"/><script type="text/javascript">
-  function show_id_links() {
-if ($('.id_link').css('display') == "none")
-$('.id_link').show();
-else
-$('.id_link').hide();
+<!DOCTYPE html>
+
+<html prefix="cc: http://creativecommons.org/ns#
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ rdfs: http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Bryn Mawr Classical Review</title>
+
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/mackay" rel="dcterms:isPartOf"/>
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
 }
 
-  function show_references() {
- $('.reference').css('border-bottom','thin dotted gray');
- 
- }
-   </script>
-        <title>Bryn Mawr Classical Review</title>
-        <link rel="stylesheet" href="../isaw-papers-7.css"/>
-        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/"/>
- <link rel="dcterms:isPartOf" href="http://isaw.nyu.edu/publications/isaw-papers"/>
-        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/mackay"/>
-    </head>
+ul {
+  page-break-inside: avoid;
+}
 
-<body><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href=""/> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Camilla MacKay; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0;margin-top:1em;align:center" src="http://i.creativecommons.org/l/by/3.0/88x31.png"/></a></p></div>
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}</style></head>
+<body>
 <article>
-<header>
-<h2><a rel="toc" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7.13</a> (2014)</h2>
+<header><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href=""></a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Camilla MacKay; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/></a></p><p style="text-align:center;margin-top:1em">This article can be downloaded as a <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/isaw-papers-7-offprint.xhtml">single file</a></p></div>
+<h2><a href="../isaw-papers-7.xhtml" rel="contents">ISAW Papers 7.13</a> (2014)</h2>
 <h1 property="dcterms:title">Bryn Mawr Classical Review</h1>
 <h2 rel="dcterms:creator"><span property="foaf:name">Camilla MacKay</span></h2>
 </header>
 <section id="section1">
-<p onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" class="textindent0" id="p1" rel="dcterms:hasPart" resource="#p1"><i>Bryn Mawr Classical Review</i> or BMCR (<a href="http://bmcr.brynmawr.edu">bmcr.brynmawr.edu</a> and <a href="http://www.bmcreview.org">www.bmcreview.org</a>) was founded in 1990 as an electronic open access journal (the second such journal ever published in the humanities), and over 8000 book reviews have since been published. It is an international journal that publishes in English, French, German, Italian, and Spanish, and reviews books published anywhere in the world. Bryn Mawr Classical Review reaches a daily email and online readership of 13,000 people worldwide; it is well known in the humanities internationally and because it has always been open access, is widely read not only within academic communities but by the interested public. Following LAWDI 2012 and my introduction to linked data, for which I'm particularly grateful to the organizers, Tom Elliott, Sebastian Heath, and John Muccigrosso, I obtained grant support in 2013 from the Trico (i.e., Bryn Mawr, Haverford, and Swarthmore Colleges) Digital Humanities initiative to begin publishing linked data for BMCR.<a id="p1anchor" class="id_link" style="color:aaa;display:none" href="#p1">↩</a><span id="p1anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p1">#p1  </span></p>
- 
-<p onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" id="p2" rel="dcterms:hasPart" resource="#p2">BMCR is a publication of Bryn Mawr Commentaries, Inc., a non-profit organization that sells Bryn Mawr Greek and Latin Commentaries, inexpensive Greek and Latin textbooks that provide text and explanatory notes geared toward a college-level readership. Expenses for BMCR include editorial assistance and postage costs (despite its place in the forefront of digital publications, reviews are almost exclusively of print books which must be sent to the reviewers, and over half the reviewers are outside North America). Bryn Mawr College provides space (and faculty and staff time), and the journal is supported by a large board of about 100 volunteer editors. Ongoing expenses cannot grow, and neither reviewers (who are already asked to assist with basic formatting) nor editors can be asked to take on significant additional responsibilities in order to enhance BMCR. The challenge of adapting the web publication of BMCR is to do so within the limited budget and limited staff and editorial time available.<a id="p2anchor" class="id_link" style="color:aaa;display:none" href="#p2">↩</a><span id="p2anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p2">#p2  </span></p>
-
-<p onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" id="p3" rel="dcterms:hasPart" resource="#p3">All reviews are stored as TEI-encoded files, with the result that structured metadata exists behind each file. BMCR reviews have (with one or two exceptions from the early years in the 1990s) clean URIs. Tagged ISBNs and titles identify each book reviewed, and tagged names identify both authors and reviewers. A separate blog (on Blogger) was added in 2008 to allow comments on reviews; reviews are automatically published to the blog and linked to the main site.<sup><a class="footnote-reference" id="footnote-reference-1" href="#footnote-1">1</a></sup><a id="p3anchor" class="id_link" style="color:aaa;display:none" href="#p3">↩</a><span id="p3anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p3">#p3  </span></p>
-
-<p onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" id="p4" rel="dcterms:hasPart" resource="#p4">We investigated using RDFa to publish linkable data in BMCR reviews, and led by Karen Coyle, we plan to repurpose the existing TEI metadata as schema.org data.. A particular challenge is to provide data that uses ontologies and vocabularies that are and will be widely used. Using WorldCat identities for books seems obvious, and we hope we can thus enable linking to all formats of a particular book. We now usually publish one ISBN per review—the ISBN of the physical format of the book provided by the publisher—but there may be multiple ISBNs: hardback, paperback, e-book. For this reason, using the WorldCat identity rather than or in addition to the ISBN, where possible, may increase the utility of BMCR's data. Since BMCR has, for several years, used Endnote to pull citations from WorldCat, the WorldCat ID number exists in our Endnote files, and with some effort we may be able to generate WorldCat identities (as published in worldcat.org) fairly easily for a couple of thousand reviews, and going forward, can incorporate their inclusion in the schema.org data.<a id="p4anchor" class="id_link" style="color:aaa;display:none" href="#p4">↩</a><span id="p4anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p4">#p4  </span></p>
-
-<p onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" id="p5" rel="dcterms:hasPart" resource="#p5">Another form of data perhaps useful for publishing as linked data consists of the author of the review, one of the tagged fields. But in this case, we have no automated way of providing, for example, the VIAF identity for the person (who may or may not exist in VIAF in any case). Would identifying the name as the reviewer provides it him or herself (usually without a middle name, sometimes only with initials) be useful? (Reviewers who review more than once for BMCR often provide different forms of their own names from review to review; we do not have our own authorities, so the same reviewer can be indexed differently even in BMCR.)<a id="p5anchor" class="id_link" style="color:aaa;display:none" href="#p5">↩</a><span id="p5anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p5">#p5  </span></p>
-
-<p onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" id="p6" rel="dcterms:hasPart" resource="#p6">A particular problem is figuring out how BMCR's linked data might be useful in a real world environment.<sup><a class="footnote-reference" id="footnote-reference-2" href="#footnote-2">2</a></sup> It is easy to imagine that publishing data to the effect that a particular BMCR URI  is a review of a particular book, identified by the worldcat.org URI, could allow a library catalog, for example, to automatically pull in a BMCR review about a particular book, regardless of the format. For example, <a href="http://bmcr.brynmawr.edu/2008/2008-04-35">http://bmcr.brynmawr.edu/2008/2008-04-35</a> is a review of <a href="http://www.worldcat.org/oclc/314219734">http://www.worldcat.org/oclc/314219734</a>, which has both print and e-book ISBNs (but we only published the hardback ISBN). Having a partner in place to make use of this data would be most encouraging; I worry that we might otherwise make the wrong choice and risk publishing data that no one will use.<a id="p6anchor" class="id_link" style="color:aaa;display:none" href="#p6">↩</a><span id="p6anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p6">#p6  </span></p>
-
-<p onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" id="p7" rel="dcterms:hasPart" resource="#p7">Given the limited resources of BMCR, and the constant editorial demands of continuous publication of some 60 or so reviews per month, implementing publication of linked data has to be something that requires little additional work of the editors, with a guaranteed (or as close to guaranteed as we can make it) result. The process must be close to automatic and thus our pressure to make a few good choices. Will our publication of schema.org data enable this? It is unclear exactly what benefit we (or our readers, or searchers) will gain, but the cost is low.<sup><a class="footnote-reference" id="footnote-reference-3" href="#footnote-3">3</a></sup><a id="p7anchor" class="id_link" style="color:aaa;display:none" href="#p7">↩</a><span id="p7anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p7">#p7  </span></p>
-
-<p onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" id="p8" rel="dcterms:hasPart" resource="#p8">Another promising possibility for linking out from BMCR arises from recent discussions with Josh Sosin, Hugh Cayless, and Ryan Baumann of the new Duke Collaboratory for Classics Computing about linking papyrological and epigraphic texts cited in BMCR reviews, using Trismegistos numbers. Relatively few BMCR reviews cover books on these topics, and so even retrospective linking for these reviews back to 1990 would be manageable. Reviewers of books on these topics too (especially papyrology) might add coding for these links on their own should we start requesting links in the review. This project may help determine the feasibility and usefulness of adding more links from the content of BMCR reviews.<a id="p8anchor" class="id_link" style="color:aaa;display:none" href="#p8">↩</a><span id="p8anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p8">#p8  </span></p>
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1"><i>Bryn Mawr Classical Review</i> or BMCR (<a href="http://bmcr.brynmawr.edu">bmcr.brynmawr.edu</a> and <a href="http://www.bmcreview.org">www.bmcreview.org</a>) was founded in 1990 as an electronic open access journal (the second such journal ever published in the humanities), and over 8000 book reviews have since been published. It is an international journal that publishes in English, French, German, Italian, and Spanish, and reviews books published anywhere in the world. Bryn Mawr Classical Review reaches a daily email and online readership of 13,000 people worldwide; it is well known in the humanities internationally and because it has always been open access, is widely read not only within academic communities but by the interested public. Following LAWDI 2012 and my introduction to linked data, for which I'm particularly grateful to the organizers, Tom Elliott, Sebastian Heath, and John Muccigrosso, I obtained grant support in 2013 from the Trico (i.e., Bryn Mawr, Haverford, and Swarthmore Colleges) Digital Humanities initiative to begin publishing linked data for BMCR.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">BMCR is a publication of Bryn Mawr Commentaries, Inc., a non-profit organization that sells Bryn Mawr Greek and Latin Commentaries, inexpensive Greek and Latin textbooks that provide text and explanatory notes geared toward a college-level readership. Expenses for BMCR include editorial assistance and postage costs (despite its place in the forefront of digital publications, reviews are almost exclusively of print books which must be sent to the reviewers, and over half the reviewers are outside North America). Bryn Mawr College provides space (and faculty and staff time), and the journal is supported by a large board of about 100 volunteer editors. Ongoing expenses cannot grow, and neither reviewers (who are already asked to assist with basic formatting) nor editors can be asked to take on significant additional responsibilities in order to enhance BMCR. The challenge of adapting the web publication of BMCR is to do so within the limited budget and limited staff and editorial time available.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">All reviews are stored as TEI-encoded files, with the result that structured metadata exists behind each file. BMCR reviews have (with one or two exceptions from the early years in the 1990s) clean URIs. Tagged ISBNs and titles identify each book reviewed, and tagged names identify both authors and reviewers. A separate blog (on Blogger) was added in 2008 to allow comments on reviews; reviews are automatically published to the blog and linked to the main site.<sup><a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">1</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">We investigated using RDFa to publish linkable data in BMCR reviews, and led by Karen Coyle, we plan to repurpose the existing TEI metadata as schema.org data.. A particular challenge is to provide data that uses ontologies and vocabularies that are and will be widely used. Using WorldCat identities for books seems obvious, and we hope we can thus enable linking to all formats of a particular book. We now usually publish one ISBN per review—the ISBN of the physical format of the book provided by the publisher—but there may be multiple ISBNs: hardback, paperback, e-book. For this reason, using the WorldCat identity rather than or in addition to the ISBN, where possible, may increase the utility of BMCR's data. Since BMCR has, for several years, used Endnote to pull citations from WorldCat, the WorldCat ID number exists in our Endnote files, and with some effort we may be able to generate WorldCat identities (as published in worldcat.org) fairly easily for a couple of thousand reviews, and going forward, can incorporate their inclusion in the schema.org data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">Another form of data perhaps useful for publishing as linked data consists of the author of the review, one of the tagged fields. But in this case, we have no automated way of providing, for example, the VIAF identity for the person (who may or may not exist in VIAF in any case). Would identifying the name as the reviewer provides it him or herself (usually without a middle name, sometimes only with initials) be useful? (Reviewers who review more than once for BMCR often provide different forms of their own names from review to review; we do not have our own authorities, so the same reviewer can be indexed differently even in BMCR.)<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">A particular problem is figuring out how BMCR's linked data might be useful in a real world environment.<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup> It is easy to imagine that publishing data to the effect that a particular BMCR URI  is a review of a particular book, identified by the worldcat.org URI, could allow a library catalog, for example, to automatically pull in a BMCR review about a particular book, regardless of the format. For example, <a href="http://bmcr.brynmawr.edu/2008/2008-04-35">http://bmcr.brynmawr.edu/2008/2008-04-35</a> is a review of <a href="http://www.worldcat.org/oclc/314219734">http://www.worldcat.org/oclc/314219734</a>, which has both print and e-book ISBNs (but we only published the hardback ISBN). Having a partner in place to make use of this data would be most encouraging; I worry that we might otherwise make the wrong choice and risk publishing data that no one will use.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+<p id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">Given the limited resources of BMCR, and the constant editorial demands of continuous publication of some 60 or so reviews per month, implementing publication of linked data has to be something that requires little additional work of the editors, with a guaranteed (or as close to guaranteed as we can make it) result. The process must be close to automatic and thus our pressure to make a few good choices. Will our publication of schema.org data enable this? It is unclear exactly what benefit we (or our readers, or searchers) will gain, but the cost is low.<sup><a class="footnote-reference" href="#footnote-3" id="footnote-reference-3">3</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
+<p id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p8">Another promising possibility for linking out from BMCR arises from recent discussions with Josh Sosin, Hugh Cayless, and Ryan Baumann of the new Duke Collaboratory for Classics Computing about linking papyrological and epigraphic texts cited in BMCR reviews, using Trismegistos numbers. Relatively few BMCR reviews cover books on these topics, and so even retrospective linking for these reviews back to 1990 would be manageable. Reviewers of books on these topics too (especially papyrology) might add coding for these links on their own should we start requesting links in the review. This project may help determine the feasibility and usefulness of adding more links from the content of BMCR reviews.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
 </section>
-
 <section id="footnotes">
 <h2>Notes</h2>
-<p onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" class="footnote" id="footnote-1"><sup><a href="#footnote-reference-1">1</a></sup> The experiment with comments on reviews has not been a resounding success: readers rarely comment on bmcreview.org, and prefer either to write directly to the reviewer (we hear anecdotally) or to publish formal responses in BMCR.<a id="footnote-1anchor" class="id_link" style="color:aaa;display:none" href="#footnote-1">↩</a><span id="footnote-1anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#footnote-1">#footnote-1  </span></p>
-
-<p onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" class="footnote" id="footnote-2"><sup><a href="#footnote-reference-2">2</a></sup> Eric Kansa's discussion of Open Context, CIDOC-CRM and linked data (<a href="../kansa/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/kansa/</a>) is a more sophisticated example of the challenge of making linked data truly useful.<a id="footnote-2anchor" class="id_link" style="color:aaa;display:none" href="#footnote-2">↩</a><span id="footnote-2anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#footnote-2">#footnote-2  </span></p>
-
-<p onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" class="footnote" id="footnote-3"><sup><a href="#footnote-reference-3">3</a></sup> <a href="https://schema.org/docs/faq.html">schema.org FAQs</a> are vague about results: "over time you can expect that more data will be used in more ways. In addition, since the markup is publicly accessible from your web pages, other organizations may find interesting new ways to make use of it as well."<a id="footnote-3anchor" class="id_link" style="color:aaa;display:none" href="#footnote-3">↩</a><span id="footnote-3anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#footnote-3">#footnote-3  </span></p>
+<p class="footnote" id="footnote-1" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';"><sup><a href="#footnote-reference-1">1</a></sup> The experiment with comments on reviews has not been a resounding success: readers rarely comment on bmcreview.org, and prefer either to write directly to the reviewer (we hear anecdotally) or to publish formal responses in BMCR.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-1" id="footnote-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-1</span></p>
+<p class="footnote" id="footnote-2" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';"><sup><a href="#footnote-reference-2">2</a></sup> Eric Kansa's discussion of Open Context, CIDOC-CRM and linked data (<a href="../kansa/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/kansa/</a>) is a more sophisticated example of the challenge of making linked data truly useful.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-2" id="footnote-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-2</span></p>
+<p class="footnote" id="footnote-3" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';"><sup><a href="#footnote-reference-3">3</a></sup> <a href="https://schema.org/docs/faq.html">schema.org FAQs</a> are vague about results: "over time you can expect that more data will be used in more ways. In addition, since the markup is publicly accessible from your web pages, other organizations may find interesting new ways to make use of it as well."<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#footnote-3" id="footnote-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-3</span></p>
 </section>
 <footer>
-<p>©2014 <span property="cc:attributionName">Camilla MacKay</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> license.</p>
-<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+<p style="margin-top:1em;text-align:center;color:gray">©2014 <span property="cc:attributionName">Camilla MacKay</span>. Published under the <a href="http://creativecommons.org/licenses/by/3.0/" rel="license" style="color:gray">Creative Commons Attribution 3.0</a> license.</p>
+<p style="margin-top:1em;text-align:center;color:gray">This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" style="color:gray">ISAW Papers 7</a></i>.</p>
 </footer>
 </article>
 </body>

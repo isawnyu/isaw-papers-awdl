@@ -1,45 +1,298 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#
+
+<html prefix="cc: http://creativecommons.org/ns#
  dcterms: http://purl.org/dc/terms/
  foaf: http://xmlns.com/foaf/0.1/
- rdfs: http://www.w3.org/2000/01/rdf-schema#">
-    <head>
-        <title>Integrating Historical-Geographic Web-resources</title>
-        <link rel="stylesheet" href="../isaw-papers-7.css" />
-        <link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/tsonev/" />
-        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" />
- <link rel="dcterms:isPartOf" href="http://isaw.nyu.edu/publications/isaw-papers" />
-    </head>
-    <body>
-        <article>
-        <header>
-        <h2><a rel="contents" href="../isaw-papers-7.xhtml">ISAW Papers 7.29</a> (2014)</h2>
-        <h1 property="dcterms:title">Integrating Historical-Geographic Web-resources</h1>
-        <h2 rel="dcterms:creator"><a rel="dcterms:identifier" href="http://viaf.org/viaf/305235677" property="foaf:name">Tsoni Tsonev</a></h2>
-        </header>
+ rdfs: http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Integrating Historical-Geographic Web-resources</title>
 
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/tsonev/" rel="canonical"/>
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
+}
+
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}</style></head>
+<body>
+<article>
+<header><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/tsonev/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/tsonev/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 ; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/></a></p><p style="text-align:center;margin-top:1em">This article can be downloaded as a <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/isaw-papers-7-offprint.xhtml">single file</a></p></div>
+<h2><a href="../isaw-papers-7.xhtml" rel="contents">ISAW Papers 7.29</a> (2014)</h2>
+<h1 property="dcterms:title">Integrating Historical-Geographic Web-resources</h1>
+<h2 rel="dcterms:creator"><a href="http://viaf.org/viaf/305235677" property="foaf:name" rel="dcterms:identifier">Tsoni Tsonev</a></h2>
+</header>
 <section id="section1">
-<p id="p1" class="textindent0">In recent years archaeological web-sites with various data formats, videos, pictures, and maps increase significantly not only in number but in diversity of themes, geographical regions and time span. On the other hand demands for acquiring archaeological information from various web resources also grow. In this situation a question naturally arises as to how to efficiently search this fast growing domain available on the Web. Not that long ago it was enough to search through Google in order to obtain good and satisfactory results. Now this option is still in use but it is getting increasingly difficult to find appropriate site, museum exhibit, and text at the cost of spending only few minutes. As the people are getting busier they cannot find much time sitting at the computer.</p>
-
-<p id="p2">This situation of fast growing in a hazardous way number of web resources (not only archaeological but other that relate to this or similar domains of knowledge) requires building adequate system for sharing data and linking representations of various kinds, texts, literature, and citations. At first glance such a task for integrating different resources seems difficult. Yet LAWDI’s approach has found an elegant solution that reduces much of the effort and, at the same time, opened space for expansion in other domains of knowledge, forms of virtual representation and open access for wide audiences.</p>
-
-<p id="p3">The basic building blocks of this integrating system are the ‘Virtual International Authority File’ (VIAF, <a href="http://viaf.org/">http://viaf.org/</a>  and ‘FOAF Vocabulary’ (Friend of a Friend), <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a> - basic characteristics and activities of persons and relations on the web. Why are persons taking primary role in virtual communication? The answer is simple: all histories, objects and texts relate to one or several related persons (authors). This approach is advantageous in that it allows to transverse disciplinary boundaries and relates various resources. In such a way the user directly accesses sufficiently defined complete datasets that may be exhaustive (contain all the necessary data) in their respective domain.</p>
-
-<p id="p4">Most often, however, users do not need to access all the data in a dataset or all the layers in a GIS or similar software presentation. For example, in archaeology most of its data have intuitive meaning when they are located on a geographical map. More than that, archaeological knowledge can be used to ascribe differential values and social importance to various monuments, sites, artefacts. Thus the geographic map turns into space laden with differentially distributed historical-geographic values that constitute the necessary requirement for successful execution of spatial analyses of archaeological data, or their management. They form locally important features that lack universal explanatory values which means that moving to another region the same spatial analytical methods will produce different results or the nature of the data in the new region will require different methods for carrying out archaeologically meaningful spatial analyses. For example, the transformed by simple Kriging method space of distribution of megaliths and rock-cut tombs in two adjacent geographic regions in South Bulgaria shows that their distribution has unique values which cannot be achieved by applying the same method to other regions with megaliths – megaliths are known from the greater part of Eurasia. Thus this universal type of monuments creates local meanings in various similar geographic regions which is a good example to show that human and social evolution lack spatio-temporal continuity.</p>
-
-<p id="p5">It is these theoretical premises that pose the requirement for selective access and integrating only fragments taken from otherwise complete datasets published on the Web. This goal requires changes in the organization of archaeological/historical data. They have to respond to a core functionality needed for establishing cross-domain (e.g. archaeology – anthropology) relationships. On the second place come descriptive languages of archaeology specific analyses: lithics, pottery, raw materials, sedimentology, etc. The major problem lies in the ways of organizing the already existing attribute data so that they to be available for external access to the interfaces of remotely enabled function modules designed for archaeologically meaningful spatial and conceptual distribution or arrangement. In this approach the unique ability of GIS or similar open source systems to model complex spatial relationships such as networks offers valuable advantages for carrying out further analyses and research.</p>
-
-<p id="p6">At the data level the integration of different data coming from various resources need to be organized as graphic representations (area feature types in GIS). Thus the synchronization of different data (data transformed into graphically represented objects) will go through the exact correspondence between each of these data-objects and respective feature on the GIS database. For this purpose the linking of GIS features to external data-objects will be accomplished through foreign-key mapping which associates the unique ID for each object-data with the corresponding GIS feature. These relationships are necessary requirements for subsequent data access and transaction processes. For example, an archaeological project may work with ancient buildings (monuments) connected by a system of roads that may correspond exactly to GIS database features.</p>
-
-<p id="p7">The general aim of this integration strategy is somewhat simpler than the already developed business models because it is not necessary to make available most of the external functionality of the corresponding information system. In business models the availability of functionality is even more important than the access to the data. The appropriate and specific for archaeological (wider humanitarian) studies aim is the possibility to organize data into geo-referenced (address specific sources of information) web-resources. For example, the typical task then would be users to be able to retrieve a list of all ‘connection object features' within a geographic area and work simultaneously with another resource to get a list of all bibliographic references related to the studies of these monuments. The management of such tasks would require different geo-referenced data types and services to be maintained in a services repository. Thus the required set of web services will be confined to a services repository for creating and storing limited number of process definitions, metadata, and services registry for publishing, classifying, and discovering services.</p>
-
-<p id="p8">The above presented scenario only describes the general approach to integrating separate information systems and data. It is based on GIS but can equally well be developed with open source software and other systems. Through this presentation I want to underline the fact that linking raw data is only the first step in the process of advancing humanitarian studies of the past. The re-organization of the archaeological/historical data into geo-referenced web resources turns the raw data into technically (GIS or other) and conceptually defined information systems. In my view it is getting into these data that poses the major challenge for future development and integration of these resources and of integrating the information systems that support them.</p>
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';">In recent years archaeological web-sites with various data formats, videos, pictures, and maps increase significantly not only in number but in diversity of themes, geographical regions and time span. On the other hand demands for acquiring archaeological information from various web resources also grow. In this situation a question naturally arises as to how to efficiently search this fast growing domain available on the Web. Not that long ago it was enough to search through Google in order to obtain good and satisfactory results. Now this option is still in use but it is getting increasingly difficult to find appropriate site, museum exhibit, and text at the cost of spending only few minutes. As the people are getting busier they cannot find much time sitting at the computer.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';">This situation of fast growing in a hazardous way number of web resources (not only archaeological but other that relate to this or similar domains of knowledge) requires building adequate system for sharing data and linking representations of various kinds, texts, literature, and citations. At first glance such a task for integrating different resources seems difficult. Yet LAWDI’s approach has found an elegant solution that reduces much of the effort and, at the same time, opened space for expansion in other domains of knowledge, forms of virtual representation and open access for wide audiences.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';">The basic building blocks of this integrating system are the ‘Virtual International Authority File’ (VIAF, <a href="http://viaf.org/">http://viaf.org/</a>  and ‘FOAF Vocabulary’ (Friend of a Friend), <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a> - basic characteristics and activities of persons and relations on the web. Why are persons taking primary role in virtual communication? The answer is simple: all histories, objects and texts relate to one or several related persons (authors). This approach is advantageous in that it allows to transverse disciplinary boundaries and relates various resources. In such a way the user directly accesses sufficiently defined complete datasets that may be exhaustive (contain all the necessary data) in their respective domain.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';">Most often, however, users do not need to access all the data in a dataset or all the layers in a GIS or similar software presentation. For example, in archaeology most of its data have intuitive meaning when they are located on a geographical map. More than that, archaeological knowledge can be used to ascribe differential values and social importance to various monuments, sites, artefacts. Thus the geographic map turns into space laden with differentially distributed historical-geographic values that constitute the necessary requirement for successful execution of spatial analyses of archaeological data, or their management. They form locally important features that lack universal explanatory values which means that moving to another region the same spatial analytical methods will produce different results or the nature of the data in the new region will require different methods for carrying out archaeologically meaningful spatial analyses. For example, the transformed by simple Kriging method space of distribution of megaliths and rock-cut tombs in two adjacent geographic regions in South Bulgaria shows that their distribution has unique values which cannot be achieved by applying the same method to other regions with megaliths – megaliths are known from the greater part of Eurasia. Thus this universal type of monuments creates local meanings in various similar geographic regions which is a good example to show that human and social evolution lack spatio-temporal continuity.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';">It is these theoretical premises that pose the requirement for selective access and integrating only fragments taken from otherwise complete datasets published on the Web. This goal requires changes in the organization of archaeological/historical data. They have to respond to a core functionality needed for establishing cross-domain (e.g. archaeology – anthropology) relationships. On the second place come descriptive languages of archaeology specific analyses: lithics, pottery, raw materials, sedimentology, etc. The major problem lies in the ways of organizing the already existing attribute data so that they to be available for external access to the interfaces of remotely enabled function modules designed for archaeologically meaningful spatial and conceptual distribution or arrangement. In this approach the unique ability of GIS or similar open source systems to model complex spatial relationships such as networks offers valuable advantages for carrying out further analyses and research.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';">At the data level the integration of different data coming from various resources need to be organized as graphic representations (area feature types in GIS). Thus the synchronization of different data (data transformed into graphically represented objects) will go through the exact correspondence between each of these data-objects and respective feature on the GIS database. For this purpose the linking of GIS features to external data-objects will be accomplished through foreign-key mapping which associates the unique ID for each object-data with the corresponding GIS feature. These relationships are necessary requirements for subsequent data access and transaction processes. For example, an archaeological project may work with ancient buildings (monuments) connected by a system of roads that may correspond exactly to GIS database features.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+<p id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';">The general aim of this integration strategy is somewhat simpler than the already developed business models because it is not necessary to make available most of the external functionality of the corresponding information system. In business models the availability of functionality is even more important than the access to the data. The appropriate and specific for archaeological (wider humanitarian) studies aim is the possibility to organize data into geo-referenced (address specific sources of information) web-resources. For example, the typical task then would be users to be able to retrieve a list of all ‘connection object features' within a geographic area and work simultaneously with another resource to get a list of all bibliographic references related to the studies of these monuments. The management of such tasks would require different geo-referenced data types and services to be maintained in a services repository. Thus the required set of web services will be confined to a services repository for creating and storing limited number of process definitions, metadata, and services registry for publishing, classifying, and discovering services.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
+<p id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';">The above presented scenario only describes the general approach to integrating separate information systems and data. It is based on GIS but can equally well be developed with open source software and other systems. Through this presentation I want to underline the fact that linking raw data is only the first step in the process of advancing humanitarian studies of the past. The re-organization of the archaeological/historical data into geo-referenced web resources turns the raw data into technically (GIS or other) and conceptually defined information systems. In my view it is getting into these data that poses the major challenge for future development and integration of these resources and of integrating the information systems that support them.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
 </section>
 <footer>
-<p>©2014 <span property="cc:attributionbName">Tsoni Tsonev</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
-<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+<p style="margin-top:1em;text-align:center;color:gray">©2014 <span property="cc:attributionbName">Tsoni Tsonev</span>. Published under the <a href="http://creativecommons.org/licenses/by/4.0/" rel="license" style="color:gray">Creative Commons Attribution 4.0</a> license.</p>
+<p style="margin-top:1em;text-align:center;color:gray">This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" style="color:gray">ISAW Papers 7</a></i>.</p>
 </footer>
-        </article>
-    </body>
+</article>
+</body>
 </html>

@@ -1,70 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html >
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#  dcterms: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  rdfs: http://www.w3.org/2000/01/rdf-schema#">
-    <head><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"/><script src="http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js" type="text/javascript"/><script src="http://isawnyu.github.com/awld-js/awld.js?autoinit" type="text/javascript"/><script type="text/javascript">
-  function show_id_links() {
-if ($('.id_link').css('display') == "none")
-$('.id_link').show();
-else
-$('.id_link').hide();
+<!DOCTYPE html>
+
+<html prefix="cc: http://creativecommons.org/ns#
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ rdfs: http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Exploring an Opportunity to Link the Dead in Ancient Rome</title>
+
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/meyers/" rel="canonical"/>
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
 }
 
-  function show_references() {
- $('.reference').css('border-bottom','thin dotted gray');
- 
- }
-   </script>
-        <title>Exploring an Opportunity to Link the Dead in Ancient Rome</title>
-<link rel="stylesheet" href="../isaw-papers-7.css"/>
-        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/"/>
- <link rel="dcterms:isPartOf" href="http://isaw.nyu.edu/publications/isaw-papers"/>
-<link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/meyers/"/>
-    </head>
-    <body><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/meyers/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/meyers/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Katy Meyers; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0;margin-top:1em;align:center" src="http://i.creativecommons.org/l/by/3.0/88x31.png"/></a></p></div>
+ul {
+  page-break-inside: avoid;
+}
 
- <article>
- <header>
- <h2><a rel="toc" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7.16</a> (2014)</h2>
- <h1 property="dcterms:title">Exploring an Opportunity to Link the Dead in Ancient Rome</h1>
- <h2 rel="dcterms:creator"><span property="foaf:name">Katy M. Meyers</span></h2>
- </header>
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
 
-<p onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" class="textindent0" id="p1" rel="dcterms:hasPart" resource="#p1">Death is a constant, however social responses to this event and subsequent treatments of the dead have varied widely through time and space. Since the beginning of archaeology, there has been interest in burials and funerary monuments with the hope of interpreting these different responses to death (Parker Pearson 1999). As theory, method and technology have developed through time, our interpretations of mortuary sites have been able to create more nuanced interpretations of why particular societies respond to death in specific manners (Rakita and Buikstra 2005). The physical remains of the dead, the burial context, and the funerary rites they received can reveal much about the lifestyles of the people in the past. However, all of this interpretation relies on the presence of one type of evidence: primary data. Linked open data (LOD) provides a much needed approach for archaeological studies of the deceased, as it would increase sharing of data, improve links between archaeologists, and further study within the discipline at an increased rate.  Using Roman Imperial burial practices as an example, I argue here that mortuary archaeology would benefit greatly from the implementation of LOD.<a id="p1anchor" class="id_link" style="color:aaa;display:none" href="#p1">↩</a><span id="p1anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p1">#p1  </span></p>
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
 
-<p onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" id="p2" rel="dcterms:hasPart" resource="#p2">Despite the popularity of the Roman Empire in modern academia, it is still not well-understood how imperial expansion was felt by the provinces, and how this affected their mortuary programs (Hingley 2005). Across the period of Roman occupation, burial practices varied based on a number of factors including region, citizen status, social rank, family beliefs, and religious cult affiliation. At the beginning of the empire, cremation was the most popular form of burial, with inhumation a secondary option. By the mid-2nd century, the frequencies between the two forms had reversed, and by the 4th century cremation was a rare practice (Nock 1932). Due to imperial tolerance, burial type was not state-mandated and the only stipulation was that the burial itself must take place outside the walls of the city. However, the types of tombs, the funerary rites, and the choice to cremate or inhume was left to the mourning community. This meant there was great diversity in the types of burials found throughout the empire, despite the strong Roman cultural influence (Toynbee 1996). The extent of adoption of the Roman identity in their various territories meant that burial practices were interpreted in a variety of ways, with some provinces changing with Roman invasion, some forms of hybrid mortuary programs and others maintaining their ancestral ways (Webster 2001).<a id="p2anchor" class="id_link" style="color:aaa;display:none" href="#p2">↩</a><span id="p2anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p2">#p2  </span></p>
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
 
-<p onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" id="p3" rel="dcterms:hasPart" resource="#p3">The questions that stem from a brief overview of Roman Imperial burials are what were the different mortuary practices and how did Roman influence change, influence, or be rejected by different social groups across the provinces? Answering these questions would help us to better understand how Roman Imperial identity was differentially accepted or rejected by the provinces, and what happened to these practices over time with waning imperial power. The data required to answer this question is immense and expansive- but it does exist. Excavations have been done of Roman Imperial and Roman Provincial sites from around the Mediterranean, Europe and Britain (Keegan 2002, Killgrove 2005, Morris 1992, Murali and Girard 2000, Philpott 1991, Wahl 2008, Williams 2004).<a id="p3anchor" class="id_link" style="color:aaa;display:none" href="#p3">↩</a><span id="p3anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p3">#p3  </span></p>
+#isaw_papers_header {
+  display: none;
+}
+}
 
-<p onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" id="p4" rel="dcterms:hasPart" resource="#p4">There are two primary problems that prevent synthesis: there is no standard method for classifying cemeteries that would allow for direct comparison of the mortuary sites, and this data is rarely found in accessible formats digitally or in print. In a study by Roberts and Mays (2010), they found that of the over 250 articles written on bioarchaeology in Britain from the top four journals, 79% of them were based on collections from only 5 locations. While this uneven use of skeletal collections can be attributed to a number of reasons, the one that they highlight is the availability and knowledge of collections.<a id="p4anchor" class="id_link" style="color:aaa;display:none" href="#p4">↩</a><span id="p4anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p4">#p4  </span></p>
+@media screen {
 
-<p onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" id="p5" rel="dcterms:hasPart" resource="#p5">Applying standardized LOD methods to the domain of Roman Imperial mortuary practices requires developing and reconfiguring data to fit four principles as stated by Tim Berners-Lee (2007), the inventor of the World Wide Web. First (1), all data must have stable uniform resource identifiers (URIs) that allow for them to be identified as unique objects at any time. Second (2), these URIs must have hypertext transfer protocol identifiers so that they can be accessed via the web. Third (3), the URI must have useful metadata that is created using a universal standard and provides information to the individual looking up the data. Finally (4), the metadata includes links to other related URIs in order to build an information network. If the goal of archaeology is indeed to interpret the past from its physical remains, then the concept of linked open data provides an opportunity to gain access to the physical remains and interpretations freely through interconnected digital networks. The progress of archaeological work requires building upon the works of others, which could be aided by the introduction of LOD.<a id="p5anchor" class="id_link" style="color:aaa;display:none" href="#p5">↩</a><span id="p5anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p5">#p5  </span></p>
+body {
+  margin:auto;
+  width:70%;
+}
+}
 
-<p onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" id="p6" rel="dcterms:hasPart" resource="#p6">For example, in an ideal system I could look up a specific Romano-British burial site in York, the grave would have a stable HTTP URI so that it could easily referenced and could be accessed online. It would contain useful data about the grave such as what physical remains were found in it, the age and sex of the individual, types of grave goods found with it, but also who excavated it, what methods they used, and who put this information online. Finally, each of the pieces of metadata would be linked to other stable HTTP URIs so that connections between evidence could be made.  In regards to being open, it also means that we would not have to pay, gain permission or be part of a specific organization in order to freely download or access this information.<a id="p6anchor" class="id_link" style="color:aaa;display:none" href="#p6">↩</a><span id="p6anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p6">#p6  </span></p>
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
 
-<p onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" id="p7" rel="dcterms:hasPart" resource="#p7">Despite the increased use of digital applications and databases, we are far from the goal of having a linked and open network of mortuary archaeology data for any region or era. The sharing of mortuary and skeletal material has just begun, with sites like Open Context providing a framework for linked open bioarchaeology data. Other groups like Archaeology Data Service and the Museum of London’s Centre for Bioarchaeology are putting primary data from mortuary sites online in an open and accessible, though not linked, format As archaeologists, we not only want to interpret the past, we have a responsibility to share our data so that others can build upon it. "If I have seen further it is by standing on the shoulders of giants” (Newton). The data itself is just as important as the interpretations we draw from it. If we had full access to all the primary data that has been previously collected, we could achieve so much more. Increased access and improved connections between datasets within bioarchaeology and archaeology would reduce sampling bias and perhaps reveal new patterns. While this scenario may not be possible, it is up to us to try. Even the small amount of data that has been placed online has already shown (Roberts and Mays 2011) that it is shared more, utilized more, and has produced more nuanced interpretations due to its high availability.<a id="p7anchor" class="id_link" style="color:aaa;display:none" href="#p7">↩</a><span id="p7anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#p7">#p7  </span></p>
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
 
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}</style></head>
+<body>
+<article>
+<header><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/meyers/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/meyers/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 Katy Meyers; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/></a></p><p style="text-align:center;margin-top:1em">This article can be downloaded as a <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/isaw-papers-7-offprint.xhtml">single file</a></p></div>
+<h2><a href="../isaw-papers-7.xhtml" rel="contents">ISAW Papers 7.16</a> (2014)</h2>
+<h1 property="dcterms:title">Exploring an Opportunity to Link the Dead in Ancient Rome</h1>
+<h2 rel="dcterms:creator"><span property="foaf:name">Katy M. Meyers</span></h2>
+</header>
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">Death is a constant, however social responses to this event and subsequent treatments of the dead have varied widely through time and space. Since the beginning of archaeology, there has been interest in burials and funerary monuments with the hope of interpreting these different responses to death (Parker Pearson 1999). As theory, method and technology have developed through time, our interpretations of mortuary sites have been able to create more nuanced interpretations of why particular societies respond to death in specific manners (Rakita and Buikstra 2005). The physical remains of the dead, the burial context, and the funerary rites they received can reveal much about the lifestyles of the people in the past. However, all of this interpretation relies on the presence of one type of evidence: primary data. Linked open data (LOD) provides a much needed approach for archaeological studies of the deceased, as it would increase sharing of data, improve links between archaeologists, and further study within the discipline at an increased rate.  Using Roman Imperial burial practices as an example, I argue here that mortuary archaeology would benefit greatly from the implementation of LOD.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">Despite the popularity of the Roman Empire in modern academia, it is still not well-understood how imperial expansion was felt by the provinces, and how this affected their mortuary programs (Hingley 2005). Across the period of Roman occupation, burial practices varied based on a number of factors including region, citizen status, social rank, family beliefs, and religious cult affiliation. At the beginning of the empire, cremation was the most popular form of burial, with inhumation a secondary option. By the mid-2nd century, the frequencies between the two forms had reversed, and by the 4th century cremation was a rare practice (Nock 1932). Due to imperial tolerance, burial type was not state-mandated and the only stipulation was that the burial itself must take place outside the walls of the city. However, the types of tombs, the funerary rites, and the choice to cremate or inhume was left to the mourning community. This meant there was great diversity in the types of burials found throughout the empire, despite the strong Roman cultural influence (Toynbee 1996). The extent of adoption of the Roman identity in their various territories meant that burial practices were interpreted in a variety of ways, with some provinces changing with Roman invasion, some forms of hybrid mortuary programs and others maintaining their ancestral ways (Webster 2001).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">The questions that stem from a brief overview of Roman Imperial burials are what were the different mortuary practices and how did Roman influence change, influence, or be rejected by different social groups across the provinces? Answering these questions would help us to better understand how Roman Imperial identity was differentially accepted or rejected by the provinces, and what happened to these practices over time with waning imperial power. The data required to answer this question is immense and expansive- but it does exist. Excavations have been done of Roman Imperial and Roman Provincial sites from around the Mediterranean, Europe and Britain (Keegan 2002, Killgrove 2005, Morris 1992, Murali and Girard 2000, Philpott 1991, Wahl 2008, Williams 2004).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">There are two primary problems that prevent synthesis: there is no standard method for classifying cemeteries that would allow for direct comparison of the mortuary sites, and this data is rarely found in accessible formats digitally or in print. In a study by Roberts and Mays (2010), they found that of the over 250 articles written on bioarchaeology in Britain from the top four journals, 79% of them were based on collections from only 5 locations. While this uneven use of skeletal collections can be attributed to a number of reasons, the one that they highlight is the availability and knowledge of collections.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">Applying standardized LOD methods to the domain of Roman Imperial mortuary practices requires developing and reconfiguring data to fit four principles as stated by Tim Berners-Lee (2007), the inventor of the World Wide Web. First (1), all data must have stable uniform resource identifiers (URIs) that allow for them to be identified as unique objects at any time. Second (2), these URIs must have hypertext transfer protocol identifiers so that they can be accessed via the web. Third (3), the URI must have useful metadata that is created using a universal standard and provides information to the individual looking up the data. Finally (4), the metadata includes links to other related URIs in order to build an information network. If the goal of archaeology is indeed to interpret the past from its physical remains, then the concept of linked open data provides an opportunity to gain access to the physical remains and interpretations freely through interconnected digital networks. The progress of archaeological work requires building upon the works of others, which could be aided by the introduction of LOD.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">For example, in an ideal system I could look up a specific Romano-British burial site in York, the grave would have a stable HTTP URI so that it could easily referenced and could be accessed online. It would contain useful data about the grave such as what physical remains were found in it, the age and sex of the individual, types of grave goods found with it, but also who excavated it, what methods they used, and who put this information online. Finally, each of the pieces of metadata would be linked to other stable HTTP URIs so that connections between evidence could be made.  In regards to being open, it also means that we would not have to pay, gain permission or be part of a specific organization in order to freely download or access this information.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+<p id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">Despite the increased use of digital applications and databases, we are far from the goal of having a linked and open network of mortuary archaeology data for any region or era. The sharing of mortuary and skeletal material has just begun, with sites like Open Context providing a framework for linked open bioarchaeology data. Other groups like Archaeology Data Service and the Museum of London’s Centre for Bioarchaeology are putting primary data from mortuary sites online in an open and accessible, though not linked, format As archaeologists, we not only want to interpret the past, we have a responsibility to share our data so that others can build upon it. "If I have seen further it is by standing on the shoulders of giants” (Newton). The data itself is just as important as the interpretations we draw from it. If we had full access to all the primary data that has been previously collected, we could achieve so much more. Increased access and improved connections between datasets within bioarchaeology and archaeology would reduce sampling bias and perhaps reveal new patterns. While this scenario may not be possible, it is up to us to try. Even the small amount of data that has been placed online has already shown (Roberts and Mays 2011) that it is shared more, utilized more, and has produced more nuanced interpretations due to its high availability.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
 <section id="works-cited">
 <h2>Works Cited</h2>
-<p onmouseover="document.getElementById('work-cited-1anchor').style.display='';document.getElementById('work-cited-1anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-1anchor').style.display='none';document.getElementById('work-cited-1anchor_label').style.display='none';" class="work-cited" id="work-cited-1" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Berners- Lee 2007 Berners-Lee, Tim, 2007. “Linked Data”. W3 Design Issues.  Available at: <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a></span><a id="work-cited-1anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-1">↩</a><span id="work-cited-1anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-1">#work-cited-1  </span></p>
-<p onmouseover="document.getElementById('work-cited-2anchor').style.display='';document.getElementById('work-cited-2anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-2anchor').style.display='none';document.getElementById('work-cited-2anchor_label').style.display='none';" class="work-cited" id="work-cited-2" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Heath and Bizer 2011 Heath, Tom and Bizer, Christian, 2011. “Linked Data: Evolving the Web into a Global Data Space” (1st edition). Synthesis Lectures on the Semantic Web: Theory and Technology. Available at: <a href="http://linkeddatabook.com/editions/1.0/">http://linkeddatabook.com/editions/1.0/</a></span><a id="work-cited-2anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-2">↩</a><span id="work-cited-2anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-2">#work-cited-2  </span></p>
-<p onmouseover="document.getElementById('work-cited-3anchor').style.display='';document.getElementById('work-cited-3anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-3anchor').style.display='none';document.getElementById('work-cited-3anchor_label').style.display='none';" class="work-cited" id="work-cited-3" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Hingley 2005 Hingley, Richard, 2005. Globalizing Roman Culture: Unity, Diversity, and Empire. Routledge: London &amp; NY.</span><a id="work-cited-3anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-3">↩</a><span id="work-cited-3anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-3">#work-cited-3  </span></p>
-<p onmouseover="document.getElementById('work-cited-4anchor').style.display='';document.getElementById('work-cited-4anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-4anchor').style.display='none';document.getElementById('work-cited-4anchor_label').style.display='none';" class="work-cited" id="work-cited-4" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Keegan 2002 Keegan, Sarah, 2002 Inhumation rites in Late Roman Britain : the treatment of the engendered body. Oxford: British Archaeological Reports.</span><a id="work-cited-4anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-4">↩</a><span id="work-cited-4anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-4">#work-cited-4  </span></p>
-<p onmouseover="document.getElementById('work-cited-5anchor').style.display='';document.getElementById('work-cited-5anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-5anchor').style.display='none';document.getElementById('work-cited-5anchor_label').style.display='none';" class="work-cited" id="work-cited-5" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Killgrove 2005 Killgrove, Kristina, 2005. “Bioarchaeology in the Roman World”. M.A. Thesis, Department of Classics, University of North Carolina. Available at: <a href="http://www.piki.org/~kristina/Killgrove-2005-classics.pdf">http://www.piki.org/~kristina/Killgrove-2005-classics.pdf</a></span><a id="work-cited-5anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-5">↩</a><span id="work-cited-5anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-5">#work-cited-5  </span></p>
-<p onmouseover="document.getElementById('work-cited-6anchor').style.display='';document.getElementById('work-cited-6anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-6anchor').style.display='none';document.getElementById('work-cited-6anchor_label').style.display='none';" class="work-cited" id="work-cited-6" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Morris 1992 Morris, Ian, 1992. Death ritual and social structure in Classical Antiquity. New York: Cambridge University Press.</span><a id="work-cited-6anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-6">↩</a><span id="work-cited-6anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-6">#work-cited-6  </span></p>
-<p onmouseover="document.getElementById('work-cited-7anchor').style.display='';document.getElementById('work-cited-7anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-7anchor').style.display='none';document.getElementById('work-cited-7anchor_label').style.display='none';" class="work-cited" id="work-cited-7" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Murali and Girard 2000 Murali, Pascal and Girard, Louis, 2000. “Biology and burial practices from the end of the 1st century AD to the beginning of the 5th century AD: the rural cemetery of Chantambre”. Burial, society, and context in the Roman World. Pearce, Millet and Struck, eds. Pp. 105-111. Oxford: Oxbow Books.</span><a id="work-cited-7anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-7">↩</a><span id="work-cited-7anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-7">#work-cited-7  </span></p>
-<p onmouseover="document.getElementById('work-cited-8anchor').style.display='';document.getElementById('work-cited-8anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-8anchor').style.display='none';document.getElementById('work-cited-8anchor_label').style.display='none';" class="work-cited" id="work-cited-8" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Newton 2006 [1676] Newton, Isaac, 2006 [1676]. Correspondence with Robert Hooke. Wikiquote. Available at: <a href="http://en.wikiquote.org/wiki/Isaac_Newton">http://en.wikiquote.org/wiki/Isaac_Newton</a></span><a id="work-cited-8anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-8">↩</a><span id="work-cited-8anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-8">#work-cited-8  </span></p>
-<p onmouseover="document.getElementById('work-cited-9anchor').style.display='';document.getElementById('work-cited-9anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-9anchor').style.display='none';document.getElementById('work-cited-9anchor_label').style.display='none';" class="work-cited" id="work-cited-9" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Nock 1932 Nock, Arthur. “Cremation and Burial in the Roman Empire”. The Harvard Theological Review 25.4 (1932), pp. 321-35.</span><a id="work-cited-9anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-9">↩</a><span id="work-cited-9anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-9">#work-cited-9  </span></p>
-<p onmouseover="document.getElementById('work-cited-10anchor').style.display='';document.getElementById('work-cited-10anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-10anchor').style.display='none';document.getElementById('work-cited-10anchor_label').style.display='none';" class="work-cited" id="work-cited-10" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Parker Pearson 1999 Parker Pearson, Michael, 1999 The Archaeology of Death and Burial. College Station: Texas A&amp;M University Press.</span><a id="work-cited-10anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-10">↩</a><span id="work-cited-10anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-10">#work-cited-10  </span></p>
-<p onmouseover="document.getElementById('work-cited-11anchor').style.display='';document.getElementById('work-cited-11anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-11anchor').style.display='none';document.getElementById('work-cited-11anchor_label').style.display='none';" class="work-cited" id="work-cited-11" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Philpott 1991 Philpott, Robert, 1991. Burial practices in Roman Britain: a survey of grave treatment and furnishing A.D. 43-410. Oxford: Tempus Reparatum.</span><a id="work-cited-11anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-11">↩</a><span id="work-cited-11anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-11">#work-cited-11  </span></p>
-<p onmouseover="document.getElementById('work-cited-12anchor').style.display='';document.getElementById('work-cited-12anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-12anchor').style.display='none';document.getElementById('work-cited-12anchor_label').style.display='none';" class="work-cited" id="work-cited-12" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Rakita and Buikstra 2005 Rakita, Gordon, and Buikstra, Jane, 2005. “Introduction”. Interacting with the Dead: Perspectives on MortuaryArchaeology for the New Millenium. Rakita, Buikstra, Beck and Williams, eds. Gainsville: University Press of Florida. Pp. 1-11.</span><a id="work-cited-12anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-12">↩</a><span id="work-cited-12anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-12">#work-cited-12  </span></p>
-<p onmouseover="document.getElementById('work-cited-13anchor').style.display='';document.getElementById('work-cited-13anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-13anchor').style.display='none';document.getElementById('work-cited-13anchor_label').style.display='none';" class="work-cited" id="work-cited-13" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Roberts and Mays 2011 Roberts, Charlotte and Mays, Simon. “Study and restudy of curated skeletal collections in bioarchaeology: A perspective on the UK and the implications for future curation of human remains”. International Journal of Osteoarchaeology, 21.5 (2011), pp. 626-630</span><a id="work-cited-13anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-13">↩</a><span id="work-cited-13anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-13">#work-cited-13  </span></p>
-<p onmouseover="document.getElementById('work-cited-14anchor').style.display='';document.getElementById('work-cited-14anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-14anchor').style.display='none';document.getElementById('work-cited-14anchor_label').style.display='none';" class="work-cited" id="work-cited-14" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Toynbee 1996 Toynbee, Jocelyn, 1996. Death and Burial in the Roman World. John Hopkins University Press</span><a id="work-cited-14anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-14">↩</a><span id="work-cited-14anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-14">#work-cited-14  </span></p>
-<p onmouseover="document.getElementById('work-cited-15anchor').style.display='';document.getElementById('work-cited-15anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-15anchor').style.display='none';document.getElementById('work-cited-15anchor_label').style.display='none';" class="work-cited" id="work-cited-15" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Wahl 2008 Wahl, Joachim, 2008. “Investigations on Pre-Roman and Roman Cremation Remains from SW Germany: Results, Potentialities and Limits”. Analysis of Burned Human Remains. Schmidt and Symes, eds. Pp. 145-162.</span><a id="work-cited-15anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-15">↩</a><span id="work-cited-15anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-15">#work-cited-15  </span></p>
-<p onmouseover="document.getElementById('work-cited-16anchor').style.display='';document.getElementById('work-cited-16anchor_label').style.display='';" onmouseleave="document.getElementById('work-cited-16anchor').style.display='none';document.getElementById('work-cited-16anchor_label').style.display='none';" class="work-cited" id="work-cited-16" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Williams 2004 Williams, Howard. “Potted histories–cremation, ceramics and social memory in early Roman Britain”. Oxford journal of archaeology (2004). Available at: <a href="http://works.bepress.com/cgi/viewcontent.cgi?article=1019&amp;context=howard_williams">http://works.bepress.com/cgi/viewcontent.cgi?article=1019&amp;context=howard_williams</a></span><a id="work-cited-16anchor" class="id_link" style="color:aaa;display:none" href="#work-cited-16">↩</a><span id="work-cited-16anchor_label" style="color:aaa;display:none;position:fixed;right:0;bottom:50%" href="#work-cited-16">#work-cited-16  </span></p>
+<p class="work-cited" id="work-cited-1" onmouseleave="document.getElementById('work-cited-1anchor').style.display='none';document.getElementById('work-cited-1anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-1anchor').style.display='';document.getElementById('work-cited-1anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Berners- Lee 2007 Berners-Lee, Tim, 2007. “Linked Data”. W3 Design Issues.  Available at: <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a></span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-1" id="work-cited-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-1</span></p>
+<p class="work-cited" id="work-cited-2" onmouseleave="document.getElementById('work-cited-2anchor').style.display='none';document.getElementById('work-cited-2anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-2anchor').style.display='';document.getElementById('work-cited-2anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Heath and Bizer 2011 Heath, Tom and Bizer, Christian, 2011. “Linked Data: Evolving the Web into a Global Data Space” (1st edition). Synthesis Lectures on the Semantic Web: Theory and Technology. Available at: <a href="http://linkeddatabook.com/editions/1.0/">http://linkeddatabook.com/editions/1.0/</a></span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-2" id="work-cited-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-2</span></p>
+<p class="work-cited" id="work-cited-3" onmouseleave="document.getElementById('work-cited-3anchor').style.display='none';document.getElementById('work-cited-3anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-3anchor').style.display='';document.getElementById('work-cited-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Hingley 2005 Hingley, Richard, 2005. Globalizing Roman Culture: Unity, Diversity, and Empire. Routledge: London &amp; NY.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-3" id="work-cited-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-3</span></p>
+<p class="work-cited" id="work-cited-4" onmouseleave="document.getElementById('work-cited-4anchor').style.display='none';document.getElementById('work-cited-4anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-4anchor').style.display='';document.getElementById('work-cited-4anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Keegan 2002 Keegan, Sarah, 2002 Inhumation rites in Late Roman Britain : the treatment of the engendered body. Oxford: British Archaeological Reports.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-4" id="work-cited-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-4</span></p>
+<p class="work-cited" id="work-cited-5" onmouseleave="document.getElementById('work-cited-5anchor').style.display='none';document.getElementById('work-cited-5anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-5anchor').style.display='';document.getElementById('work-cited-5anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Killgrove 2005 Killgrove, Kristina, 2005. “Bioarchaeology in the Roman World”. M.A. Thesis, Department of Classics, University of North Carolina. Available at: <a href="http://www.piki.org/~kristina/Killgrove-2005-classics.pdf">http://www.piki.org/~kristina/Killgrove-2005-classics.pdf</a></span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-5" id="work-cited-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-5</span></p>
+<p class="work-cited" id="work-cited-6" onmouseleave="document.getElementById('work-cited-6anchor').style.display='none';document.getElementById('work-cited-6anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-6anchor').style.display='';document.getElementById('work-cited-6anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Morris 1992 Morris, Ian, 1992. Death ritual and social structure in Classical Antiquity. New York: Cambridge University Press.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-6" id="work-cited-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-6</span></p>
+<p class="work-cited" id="work-cited-7" onmouseleave="document.getElementById('work-cited-7anchor').style.display='none';document.getElementById('work-cited-7anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-7anchor').style.display='';document.getElementById('work-cited-7anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Murali and Girard 2000 Murali, Pascal and Girard, Louis, 2000. “Biology and burial practices from the end of the 1st century AD to the beginning of the 5th century AD: the rural cemetery of Chantambre”. Burial, society, and context in the Roman World. Pearce, Millet and Struck, eds. Pp. 105-111. Oxford: Oxbow Books.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-7" id="work-cited-7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-7</span></p>
+<p class="work-cited" id="work-cited-8" onmouseleave="document.getElementById('work-cited-8anchor').style.display='none';document.getElementById('work-cited-8anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-8anchor').style.display='';document.getElementById('work-cited-8anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Newton 2006 [1676] Newton, Isaac, 2006 [1676]. Correspondence with Robert Hooke. Wikiquote. Available at: <a href="http://en.wikiquote.org/wiki/Isaac_Newton">http://en.wikiquote.org/wiki/Isaac_Newton</a></span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-8" id="work-cited-8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-8</span></p>
+<p class="work-cited" id="work-cited-9" onmouseleave="document.getElementById('work-cited-9anchor').style.display='none';document.getElementById('work-cited-9anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-9anchor').style.display='';document.getElementById('work-cited-9anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Nock 1932 Nock, Arthur. “Cremation and Burial in the Roman Empire”. The Harvard Theological Review 25.4 (1932), pp. 321-35.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-9" id="work-cited-9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-9</span></p>
+<p class="work-cited" id="work-cited-10" onmouseleave="document.getElementById('work-cited-10anchor').style.display='none';document.getElementById('work-cited-10anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-10anchor').style.display='';document.getElementById('work-cited-10anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Parker Pearson 1999 Parker Pearson, Michael, 1999 The Archaeology of Death and Burial. College Station: Texas A&amp;M University Press.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-10" id="work-cited-10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-10</span></p>
+<p class="work-cited" id="work-cited-11" onmouseleave="document.getElementById('work-cited-11anchor').style.display='none';document.getElementById('work-cited-11anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-11anchor').style.display='';document.getElementById('work-cited-11anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Philpott 1991 Philpott, Robert, 1991. Burial practices in Roman Britain: a survey of grave treatment and furnishing A.D. 43-410. Oxford: Tempus Reparatum.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-11" id="work-cited-11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-11</span></p>
+<p class="work-cited" id="work-cited-12" onmouseleave="document.getElementById('work-cited-12anchor').style.display='none';document.getElementById('work-cited-12anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-12anchor').style.display='';document.getElementById('work-cited-12anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Rakita and Buikstra 2005 Rakita, Gordon, and Buikstra, Jane, 2005. “Introduction”. Interacting with the Dead: Perspectives on MortuaryArchaeology for the New Millenium. Rakita, Buikstra, Beck and Williams, eds. Gainsville: University Press of Florida. Pp. 1-11.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-12" id="work-cited-12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-12</span></p>
+<p class="work-cited" id="work-cited-13" onmouseleave="document.getElementById('work-cited-13anchor').style.display='none';document.getElementById('work-cited-13anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-13anchor').style.display='';document.getElementById('work-cited-13anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Roberts and Mays 2011 Roberts, Charlotte and Mays, Simon. “Study and restudy of curated skeletal collections in bioarchaeology: A perspective on the UK and the implications for future curation of human remains”. International Journal of Osteoarchaeology, 21.5 (2011), pp. 626-630</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-13" id="work-cited-13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-13</span></p>
+<p class="work-cited" id="work-cited-14" onmouseleave="document.getElementById('work-cited-14anchor').style.display='none';document.getElementById('work-cited-14anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-14anchor').style.display='';document.getElementById('work-cited-14anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Toynbee 1996 Toynbee, Jocelyn, 1996. Death and Burial in the Roman World. John Hopkins University Press</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-14" id="work-cited-14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-14</span></p>
+<p class="work-cited" id="work-cited-15" onmouseleave="document.getElementById('work-cited-15anchor').style.display='none';document.getElementById('work-cited-15anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-15anchor').style.display='';document.getElementById('work-cited-15anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Wahl 2008 Wahl, Joachim, 2008. “Investigations on Pre-Roman and Roman Cremation Remains from SW Germany: Results, Potentialities and Limits”. Analysis of Burned Human Remains. Schmidt and Symes, eds. Pp. 145-162.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-15" id="work-cited-15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-15</span></p>
+<p class="work-cited" id="work-cited-16" onmouseleave="document.getElementById('work-cited-16anchor').style.display='none';document.getElementById('work-cited-16anchor_label').style.display='none';" onmouseover="document.getElementById('work-cited-16anchor').style.display='';document.getElementById('work-cited-16anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Williams 2004 Williams, Howard. “Potted histories–cremation, ceramics and social memory in early Roman Britain”. Oxford journal of archaeology (2004). Available at: <a href="http://works.bepress.com/cgi/viewcontent.cgi?article=1019&amp;context=howard_williams">http://works.bepress.com/cgi/viewcontent.cgi?article=1019&amp;context=howard_williams</a></span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#work-cited-16" id="work-cited-16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="work-cited-16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#work-cited-16</span></p>
 </section>
 <footer>
-<p>©2014 <span property="cc:attributionName">Katy Meyers</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
-<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+<p style="margin-top:1em;text-align:center;color:gray">©2014 <span property="cc:attributionName">Katy Meyers</span>. Published under the <a href="http://creativecommons.org/licenses/by/4.0/" rel="license" style="color:gray">Creative Commons Attribution 4.0</a> license.</p>
+<p style="margin-top:1em;text-align:center;color:gray">This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" style="color:gray">ISAW Papers 7</a></i>.</p>
 </footer>
 </article>
 </body>

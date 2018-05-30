@@ -1,69 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="cc: http://creativecommons.org/ns#
+
+<html prefix="cc: http://creativecommons.org/ns#
  dcterms: http://purl.org/dc/terms/
  foaf: http://xmlns.com/foaf/0.1/
- rdfs: http://www.w3.org/2000/01/rdf-schema#">
-    <head>
-        <title>Linked Open Data and the Ur of the Chaldees Project</title>
-        <link rel="stylesheet" href="../isaw-papers-7.css" />
-        <link rel="dcterms:isPartOf" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" />
- <link rel="dcterms:isPartOf" href="http://isaw.nyu.edu/publications/isaw-papers" />
-        <link rel="canonical" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/hafford/"/>
-    </head>
+ rdfs: http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Linked Open Data and the Ur of the Chaldees Project</title>
 
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+<link href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/hafford/" rel="canonical"/>
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
+}
+
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}</style></head>
 <body>
 <article>
-<header>
-<h2><a rel="contents" href="../isaw-papers-7.xhtml">ISAW Papers 7.7</a> (2014)</h2>
+<header><div id="isaw_papers_header" style="text-align:justified; background:#aaa;margin:1em;padding:2em"><p class="textindent0">This article is available at the URI <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/hafford/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/hafford/</a> as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website.</p><p class="textindent0" style="text-align:center;margin-top:1em">Except where noted, ©2014 William B. Hafford; distributed under the terms of the Creative Commons Attribution License<br/><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/></a></p><p style="text-align:center;margin-top:1em">This article can be downloaded as a <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/isaw-papers-7-offprint.xhtml">single file</a></p></div>
+<h2><a href="../isaw-papers-7.xhtml" rel="contents">ISAW Papers 7.7</a> (2014)</h2>
 <h1 property="dcterms:title">Linked Open Data and the Ur of the Chaldees Project</h1>
 <h2 rel="dcterms:creator"><span property="foaf:name">William B. Hafford</span></h2>
 </header>
 <section>
-
-<p class="textindent0" id="p1" rel="dcterms:hasPart" resource="#p1">Research, at its core, is the act of making connections among data – building up systematically to a supportable idea or conclusion. The basic components, therefore, are the data themselves, the individual points that demonstrate the concept that unites them. To restate the matter: Researchers are dependent on their data.</p>
-
-<p id="p2" rel="dcterms:hasPart" resource="#p2">Yet, data are not always easy to acquire, and many different researchers may end up gathering the same or similar data many different times, slowly building toward their own conclusions. If the data were readily accessible, already linked to similar instances or searchable in such a way as to complete the larger scale grouping for analysis, research into that data would be faster, easier, and would allow for less duplication of effort.</p>
-
-<p id="p3" rel="dcterms:hasPart" resource="#p3">Such is one major idea behind <a href="http://linkeddata.org/">linked data</a> on the web. Imbedded hyperlinks in online documents have long led us to other documents that might be of use in finding more information, but data points within those documents have not been quickly extractable, and digital data repositories have for long periods existed in relative isolation. If computers can find and access similar data across many data stores, research becomes far more powerful.</p>
-
-<p id="p4" rel="dcterms:hasPart" resource="#p4">As researchers of the ancient world, Archaeologists face the problems of any researcher: often the act of gathering data from various reports and repositories, physical or virtual, takes far longer than the process of connecting those data in order to come to some understanding of the ancient concept or practice being investigated. One person studying, for example, figurines from an archaeological site, may comb through field notes for occurrences of the objects, spending days, weeks, or months locating every one. Another person may later go through the same notes for occurrences of amulets or statuettes, covering many of the same items and spending their own days, weeks, or months. Perhaps the work of the earlier researcher has guided them somewhat to make their search more effective, but they likely still would have to go through every field note to see if items that meet the new criteria were missed. In a digital age, this sort of collecting of data can be done very quickly--if the data is arranged in a machine-readable way.</p>
-
-<p id="p5" rel="dcterms:hasPart" resource="#p5">Such is the beauty of linked data on the web. They are published in their own self-defining schemas, related to other schemas wherever possible (<a href="http://linkeddatabook.com/editions/1.0/">Heath and Bizer 2011</a>: p85-86, 99). This allows the computer to make connections across data and across different data stores. It would thus be possible to search not only figurines, statuettes, and amulets from one archaeological site, but from all sites published as linked data on the web.</p>
-
-<p id="p5" rel="dcterms:hasPart" resource="#p5">To facilitate such research, archaeological data--especially those from early excavations that are at the foundation of our understanding of major portions of the ancient world--should be made accessible and machine-readable in a linked (and openly available) manner. This is one of the driving concepts behind the <a href="http://wiki.digitalclassicist.org/Linked_Ancient_World_Data_Institute">Linked Ancient World Data Initiative</a>, and behind the project being conducted for a particular site entitled Ur of the Chaldees, a Virtual Vision of Woolley's Excavation. This project is jointly conducted by the University of Pennsylvania Museum and the British Museum with lead funding from the Leon Levy Foundation. Sir Leonard Woolley excavated at the ancient city of Ur from 1922 to 1934, uncovering huge amounts of private housing and public buildings as well as religious, industrial, and funerary areas from at least the Ubaid through the Persian periods--some 5,000 years of occupation. In so doing, he created an enormous amount of data, far more than just the tens of thousands of artifacts he recorded and sent to Baghdad, London, and Philadelphia.</p>
-
-<p id="p6" rel="dcterms:hasPart" resource="#p6">During the excavation, more than 15,000 field catalogue cards were produced, covering more than 25,000 artifacts. Field photographs from the twelve years number 2,350 and at least 4,500 hand-written field notecards were also produced, used later to aid in publication and then stored in the British Museum. The actual publication record was good, with yearly reports appearing in the Antiquaries Journal, and eventually ten volumes on the excavations and nine volumes on the cuneiform texts, though the full series took some fifty years to produce.</p>
-
-<p  id="p7" rel="dcterms:hasPart" resource="#p7">These publications have long been held to be the definitive record of Ur and they do indeed hold much vital material. But the volumes, as extensive as they seem, say far from everything that can be said about the site. Moreover, they contain interpretations and only part of the data on which those interpretations were based. Woolley was a good archaeologist, but he could not publish every object nor completely explain every decision when limited to the slow process of paper publication. With the advent of linked open data on the web, it is possible to present it all in machine-readable formats. Furthermore, in this format any grouping made by Woolley or anyone else can be quickly deconstructed and new ones created to allow for still newer interpretations or reanalysis of the old.</p>
-
-<p id="p8" rel="dcterms:hasPart" resource="#p8">The excavation of Ur led to much of our current understanding of the ancient Near East and as such is clearly important to analyze and reinvestigate. But there are many other reasons to aggregate the data from it and others like it. Not only will this allow for new visions, but it will also unite and protect the information.</p>
-
-<p id="p9" rel="dcterms:hasPart" resource="#p9">First, unification: The current information is physically divided. Laws of the early 20th century typically allowed for finds to be split between host nation and excavating institutions. This meant that from Ur, half of the artifacts went to Baghdad and the other half was split between London and Philadelphia. Even the archival documents are relatively dispersed. Gathering the data from all of the institutions will reunite the excavated portions of the city in a virtual space.</p>
-
-<p id="p10" rel="dcterms:hasPart" resource="#p10">Second, protection: In the wake of the second Gulf War the Iraq National Museum was looted, demonstrating the fragility of our hold on physical data even in the modern age. The loss of cultural heritage is tragic, but at least if the information were recorded in a virtual space, there would remain researchable data for the future. Much of the material looted from the museum was eventually returned, but even in the case of some items protected in the Rafidan Bank vaults or moved to other secret locations before the war, there was some damage due to the impromptu storage conditions (chiefly the Nimrud Ivories, see <a href="http://articles.baltimoresun.com/2010-07-02/entertainment/bs-ae-walters-iraq-20100703_1_walters-director-gary-vikan-treasures-nimrud">McCauley 7/2/2010</a>).</p>
-
-<p id="p11" rel="dcterms:hasPart" resource="#p11">Even in the western museums, some artifacts have been lost to environmental conditions over decades of storage and a few items are now listed as ‘Not Accounted For’ with no clear understanding of how they went missing. Misplacement, loss, damage, or theft can occur anywhere. This is not to say that such occurrences should be overlooked, but there will likely be a small percentage of loss no matter what actions are taken to prevent it. Thus, every object in the care of museums must be carefully recorded to mitigate loss and to demonstrate the importance of each piece. The data must then be made available to researchers for continued understanding of these objects, individually and in the aggregate.</p>
-
-<p id="p12" rel="dcterms:hasPart" resource="#p12">After the looting of the Iraq National Museum in 2003, the British Museum and the Penn Museum began to look at their collections in hopes of assisting Baghdad with understanding what may have gone missing. Ur was a site that provided many of the first entries into the Iraq Museum, since the modern country itself was being formed at the time those excavations began. The records of artifacts in the IM were not as complete as they might have been, but if Philadelphia and London could show what they had from this most important site, Baghdad could better assess their own collection. As it turned out, the recording in the two western cities was not as complete as might be hoped either, and thus began a long project to upgrade records with the goal of helping all three museums reunite Ur in a virtual space.</p>
-
-<p id="p13" rel="dcterms:hasPart" resource="#p13">It began by looking to a list of artifacts from the excavations but quickly expanded with the realization that there was much more information that should be digitally shared. Archives, photos, and field notes all held information on how and why Woolley had come to the conclusions he had. Furthermore, the artifacts were often not connected back to their field data, having lost their field numbers. The potential was there to reconnect them and to put them all online for everyone’s use. But, in 2003 digital scholarship had not advanced to the level where such data could easily be published. It was possible, but it would take a great deal of money and time. Funds were slow in coming and small in number. Thus the earliest project years managed to gather only sporadic material such as medium resolution scans of field notes in the British Museum and field photos in the Penn Museum.</p>
-
-<p id="p14" rel="dcterms:hasPart" resource="#p14">Finally, in 2011 with the increased ability of and interest in digital humanities, the Leon Levy Foundation graciously granted funds to conduct an exploratory year during which an assessment of work to be done could be made. The project set about determining how much Ur material was outside of Iraq, how scattered it was, as well as how long it would take to make it all digital. The exploratory year began in 2012, putting all of Woolley's 15,000 artifact cards, many of which covered multiple objects, into a database and separating them to create a list of and primary data on every object excavated and written up at Ur during the excavations. This assessment showed that around 40% of the objects in each museum had no clear connection to their original field data. It recommended that every artifact from Ur in both museums be examined and reconnected to field records wherever possible. They must also be assessed for condition, the need for conservation and/or repairs. Publication of any item must be confirmed and any mistakes referenced in one, easily accessible place.</p>
-
-<p id="p15" rel="dcterms:hasPart" resource="#p15">After the initial work, the Leon Levy Foundation and Hagop Kevorkian Fund provided continuation grants to begin the individual examinations of artifacts as well as to continue scanning and transcribing all field notes and missives from the field as well as all ancient texts found at the site. This work is currently underway in both London and Philadelphia. Baghdad is conducting its own inventories but will hopefully join when their work allows.</p>
-
-<p id="p16" rel="dcterms:hasPart" resource="#p16">As soon as possible, and beginning with portions of the data so as not overly to delay, all of the information will be published with stable URIs and RDF/XML, JSON and/or other machine-readable references, connected to some version of ArchaeoML and/or CIDOC-CRM wherever possible (see <a href="http://opencontext.org/about/concepts">Open Context</a> for the format we are currently hoping to emulate). The site created will thus be a record of everything from Ur, essentially a modern publication, but also a research tool that provides ways of interlinking and presenting core data so that more can continuously be learned and published about the site and its history. In this way it will be a growing record, a continually expanding work. It will be searchable textually, visually, and spatially (though this latter aspect will not be possible within the first two years). In other words, any keyword, artifact number, or other indicator can be entered into the site and all occurrences found throughout field notes, transliterated and translated cuneiform texts, catalogues, and publications; photos can be browsed and similar objects called up; and maps can be searched by area, room or tomb with the site populating these spaces with artifacts in context wherever possible.</p>
-
-<p id="p17" rel="dcterms:hasPart" resource="#p17">The site will be open to all and linked to related sites, such as the online catalogues of relevant museums and the Cuneiform Digital Library Initiative. Most importantly, the RDF that describes the data will be part of the overall linked data on the web so that other connections can be made with any other information also published in linked open format. This means that new ways of envisioning the data, new ways of assembling it with similar information from other sites, will be possible, leading to more encompassing and more complete understandings of the Ancient Near East as a whole.</p>
-
-<p id="p18" rel="dcterms:hasPart" resource="#p18">Truly this will be a virtual vision of Woolley’s excavation–and so much more.</p>
-
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">Research, at its core, is the act of making connections among data – building up systematically to a supportable idea or conclusion. The basic components, therefore, are the data themselves, the individual points that demonstrate the concept that unites them. To restate the matter: Researchers are dependent on their data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">Yet, data are not always easy to acquire, and many different researchers may end up gathering the same or similar data many different times, slowly building toward their own conclusions. If the data were readily accessible, already linked to similar instances or searchable in such a way as to complete the larger scale grouping for analysis, research into that data would be faster, easier, and would allow for less duplication of effort.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">Such is one major idea behind <a href="http://linkeddata.org/">linked data</a> on the web. Imbedded hyperlinks in online documents have long led us to other documents that might be of use in finding more information, but data points within those documents have not been quickly extractable, and digital data repositories have for long periods existed in relative isolation. If computers can find and access similar data across many data stores, research becomes far more powerful.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">As researchers of the ancient world, Archaeologists face the problems of any researcher: often the act of gathering data from various reports and repositories, physical or virtual, takes far longer than the process of connecting those data in order to come to some understanding of the ancient concept or practice being investigated. One person studying, for example, figurines from an archaeological site, may comb through field notes for occurrences of the objects, spending days, weeks, or months locating every one. Another person may later go through the same notes for occurrences of amulets or statuettes, covering many of the same items and spending their own days, weeks, or months. Perhaps the work of the earlier researcher has guided them somewhat to make their search more effective, but they likely still would have to go through every field note to see if items that meet the new criteria were missed. In a digital age, this sort of collecting of data can be done very quickly--if the data is arranged in a machine-readable way.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">Such is the beauty of linked data on the web. They are published in their own self-defining schemas, related to other schemas wherever possible (<a href="http://linkeddatabook.com/editions/1.0/">Heath and Bizer 2011</a>: p85-86, 99). This allows the computer to make connections across data and across different data stores. It would thus be possible to search not only figurines, statuettes, and amulets from one archaeological site, but from all sites published as linked data on the web.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">To facilitate such research, archaeological data--especially those from early excavations that are at the foundation of our understanding of major portions of the ancient world--should be made accessible and machine-readable in a linked (and openly available) manner. This is one of the driving concepts behind the <a href="http://wiki.digitalclassicist.org/Linked_Ancient_World_Data_Institute">Linked Ancient World Data Initiative</a>, and behind the project being conducted for a particular site entitled Ur of the Chaldees, a Virtual Vision of Woolley's Excavation. This project is jointly conducted by the University of Pennsylvania Museum and the British Museum with lead funding from the Leon Levy Foundation. Sir Leonard Woolley excavated at the ancient city of Ur from 1922 to 1934, uncovering huge amounts of private housing and public buildings as well as religious, industrial, and funerary areas from at least the Ubaid through the Persian periods--some 5,000 years of occupation. In so doing, he created an enormous amount of data, far more than just the tens of thousands of artifacts he recorded and sent to Baghdad, London, and Philadelphia.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">During the excavation, more than 15,000 field catalogue cards were produced, covering more than 25,000 artifacts. Field photographs from the twelve years number 2,350 and at least 4,500 hand-written field notecards were also produced, used later to aid in publication and then stored in the British Museum. The actual publication record was good, with yearly reports appearing in the Antiquaries Journal, and eventually ten volumes on the excavations and nine volumes on the cuneiform texts, though the full series took some fifty years to produce.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+<p id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">These publications have long been held to be the definitive record of Ur and they do indeed hold much vital material. But the volumes, as extensive as they seem, say far from everything that can be said about the site. Moreover, they contain interpretations and only part of the data on which those interpretations were based. Woolley was a good archaeologist, but he could not publish every object nor completely explain every decision when limited to the slow process of paper publication. With the advent of linked open data on the web, it is possible to present it all in machine-readable formats. Furthermore, in this format any grouping made by Woolley or anyone else can be quickly deconstructed and new ones created to allow for still newer interpretations or reanalysis of the old.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
+<p id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p8">The excavation of Ur led to much of our current understanding of the ancient Near East and as such is clearly important to analyze and reinvestigate. But there are many other reasons to aggregate the data from it and others like it. Not only will this allow for new visions, but it will also unite and protect the information.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
+<p id="p9" onmouseleave="document.getElementById('p9anchor').style.display='none';document.getElementById('p9anchor_label').style.display='none';" onmouseover="document.getElementById('p9anchor').style.display='';document.getElementById('p9anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p9">First, unification: The current information is physically divided. Laws of the early 20th century typically allowed for finds to be split between host nation and excavating institutions. This meant that from Ur, half of the artifacts went to Baghdad and the other half was split between London and Philadelphia. Even the archival documents are relatively dispersed. Gathering the data from all of the institutions will reunite the excavated portions of the city in a virtual space.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p9" id="p9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p9</span></p>
+<p id="p10" onmouseleave="document.getElementById('p10anchor').style.display='none';document.getElementById('p10anchor_label').style.display='none';" onmouseover="document.getElementById('p10anchor').style.display='';document.getElementById('p10anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p10">Second, protection: In the wake of the second Gulf War the Iraq National Museum was looted, demonstrating the fragility of our hold on physical data even in the modern age. The loss of cultural heritage is tragic, but at least if the information were recorded in a virtual space, there would remain researchable data for the future. Much of the material looted from the museum was eventually returned, but even in the case of some items protected in the Rafidan Bank vaults or moved to other secret locations before the war, there was some damage due to the impromptu storage conditions (chiefly the Nimrud Ivories, see <a href="http://articles.baltimoresun.com/2010-07-02/entertainment/bs-ae-walters-iraq-20100703_1_walters-director-gary-vikan-treasures-nimrud">McCauley 7/2/2010</a>).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p10" id="p10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p10</span></p>
+<p id="p11" onmouseleave="document.getElementById('p11anchor').style.display='none';document.getElementById('p11anchor_label').style.display='none';" onmouseover="document.getElementById('p11anchor').style.display='';document.getElementById('p11anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p11">Even in the western museums, some artifacts have been lost to environmental conditions over decades of storage and a few items are now listed as ‘Not Accounted For’ with no clear understanding of how they went missing. Misplacement, loss, damage, or theft can occur anywhere. This is not to say that such occurrences should be overlooked, but there will likely be a small percentage of loss no matter what actions are taken to prevent it. Thus, every object in the care of museums must be carefully recorded to mitigate loss and to demonstrate the importance of each piece. The data must then be made available to researchers for continued understanding of these objects, individually and in the aggregate.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p11" id="p11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p11</span></p>
+<p id="p12" onmouseleave="document.getElementById('p12anchor').style.display='none';document.getElementById('p12anchor_label').style.display='none';" onmouseover="document.getElementById('p12anchor').style.display='';document.getElementById('p12anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p12">After the looting of the Iraq National Museum in 2003, the British Museum and the Penn Museum began to look at their collections in hopes of assisting Baghdad with understanding what may have gone missing. Ur was a site that provided many of the first entries into the Iraq Museum, since the modern country itself was being formed at the time those excavations began. The records of artifacts in the IM were not as complete as they might have been, but if Philadelphia and London could show what they had from this most important site, Baghdad could better assess their own collection. As it turned out, the recording in the two western cities was not as complete as might be hoped either, and thus began a long project to upgrade records with the goal of helping all three museums reunite Ur in a virtual space.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p12" id="p12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p12</span></p>
+<p id="p13" onmouseleave="document.getElementById('p13anchor').style.display='none';document.getElementById('p13anchor_label').style.display='none';" onmouseover="document.getElementById('p13anchor').style.display='';document.getElementById('p13anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p13">It began by looking to a list of artifacts from the excavations but quickly expanded with the realization that there was much more information that should be digitally shared. Archives, photos, and field notes all held information on how and why Woolley had come to the conclusions he had. Furthermore, the artifacts were often not connected back to their field data, having lost their field numbers. The potential was there to reconnect them and to put them all online for everyone’s use. But, in 2003 digital scholarship had not advanced to the level where such data could easily be published. It was possible, but it would take a great deal of money and time. Funds were slow in coming and small in number. Thus the earliest project years managed to gather only sporadic material such as medium resolution scans of field notes in the British Museum and field photos in the Penn Museum.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p13" id="p13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p13</span></p>
+<p id="p14" onmouseleave="document.getElementById('p14anchor').style.display='none';document.getElementById('p14anchor_label').style.display='none';" onmouseover="document.getElementById('p14anchor').style.display='';document.getElementById('p14anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p14">Finally, in 2011 with the increased ability of and interest in digital humanities, the Leon Levy Foundation graciously granted funds to conduct an exploratory year during which an assessment of work to be done could be made. The project set about determining how much Ur material was outside of Iraq, how scattered it was, as well as how long it would take to make it all digital. The exploratory year began in 2012, putting all of Woolley's 15,000 artifact cards, many of which covered multiple objects, into a database and separating them to create a list of and primary data on every object excavated and written up at Ur during the excavations. This assessment showed that around 40% of the objects in each museum had no clear connection to their original field data. It recommended that every artifact from Ur in both museums be examined and reconnected to field records wherever possible. They must also be assessed for condition, the need for conservation and/or repairs. Publication of any item must be confirmed and any mistakes referenced in one, easily accessible place.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p14" id="p14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p14</span></p>
+<p id="p15" onmouseleave="document.getElementById('p15anchor').style.display='none';document.getElementById('p15anchor_label').style.display='none';" onmouseover="document.getElementById('p15anchor').style.display='';document.getElementById('p15anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p15">After the initial work, the Leon Levy Foundation and Hagop Kevorkian Fund provided continuation grants to begin the individual examinations of artifacts as well as to continue scanning and transcribing all field notes and missives from the field as well as all ancient texts found at the site. This work is currently underway in both London and Philadelphia. Baghdad is conducting its own inventories but will hopefully join when their work allows.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p15" id="p15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p15</span></p>
+<p id="p16" onmouseleave="document.getElementById('p16anchor').style.display='none';document.getElementById('p16anchor_label').style.display='none';" onmouseover="document.getElementById('p16anchor').style.display='';document.getElementById('p16anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p16">As soon as possible, and beginning with portions of the data so as not overly to delay, all of the information will be published with stable URIs and RDF/XML, JSON and/or other machine-readable references, connected to some version of ArchaeoML and/or CIDOC-CRM wherever possible (see <a href="http://opencontext.org/about/concepts">Open Context</a> for the format we are currently hoping to emulate). The site created will thus be a record of everything from Ur, essentially a modern publication, but also a research tool that provides ways of interlinking and presenting core data so that more can continuously be learned and published about the site and its history. In this way it will be a growing record, a continually expanding work. It will be searchable textually, visually, and spatially (though this latter aspect will not be possible within the first two years). In other words, any keyword, artifact number, or other indicator can be entered into the site and all occurrences found throughout field notes, transliterated and translated cuneiform texts, catalogues, and publications; photos can be browsed and similar objects called up; and maps can be searched by area, room or tomb with the site populating these spaces with artifacts in context wherever possible.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p16" id="p16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p16</span></p>
+<p id="p17" onmouseleave="document.getElementById('p17anchor').style.display='none';document.getElementById('p17anchor_label').style.display='none';" onmouseover="document.getElementById('p17anchor').style.display='';document.getElementById('p17anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p17">The site will be open to all and linked to related sites, such as the online catalogues of relevant museums and the Cuneiform Digital Library Initiative. Most importantly, the RDF that describes the data will be part of the overall linked data on the web so that other connections can be made with any other information also published in linked open format. This means that new ways of envisioning the data, new ways of assembling it with similar information from other sites, will be possible, leading to more encompassing and more complete understandings of the Ancient Near East as a whole.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p17" id="p17anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p17anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p17</span></p>
+<p id="p18" onmouseleave="document.getElementById('p18anchor').style.display='none';document.getElementById('p18anchor_label').style.display='none';" onmouseover="document.getElementById('p18anchor').style.display='';document.getElementById('p18anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p18">Truly this will be a virtual vision of Woolley’s excavation–and so much more.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/#p18" id="p18anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p18anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p18</span></p>
 </section>
-
 <footer>
-<p>©2014 <span property="cc:attributionName">William B. Hafford</span>. Published under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> license.</p>
-<p>This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">ISAW Papers 7</a></i>.</p>
+<p style="margin-top:1em;text-align:center;color:gray">©2014 <span property="cc:attributionName">William B. Hafford</span>. Published under the <a href="http://creativecommons.org/licenses/by/4.0/" rel="license" style="color:gray">Creative Commons Attribution 4.0</a> license.</p>
+<p style="margin-top:1em;text-align:center;color:gray">This article is part of <i><a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/" style="color:gray">ISAW Papers 7</a></i>.</p>
 </footer>
 </article>
 </body>
