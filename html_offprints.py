@@ -159,6 +159,7 @@ for j in range(1, 14) :
 	with open(str(j)+"/head.xml", "r") as head:
 		head = BeautifulSoup(head, "html.parser")
 		download_link = head.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/isaw-papers-"+str(j)+"-offprint.xhtml")
+		download_link["download"] = "isaw-papers-"+str(j)
 		header(head, soup, download_link)
 
 	# Collection of articles ISAW Papers 7 (other numbers can be added if future articles are collections)
@@ -183,6 +184,7 @@ for j in range(1, 14) :
 						with open(str(j)+'/'+ str(element) + "/head.xml", "r") as head:
 							head = BeautifulSoup(head, "html.parser")
 							download_link = head.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/"+str(element)+"/"+str(el)+"-offprint.xhtml")
+							download_link["download"] = el 
 							header(head, soup_7, download_link)
 
 						paragraphs_footer = soup_7.footer.find_all("p")
