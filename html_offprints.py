@@ -6,7 +6,7 @@ import re
 from wand.image import Image
 from wand.display import display
 
-def image64(images, path, soup) :
+def image64(images, path, soup, *path_dlib) :
 	""" Encodes the images in base64 and replace the link to the images in the html by the encoded image
     
     :param images: list of images
@@ -31,7 +31,11 @@ def image64(images, path, soup) :
 			i64.append(str(im64).replace("b'", "").replace("'",""))
 		
 		source = source.replace("images/", "").replace(".png", "").replace(".jpg", "").replace(".gif", "")
-		images[i].wrap(soup.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+source))
+		if path_dlib : 
+			images[i].wrap(soup.new_tag("a", href=path_dlib[0]+"#"+source))
+		else : 
+			images[i].wrap(soup.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+source))
+
 		images[i]["src"] = "data:image/png;base64,"+str(i64[i])
 		if os.path.isdir(str(j)+"/images"):
 			shutil.rmtree(str(j)+"/images")
@@ -50,7 +54,7 @@ def css(soup) :
 	soup.head.append(soup.new_tag("style"))
 	soup.head.style.append(css)
 
-def js_figures(soup):
+def js_figures(soup, *path_dlib):
 	"""Adds javascript element in the figure elements to help the citation of the figure
    
     :param soup: the whole article
@@ -63,7 +67,10 @@ def js_figures(soup):
 			figure["onmouseleave"] = "document.getElementById('"+ids+"anchor').style.display='none';document.getElementById('"+ids+"anchor_label').style.display='none';"
 		
 			figure["onmouseover"] = "document.getElementById('"+ids+"anchor').style.display='';document.getElementById('"+ids+"anchor_label').style.display='';" 
-			link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+ids)
+			if path_dlib : 
+				link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href=path_dlib[0]+"#"+ids)
+			else : 
+				link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+ids)
 			link.append("⬈")
 			span = soup.new_tag("span", id=ids+'anchor_label', style="color:#aaa;display:none;position:fixed;right:0;bottom:50%" )
 			span.append("#"+ids)
@@ -71,7 +78,7 @@ def js_figures(soup):
 				figure.figcaption.append(span)
 				figure.figcaption.append(link)
 
-def js_p(soup) :	
+def js_p(soup, *path_dlib) :	
 	"""Adds javascript element in the paragraphs elements to help the citation of the paragraphs
    
     :param soup: the whole article
@@ -83,7 +90,11 @@ def js_p(soup) :
 			ids = p["id"]
 			p["onmouseleave"] = "document.getElementById('"+ids+"anchor').style.display='none';document.getElementById('"+ids+"anchor_label').style.display='none';"
 			p["onmouseover"] = "document.getElementById('"+ids+"anchor').style.display='';document.getElementById('"+ids+"anchor_label').style.display='';" 
-			link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+ids )
+			if path_dlib :
+				link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href=path_dlib[0]+"#"+ids )
+			else : 
+				link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+ids )
+
 			link["class"] = "id_link"
 			link.append("⬈")
 			p.append(link)
@@ -171,15 +182,16 @@ for j in range(1, 14) :
 					if re.match("isaw-papers-"+str(j)+"-*", str(el)):
 						with open ('isaw-papers/isaw-papers-'+str(j)+'/'+ str(element) + '/'+ str(el), "r") as article : 
 							soup_7 = BeautifulSoup(article, "html.parser")
+						dlib_path = "http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/"+str(element)+"/"
+
 						if soup_7.img :
 							images = soup_7.find_all("img") 			
 							path = "isaw-papers/isaw-papers-"+str(j)+"/"+str(element) + "/"
-							if element != "meadows-gruber" and element != "pett" :
-								image64(images, path, soup)
+							image64(images, path, soup, dlib_path)
 						el = el.replace('.xhtml', '')
 						css(soup_7)
-						js_figures(soup_7)
-						js_p(soup_7)
+						js_figures(soup_7, dlib_path)
+						js_p(soup_7, dlib_path)
 						video(soup_7)
 						with open(str(j)+'/'+ str(element) + "/head.xml", "r") as head:
 							head = BeautifulSoup(head, "html.parser")
