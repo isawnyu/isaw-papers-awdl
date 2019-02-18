@@ -154,7 +154,7 @@ Feedback can be left by open an issue on the <a href="https://github.com/fmezard
 
 """)
 
-for j in range(14, 15) :
+for j in range(1, 15) :
 	# Opening every articles and creating a BeautifulSoup object with all the modifications
 	with open("isaw-papers/isaw-papers-"+str(j)+"/isaw-papers-"+str(j)+".xhtml", "r") as article :
 		soup = BeautifulSoup(article,"html.parser")
