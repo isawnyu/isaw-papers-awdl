@@ -1,0 +1,3 @@
+[submodule "isaw-papers"]
+	path = isaw-papers
+	url = https://github.com/isawnyu/isaw-papers.git
