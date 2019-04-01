@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="bibo: http://purl.org/ontology/bibo/
+ cc: http://creativecommons.org/ns#
+ dcmitype: http://purl.org/dc/dcmitype/
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ nm: http://nomisma.org/id/
+ owl:  http://www.w3.org/2002/07/owl#
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ rdfa: http://www.w3.org/ns/rdfa#
+ rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+ skos: http://www.w3.org/2004/02/skos/core#
+ " xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Tables of Synodic Events from -800 to 1650 Using Modern and Almagest Models</title>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS"/>
+<meta content="Tables of Synodic Events from -800 to 1650 Using Modern and Almagest" name="DC.title"/>
+<meta content="2019-04-01" name="DC.date"/>
+<meta content="application/xhtml+xml" name="DC.format"/>
+<meta content="Christián C. Carman" name="DC.creator"/>
+<meta content="Dennis Duke" name="DC.creator"/>
+<meta content="en" name="DC.language"/>
+<meta content="Put full plain-text of abstract here." name="DC.abstract"/>
+<meta content="Institute for the Study of the Ancient World, New York University" name="DC.publisher"/>
+<meta content="" name="DC.subject"/>
+<meta content="" name="DC.subject"/>
+<meta content="Creative Commons Attribution 4.0 Unported (CC-BY)" name="DCTERMS.license"/>
+<meta content="" name="DCTERMS.bibliographicCitation"/>
+<meta content="ISAW Papers" name="DCTERMS.isPartOf"/>
+<meta content="2333.1/k98sf96r" name="DCTERMS.identifier.DOI"/>
+<link href="http://www.worldcat.org/oclc/756047783" rel="dcterms:isPartOf"/>
+<link href="urn:issn:2164-1471" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
+}
+
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}
+
+.work_cited_links {
+  color:gray;
+ }
+
+.work_cited {
+  margin-left:.25in;
+  text-indent:-.25in
+ }
+ 
+.editorial_note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+*[xml|lang |= 'grc'] {
+font-family:"New Athena Unicode";
+}
+       
+*[xml|lang |= 'egyd'] {
+font-family:Umschrift_TTn;
+}
+       
+    *:lang(grc){font-family:"New Athena Unicode";}
+    *:lang(egyd){font-family:Umschrift_TTn;}
+ 
+
+*[xml|lang |= 'syr'] {
+   font-family:"Serto Urhoy"; 
+}
+
+xml:lang(syr) {
+ font-family:"Serto Urhoy";
+ }
+
+
+</style></head>
+<body>
+<article>
+<header><div id="isaw_papers_header" style="text-align:justify; background:#aaa;margin:1em;padding:2em" xmlns="http://www.w3.org/1999/xhtml">
+<p class="textindent0">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/15/ as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website. </p>
+<p class="textindent0" style="text-align:justify;margin:1em">©2019 Christián C. Carman and Dennis Duke; distributed under the terms of the Creative Commons Attribution 4.0 International (CC-BY) license.<br/>
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/>
+</a>
+</p>
+<p style="text-align:center;margin-top:1em">This article can be downloaded as a <a download="isaw-papers-15" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/15/isaw-papers-15-offprint.xhtml">single file</a></p></div>
+<h2>ISAW Papers 15 (2019)</h2>
+<h1 rel="dcterms:title">Tables of Synodic Events from -800 to 1650 Using Modern and <i>Almagest</i> Models</h1>
+<h2><span rel="dcterms:creator">Christián C. Carman</span>, (Universidad Nacional de Quilmes, CONICET) and <span rel="dcterms:creator">Dennis Duke</span>, (Florida State University)</h2>
+<p class="abstract"><em>Abstract: </em><span id="abstract" property="dcterms:abstract">This article describes and makes available computed data for the major synodic events for the inner (Mercury, Venus) and outer (Mars, Jupiter, Saturn) planets for the time period -800 to 1650.</span></p>
+<p class="subjects"><em>Library of Congress Subject:</em> <a href="http://id.loc.gov/authorities/subjects/sh85009003" rel="dcterms:subject">Astronomy</a>.</p>
+</header>
+<main>
+<section id="section1">
+<p class="textindent0">We have computed the major synodic events for the inner (Mercury, Venus) and outer (Mars, Jupiter, Saturn) planets for the time period -800 to 1650. The events are computed using modern models (Bretagnon 1986) and the models from Ptolemy’s <i>Almagest</i> (Pedersen 2011). While ordinary ephemerides give planetary positions at a list of times, our tables give the times and positions of the planets for a list of events. Often in discussions of ancient astronomy it is helpful to be able to look up directly the time and positions of such events for both modern models and the <i>Almagest</i> models.</p>
+<p>The events computed for the inner planets are: 1) superior conjunction of the true planet and the mean Sun, 2) greatest elongation (east), 3) first station, 4) inferior conjunction of the true planet and the mean Sun, 5) second station, and 6) greatest elongation (west).</p>
+<p>The events computed for the outer planets are: 1) conjunction of the true planet and the mean Sun, 2) first station, 3) opposition of the true planet and the mean Sun, and 4) second station.</p>
+<p>For each event we give the date/time and the corresponding true and mean longitudes of the planet and the Sun. The accuracy of the computed times is about 1/28<sup>th</sup> of a second. This is accomplished in each case by an appropriate set of iterations and/or interpolations, and, no doubt needless to say, is far more precise that any possible observation timing by any ancient astronomer.</p>
+<p>We have also computed the date and time of first and last visibilities of the inner and outer planets at Alexandria (longitude 29;55 degrees east, latitude 31;13,12 degrees north) and Babylon (longitude 44;26 degrees east, latitude 33;20 degrees north) for the same time period -800 to 1650 using the same modern and <i>Almagest</i> models.</p>
+<p>The events computed for the inner planets are: 1) first visibility of the planet in the west after sunset (EF), 2) last visibility of the planet in the west after sunset (EL), 3) first visibility of the planet in the east before sunrise (MF), 4) and last visibility of the planet in the east before sunrise (ML).</p>
+<p>The events computed for the outer planets are: 1) first visibility of the planet in the east before sunrise (EF), 4) last visibility of the planet rising after sunset (AR), 3) first visibility of the planet setting before sunrise (CS), and 4) last visibility of the planet in the west after sunset (EL). The AR and CS events are not mentioned in ancient sources, but are included here for completeness.</p>
+<p>Computation of these visibility events requires a number of additional assumptions beyond the specification of the models. We use the <i>arcus visionis</i> (AV) model of the <i>Almagest</i>, which depends upon the specification of an AV distance of the Sun below the horizon at the moment the planet is on the horizon. For both the modern and <i>Almagest</i> models we give results for two sets of parameters. The first set uses the default convention of the program PLSV (Swerdlow 2004) that the apparent planet, i.e. corrected for refraction (Meeus 1998, 101), is on the horizon and the Sun is depressed below the horizon at a set of AV values specific to each planet and event type that generally follow Schoch (Schoch 1924). The second set assumes the true planet is on the horizon and uses the values from the <i>Almagest</i> XIII 7 (Toomer 1984) except that for the AR and CS events we use half the AV value since the Sun is on the opposite horizon as the planet.</p>
+<p>In all cases the date given for the visibility events cannot be considered as more than indicative, since such events are in reality sensitive not only to the AV values but also to local weather, obscurations of the horizon, azimuth differences of the planet and the Sun, etc. It is the case, however, that our results for the modern model do match fairly closely with the results from PLSV.</p>
+<p>There are ten files for each planet. Here is the key to the otherwise cryptic file names:</p>
+<ol>
+<li>planet1650 (where ‘planet’ is one of planet names): YMDH calendar dates for Alexandria, then the corresponding JD’s for Greenwich, then for the outer planets the mean and true longitudes of the planet and the Sun for the synodic events conjunction, first station, opposition, second station. For the inner planets, as above but the events are superior conjunction, greatest elongation (east), first station, inferior conjunction, second station, greatest elongation (west).</li>
+<li>planet1650pt, as above but using the <i>Almagest</i> models for the longitudes. The YMDH calendar dates and the corresponding JD’s are both for Alexandria.</li>
+<li>planet1650v: modern models, YMDH and JD’s for Alexandria, then for the outer planets the longitude and latitude, the longitude of the Sun, the azimuth and altitude of the planet, and the altitude and azimuth of the Sun. The altitude of the planet is always -0.5667 degrees, which corresponds approximately to an apparent, i.e. refraction corrected, altitude of 0 degrees. The observer is assumed to be in Alexandria. For the outer planets the event sequence is MF,AR,CS,EL. For the inner planets the sequence is EF,EL,ML,MF.</li>
+<li>planet1650v1: the same as planet1650v except that the true altitude of the planet is 0 degrees, which is the convention used in the <i>Almagest</i>.</li>
+<li>planet1650vb: the same as planet1650v except the observer is assumed to be in Babylon.</li>
+<li>planet1650v1b: the same as planet1650v1 except the observer is assumed to be in Babylon.</li>
+<li>planet1650ptv: the same as planet1650v except the <i>Almagest</i> models are used.</li>
+<li>planet1650ptv1: the same as planet1650v1 except the <i>Almagest</i> models are used.</li>
+<li>planet1650ptvb: the same as planet1650vb except the <i>Almagest</i> models are used.</li>
+<li>planet1650ptv1b: the same as planet1650v1b except the <i>Almagest</i> models are used.</li>
+</ol>
+</section>
+<section id="works-cited">
+<h2>References</h2>
+<p class="work-cited" id="reference-1" onmouseleave="document.getElementById('reference-1anchor').style.display='none';document.getElementById('reference-1anchor_label').style.display='none';" onmouseover="document.getElementById('reference-1anchor').style.display='';document.getElementById('reference-1anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Pierre Bretagnon and Jean-Louis Simon 1986, <i>Planetary Programs and Tables from –4000 to +2800</i>, Willmann-Bell, Richmond.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/15/#reference-1" id="reference-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-1</span></p>
+<p class="work-cited" id="reference-2" onmouseleave="document.getElementById('reference-2anchor').style.display='none';document.getElementById('reference-2anchor_label').style.display='none';" onmouseover="document.getElementById('reference-2anchor').style.display='';document.getElementById('reference-2anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Jean Meeus 1998, <i>Astronomical Algorithms</i>, 2<sup>nd</sup> edition, Willmann-Bell, Richmond.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/15/#reference-2" id="reference-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-2</span></p>
+<p class="work-cited" id="reference-3" onmouseleave="document.getElementById('reference-3anchor').style.display='none';document.getElementById('reference-3anchor_label').style.display='none';" onmouseover="document.getElementById('reference-3anchor').style.display='';document.getElementById('reference-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Noel Swerdlow 2004, <i>Planetary, Stellar, and Lunar Visibility</i>, v 3.1, <a href="http://www.alcyone.de">http://www.alcyone.de</a>, by Rainer Lange and Noel Swerdlow.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/15/#reference-3" id="reference-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-3</span></p>
+<p class="work-cited" id="reference-4" onmouseleave="document.getElementById('reference-4anchor').style.display='none';document.getElementById('reference-4anchor_label').style.display='none';" onmouseover="document.getElementById('reference-4anchor').style.display='';document.getElementById('reference-4anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Olaf Pedersen 2011, <i>A Survey of the Almagest, with Annotation and New Commentary by Alexander Jones</i>, Sources and Studies in the History of Mathematics and Physical Sciences. Springer, New York.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/15/#reference-4" id="reference-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-4</span></p>
+<p class="work-cited" id="reference-5" onmouseleave="document.getElementById('reference-5anchor').style.display='none';document.getElementById('reference-5anchor_label').style.display='none';" onmouseover="document.getElementById('reference-5anchor').style.display='';document.getElementById('reference-5anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Carl Schoch 1924, <i>The “Arcus Visionis” of the Planets in the Babylonian Observations</i>, Monthly Notices of the Royal Astronomical Society, Volume 84, Issue 9, 14 July, 731-734.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/15/#reference-5" id="reference-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-5</span></p>
+<p class="work-cited" id="reference-6" onmouseleave="document.getElementById('reference-6anchor').style.display='none';document.getElementById('reference-6anchor_label').style.display='none';" onmouseover="document.getElementById('reference-6anchor').style.display='';document.getElementById('reference-6anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Gerald J. Toomer 1984, <i>Ptolemy’s Almagest, translated and Annotated</i>, Duckworth, London.
+</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/15/#reference-6" id="reference-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-6</span></p>
+</section>
+<section id="appendix1">
+<h2>Appendix 1: Links to data as Microsoft Excel Spreadsheets</h2>
+<table>
+<tr>
+<th style="text-align:left">Mercury</th>
+<th style="text-align:left">Venus</th>
+<th style="text-align:left">Mars</th>
+<th style="text-align:left">Jupiter</th>
+<th style="text-align:left">Saturn</th>
+</tr>
+<tr>
+<td><a href="mercury1650.xlsx">mercury1650.xlsx</a></td>
+<td><a href="venus1650.xlsx">venus1650.xlsx</a></td>
+<td><a href="mars1650.xlsx">mars1650.xlsx</a></td>
+<td><a href="jupiter1650.xlsx">jupiter1650.xlsx</a></td>
+<td><a href="saturn1650.xlsx">saturn1650.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650pt.xlsx">mercury1650pt.xlsx</a></td>
+<td><a href="venus1650pt.xlsx">venus1650pt.xlsx</a></td>
+<td><a href="mars1650pt.xlsx">mars1650pt.xlsx</a></td>
+<td><a href="jupiter1650pt.xlsx">jupiter1650pt.xlsx</a></td>
+<td><a href="saturn1650pt.xlsx">saturn1650pt.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v.xlsx">mercury1650v.xlsx</a></td>
+<td><a href="venus1650v.xlsx">venus1650v.xlsx</a></td>
+<td><a href="mars1650v.xlsx">mars1650v.xlsx</a></td>
+<td><a href="jupiter1650v.xlsx">jupiter1650v.xlsx</a></td>
+<td><a href="saturn1650v.xlsx">saturn1650v.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v1.xlsx">mercury1650v1.xlsx</a></td>
+<td><a href="venus1650v1.xlsx">venus1650v1.xlsx</a></td>
+<td><a href="mars1650v1.xlsx">mars1650v1.xlsx</a></td>
+<td><a href="jupiter1650v1.xlsx">jupiter1650v1.xlsx</a></td>
+<td><a href="saturn1650v1.xlsx">saturn1650v1.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650vb.xlsx">mercury1650vb.xlsx</a></td>
+<td><a href="venus1650vb.xlsx">venus1650vb.xlsx</a></td>
+<td><a href="mars1650vb.xlsx">mars1650vb.xlsx</a></td>
+<td><a href="jupiter1650vb.xlsx">jupiter1650vb.xlsx</a></td>
+<td><a href="saturn1650vb.xlsx">saturn1650vb.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v1b.xlsx">mercury1650v1b.xlsx</a></td>
+<td><a href="venus1650v1b.xlsx">venus1650v1b.xlsx</a></td>
+<td><a href="mars1650v1b.xlsx">mars1650v1b.xlsx</a></td>
+<td><a href="jupiter1650v1b.xlsx">jupiter1650v1b.xlsx</a></td>
+<td><a href="saturn1650v1b.xlsx">saturn1650v1b.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv.xlsx">mercury1650ptv.xlsx</a></td>
+<td><a href="venus1650ptv.xlsx">venus1650ptv.xlsx</a></td>
+<td><a href="mars1650ptv.xlsx">mars1650ptv.xlsx</a></td>
+<td><a href="jupiter1650ptv.xlsx">jupiter1650ptv.xlsx</a></td>
+<td><a href="saturn1650ptv.xlsx">saturn1650ptv.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv1.xlsx">mercury1650ptv1.xlsx</a></td>
+<td><a href="venus1650ptv1.xlsx">venus1650ptv1.xlsx</a></td>
+<td><a href="mars1650ptv1.xlsx">mars1650ptv1.xlsx</a></td>
+<td><a href="jupiter1650ptv1.xlsx">jupiter1650ptv1.xlsx</a></td>
+<td><a href="saturn1650ptv1.xlsx">saturn1650ptv1.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptvb.xlsx">mercury1650ptvb.xlsx</a></td>
+<td><a href="venus1650ptvb.xlsx">venus1650ptvb.xlsx</a></td>
+<td><a href="mars1650ptvb.xlsx">mars1650ptvb.xlsx</a></td>
+<td><a href="jupiter1650ptvb.xlsx">jupiter1650ptvb.xlsx</a></td>
+<td><a href="saturn1650ptvb.xlsx">saturn1650ptvb.xlsx</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv1b.xlsx">mercury1650ptv1b.xlsx</a></td>
+<td><a href="venus1650ptv1b.xlsx">venus1650ptv1b.xlsx</a></td>
+<td><a href="mars1650ptv1b.xlsx">mars1650ptv1b.xlsx</a></td>
+<td><a href="jupiter1650ptv1b.xlsx">jupiter1650ptv1b.xlsx</a></td>
+<td><a href="saturn1650ptv1b.xlsx">saturn1650ptv1b.xlsx</a></td>
+</tr>
+</table>
+</section>
+<section>
+<h2>Appendix 2: Links to Data as CSV Files</h2>
+<table>
+<tr>
+<th style="text-align:left">Mercury</th>
+<th style="text-align:left">Venus</th>
+<th style="text-align:left">Mars</th>
+<th style="text-align:left">Jupiter</th>
+<th style="text-align:left">Saturn</th>
+</tr>
+<tr>
+<td><a href="mercury1650.csv">mercury1650.csv</a></td>
+<td><a href="venus1650.csv">venus1650.csv</a></td>
+<td><a href="mars1650.csv">mars1650.csv</a></td>
+<td><a href="jupiter1650.csv">jupiter1650.csv</a></td>
+<td><a href="saturn1650.csv">saturn1650.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650pt.csv">mercury1650pt.csv</a></td>
+<td><a href="venus1650pt.csv">venus1650pt.csv</a></td>
+<td><a href="mars1650pt.csv">mars1650pt.csv</a></td>
+<td><a href="jupiter1650pt.csv">jupiter1650pt.csv</a></td>
+<td><a href="saturn1650pt.csv">saturn1650pt.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v.csv">mercury1650v.csv</a></td>
+<td><a href="venus1650v.csv">venus1650v.csv</a></td>
+<td><a href="mars1650v.csv">mars1650v.csv</a></td>
+<td><a href="jupiter1650v.csv">jupiter1650v.csv</a></td>
+<td><a href="saturn1650v.csv">saturn1650v.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v1.csv">mercury1650v1.csv</a></td>
+<td><a href="venus1650v1.csv">venus1650v1.csv</a></td>
+<td><a href="mars1650v1.csv">mars1650v1.csv</a></td>
+<td><a href="jupiter1650v1.csv">jupiter1650v1.csv</a></td>
+<td><a href="saturn1650v1.csv">saturn1650v1.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650vb.csv">mercury1650vb.csv</a></td>
+<td><a href="venus1650vb.csv">venus1650vb.csv</a></td>
+<td><a href="mars1650vb.csv">mars1650vb.csv</a></td>
+<td><a href="jupiter1650vb.csv">jupiter1650vb.csv</a></td>
+<td><a href="saturn1650vb.csv">saturn1650vb.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v1b.csv">mercury1650v1b.csv</a></td>
+<td><a href="venus1650v1b.csv">venus1650v1b.csv</a></td>
+<td><a href="mars1650v1b.csv">mars1650v1b.csv</a></td>
+<td><a href="jupiter1650v1b.csv">jupiter1650v1b.csv</a></td>
+<td><a href="saturn1650v1b.csv">saturn1650v1b.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv.csv">mercury1650ptv.csv</a></td>
+<td><a href="venus1650ptv.csv">venus1650ptv.csv</a></td>
+<td><a href="mars1650ptv.csv">mars1650ptv.csv</a></td>
+<td><a href="jupiter1650ptv.csv">jupiter1650ptv.csv</a></td>
+<td><a href="saturn1650ptv.csv">saturn1650ptv.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv1.csv">mercury1650ptv1.csv</a></td>
+<td><a href="venus1650ptv1.csv">venus1650ptv1.csv</a></td>
+<td><a href="mars1650ptv1.csv">mars1650ptv1.csv</a></td>
+<td><a href="jupiter1650ptv1.csv">jupiter1650ptv1.csv</a></td>
+<td><a href="saturn1650ptv1.csv">saturn1650ptv1.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptvb.csv">mercury1650ptvb.csv</a></td>
+<td><a href="venus1650ptvb.csv">venus1650ptvb.csv</a></td>
+<td><a href="mars1650ptvb.csv">mars1650ptvb.csv</a></td>
+<td><a href="jupiter1650ptvb.csv">jupiter1650ptvb.csv</a></td>
+<td><a href="saturn1650ptvb.csv">saturn1650ptvb.csv</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv1b.csv">mercury1650ptv1b.csv</a></td>
+<td><a href="venus1650ptv1b.csv">venus1650ptv1b.csv</a></td>
+<td><a href="mars1650ptv1b.csv">mars1650ptv1b.csv</a></td>
+<td><a href="jupiter1650ptv1b.csv">jupiter1650ptv1b.csv</a></td>
+<td><a href="saturn1650ptv1b.csv">saturn1650ptv1b.csv</a></td>
+</tr>
+</table>
+</section>
+<section>
+<h2>Appendix 3: Links to Data as HTML Tables</h2>
+<table>
+<tr>
+<td><a href="mercury1650.html">mercury1650.html</a></td>
+<td><a href="venus1650.html">venus1650.html</a></td>
+<td><a href="mars1650.html">mars1650.html</a></td>
+<td><a href="jupiter1650.html">jupiter1650.html</a></td>
+<td><a href="saturn1650.html">saturn1650.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650pt.html">mercury1650pt.html</a></td>
+<td><a href="venus1650pt.html">venus1650pt.html</a></td>
+<td><a href="mars1650pt.html">mars1650pt.html</a></td>
+<td><a href="jupiter1650pt.html">jupiter1650pt.html</a></td>
+<td><a href="saturn1650pt.html">saturn1650pt.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v.html">mercury1650v.html</a></td>
+<td><a href="venus1650v.html">venus1650v.html</a></td>
+<td><a href="mars1650v.html">mars1650v.html</a></td>
+<td><a href="jupiter1650v.html">jupiter1650v.html</a></td>
+<td><a href="saturn1650v.html">saturn1650v.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v1.html">mercury1650v1.html</a></td>
+<td><a href="venus1650v1.html">venus1650v1.html</a></td>
+<td><a href="mars1650v1.html">mars1650v1.html</a></td>
+<td><a href="jupiter1650v1.html">jupiter1650v1.html</a></td>
+<td><a href="saturn1650v1.html">saturn1650v1.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650vb.html">mercury1650vb.html</a></td>
+<td><a href="venus1650vb.html">venus1650vb.html</a></td>
+<td><a href="mars1650vb.html">mars1650vb.html</a></td>
+<td><a href="jupiter1650vb.html">jupiter1650vb.html</a></td>
+<td><a href="saturn1650vb.html">saturn1650vb.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650v1b.html">mercury1650v1b.html</a></td>
+<td><a href="venus1650v1b.html">venus1650v1b.html</a></td>
+<td><a href="mars1650v1b.html">mars1650v1b.html</a></td>
+<td><a href="jupiter1650v1b.html">jupiter1650v1b.html</a></td>
+<td><a href="saturn1650v1b.html">saturn1650v1b.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv.html">mercury1650ptv.html</a></td>
+<td><a href="venus1650ptv.html">venus1650ptv.html</a></td>
+<td><a href="mars1650ptv.html">mars1650ptv.html</a></td>
+<td><a href="jupiter1650ptv.html">jupiter1650ptv.html</a></td>
+<td><a href="saturn1650ptv.html">saturn1650ptv.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv1.html">mercury1650ptv1.html</a></td>
+<td><a href="venus1650ptv1.html">venus1650ptv1.html</a></td>
+<td><a href="mars1650ptv1.html">mars1650ptv1.html</a></td>
+<td><a href="jupiter1650ptv1.html">jupiter1650ptv1.html</a></td>
+<td><a href="saturn1650ptv1.html">saturn1650ptv1.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptvb.html">mercury1650ptvb.html</a></td>
+<td><a href="venus1650ptvb.html">venus1650ptvb.html</a></td>
+<td><a href="mars1650ptvb.html">mars1650ptvb.html</a></td>
+<td><a href="jupiter1650ptvb.html">jupiter1650ptvb.html</a></td>
+<td><a href="saturn1650ptvb.html">saturn1650ptvb.html</a></td>
+</tr>
+<tr>
+<td><a href="mercury1650ptv1b.html">mercury1650ptv1b.html</a></td>
+<td><a href="venus1650ptv1b.html">venus1650ptv1b.html</a></td>
+<td><a href="mars1650ptv1b.html">mars1650ptv1b.html</a></td>
+<td><a href="jupiter1650ptv1b.html">jupiter1650ptv1b.html</a></td>
+<td><a href="saturn1650ptv1b.html">saturn1650ptv1b.html</a></td>
+</tr>
+</table>
+</section>
+</main>
+<footer>
+<p class="editorial-note"><a href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"><i>ISAW Papers</i></a> (ISSN 2164-1471) is a publication of the <a href="http://isaw.nyu.edu" property="dcterms:publisher" rel="dcterms:publisher">Institute for the Study of the Ancient World</a>, <a href="http://nyu.edu/">New York University</a>. This article was suggeasted for publication by Alexander Jones as a member of the ISAW faculty.</p>
+<p class="copyright" style="margin-top:1em;text-align:center;color:gray">©2019 <span rel="cc:attributionName">Christián C. Carman and Dennis Duke</span>. Distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/" rel="cc:license" style="color:gray">Creative Commons Attribution 4.0 International</a> license.</p>
+</footer>
+</article>
+</body>
+</html>
