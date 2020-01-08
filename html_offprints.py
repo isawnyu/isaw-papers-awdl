@@ -154,8 +154,12 @@ def video(soup):
 
 #""")
 
-for j in range(15, 17) :
-    # Opening every articles and creating a BeautifulSoup object with all the modifications
+# build dir array
+
+papers_list = ['magic-11']
+
+for j in papers_list :
+    # Opening every article and creating a BeautifulSoup object with all the modifications
     with open("isaw-papers/isaw-papers-"+str(j)+"/isaw-papers-"+str(j)+".xhtml", "r") as article :
         soup = BeautifulSoup(article,"html.parser")
     images = soup.find_all("img", {"src" : re.compile("images/*")})
