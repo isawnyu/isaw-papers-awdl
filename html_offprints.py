@@ -6,6 +6,10 @@ import re
 from wand.image import Image
 from wand.display import display
 
+# ISAW PAPERS DIR
+
+ISAW_PAPERS_PREFIX = "/Users/sfsh/Documents/isaw/"
+
 def image64(images, path, soup, *path_dlib) :
     """ Encodes the images in base64 and replace the link to the images in the html by the encoded image
 
@@ -48,7 +52,7 @@ def css(soup) :
     """
     css_link = soup.find("link", {"rel" : re.compile("stylesheet*")})
     css_link.decompose()
-    with open("isaw-papers/isaw-publications.css", "r") as css_file :
+    with open(ISAW_PAPERS_PREFIX + "isaw-papers/isaw-publications.css", "r") as css_file :
             css = css_file.read()
     css = css.replace("<http://isaw.nyu.edu/publications/isaw-papers>", "&lt;http://isaw.nyu.edu/publications/isaw-papers&gt;")
     soup.head.append(soup.new_tag("style"))
@@ -160,7 +164,7 @@ papers_list = ['15']
 
 for j in papers_list :
     # Opening every article and creating a BeautifulSoup object with all the modifications
-    with open("isaw-papers/isaw-papers-"+str(j)+"/isaw-papers-"+str(j)+".xhtml", "r") as article :
+    with open(ISAW_PAPERS_PREFIX + "isaw-papers/isaw-papers-"+str(j)+"/isaw-papers-"+str(j)+".xhtml", "r") as article :
         soup = BeautifulSoup(article,"html.parser")
     images = soup.find_all("img", {"src" : re.compile("images/*")})
     path = "isaw-papers/isaw-papers-"+str(j)+"/"
