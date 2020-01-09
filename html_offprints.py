@@ -156,7 +156,7 @@ def video(soup):
 
 # build dir array
 
-papers_list = ['magic-11']
+papers_list = ['15']
 
 for j in papers_list :
     # Opening every article and creating a BeautifulSoup object with all the modifications
