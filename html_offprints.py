@@ -8,7 +8,7 @@ from wand.display import display
 
 # ISAW PAPERS DIR
 
-ISAW_PAPERS_PREFIX = "/Users/sfsh/Documents/isaw/"
+ISAW_PAPERS_PREFIX = "/Users/sfsheath/Documents/isaw/"
 
 def image64(images, path, soup, *path_dlib) :
     """ Encodes the images in base64 and replace the link to the images in the html by the encoded image
@@ -23,7 +23,7 @@ def image64(images, path, soup, *path_dlib) :
     i64 = []
     for i in range(0, len(images)):
         source = images[i]["src"]
-        with Image(filename=str(path)+str(source)) as imageFile:
+        with Image(filename=str(ISAW_PAPERS_PREFIX+path)+str(source)) as imageFile:
             imageFile.transform('','1024x1024')
             if not os.path.isdir(str(j)+"/images"):
                 os.makedirs(str(j)+"/images")
