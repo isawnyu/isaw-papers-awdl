@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html lang="en" prefix="bibo: http://purl.org/ontology/bibo/
+ cc: http://creativecommons.org/ns#
+ dcmitype: http://purl.org/dc/dcmitype/
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ nm: http://nomisma.org/id/
+ owl:  http://www.w3.org/2002/07/owl#
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ rdfa: http://www.w3.org/ns/rdfa#
+ rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+ skos: http://www.w3.org/2004/02/skos/core#
+ " xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Introduction</title>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS"/>
+<meta content="Introdutction" name="DC.title"/>
+<meta content="2020-00-00" name="DC.date"/>
+<meta content="application/xhtml+xml" name="DC.format"/>
+<meta content="Franziska Naether" name="DC.creator"/>
+<meta content="en" name="DC.language"/>
+<meta content="???." name="DC.abstract"/>
+<meta content="Institute for the Study of the Ancient World, New York University" name="DC.publisher"/>
+<meta content="Rites and ceremonies in literature--Congresses" name="DC.subject"/>
+<meta content="Magic, Ancient--Congresses" name="DC.subject"/>
+<meta content="Creative Commons Attribution 4.0 Unported (CC-BY)" name="DCTERMS.license"/>
+<meta content="Naether. (2020) " name="DCTERMS.bibliographicCitation"/>
+<meta content="ISAW Papers" name="DCTERMS.isPartOf"/>
+<meta content="???" name="DCTERMS.identifier.DOI"/>
+<link href="http://www.worldcat.org/oclc/756047783" rel="dcterms:isPartOf"/>
+<link href="urn:issn:2164-1471" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
+}
+
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}
+
+.work_cited_links {
+  color:gray;
+ }
+
+.work_cited {
+  margin-left:.25in;
+  text-indent:-.25in
+ }
+ 
+.editorial_note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+*[xml|lang |= 'grc'] {
+font-family:"New Athena Unicode";
+}
+       
+*[xml|lang |= 'egyd'] {
+font-family:Umschrift_TTn;
+}
+       
+    *:lang(grc){font-family:"New Athena Unicode";}
+    *:lang(egyd){font-family:Umschrift_TTn;}
+ 
+
+*[xml|lang |= 'syr'] {
+   font-family:"Serto Urhoy"; 
+}
+
+xml:lang(syr) {
+ font-family:"Serto Urhoy";
+ }
+
+
+</style></head>
+<body>
+<article>
+<header><div id="isaw_papers_header" style="text-align:justify; background:#aaa;margin:1em;padding:2em" xmlns="http://www.w3.org/1999/xhtml">
+<p class="textindent0">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/ as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website. </p>
+<p class="textindent0" style="text-align:justify;margin:1em">©2020 Franziska Naether; text distributed under the terms of the Creative Commons Attribution 4.0 International (CC-BY) license.<br/>
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/>
+</a>
+</p>
+<p style="text-align:center;margin-top:1em">This article can be downloaded as a <a download="isaw-papers-18-1" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/isaw-papers-18-1-offprint.xhtml">single file</a></p></div>
+<h2>ISAW Papers 18.1 (2020)</h2>
+<h1 rel="dcterms:title">Introduction</h1>
+<h2><span rel="dcterms:creator"><a href="https://viaf.org/viaf/122046086/" property="foaf:name" rel="dcterms:identifier">Franziska Naether</a></span>, Leipzig University/Stellenbosch University</h2>
+<p class="textindent0 margintop15em" style="margin-left:2em;margin-right:2em">In Franziska Naether, ed. 2020. <i>Cult Practices in Ancient Literatures: Egyptian, Near Eastern and Graeco-Roman Narratives in a Cross-Cultural Perspective. Proceedings of a Workshop at the Institute for the Study of the Ancient World, New York, May 16-17, 2016.</i> ISAW Papers 18.</p>
+<p class="doi">DOI: <a href="???" rel="dcterms:identifier">??</a></p>
+<p class="abstract"><em>Abstract: </em><span id="abstract" property="dcterms:abstract">???</span></p>
+<p class="subjects"><em>Library of Congress Subjects:</em> <a href="http://id.loc.gov/authorities/subjects/sh94008536" rel="dcterms:subject">Rites and ceremonies in literature--Congresses</a>; <a href="http://id.loc.gov/authorities/subjects/sh85079605" rel="dcterms:subject">Magic, Ancient--Congresses</a>.</p>
+<div id="toc">
+<p>Table of Contents</p>
+<ul>
+<li><a href="#section1">Introduction</a></li>
+<li><a href="#section2">Methodological Remarks</a></li>
+<li><a href="#section3">Analyzing the Phenomena</a></li>
+<li><a href="#section4">Acknowledgements</a></li>
+<li><a href="#references">Bibliography</a></li>
+<li><a href="#footnotes">Notes</a></li>
+<li><a href="#section5">Abbreviations Used by Contributors</a></li>
+<li><a href="#section6">More About the Workshop</a></li>
+<li><a href="#section7">Video Recordings of the Talks</a></li>
+<li><a href="#section8">Contributors and Abstracts</a></li>
+</ul>
+</div>
+</header>
+<section id="section1">
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">Heroic stories and novels, tales, travel fictions and wisdom texts in the ancient world, from Egypt to Greece, from Anatolia to Rome, contained rituals, magic, and divination. In a two-day workshop held at the Institute for the Study of the Ancient World on May 16–17, 2016 senior and emerging scholars who study rituals, magical, and divinatory practices in the context of literary texts were invited to contribute to a wide-ranging discussion of such cult practices and their functions in regard to ritual and literary studies. Topics included secret knowledge, presentations of the divine and of fate, and practitioners of cult practices as protagonists in the narratives. Particular attention was devoted to the portrayal and identity of “wise” men and women – priests, magicians, wizards, etc. – and their female counterparts. Among the practices, magical spells and oracles communicated through inspiration, dreams and other methods of divination came in for special discussion. The essays and abstracts collected here represent the proceedings of this workshop.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">The research questions laid out here touch not only issues of content, but also of methodology: what information do we have about ritual participants, locations, instruments, etc., and how should we analyze our sources from the view of religious studies? What perspectives do narratives and wisdom texts offer for the study of cult practices, and what are their limitations? How can language, story lines and ritual quotations be explained in terms of literary studies? The analysis of cult practices as situations of communication between actants in particular offers great insights for the discussion of literary studies in our fields and in ritual studies. As far as I can see, the topic of this publication has been discussed only rarely on a transdisciplinary level, e.g. for the novel in Graeco-Roman Egypt.<sup><a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">1</a></sup> This stands in stark contrast to the fact that religious action is very often part of the plot of ancient works of literature. Typically, scholars have commented only on individual phenomena but have not tried to put together a larger research group containing contributors from different fields, e.g., Bible Studies and the Ancient Near East.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">In this workshop, we took “cult practice” to mean the totality of all religious, ritual, divinatory and magical practices. It is a neutral term that encompasses all problematic terms and phenomena, e.g. “magic” or “ritual power.” Such cult practices were performed both during the official cult in the temple and in private areas. A few of the papers discuss the issues of categorization of rituals as “public” or “private,” and reflect on emic and etic perspectives of “magic” and “witchcraft” (in contrast or as part of “religion”), such as the Sumerian “Kishpu,” the Egyptian “Heka,” or the Greek “Mageia” and “Goeteia” in the ancient cultures and from a modern scholarly viewpoint (see the contributions of Gina Konstantopoulos<!--insert link-->, Edward Love<!--insert link-->, Philippe Matthey<!--insert link-->, and Mark Roblee<!--insert link-->).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">The approach of many of the papers presented in this workshop is phenomena- and genre-based. The contributions focus on novels, tales, and dramas. Those texts follow the broad definition of literature which has been proposed by scholars such as Elke Blumenthal and Willy Clarysse: that texts could be reused and read aloud to an audience and therefore are by definition literary.<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup> In fact, the actual number of literate people in ancient cultures must have been very small in regard to the total of the population.<sup><a class="footnote-reference" href="#footnote-3" id="footnote-reference-3">3</a></sup> Hence, we are dealing with the output of a small élite, which was consumed by an audience mainly by oral culture.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+</section>
+<section id="section2">
+<h2>Methodological Remarks</h2>
+<p class="textindent0" id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">The texts which we dealt with in the workshop spanned several millennia. They originated from numerous royal dynasties and cultures in the ancient world. Some of them might have been transmitted in long lines of tradition. Oftentimes, they were composed in different languages and likely underwent several redactions. One particular focus of our workshop was the rich material in Demotic from Egypt (ca. 700 <span style="font-variant: small-caps;">bce</span> until 500 <span style="font-variant: small-caps;">ce</span>), which has been gaining more and more attention over the last three decades.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">The texts feature different belief systems: pagan religions from Mesopotamia, Egypt, Greece and Rome, and Christianity, among others. During the millennia, cult practices and the access of priests and the public to the gods changed, and the functions of individual divinities underwent a transition. It is therefore crucial to contextualize the narratives in their historical settings, if possible, both that in which the texts were composed and the one in which the narratives are set, which could differ considerably if narratives are set in a distant past.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+<p id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">However, our understanding about certain phenomena is restricted by the evidence. Some works of literature survive in only one copy, such as the stories from the Egyptian Papyrus Westcar (see Rita Lucarelli’s contribution <!--insert link-->), while the “Alexander Romance” treated by Philippe Matthey<!--insert link--> is available in numerous copies and languages through the ages, forming different avenues of reception. The Greek comedies and dramas which form the base of Elena Chepel’s research <!--insert link-->have been transmitted through the copies of monks in Medieval times. Each of these forms of transmission is complex and requires special methodological attention when it comes to interpretation. Another issue is the credibility of the mentions and descriptions of cult practices: how accurate should we take them to be? How do the intentions of authors and subsequent bias or otherwise affect such descriptions, and should one assume that they might have priestly connections? All of these considerations suggest an approach based on phenomena, or an analysis of cult practices by the methods of the sociology of religion and socio-linguistics, and by embedding the narratives into their socio-historical context.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
+</section>
+<section id="section3">
+<h2>Analyzing the Phenomena</h2>
+<p class="textindent0" id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p8">While working in transdisciplinary environments like that at ISAW and particularly within this workshop, it is always practical to start by asking simple “W-questions,” to establish common ground and fundamental differences. First of all, the WHAT: cult practices themselves and their treatment in literary texts can be analyzed according to their method of ritual category. The Egyptian <i>pḥ-nṯr</i>, literally “reaching a god,” a term for an oracular consultation, is discussed in a couple of contributions (Philippe Matthey<!--insert link-->, Mark Roblee<!--insert link-->, and Edward Love<!--insert link-->). Rituals might contain interesting motifs such as hierophagy (for prophecy) in Meredith Warren’s paper <!--insert link-->or the intoxication with alcohol whose effects worked like or alongside magic as presented by Lucas Livingston<!--insert link-->. Another popular subject was that of transformation: transforming oneself, a person or an object into someone or something else. In studying topics like incubation or the ingestion of alcohol, the literary evidence could be paired with archaeological remains, such as temples where certain practices might have been performed or artifacts from the material world (see the contributions by Gil Renberg<!--insert link--> and Lucas Livingston<!--insert link-->).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
+<p id="p9" onmouseleave="document.getElementById('p9anchor').style.display='none';document.getElementById('p9anchor_label').style.display='none';" onmouseover="document.getElementById('p9anchor').style.display='';document.getElementById('p9anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p9">A main focus of the papers presented and collected here lies in the quest for the WHO: the practitioners, such as priests, mantic specialists, wandering personnel, shamans, holy, old, and “wise” men and women, however they are called in the sources and the secondary literature. They form one part in the chain of communication between the human and the divine, often taking an important intermediate position because of their status within the élite or otherwise professional or priestly hierarchy. They might be royal or central members of the community. One common denominator is that they are literate and initiated into arcane knowledge. They could represent petitioners – locals like villagers or even the king within the cult practices in front of the gods. The tasks of such intermediaries were to perform offerings, write down oracle questions, or interpret divine replies to the persons who approached them for help. Furthermore, we could assume a public or audience of some sort depending on the accessibility of the rituals.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p9" id="p9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p9</span></p>
+<p id="p10" onmouseleave="document.getElementById('p10anchor').style.display='none';document.getElementById('p10anchor_label').style.display='none';" onmouseover="document.getElementById('p10anchor').style.display='';document.getElementById('p10anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p10">While in Egypt the practitioners are most often part of the temple hierarchy and male, we can establish a literary figure of the “priest-magician” as a common protagonist of narratives (see Rita Lucarelli <!--insert link-->, Edward Love <!--insert link-->, Philippe Matthey <!--insert link-->, Mark Roblee <!--insert link-->, and Gil Renberg <!--insert link-->) – contrary to the Greek world (Lucas Livingston <!--insert link--> and Elena Chepel <!--insert link-->). Mesopotamian literature offers more women, e.g., the wise (old) “um-ma” or “witch” (treated by Gina Konstantopoulos <!--insert link-->, Ainsley Hawthorn <!--insert link-->, and Rita Lucarelli <!--insert link-->). This character is completely absent in the Nile Valley.<sup><a class="footnote-reference" href="#footnote-4" id="footnote-reference-4">4</a></sup> In Late Antiquity there was a shift of cult practices from temples and churches to individuals, which produced further specific characters such as the holy man who could be a church father, a hermit, or a monk (Meredith Warren <!--insert link-->). Some scholars in this volume thematize a “democratization” of cult practices (e.g., Gil Renberg <!--insert link-->, Mark Roblee <!--insert link-->, and Meredith Warren <!--insert link-->). This means that formerly restricted rituals were available to more and more petitioners through the ages. Other participants of the communication process are gods, demons and other entities people sought out for counsel, therapy, and information on past, present and future. Sometimes, it is not easy to discern these personages when it comes to terminology (e.g., defining a demon).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p10" id="p10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p10</span></p>
+<p id="p11" onmouseleave="document.getElementById('p11anchor').style.display='none';document.getElementById('p11anchor_label').style.display='none';" onmouseover="document.getElementById('p11anchor').style.display='';document.getElementById('p11anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p11">WHERE cult practices could take place is also varied and connected to the practitioners: in big cult centers, local temples, royal courts, caverns, or open waters and fields. Tackling the question of WHEN, it is obvious that rituals occurred at certain times of the year according to calendars of religious festivals. In contrast, magical practices are sometimes performed at night under the cover of darkness. In the literary texts, there is a tendency for cultic action to occur when the story demands it, following the intention of the author. By which means or HOW an individual cult practice has been executed is, finally, another important question: there is a variety of expressions used for “casting spells” (Edward Love <!--insert link-->, Gina Konstantopoulos <!--insert link-->). Many of these practices have been marked as “foreign” (e.g., incubation, the witch in Mesopotamia, the Nubian sorcerer, etc.), though this is more a social designation used by groups in order to discredit the “other” rather than implying an actual import from elsewhere.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p11" id="p11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p11</span></p>
+<p id="p12" onmouseleave="document.getElementById('p12anchor').style.display='none';document.getElementById('p12anchor_label').style.display='none';" onmouseover="document.getElementById('p12anchor').style.display='';document.getElementById('p12anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p12">An exciting and popular literary setting in the narratives are battles and duels of wizards. A story with a quite famous battle is the <i>Second Setna Novel</i> (often referred to as <i>Setne II </i>by the contributors), in which Setna’s son, the wunderkind Si-Osiris, is fighting against a “shaman” from Nubia (<i>ȝte n igš </i>in Egyptian). I have treated this and other comparable tales such as the unpublished Demotic narrative <i>The Story of King Djoser and Imhotep</i> and the Sumerian epic tale <i>Enmerkar and the Lord of Aratta</i> elsewhere.<sup><a class="footnote-reference" href="#footnote-5" id="footnote-reference-5">5</a></sup> Here, duels are also featured in the contributions by Gina Konstantopoulos <!--insert link-->, Rita Lucarelli <!--insert link-->and Edward Love <!--insert link-->.<sup><a class="footnote-reference" href="#footnote-6" id="footnote-reference-6">6</a></sup> Heroes and magical battles – not only the ancient narratives, but also the treatments by the authors of this collection – provide an exciting read. Gil Renberg <!--insert link-->and Meredith Warren <!--insert link-->have recently published monographs about their research. Both of them agreed to provide short summaries of their work with links to their larger projects. Mark Roblee <!--insert link-->did not deliver a paper at the workshop but agreed to write a contribution. With this volume, we hope to instigate further research on this fascinating topic of reading literary texts with an eye to religious phenomena.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p12" id="p12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p12</span></p>
+</section>
+<section id="section4">
+<h2>Acknowledgements:</h2>
+<p class="textindent0" id="p13" onmouseleave="document.getElementById('p13anchor').style.display='none';document.getElementById('p13anchor_label').style.display='none';" onmouseover="document.getElementById('p13anchor').style.display='';document.getElementById('p13anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">The workshop was made possible by funding from the Volkswagen Foundation (Germany) and additional funding by ISAW. It was a requirement of the grant to invite chiefly North American and emerging scholars. I am very grateful for this generous financial support. During the academic year of 2015–16, I was a Visiting Research Scholar at ISAW working on my project “Cult Practices in Ancient Egyptian Literature,” which I submitted as a habilitation thesis to Leipzig University. This workshop aimed to put my research in context with other ancient cultures and I am grateful that the editors of <i>ISAW Papers </i>accepted this proposal and made this publication possible (Roger Bagnall, Sebastian Heath, and David Ratzan). Thanks are also due to Marc LeBlanc, Andrea Chang, Shaun Gaffney, Maggie Pavao, Beate Pongratz-Leisten, Julianna Reitz, Irene Soto Marin, and Kristen Soule for their support organizing the workshop, as well as to my colleague Kerstin Seidel from the Egyptological Institute at Leipzig University for her assistance in administrative affairs on the German side. They all helped to make this cooperation project of NYU and LU a success. The publication was prepared while I was in New York and Leipzig and while holding a “EUROSA” grant by the European Union at Stellenbosch University in South Africa. Several anonymous peer reviewers provided the authors with helpful commentaries and suggestions.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p13" id="p13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p13</span></p>
+</section>
+<section id="references">
+<h2>Bibliography</h2>
+<p class="work-cited" id="reference-1" onmouseleave="document.getElementById('reference-1anchor').style.display='none';document.getElementById('reference-1anchor_label').style.display='none';" onmouseover="document.getElementById('reference-1anchor').style.display='';document.getElementById('reference-1anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Rutherford, Ian. 2016. (ed.) <i>Graeco-Roman Interactions</i>. Oxford.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#reference-1" id="reference-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-1</span></p>
+<p class="work-cited" id="reference-2" onmouseleave="document.getElementById('reference-2anchor').style.display='none';document.getElementById('reference-2anchor_label').style.display='none';" onmouseover="document.getElementById('reference-2anchor').style.display='';document.getElementById('reference-2anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Naether, Franziska. 2019a. “Wise Men and Women in Literary Papyri.” In: Nodar, Alberto/Torallas Tovar, Sofia (eds.). <i>Proceedings of the 28th Congress of Papyrology, 2016 August 1–6, Barcelona</i>. Publicacions de l'Abadia de Montserrat, Universitat Pompeu Fabra. Barcelona. 105–113.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#reference-2" id="reference-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-2</span></p>
+<p class="work-cited" id="reference-3" onmouseleave="document.getElementById('reference-3anchor').style.display='none';document.getElementById('reference-3anchor_label').style.display='none';" onmouseover="document.getElementById('reference-3anchor').style.display='';document.getElementById('reference-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Naether, Franziska. 2019b. “Magical Practices in Egyptian Literary Texts: In Quest for Cultural Plurality.” In: Bortolani, Ljuba Merlina/Furley, William/Nagel, Svenja/Quack, Joachim F. (eds.). <i>Cultural Plurality in Ancient Magical Texts and Practices. Graeco-Egyptian Handbooks and Related Traditions</i>. Orientalische Religionen in der Antike 32, Tübingen. 27–41.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#reference-3" id="reference-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-3</span></p>
+<p class="work-cited" id="reference-4" onmouseleave="document.getElementById('reference-4anchor').style.display='none';document.getElementById('reference-4anchor_label').style.display='none';" onmouseover="document.getElementById('reference-4anchor').style.display='';document.getElementById('reference-4anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Naether, Franziska. 2019c. “Ancient Expats? Wise Women and Witches in Egyptian Literary Sources.” In: Berlejung, Angelika/Grohmann, Marianne (eds.). <i>Foreign Women – Women in Foreign Lands. Studies on Foreignness and Gender in the Hebrew Bible and the Ancient Near East in the First Millennium BCE.</i> Orientalische Religionen in der Antike 35. Tübingen. 219–231.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#reference-4" id="reference-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-4</span></p>
+<p class="work-cited" id="reference-5" onmouseleave="document.getElementById('reference-5anchor').style.display='none';document.getElementById('reference-5anchor_label').style.display='none';" onmouseover="document.getElementById('reference-5anchor').style.display='';document.getElementById('reference-5anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Naether, Franziska/Ross Micah. 2014. “The Categorization of Numeric and Magical Texts as Exemplified by OMM 170+796+844.” In: Broux, Yanne/Depauw, Mark (eds.). Acts of the Tenth International Congress of Demotic Studies, Leuven, August 26–29, 2008. Orientalia Lovaniensia Analecta 231. Leuven. 161–202.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#reference-5" id="reference-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-5</span></p>
+<p class="work-cited" id="reference-6" onmouseleave="document.getElementById('reference-6anchor').style.display='none';document.getElementById('reference-6anchor_label').style.display='none';" onmouseover="document.getElementById('reference-6anchor').style.display='';document.getElementById('reference-6anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Ritner, Robert K. 2001. “The Religious, Social, and Legal Parameters of Traditional Egyptian Magic.” In: Meyer, Marvin/Mirecki, Paul A. (eds.). Ancient Magic and Ritual Power. Religions in the Graeco-Roman World 129. Leiden. 43–60.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#reference-6" id="reference-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-6</span></p>
+</section>
+<section id="footnotes">
+<h2>Notes</h2>
+<p class="footnote" id="footnote-1" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';"><sup><a href="#footnote-reference-1">1</a></sup> See, e.g., Rutherford  2016.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#footnote-1" id="footnote-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-1</span></p>
+<p class="footnote" id="footnote-2" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';"><sup><a href="#footnote-reference-2">2</a></sup> There are far more features which define a text as literature; see the summary in F. Naether and M. Ross, “The Categorization of Numeric and Magical Texts as Exemplified by OMM 170+796+844,” in: Y. Broux and M. Depauw (eds.), <i>Acts of the Tenth International Congress of Demotic Studies, Leuven, August 26–29, 2008,</i> Orientalia Lovaniensia Analecta 231 (Leuven: Peeters, 2014): 161–202.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#footnote-2" id="footnote-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-2</span></p>
+<p class="footnote" id="footnote-3" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';"><sup><a href="#footnote-reference-3">3</a></sup> For Roman Egypt, see  Ritner 2001: 52–53: “With literacy restricted to 1% of the population, only the scribally-trained priesthood could compose and use the complex magical texts.”<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#footnote-3" id="footnote-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-3</span></p>
+<p class="footnote" id="footnote-4" onmouseleave="document.getElementById('footnote-4anchor').style.display='none';document.getElementById('footnote-4anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-4anchor').style.display='';document.getElementById('footnote-4anchor_label').style.display='';"><sup><a href="#footnote-reference-4">4</a></sup> See also Naether 2019a and 2019c.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#footnote-4" id="footnote-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-4</span></p>
+<p class="footnote" id="footnote-5" onmouseleave="document.getElementById('footnote-5anchor').style.display='none';document.getElementById('footnote-5anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-5anchor').style.display='';document.getElementById('footnote-5anchor_label').style.display='';"><sup><a href="#footnote-reference-5">5</a></sup> Naether 2019c.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#footnote-5" id="footnote-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-5</span></p>
+<p class="footnote" id="footnote-6" onmouseleave="document.getElementById('footnote-6anchor').style.display='none';document.getElementById('footnote-6anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-6anchor').style.display='';document.getElementById('footnote-6anchor_label').style.display='';"><sup><a href="#footnote-reference-6">6</a></sup> See also Naether 2019c.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#footnote-6" id="footnote-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-6</span></p>
+</section>
+<section id="section5">
+<h2>Abbreviations Used by Contributors:</h2>
+<p class="textindent0" id="p14" onmouseleave="document.getElementById('p14anchor').style.display='none';document.getElementById('p14anchor_label').style.display='none';" onmouseover="document.getElementById('p14anchor').style.display='';document.getElementById('p14anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p14">TM: Numbers referring to the Trismegistos database, an interdisciplinary portal of papyrological and epigraphical resources for the Ancient World, <a href="http://www.trismegistos.org/">http://www.trismegistos.org/</a><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p14" id="p14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p14</span></p>
+<p class="textindent0" id="p15" onmouseleave="document.getElementById('p15anchor').style.display='none';document.getElementById('p15anchor_label').style.display='none';" onmouseover="document.getElementById('p15anchor').style.display='';document.getElementById('p15anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p15">ETCLS: The second edition of the Electronic Text Corpus of Sumerian Literature (full texts), <a href="http://etcsl.orinst.ox.ac.uk/">http://etcsl.orinst.ox.ac.uk/#</a><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p15" id="p15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p15</span></p>
+<p class="textindent0" id="p16" onmouseleave="document.getElementById('p16anchor').style.display='none';document.getElementById('p16anchor_label').style.display='none';" onmouseover="document.getElementById('p16anchor').style.display='';document.getElementById('p16anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p16">TLA: <i>The Thesaurus Linguae Aegyptiae</i> (full texts), <a href="http://aaew.bbaw.de/tla/">http://aaew.bbaw.de/tla/</a><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p16" id="p16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p16</span></p>
+<p class="textindent0" id="p17" onmouseleave="document.getElementById('p17anchor').style.display='none';document.getElementById('p17anchor_label').style.display='none';" onmouseover="document.getElementById('p17anchor').style.display='';document.getElementById('p17anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p17">PGM/PDM: The magical papyri (<i>Papyri Graecae Magicae</i> and <i>Papyri Demoticae Magicae</i>); for an overview, see Naether, Franziska. 2015. “Griechisch-Ägyptische Magie nach den Papyri Graecae et Demoticae Magicae,” in: Jördens, Andrea (ed.), <i>Ägyptische Magie und ihre Umwelt</i>. Philippika 80, Wiesbaden. 191–217.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p17" id="p17anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p17anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p17</span></p>
+<p class="textindent0" id="p18" onmouseleave="document.getElementById('p18anchor').style.display='none';document.getElementById('p18anchor_label').style.display='none';" onmouseover="document.getElementById('p18anchor').style.display='';document.getElementById('p18anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p18">Editions of Papyri, Ostraka etc. are cited after Oates, John F. et al. <i>Checklist of Greek, Latin, Demotic and Coptic Papyri, Ostraca and Tablets</i>, <a href="http://scriptorium.lib.duke.edu/papyrus/texts/clist.html">http://scriptorium.lib.duke.edu/papyrus/texts/clist.html</a> and its partially updated version on <a href="http://papyri.info/docs/checklist">http://papyri.info/docs/checklist</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p18" id="p18anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p18anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p18</span></p>
+<p class="textindent0" id="p19" onmouseleave="document.getElementById('p19anchor').style.display='none';document.getElementById('p19anchor_label').style.display='none';" onmouseover="document.getElementById('p19anchor').style.display='';document.getElementById('p19anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p19">Greek and Latin authors are cited after the <i>New Pauly</i>. A handy list of abbreviations is available here: <a href="https://de.wikipedia.org/wiki/Liste_der_Abk%C3%BCrzungen_antiker_Autoren_und_Werktitel">https://de.wikipedia.org/wiki/Liste_der_Abk%C3%BCrzungen_antiker_Autoren_und_Werktitel</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p19" id="p19anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p19anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p19</span></p>
+</section>
+<section id="section6">
+<h2>More About the Workshop:</h2>
+<p class="textindent0" id="p20" onmouseleave="document.getElementById('p20anchor').style.display='none';document.getElementById('p20anchor_label').style.display='none';" onmouseover="document.getElementById('p20anchor').style.display='';document.getElementById('p20anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p20">Call for papers: <a href="http://isaw.nyu.edu/news/cfp-cult-practices">http://isaw.nyu.edu/news/cfp-cult-practices</a><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p20" id="p20anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p20anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p20</span></p>
+<p class="textindent0" id="p21" onmouseleave="document.getElementById('p21anchor').style.display='none';document.getElementById('p21anchor_label').style.display='none';" onmouseover="document.getElementById('p21anchor').style.display='';document.getElementById('p21anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p21">Program: <a href="http://isaw.nyu.edu/events/archive/2015/cult-practices-day-one">http://isaw.nyu.edu/events/archive/2015/cult-practices-day-one</a> and <a href="http://isaw.nyu.edu/events/archive/2015/cult-practices-day-two">http://isaw.nyu.edu/events/archive/2015/cult-practices-day-two</a><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p21" id="p21anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p21anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p21</span></p>
+<p class="textindent0" id="p22" onmouseleave="document.getElementById('p22anchor').style.display='none';document.getElementById('p22anchor_label').style.display='none';" onmouseover="document.getElementById('p22anchor').style.display='';document.getElementById('p22anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p22">Report about workshop: <a href="http://isaw.nyu.edu/news/Cult-Practices-ISAWworkshop">http://isaw.nyu.edu/news/Cult-Practices-ISAWworkshop</a><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p22" id="p22anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p22anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p22</span></p>
+</section>
+<section id="section7">
+<h2>Video Recordings of the Talks:</h2>
+<p class="textindent0" id="p23" onmouseleave="document.getElementById('p23anchor').style.display='none';document.getElementById('p23anchor_label').style.display='none';" onmouseover="document.getElementById('p23anchor').style.display='';document.getElementById('p23anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p23">Video recordings of the lectures have been archived by ISAW and may be viewable on request; interested readers should contact ISAW directly for current information.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p23" id="p23anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p23anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p23</span></p>
+</section>
+<section id="section8">
+<h2>Contributors and Abstracts:</h2>
+<p class="textindent0" id="p24" onmouseleave="document.getElementById('p24anchor').style.display='none';document.getElementById('p24anchor_label').style.display='none';" onmouseover="document.getElementById('p24anchor').style.display='';document.getElementById('p24anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p24"><b>Elena Chepel</b> (Institute of World History, Russian Academy of Sciences): <i>Alternative Facts from Oracles and Post-Truth Politics in Aristophanes</i><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p24" id="p24anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p24anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p24</span></p>
+<p class="textindent0" id="p25" onmouseleave="document.getElementById('p25anchor').style.display='none';document.getElementById('p25anchor_label').style.display='none';" onmouseover="document.getElementById('p25anchor').style.display='';document.getElementById('p25anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p25">Oracles are recited in Attic сomedies in various contexts introducing the dramatic action (e.g., <i>Plutus</i>), structuring the central debate of two opponents (e.g., <i>Knights</i>), justifying the “great idea” of the protagonist (e.g., <i>Lysistrata</i>), or embedded in sacrificial scenes that are crucial to the comic plot (e.g., <i>Peace, Birds</i>). They are framed as messages coming directly from the gods and their performance is ritualized. At the same time, comedy demonstrates that the problem of the authenticity of an oracle is raised anew in every oracular delivery. It is the task of the performer to make the oracle compelling enough for the community to accept it. Comedy shows that the interpretation is an essential tool to do this, thus reflecting the tradition that values the human skill to decipher the sacred message in order to communicate successfully with the divinity. Comedy, therefore, allows us to explore the understudied aspects of oracular practices in Greece: the circulation and performance of oracular texts, the agonistic tradition of oracular interpretation, and the potential of oracular performances to produce ritual authority by establishing the “true” meaning of the god’s message. Comedy employs this ritual authority for several purposes. First of all, it is easily converted into political power allowing for manipulation. Secondly, the correct interpretation is associated with the protagonists of the plays and with their utopian ideas thus showing them to be free from any ritual fallacy.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p25" id="p25anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p25anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p25</span></p>
+<p class="textindent0 margintop15em" id="p26" onmouseleave="document.getElementById('p26anchor').style.display='none';document.getElementById('p26anchor_label').style.display='none';" onmouseover="document.getElementById('p26anchor').style.display='';document.getElementById('p26anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p26"><b>Ainsley Hawthorn</b> (Yale University): <i>The Fish and the Tamarisk: Symbolism and Ritual Instruction in “Lugalbanda and the Anzu Bird”</i><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p26" id="p26anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p26anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p26</span></p>
+<p class="textindent0" id="p27" onmouseleave="document.getElementById('p27anchor').style.display='none';document.getElementById('p27anchor_label').style.display='none';" onmouseover="document.getElementById('p27anchor').style.display='';document.getElementById('p27anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p27">At the end of the Sumerian narrative poem <i>Lugalbanda and the Anzu Bird</i>, Lugalbanda asks the goddess Inana how his king, Enmerkar, can win back her favor and thereby secure success in battle against a neighboring city-state. The goddess responds with a lengthy description of a ritual whose meaning and literary function is obscure. A partial explanation of the passage has been provided by Jeremy Black, who posits that the ritual is an allegory that refers back to previous elements of the story in order to bring the whole content of the poem to a coherent conclusion. This paper proposes that there is additional sexual and astral symbolism within the ritual that resumes and resolves motifs developed throughout the poem and its companion text, <i>Lugalbanda and the Mountain Cave</i>. These include themes of celestial healing, as well as intimacy in the relationship between human and deity and similarity between this rapport and the bond with a relative or lover. In light of its findings, the paper will ultimately consider whether the ritual has etiological implications.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p27" id="p27anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p27anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p27</span></p>
+<p class="textindent0 margintop15em" id="p28" onmouseleave="document.getElementById('p28anchor').style.display='none';document.getElementById('p28anchor_label').style.display='none';" onmouseover="document.getElementById('p28anchor').style.display='';document.getElementById('p28anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p28"><b>Gina Konstantopoulos</b> (University of Tsukuba): <i>Wise Women and Benevolent Magic in Old Babylonian Literary Texts</i><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p28" id="p28anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p28anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p28</span></p>
+<p class="textindent0" id="p29" onmouseleave="document.getElementById('p29anchor').style.display='none';document.getElementById('p29anchor_label').style.display='none';" onmouseover="document.getElementById('p29anchor').style.display='';document.getElementById('p29anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p29">The Sumerian duology of Old Babylonian literary texts <i>Enmerkar and the Lord of Aratta </i>and <i>Enmerkar and Ensuhgirana </i>not only detail the rivalry between Mesopotamia and Aratta, but also contain a number of insights into magical and ritual practice. Among the different episodes presented in these narratives, this paper will focus principally on a magical battle that occupies a climatic point in the narrative of <i>Enmerkar and Ensuhgirana. </i>Here, a duel occurs between a foreign sorcerer who acts on behalf of Aratta and Sagburu, a wise woman from the Mesopotamian city of Ereš, who emerges from the contest triumphant. In contrast to the demonic witch, a figure that often features as an antagonist in Mesopotamian incantation texts, Sagburu is a rare – if not unique – example of a benevolent female practitioner of magic in Mesopotamian texts. Her singular nature is in contrast to the more widely attested presence of such beneficent female figures in Hittite texts, and similarly benevolent – or at least ambivalent – witches and sorceresses in the later Greco-Roman world. Through analyzing the battle between Sagburu and the foreign sorcerer within the context presented by the two <i>Enmerkar </i>texts as a whole, we can explore the particular role Sagburu plays, her connection to divine female agents who empower her own abilities, and the deeper parallels that lie between the battle itself and the role of magic and ritual.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p29" id="p29anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p29anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p29</span></p>
+<p class="textindent0 margintop15em" id="p30" onmouseleave="document.getElementById('p30anchor').style.display='none';document.getElementById('p30anchor_label').style.display='none';" onmouseover="document.getElementById('p30anchor').style.display='';document.getElementById('p30anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p30"><b>Lucas Livingston</b> (Art Institute Chicago): <i>Alcohol's Magic in Antiquity: Fermentation, Intoxication, Metamorphosis, and Madness</i><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p30" id="p30anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p30anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p30</span></p>
+<p class="textindent0" id="p31" onmouseleave="document.getElementById('p31anchor').style.display='none';document.getElementById('p31anchor_label').style.display='none';" onmouseover="document.getElementById('p31anchor').style.display='';document.getElementById('p31anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p31">Alcohol’s magical effect to induce a transformation of state, whether physical or psychological, bane or boon, is a recurring theme in ancient Greek literature, art, and cult practice. The potent power of fermented beverage seems likened to a transformative potion as either a gift or a curse from the gods. This paper examines multiple examples of visual, literary, and archaeological evidence in support of this theme. The <i>Odyssey</i>'s tale of Circe's elixir might be read as a caution against conspicuous consumption, which is supported by the visual interpretation of painted <i>kylix</i> "eye cups" and <i>rhyton</i> vessels. Interior and exterior decoration of Greek drinking vessels refer directly to Dionysian tales of alcohol-induced transformation, while additional legends of the wine god's coterie offer copious examples of the relationships between fermentation, intoxication, metamorphosis, and animalistic behavior. Beer, wine, and mead take center stage before the advent of distilled liquors like whiskey and brandy, however Homeric literary accounts and contemporaneous archaeological evidence of mixed fermented drinks suggest our modern beverage categorization does not always apply in antiquity.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p31" id="p31anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p31anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p31</span></p>
+<p class="textindent0 margintop15em" id="p32" onmouseleave="document.getElementById('p32anchor').style.display='none';document.getElementById('p32anchor_label').style.display='none';" onmouseover="document.getElementById('p32anchor').style.display='';document.getElementById('p32anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p32"><b>Dr. Edward Love</b> (Universität Würzburg): <i>The Literary vs The Literal: The narration of magical practices, texts, and their practitioners in</i> Setne I <i>and</i> II <i>compared with the so-called Demotic and Greek Magical Papyri</i><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p32" id="p32anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p32anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p32</span></p>
+<p class="textindent0" id="p33" onmouseleave="document.getElementById('p33anchor').style.display='none';document.getElementById('p33anchor_label').style.display='none';" onmouseover="document.getElementById('p33anchor').style.display='';document.getElementById('p33anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p33">The Demotic narratives concerning magicians (<i>ḥr-tb</i>), sorcerers (<i>ȝte</i>), fine scribes (<i>sẖ-nfr</i>), and wise men (<i>rmṯ-rḫ</i>) contained in the literary cycle starring Setne Khaemwaset are the paramount Graeco-Roman period Egyptian language sources for the literary presentation of magical practice. Transmitted within the priestly milieu in which the so-called Demotic and Greek magical papyri (<i>PDM</i> and <i>PGM</i>) were also practiced and transmitted, “Setne I” and “Setne II” provide unparalleled insights into the conceptualization of magical practice by magical practitioners. Yet, these stories do not lionize earthly – but legendary – practitioners, nor do they describe magical practices similar to those found in the <i>PDM</i> and <i>PGM</i>. This study, therefore, will reconsider these sources within their audiences’ milieu, by: (1) providing a typological treatment of the lexical conceptualization of both magical practice (e.g., <i>iri ḥyḳ</i> vs. <i>ḥwy ḥyḳ</i>) and the textual authority from which these practices stemmed (e.g., <i>hp n sẖȝ</i> vs. <i>sp n sẖȝ</i>); (2) assessing which practices would have been considered a ritual reality of the <i>PDM</i> and <i>PGM</i> rather than a fictitious fantasy; and (3) arguing that the “Book of Thoth” – the ultimate source of ritual power in each story – was not a restricted tome of knowledge forbidden by the gods for mortal use.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p33" id="p33anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p33anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p33</span></p>
+<p class="textindent0 margintop15em" id="p34" onmouseleave="document.getElementById('p34anchor').style.display='none';document.getElementById('p34anchor_label').style.display='none';" onmouseover="document.getElementById('p34anchor').style.display='';document.getElementById('p34anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p34"><b>Rita Lucarelli</b> (University of California, Berkeley): <i>The Magician as a Literary Figure in Ancient Egyptian Texts</i><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p34" id="p34anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p34anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p34</span></p>
+<p class="textindent0" id="p35" onmouseleave="document.getElementById('p35anchor').style.display='none';document.getElementById('p35anchor_label').style.display='none';" onmouseover="document.getElementById('p35anchor').style.display='';document.getElementById('p35anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p35">Magicians are powerful figures in ancient literatures. Although they are generally described as human, they can reach and share supernatural powers thanks to their secret, restricted knowledge of the written spells and for their skills in performing rituals. Magicians can be priests, wise men, local ritual experts, tricksters, outsiders or shamanic personalities, depending from the audience they address and their cultural and religious context. This paper will discuss the multifaceted role of magician in the ancient Egyptian society through the evidence given mainly by literary sources as well as by a number of non-literary spells and <i>materia magica</i>. Questions of definition and terminology employed in the sources to describe a magician will be taken into consideration, as well as the issue of gender and of the almost total lack of evidence for “witches” as a complementary literary figure in ancient Egypt.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p35" id="p35anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p35anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p35</span></p>
+<p class="textindent0 margintop15em" id="p36" onmouseleave="document.getElementById('p36anchor').style.display='none';document.getElementById('p36anchor_label').style.display='none';" onmouseover="document.getElementById('p36anchor').style.display='';document.getElementById('p36anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p36"><b>Philippe Matthey</b> (Swiss National Science Foundation, University of Liège/University of Geneva): <i>From Cult Practice to Magical Ritual: Deciphering the “Lecanomancy” in the </i>Alexander Romance<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p36" id="p36anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p36anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p36</span></p>
+<p class="textindent0" id="p37" onmouseleave="document.getElementById('p37anchor').style.display='none';document.getElementById('p37anchor_label').style.display='none';" onmouseover="document.getElementById('p37anchor').style.display='';document.getElementById('p37anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p37">The Greek <i>Alexander Romance</i>, an imaginative account of Alexander the Great’s life and deeds, is well known for its Egyptian introduction containing a meticulous depiction of several “magical” rituals accomplished by the Egyptian pharaoh Nectanebo, like his infamous <i>lekanomanteia</i> (“divination with a bowl”) performed to keep Egypt’s enemies at bay, or his sending of dreams in order to charm the Macedonian queen Olympias or scare away her husband Philip. In this paper, I shed some light on the Egyptian influence behind the literary descriptions of these spells and on the way they reflect ritual practices attested in the Pharaonic and Graeco-Roman periods. In particular, the complex description of Nectanebo’s <i>lekanomanteia</i> has often been presented as a hybrid spell mixing elements of divination and execration rituals, understood as a novelistic translation of the Egyptian pharaoh’s ritual duty: to defend Egypt against its enemies (both cosmic and geographic) and to render them harmless by the means of quotidian ritual activities performed by priests on the king’s behalf. However, I will demonstrate more precisely how the <i>lekanomanteia</i> performed by Nectanebo closely mirrors the forms and purposes of so-called “apparition spells” from the corpus of the Greek and Demotic magical papyri.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p37" id="p37anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p37anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p37</span></p>
+<p class="textindent0 margintop15em" id="p38" onmouseleave="document.getElementById('p38anchor').style.display='none';document.getElementById('p38anchor_label').style.display='none';" onmouseover="document.getElementById('p38anchor').style.display='';document.getElementById('p38anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p38"><b>Gil Renberg</b> (University of Michigan, Ann Arbor): <i>Incubation in Demotic Literature</i><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p38" id="p38anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p38anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p38</span></p>
+<p class="textindent0" id="p39" onmouseleave="document.getElementById('p39anchor').style.display='none';document.getElementById('p39anchor_label').style.display='none';" onmouseover="document.getElementById('p39anchor').style.display='';document.getElementById('p39anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p39">Among the ritual activities to be found in Demotic literature is incubation, which is attested in both well-known works and obscure ones, but there has never been a study of what such sources can reveal – as well as the questions they raise – regarding the practice. This paper, part of a larger project on incubation in the ancient world, will survey all of the Demotic passages that clearly or potentially refer to incubation, as well as certain pertinent passages in Greek literature, and put them in the context of what is known of incubation at Egyptian sanctuaries during the Greco-Roman period. [This work is now published as part of the monograph <i>Where Dreams May Come: Incubation Sanctuaries in the Greco-Roman World</i>, 2 vols. (Religions in the Graeco-Roman World 184; Leiden &amp; Boston, 2017), which won the Goodwin Award of the Society for Classical Studies in 2019].<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p39" id="p39anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p39anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p39</span></p>
+<p class="textindent0 margintop15em" id="p40" onmouseleave="document.getElementById('p40anchor').style.display='none';document.getElementById('p40anchor_label').style.display='none';" onmouseover="document.getElementById('p40anchor').style.display='';document.getElementById('p40anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p40"><b>Mark Roblee</b> (University of Massachusetts, Amherst): <i>Divination is Divinization: The ancient Egyptian</i> pḥ-nṯr <i>oracle and the “Mithras Liturgy” in Late Roman Egypt</i><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p40" id="p40anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p40anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p40</span></p>
+<p class="textindent0" id="p41" onmouseleave="document.getElementById('p41anchor').style.display='none';document.getElementById('p41anchor_label').style.display='none';" onmouseover="document.getElementById('p41anchor').style.display='';document.getElementById('p41anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p41">When it comes to divination in late antique Graeco-Roman Egypt, it is difficult to separate the priest from the magician, religion from magic, or philosophy from all of the above. Whether performed publicly as a part of state cult or privately for élite (or non-élite) clients, divination often suggested the possibility of personal divinity for those involved. To bring this possibility of personal divinity into greater relief, this paper will interpret two divination practices from late antique Egypt – the “Mithras Liturgy” and the ancient Egyptian <i>pḥ-nṯr</i> oracle. In so doing I will attend to (1) the Egyptian concept of <i>ḥk3</i>; (2) select textual evidence for public and private practices related to self-deification; (3) the complex identity and pedigree of the Egyptian priest-magician as in figures like Horapollon; and (4) related scholarly debates around the cultural dynamics of Hellenization and Hellenism. This paper argues that self-deification as expressed in late antique Graeco-Egyptian cultic, magical and philosophic literature was not the exclusive domain of Hellenized philosophical elites, but rather, part of a more general cultural milieu of traditional Egyptian temple thought and cultic practice.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p41" id="p41anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p41anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p41</span></p>
+<p class="textindent0 margintop15em" id="p42" onmouseleave="document.getElementById('p42anchor').style.display='none';document.getElementById('p42anchor_label').style.display='none';" onmouseover="document.getElementById('p42anchor').style.display='';document.getElementById('p42anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p42"><b>Meredith J. C. Warren</b> (University of Sheffield): Tasting the Little Scroll: A Sensory Analysis of Divine Interaction in <i>Revelation</i> 10:8–10<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p42" id="p42anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p42anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p42</span></p>
+<p class="textindent0" id="p43" onmouseleave="document.getElementById('p43anchor').style.display='none';document.getElementById('p43anchor_label').style.display='none';" onmouseover="document.getElementById('p43anchor').style.display='';document.getElementById('p43anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p43">I propose that Revelation 10:8–10 makes use of a common yet unrecognized literary trope I call hierophagy – the eating of otherworldly things – in which the eater undergoes a change as a result of the eating that renders him/her uniquely capable of understanding divine knowledge. The consuming of the small scroll in Revelation 10:8–10 has received less attention than many other aspects of the apocalypse. However, the consuming of the scroll is a key element of how John experiences God’s revelation, and indeed, how he transmits it to others. I propose that the scroll’s ingestion represents a shared understanding of how the ritual ingestion of otherworldly food works in narrative to grant access to the divine realm and thereby transmit divine knowledge. Ezekiel 2:8–3:3 is most commonly read as a referent of Rev 10:8–10, but other texts, such as 4 Ezra 14:38–41, Joseph and Aseneth 16, and Perpetua and Felicitas 4, shed more light on the consumptive process in Revelation. [The substance of this paper was published 2017 as “Tasting the Little Scroll: A Sensory Analysis of Divine Interaction in Revelation 10.8–10,” <i>Journal for the Study of the New Testament</i> 40.1: 101–119, available open access under <a href="https://journals.sagepub.com/doi/10.1177/0142064X17723489">https://journals.sagepub.com/doi/10.1177/0142064X17723489</a>. The larger project out of which this material was taken has also now been published as a monograph in 2019:<i> Food and Transformation in Ancient Mediterranean Literature</i>. Writings from the Greco-Roman World Supplement Series. Atlanta.]<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/18-1/#p43" id="p43anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p43anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p43</span></p>
+</section>
+<footer>
+<p class="editorial-note"><a href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"><i>ISAW Papers</i></a> (ISSN 2164-1471) is a publication of the <a href="http://isaw.nyu.edu" property="dcterms:publisher" rel="dcterms:publisher">Institute for the Study of the Ancient World</a>, <a href="http://nyu.edu/">New York University</a>. This article was suggested for publication by ????? as a member of the ISAW faculty.</p>
+<p class="copyright" style="margin-top:1em;text-align:center;color:gray">©2020 <span rel="cc:attributionName">Franziska Naether</span>. Distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/" rel="cc:license" style="color:gray">Creative Commons Attribution 4.0 International</a> license. Additional rights holders and licenses for figures noted in captions as necessary.</p>
+</footer>
+</article>
+</body>
+</html>
