@@ -160,7 +160,7 @@ def video(soup):
 
 # build dir array
 
-papers_list = ['18','18-1','18-2','18-3','18-4','18-5','18-6','18-7','18-8','18-9','18-10','18-11']
+papers_list = ['18','18-1','18-2','18-3','18-4','18-5','18-6','18-7','18-8','18-9','18-10','18-11','19']
 
 for j in papers_list :
     # Opening every article and creating a BeautifulSoup object with all the modifications
