@@ -8,7 +8,7 @@ from wand.display import display
 
 # ISAW PAPERS DIR
 
-ISAW_PAPERS_PREFIX = "/Users/sfsheath/Documents/isaw/"
+ISAW_PAPERS_PREFIX = "../"
 
 def image64(images, path, soup, *path_dlib) :
     """ Encodes the images in base64 and replace the link to the images in the html by the encoded image
@@ -161,7 +161,7 @@ def video(soup):
 # build dir array
 
 papers_list = ['18','18-1','18-2','18-3','18-4','18-5','18-6','18-7','18-8','18-9','18-10','18-11','19']
-papers_list = ['19']
+papers_list = ['20-1','20-3','20-7']
 
 for j in papers_list :
     # Opening every article and creating a BeautifulSoup object with all the modifications

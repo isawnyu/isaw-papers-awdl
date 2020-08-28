@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html lang="en" prefix="bibo: http://purl.org/ontology/bibo/
+ cc: http://creativecommons.org/ns#
+ dcmitype: http://purl.org/dc/dcmitype/
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ nm: http://nomisma.org/id/
+ owl:  http://www.w3.org/2002/07/owl#
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ rdfa: http://www.w3.org/ns/rdfa#
+ rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+ skos: http://www.w3.org/2004/02/skos/core#
+ " xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Introducing the Semantic Web and Linked Open Data</title>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS"/>
+<meta content="Introducing the Semantic Web and Linked Open Data" name="DC.title"/>
+<meta content="2020-??-00" name="DC.date"/>
+<meta content="application/xhtml+xml" name="DC.format"/>
+<meta content="Sarah E. Bond" name="DC.creator"/>
+<meta content="Paul C. Dilley" name="DC.creator"/>
+<meta content="Ryan Horne" name="DC.creator"/>
+<meta content="en" name="DC.language"/>
+<meta content="TK" name="DC.abstract"/>
+<meta content="Semantic Web--Congresses" name="DC.subject"/>
+<meta content="Linked data--Congresses" name="DC.subject"/>
+<meta content="Creative Commons Attribution 4.0 Unported (CC-BY)" name="DCTERMS.license"/>
+<meta content="Sarah E. Bond, Paul C. Dilley, and Ryan Horne. 2020. Introducing the Semantic Web and Linked Open Data. ISAW Papers 20." name="DCTERMS.bibliographicCitation"/>
+<meta content="ISAW Papers" name="DCTERMS.isPartOf"/>
+<meta content="TK" name="DCTERMS.identifier.URI"/>
+<link href="http://www.worldcat.org/oclc/756047783" rel="dcterms:isPartOf"/>
+<link href="urn:issn:2164-1471" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
+}
+
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}
+
+.work_cited_links {
+  color:gray;
+ }
+
+.work_cited {
+  margin-left:.25in;
+  text-indent:-.25in
+ }
+ 
+.editorial_note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+*[xml|lang |= 'grc'] {
+font-family:"New Athena Unicode";
+}
+       
+*[xml|lang |= 'egyd'] {
+font-family:Umschrift_TTn;
+}
+       
+    *:lang(grc){font-family:"New Athena Unicode";}
+    *:lang(egyd){font-family:Umschrift_TTn;}
+ 
+
+*[xml|lang |= 'syr'] {
+   font-family:"Serto Urhoy"; 
+}
+
+xml:lang(syr) {
+ font-family:"Serto Urhoy";
+ }
+
+
+</style></head>
+<body>
+<article>
+<header><div id="isaw_papers_header" style="text-align:justify; background:#aaa;margin:1em;padding:2em" xmlns="http://www.w3.org/1999/xhtml">
+<p class="textindent0">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/ as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website. </p>
+<p class="textindent0" style="text-align:justify;margin:1em">©2020 Sarah E. Bond, Paul C. Dilley, and Ryan Horne; text distributed under the terms of the Creative Commons Attribution 4.0 International (CC-BY) license.<br/>
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/>
+</a>
+</p>
+<p style="text-align:center;margin-top:1em">This article can be downloaded as a <a download="isaw-papers-20-1" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/isaw-papers-20-1-offprint.xhtml">single file</a></p></div>
+<h2>ISAW Papers 20 (2020)</h2>
+<h1><span rel="dcterms:title">Introducing the Semantic Web and Linked Open Data</span></h1>
+<h2><span rel="dcterms:creator"><a href="https://orcid.org/0000-0002-0114-9144" property="foaf:name" rel="dcterms:identifier">Sarah E. Bond</a></span>, <span rel="dcterms:creator"><a href="https://orcid.org/0000-0001-8797-1202" property="foaf:name" rel="dcterms:identifier">Paul C. Dilley</a></span>, and <span rel="dcterms:creator"><a href="https://orcid.org/0000-0002-5009-3116" property="foaf:name" rel="dcterms:identifier">Ryan Horne</a></span></h2>
+<p class="doi">URI: <a href="TK" rel="dcterms:identifier">TK</a></p>
+<p class="abstract"><em>Abstract: </em><span id="abstract" property="dcterms:abstract">TK</span></p>
+<p class="subjects"><em>Library of Congress Subjects:</em> <a href="http://id.loc.gov/authorities/subjects/sh2010112582" rel="dcterms:subject">Semantic Web--Congresses</a>; <a href="http://id.loc.gov/authorities/subjects/sh2013002090" rel="dcterms:subject">Linked data--Congresses</a>.</p>
+<nav id="toc">
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#section2">Essential Concepts and Terminology for Linked Open Data</a></li>
+<li><a href="#section3">From Linked Open Data to Linked Ancient World Data</a></li>
+<li><a href="#section4">Conclusion</a></li>
+<li><a href="#footnotes">Notes</a></li>
+</ul>
+</nav>
+</header>
+<section id="section1">
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">In 2001, <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a>, <a href="https://en.wikipedia.org/wiki/James_Hendler">James Hendler</a>, and <a href="https://en.wikipedia.org/wiki/Ora_Lassila">Ora Lassila</a> published their vision for the future of the Web in the magazine <i>Scientific American.</i> “<a href="https://www-sop.inria.fr/acacia/cours/essi2006/Scientific%20American_%20Feature%20Article_%20The%20Semantic%20Web_%20May%202001.pdf">The Semantic Web</a>,” outlined the necessity for a decentralized extension to the Web which would encourage a standardized order and purpose-driven future for the internet. They prophesied that, “[a] new form of Web content that is meaningful to computers will unleash a revolution of new possibilities.”<sup><a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">1</a></sup> What followed was an impassioned plea for a set of standards that created a meaningful, i.e. semantic, future predicated on open exchange within the Web. Berners-Lee is himself credited with inventing the World Wide Web in 1989 and co-founded the <a href="http://opendatainstitute.org/">Open Data Institute</a> (ODI) in 2012. He is also the current director of the World Wide Web Consortium (W3C). For the past 30 years, Berners-Lee and many others have worked tirelessly to keep the Web open and accessible to all, but it is only in the last two decades that developers have begun to prepare more actively for a Web future refocused on a system of annotation, citation, and preservation which is dependent upon the adoption of sets of standards collectively called Linked Open Data (LOD). Linked Open Data has also become an important subfield within the Digital Humanities, not only in connection with adjacent disciplines such as cultural heritage management and informatics, but touching more generally on aspects of data-driven projects and research strategies.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+</section>
+<section id="section2">
+<h2>Essential Concepts and Terminology for Linked Open Data<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup></h2>
+<p class="textindent0" id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">One of the foundational ideas underpinning LOD is the notion that different datasets can be connected together through the web in an open, freely accessible manner by encouraging individuals, organizations, and institutions not only to make their data openly available, but conversely, to then cite extant but stable open data on the Web already. Berners-Lee outlined the following basic principles which guide LOD development:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<ol>
+<li>Use URIs as names for things</li>
+<li>Use HTTP URIs so that people can look up those names</li>
+<li>When someone looks up a URI, provide useful information, using the standards (RDF*, SPARQL)</li>
+<li>Include links to other URIs. so that they can discover more things<sup><a class="footnote-reference" href="#footnote-3" id="footnote-reference-3">3</a></sup></li>
+</ol>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">For data to conform to LOD standards, the data must additionally be released under an open licensing agreement, allowing it to be used, expanded, or built upon by others.<sup><a class="footnote-reference" href="#footnote-4" id="footnote-reference-4">4</a></sup>In practical terms, this means that projects seeking to interface with the LOD world need to disambiguate and identify the entities in their data sets, provide some means for those individual entities to be accessible through the web, and link those entities to other data providers. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">Although it is highly recommended that they do so, it is not strictly necessary for a project to offer its own data in a LOD format in order to use existing resources. What is required is that a digital project establishes some link between its own data and a LOD resource. For many projects dealing with ancient geography, for example, this takes the form of linking a piece of text, artifact, or list to an appropriate <a href="https://pleiades.stoa.org/">Pleiades project</a> ID, which has a stable URI. For instance, if a study is done on ancient letters that mention Rome, each individual letter would be represented in a spread sheet or database, with a field denoting the places mentioned within it, and another with appropriate <i>Pleiades</i> IDs (in this case <a href="https://pleiades.stoa.org/places/423025">https://pleiades.stoa.org/places/423025</a>). After constructing such a database or spreadsheet, it is then a simple matter to use the API of the data provider to get any relevant information.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">However, LOD is far more useful when data and connections are contributed back to the community writ large. One of the primary methods for linking data is through the Resource Description Framework standard, or RDF. This technology is a method for representing the relationship of different web based resources in a standard format that can be read an understood by machines. In order for RDF to work, it uses <i>Uniform Resource Identifiers</i> (URIs) to uniquely identify and disambiguate different web resources. The <i>HyperText Transfer Protocol</i> is where most internet users encounter URIs. For example, the website for the <i>Pleiades</i> project is <a href="https://pleiades.stoa.org/">https://pleiades.stoa.org</a>; The entire address is a URI, with the <code>https</code> as a <i>scheme</i> and the address <code>pleiades.stoa.org</code> as an <i>authority</i>. What this means in practical terms is that <code><a href="https://pleiades.stoa.org/">https://pleiades.stoa.org/</a></code> identifies a unique site that should resolve in an expected manner.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">The digital ecosystem is not a static environment. Websites can—and often do—change, become defunct, or disappear altogether. However, the ideal URI points to a web resource that will not conceptually change. The URI for the city of Rome in the Pleiades Project, <a href="https://pleiades.stoa.org/places/423025">https://pleiades.stoa.org/places/423025</a>, should always point to some information about Rome; the design and display elements of the site, and perhaps some of the underlying data itself may be altered, but <a href="https://pleiades.stoa.org/places/423025">https://pleiades.stoa.org/places/423025</a> should <i>always</i> point to some information about Rome, and not, say, a new method for creating rocket engines or a recipe for a sour imperial stout. The term RDF describes the relationship between these ideally stable URIs through a <i>triple</i>, or a deceleration taking the form of &lt;subject&gt;&lt;predicate&gt;&lt;value&gt;. A project may wish to state that it has data on an artifact found in Rome, and the resulting RDF triple can be expressed by using <a href="https://pleiades.stoa.org/places/423025">https://pleiades.stoa.org/places/423025</a> as the subject, <i>found in</i> as the predicate, and the id of the artifact  itself in a web-accessible database as the <i>value</i>. After constructing a file of these triples, in a recognized format, a project can submit its data to an aggregator which makes it accessible to the larger LOD world by establishing a recognized means to search and present data in the LOD cloud relevant to the study domain. The details of this process, including refining data for alignments with LOD resources, and publishing the results, are discussed below.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+</section>
+<section id="section3">
+<h2>From Linked Open Data to Linked Ancient World Data</h2>
+<p class="textindent0" id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">In the spring of 2012 and 2013, the fields of Classics, Ancient History, and Classical Archaeology took a definitive step towards the adoption of LOD standards with the convening of two Linked Ancient World Data Institutes (LAWDI) funded by the Office of Digital Humanities of the National Endowment for the Humanities.<sup><a class="footnote-reference" href="#footnote-5" id="footnote-reference-5">5</a></sup> Two three-day workshops, one at the Institute for the Study of the Ancient World at New York University (2012) and the other at Drew University (2013) brought together a number of digital humanists focused on applying Linked Open Data standards to the digital study of the ancient Mediterranean and the Near East.<sup><a class="footnote-reference" href="#footnote-6" id="footnote-reference-6">6</a></sup> These workshops focused on the need for stable URIs and parsable, open data provided in formats which could easily facilitate machine-based reuse of this data. Models for such LAWD standards included the <a href="https://pelagios.org/">Pelagios Commons</a> consortium and the <a href="https://pleiades.stoa.org/home">Pleiades Project</a>. Participants began to discuss, debate, and decide upon more standardized vocabularies within the online environment. If anything, it was apparent to the many philologists and language-based academics in attendance that establishing an open, stable language spoken between projects on the Web would be able to enrich, connect, and stabilize the data and bibliographies on sites nested on servers across the globe. In recent years, linked data related to the ancient world has continued to develop in multiple areas, including large-scale linked data projects such as the Linking Latin project (Lila), based at Università Cattolica del Sacro Cuore, Milan, which aims to build a knowledge base of linked NLP resources for Latin (<a href="https://lila-erc.eu/#about-1">https://lila-erc.eu</a>); and biblissima, a data aggregator which seeks to link collections of IIIF-compliant manuscript images (<a href="http://beta.biblissima.fr/">http://beta.biblissima.fr/</a>).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
+<p id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p8">In 2016, Sarah E. Bond, Paul Dilley, and Ryan Horne decided to convene a similar conference to the LAWDI of 2012 and 2013 at the University of Iowa in Iowa City, IA, in order to address how LOD had developed in the intermediate years and how their new digital project, called Big Ancient Mediterranean (BAM) might best adopt LAWD standards and connect to the current network of digital projects. Funded by the University of Iowa’s Obermann Center for Advanced Studies and hosted within the University of Iowa Library’s Digital Scholarship &amp; Publishing Studio, “Linking the Big Ancient Mediterranean” brought together internationally noted academics from the fields of Classics, Archaeology, Digital Humanities, Museum Studies, Art History, Library and Information Science, and Computer Science for a two-day conference. Instead of simply publishing the paper presentations in a closed access edited volume, presenters instead decided to construct a handbook that would aid future digital projects focused on the ancient and late ancient Mediterranean and Near East. There was a consensus that we wished to publish this handbook in a manner that made it open access online in the spirit of LOD. What follows is then the use of case-studies written by the principal investigators or contributors to various digital projects who have themselves adopted LOD standards and experienced the myriad hopes, frustrations, failures, and accomplishments that come with beginning or revising a digital humanities project.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
+<p id="p9" onmouseleave="document.getElementById('p9anchor').style.display='none';document.getElementById('p9anchor_label').style.display='none';" onmouseover="document.getElementById('p9anchor').style.display='';document.getElementById('p9anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p9">In the first chapter<!--insert link--> of this handbook, ancient historian and ancient geographer Ryan Horne discusses not the “what” but rather the “how” of LOD with particular attention to the issue of space. He addresses the basics of how principal investigators and contributors to digital projects can first assess the nature of their data before determining its relationship(s) with people, places, objects, and concepts. He remarks on possible metadata considerations and the necessity for unique IDs for each datapoint, as well as the need for careful recording of replicable research methodologies and how to reconcile with other providers before publishing it under an open license of your choosing. In the second chapter<!--insert link-->, archaeologist and Co-PI of <a href="https://perio.do/en/">PeriodO</a>, Adam Rabinowitz moves us from considerations of space to the challenges of conceptualizing and quantifying time. Rabinowitz addresses how to incorporate time within datasets that will be modeled as LOD, beginning with the basic modeling and expression of Gregorian calendar dates and then transitioning to the modeling and expression of periods and other temporal expressions. He also differentiates the variant modeling approaches which will be needed in order to address continuous time-stamped data versus data stamped with relative periods. Ultimately, he argues that “structured representation of periods in datasets related to the past will help us to understand our own scholarly disciplines.” <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p9" id="p9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p9</span></p>
+<p id="p10" onmouseleave="document.getElementById('p10anchor').style.display='none';document.getElementById('p10anchor_label').style.display='none';" onmouseover="document.getElementById('p10anchor').style.display='';document.getElementById('p10anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p10">In addition to the dynamics of space and time, a third chapter<!--insert link--> in the volume engages a broad category of the ancient world. Gabriel Bodard describes linked open data for people and names, as developed by the SNAP:DRGN project. He offers a rich overview of the varieties of data about people available from ancient sources, and the “factoid” model for prosopographical databases. Distinct from, but related to, the practices of prosopographies, personal names lexica, and catalogues, the SNAP cookbook for person data in RDF. Each person has a required URI, as well as type (e.g. mortal or immortal), citation, and publisher information; name is optional but recommended (it might not always be known), as are attestations; data such as associated place, date, occupation, relationship, and other identifiers, are to be recorded when available.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p10" id="p10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p10</span></p>
+<p id="p11" onmouseleave="document.getElementById('p11anchor').style.display='none';document.getElementById('p11anchor_label').style.display='none';" onmouseover="document.getElementById('p11anchor').style.display='';document.getElementById('p11anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p11">The representation of materiality is another challenge for LOD modeling. In her chapter, digital humanities librarian and 3D modeling specialist Hannah Scates Kettler<!--insert link--> reflects on the challenges of research in the third dimension. After providing a history of LOD and 3D modeling, Scates Kettler addresses the research, publication, and dissemination of 3D research. The issues of ethics surrounding the modeling of cultural heritage are of central concern, as is the creation of principles that outline and enforce these ethics. Scates Kettler underscores the need for interdisciplinary work within the humanities in order to convey information, but also returns to a key theme of this handbook: the value of adopting LOD as a guiding principle: “Linked Open Data has the potential to not only aid in the discovery of 3D research, but also aid in the creation of new relationships that provide context to 3D data, provide ways of viewing and interaction (should appropriate metadata be captured) and provide an extension on a much too short research lifecycle for 3D.” As Scates Kettler and the rest of the contributors within this handbook demonstrate, LOD can break the silos of traditional academic content by creating democratized networks of information. But ethical and open 3D modelling means its citizens must still adhere to certain rules and best practices.   <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p11" id="p11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p11</span></p>
+<p id="p12" onmouseleave="document.getElementById('p12anchor').style.display='none';document.getElementById('p12anchor_label').style.display='none';" onmouseover="document.getElementById('p12anchor').style.display='';document.getElementById('p12anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p12">Two other chapters discuss LOD as it relates to material objects. Andrew Meadows and Ethan Gruber, in a revised version<!--insert link--> of their 2014 article in ISAW Papers, describe the current landscape of LOD relating to numismatics. After giving an overview of coins as historical sources, archaeological objects, and the publication of online numismatic databases, they describe the challenges of describing these complex objects, which are simultaneously physical, textual and geographical. They describe the ontology that meets these descriptive challenges, developed in 2014 and now in use by nomisma.org, including how it can be used to connect ideal coin types to individual specimens of coins, and to coin hoards. Pietro Liuzzo<!--insert link--> describes how a linked open data model employing TEI and RDF triples is used to adopt current models of codex structure and stratigraphy as described in <i>La Syntaxe du Codex. Essai de codicologie structural</i> (Andrist, Canart, and Maniaci 2013) to a digital environment, and in particular for Beta maṣāḥǝft: Manuscripts of Ethiopia and Eritrea, a resource for the rich heritage of manuscripts in Ethiopic (Ge’ez). Liuzzo describes how the physical structure of the manuscript is encoded in TEI, which is then used to produce an RDF triplet, which can then be visualized and verified as part of the research workflow. Liuzzo’s analysis suggests how ad-hoc rather than comprehensive methodologies can be of fundamental research value, and indeed can lead to further collaboration.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p12" id="p12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p12</span></p>
+<p id="p13" onmouseleave="document.getElementById('p13anchor').style.display='none';document.getElementById('p13anchor_label').style.display='none';" onmouseover="document.getElementById('p13anchor').style.display='';document.getElementById('p13anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p13">Several chapters in the volume address LOD as it relates to literature. Thomas Koentges<!--insert link--> introduces the CITE architecture and CTS identifiers, in conversation with developers and practitioners Christopher Blackwell, Gregory Crane, Neel Smith, and James Tauber. The CITE architecture, which developed out of the Homer Multitext Project, is “a highly precise framework to reference research data in textual humanities in a machine-actionable way.” It formalizes the connection between different versions, whether manuscript, print, or electronic, of a given work at the level of the text. CITE architecture is used in conjunction with Canonical Text Services (CTS) - Uniform Resource Names (URN), which point to a particular section of the text, which can be viewed in various ways (including Perseus’s new Scaife viewer). Alison Babeu and Paul Dilley<!--insert link--> explore a related topic, linked data for Authors and Works, outlining the development of authoritative digital catalogues of ancient works, with related metadata, including time, place of composition, and genre. Building upon print resources such as the TLG, as well as digitized editions, the Perseus Catalog offers stable urns for ancient authors and works; while the Virtual Internet Authority File (VIAF), builds on a consortium of international libraries operated by the OCLC, to present the names of authors and their works in multiple languages.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p13" id="p13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p13</span></p>
+<p id="p14" onmouseleave="document.getElementById('p14anchor').style.display='none';document.getElementById('p14anchor_label').style.display='none';" onmouseover="document.getElementById('p14anchor').style.display='';document.getElementById('p14anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p14">The use of LOD to amplify and preserve cultural heritage is an issue within a number of the projects in the LOD handbook, including those focused on specific regions and/or traditions. In his chapter, historian of early Christianity and Co-PI of <a href="http://syriaca.org/">Syriaca.org</a> David A. Michelson<!--insert link--> examines the modelling, encoding, and publishing of historical data surrounding a language by using the example of Syriac, which was “a dialect of Aramaic which was used widely in the Middle East and Asia during the first millennium of the current era.” Michelson discusses how Syriaca.org applied the principles of LOD to aggregate, relate, and then publish the historical information pulled from Syriac sources; investigating how the project reconciled the graph data structure of LOD with the encoding guidelines provided by a consortium known as the Text Encoding Initiative (TEI), which defines a long-established eXtensible Markup Language (XML) format for marking up and encoding texts. Michelson uses Syriaca.org as a way of showing that a digital project engaged using LOD can create a paradigm for other projects looking to digitize, organize, and preserve texts connected to other endangered languages. The themes of preservation and stability are seen in the chapter by papyrologist and digital humanist Ryan Baumann<!--insert link-->, who uses <a href="http://papyri.info/">Papyri.info</a> for his case study. Papyri.info allows for the searching and edits of thousands of papyrological documents, mostly from Egypt, but also exemplifies the need for social and institutional commitments to establishing and providing stable identifiers for data. Baumann again stresses the need for project managers to establish relationships between texts, objects, and their representations. He also points to the need for projects to create a data preservation plan with their institution to ensure that the URIs linked to are secure now and well into the future. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p14" id="p14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p14</span></p>
+<p id="p15" onmouseleave="document.getElementById('p15anchor').style.display='none';document.getElementById('p15anchor_label').style.display='none';" onmouseover="document.getElementById('p15anchor').style.display='';document.getElementById('p15anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p15">Finally, several contributions engage with large archaeological datasets. Sebastian Heath<!--insert link--> provides an example of LOD in action, through his dataset of 260 Roman Amphitheatres, which is available in an open license Github repository. He walks readers through the .geojson file, with its structured data on amphitheater size, location, etc.; and demonstrates how one can use SPRQL to query JSON-SD files with IPython notebooks, for example to select amphitheatres belonging to a particular chronological period. This procedure is an excellent way for both exploring one’s own research data in a linked environment, which can also be made available for others to query. In “Origins and Antidotes of Omission: Southeastern European Archaeology, Linked Open Data, and the Possibilities for Archaeological Integration,”<!--insert link--> Anne Hunnell Chen and Jamie Folsom discuss their project for creating a LOD ecosystem for data relating to the archaeology of southeastern Europe, a relatively understudied region, focusing on the importance of including local partners in the integration of data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p15" id="p15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p15</span></p>
+</section>
+<section id="section4">
+<h2>Conclusion</h2>
+<p class="textindent0" id="p16" onmouseleave="document.getElementById('p16anchor').style.display='none';document.getElementById('p16anchor_label').style.display='none';" onmouseover="document.getElementById('p16anchor').style.display='';document.getElementById('p16anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p16">The chapters in this volume reflect many different places, times, sources, and approaches. We hope that it will provide readers with a sense of the possibilities for participating in the linked data environment, and an introduction to some of the major resources and techniques for doing so. While this volume cannot address every potential question or concern now or in the future, it can provide a map for accessing and understanding the terminologies, methodologies, and goals of the LOD movement in the study of the ancient and late ancient Mediterranean and Near East.  <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#p16" id="p16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p16</span></p>
+</section>
+<section id="footnotes">
+<h2>Notes</h2>
+<p class="footnote" id="footnote-1" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';"><sup><a href="#footnote-reference-1">1</a></sup> Tim Berners-Lee, James Hendler, and Ora Lassila, "The Semantic Web," <i>Scientific American</i> (May 2001): 29-37.  See the subsequent assessment in Christian Bizer, Tom Heath, and Tim Berners-Lee, “Linked Data - The Story So Far,” <i>International Journal on Semantic Web and Information Systems</i> 5.3 (2009): 1-22. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#footnote-1" id="footnote-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-1</span></p>
+<p class="footnote" id="footnote-2" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';"><sup><a href="#footnote-reference-2">2</a></sup> For a more extensive practical introduction in a Digital Humanities context, see Jonathan Blaney, “Introduction to the Principles of Linked Open Data:” <a href="https://programminghistorian.org/en/lessons/intro-to-linked-data">https://programminghistorian.org/en/lessons/intro-to-linked-data</a> (Accessed August 10, 2020).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#footnote-2" id="footnote-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-2</span></p>
+<p class="footnote" id="footnote-3" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';"><sup><a href="#footnote-reference-3">3</a></sup> Tim Berners-Lee, “Linked Data” (July 2006; modified June 2009): <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a> (Accessed August 10, 2020).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#footnote-3" id="footnote-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-3</span></p>
+<p class="footnote" id="footnote-4" onmouseleave="document.getElementById('footnote-4anchor').style.display='none';document.getElementById('footnote-4anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-4anchor').style.display='';document.getElementById('footnote-4anchor_label').style.display='';"><sup><a href="#footnote-reference-4">4</a></sup> See the <i>Journal of Open Humanities Data </i>for a useful list of open licenses: <a href="https://openhumanitiesdata.metajnl.com/about/#q5">https://openhumanitiesdata.metajnl.com/about/#q5</a> (Accessed August 10, 2020).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#footnote-4" id="footnote-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-4</span></p>
+<p class="footnote" id="footnote-5" onmouseleave="document.getElementById('footnote-5anchor').style.display='none';document.getElementById('footnote-5anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-5anchor').style.display='';document.getElementById('footnote-5anchor_label').style.display='';"><sup><a href="#footnote-reference-5">5</a></sup> “Linked Ancient World Data Institute,” <i>The Digital Classicist Wiki</i>: <a href="https://wiki.digitalclassicist.org/Linked_Ancient_World_Data_Institute">https://wiki.digitalclassicist.org/Linked_Ancient_World_Data_Institute</a>. (Accessed August 10, 2020).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#footnote-5" id="footnote-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-5</span></p>
+<p class="footnote" id="footnote-6" onmouseleave="document.getElementById('footnote-6anchor').style.display='none';document.getElementById('footnote-6anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-6anchor').style.display='';document.getElementById('footnote-6anchor_label').style.display='';"><sup><a href="#footnote-reference-6">6</a></sup> See Thomas Elliott, Sebastian Heath, and John Muccigrosso, “Current Practice in Linked Open Data for the Ancient World,” ISAW Papers 7 (2014): <a href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/">http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/</a> (Accessed August 10, 2020), and the rest of the papers in that volume. For a recent overview of linked data relating to the ancient world, see Hugh Cayless, “Sustaining Linked Ancient World Data,” in Monica Berti, ed., <i>Digital Classical Philology: Ancient Greek and Latin in the Digital Revolution</i> (Berlin: DeGruyter, 2019): 35-50. <a href="https://www.degruyter.com/viewbooktoc/product/502894">https://www.degruyter.com/viewbooktoc/product/502894</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-1/#footnote-6" id="footnote-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-6</span></p>
+</section>
+<footer>
+<p class="editorial-note"><a href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"><i>ISAW Papers</i></a> (ISSN 2164-1471) is a publication of the <a href="http://isaw.nyu.edu" property="dcterms:publisher" rel="dcterms:publisher">Institute for the Study of the Ancient World</a>, <a href="http://nyu.edu/">New York University</a>.</p>
+<p class="copyright" style="margin-top:1em;text-align:center;color:gray">©2020 <span rel="cc:attributionName">Sarah E. Bond, Paul C. Dilley, and Ryan Horne</span>. Distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/" rel="cc:license">Creative Commons Attribution 4.0 International</a> license. Additional rights holders and licenses for figures noted in captions as necessary.</p>
+</footer>
+</article>
+</body>
+</html>
