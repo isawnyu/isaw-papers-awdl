@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html lang="en" prefix="bibo: http://purl.org/ontology/bibo/
+ cc: http://creativecommons.org/ns#
+ dcmitype: http://purl.org/dc/dcmitype/
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ nm: http://nomisma.org/id/
+ owl:  http://www.w3.org/2002/07/owl#
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ rdfa: http://www.w3.org/ns/rdfa#
+ rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+ skos: http://www.w3.org/2004/02/skos/core#
+ " xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The CITE Architecture: Q &amp; A Regarding CTS and CITE</title>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS"/>
+<meta content="The CITE Architecture: Q and A Regarding CTS and CITE" name="DC.title"/>
+<meta content="2020-??-00" name="DC.date"/>
+<meta content="application/xhtml+xml" name="DC.format"/>
+<meta content="Thomas Koentges" name="DC.creator"/>
+<meta content="???" name="DC.creator"/>
+<meta content="???" name="DC.creator"/>
+<meta content="en" name="DC.language"/>
+<meta content="TK" name="DC.abstract"/>
+<meta content="Classical literature--Bibliography--Methodology" name="DC.subject"/>
+<meta content="Machine-readable bibliographic data" name="DC.subject"/>
+<meta content="Creative Commons Attribution 4.0 Unported (CC-BY)" name="DCTERMS.license"/>
+<meta content="Thomas Koentges, ???. 2020. The CITE Architecture: Q and A Regarding CTS and CITE. ISAW Papers 20.7." name="DCTERMS.bibliographicCitation"/>
+<meta content="ISAW Papers" name="DCTERMS.isPartOf"/>
+<meta content="TK" name="DCTERMS.identifier.URI"/>
+<link href="http://www.worldcat.org/oclc/756047783" rel="dcterms:isPartOf"/>
+<link href="urn:issn:2164-1471" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
+}
+
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}
+
+.work_cited_links {
+  color:gray;
+ }
+
+.work_cited {
+  margin-left:.25in;
+  text-indent:-.25in
+ }
+ 
+.editorial_note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+*[xml|lang |= 'grc'] {
+font-family:"New Athena Unicode";
+}
+       
+*[xml|lang |= 'egyd'] {
+font-family:Umschrift_TTn;
+}
+       
+    *:lang(grc){font-family:"New Athena Unicode";}
+    *:lang(egyd){font-family:Umschrift_TTn;}
+ 
+
+*[xml|lang |= 'syr'] {
+   font-family:"Serto Urhoy"; 
+}
+
+xml:lang(syr) {
+ font-family:"Serto Urhoy";
+ }
+
+
+</style></head>
+<body>
+<article>
+<header><div id="isaw_papers_header" style="text-align:justify; background:#aaa;margin:1em;padding:2em" xmlns="http://www.w3.org/1999/xhtml">
+<p class="textindent0">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/ as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website. </p>
+<p class="textindent0" style="text-align:justify;margin:1em">©2020 Thomas Koentges; text and images distributed under the terms of the Creative Commons Attribution 4.0 International (CC-BY) license.<br/>
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/>
+</a>
+</p>
+<p style="text-align:center;margin-top:1em">This article can be downloaded as a <a download="isaw-papers-20-8" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/isaw-papers-20-8-offprint.xhtml">single file</a></p></div>
+<h2>ISAW Papers 20.7 (2020)</h2>
+<h1><span rel="dcterms:title">The CITE Architecture: Q &amp; A Regarding CTS and CITE</span></h1>
+<h2><span rel="dcterms:creator"><a href="https://orcid.org/0000-0002-9425-5850" property="foaf:name" rel="dcterms:identifier">Thomas Koentges</a></span>, Christopher Blackwell, Gregory Crane, Neel Smith, James Tauber</h2>
+<p class="doi">URI: <a href="TK" rel="dcterms:identifier">TK</a></p>
+<p class="abstract"><em>Abstract: </em><span id="abstract" property="dcterms:abstract">TK</span></p>
+<p class="subjects"><em>Library of Congress Subjects:</em> <a href="http://id.loc.gov/authorities/subjects/sh85026708" rel="dcterms:subject">Classical literature--Bibliography--Methodology</a>; <a href="http://id.loc.gov/authorities/subjects/sh85079330" rel="dcterms:subject">Machine-readable bibliographic data</a>.</p>
+<nav id="toc">
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#qanda">Q &amp; A</a></li>
+<ul>
+<li><a href="#question1">Question 1</a></li>
+<li><a href="#question2">Question 2</a></li>
+<li><a href="#question3">Question 3</a></li>
+<li><a href="#question4">Question 4</a></li>
+<li><a href="#question5">Question 5</a></li>
+<li><a href="#question6">Question 6</a></li>
+<li><a href="#question7">Question 7</a></li>
+<li><a href="#question8">Question 8</a></li>
+<li><a href="#question9">Question 9</a></li>
+<li><a href="#question10">Question 10</a></li>
+<li><a href="#question11">Question 11</a></li>
+<li><a href="#question12">Question 12</a></li>
+<li><a href="#question13">Question 13</a></li>
+<li><a href="#question14">Question 14</a></li>
+<li><a href="#question15">Question 15</a></li>
+</ul>
+<li><a href="#furtherreading">Further Reading</a></li>
+</ul>
+</nav>
+</header>
+<section id="introduction">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:intro.1]</code></h2>
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">The CITE architecture is a highly precise framework to reference research data in textual humanities in a machine-actionable way. Traditional reference systems rely on a good deal of human interpretation. For instance, traditionally Plato is often cited according to Stephanus pages and Stephanus paragraphs; that is, identifiers inspired by the edition of the <i>Corpus Platonicum</i> published by Henri Estienne in 1578. Yet, if one looks at different modern editions of Plato’s text, precisely where a certain paragraph or page starts can differ from edition to edition, because Stephanus’ original paragraphs often break the text mid-sentence and sometimes even mid-word. As a result, comparing the text of two different editions requires some adjustments and interpretation by a human reader. Taking another example, a reader has to be aware that <i>Petronii Arbitri Affranii Satyrici lib.</i>,<i> Petronii Arbitri Satyri fragmenta ex libro quinto decimo et sexto decimo</i>, <i>Petronii Arbitri Satiricon</i>, <i>Petronii Arbitri Satyricon</i>, <i>Petronii Arbitri Satirici fragmenta</i>, and <i>excerta petronii satiriei</i>, point to the same work.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:intro.2]</code></h2>
+<p class="textindent0" id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">Because the CITE architecture is highly precise, it is used in many historical text digitization efforts and research projects: most significantly, in the Homer Multitext Project (the project for which the CITE architecture was originally created), the Perseus Digital Library and Scaife Digital Library Viewer at Tufts University, and the Open Greek and Latin Project (OGL), which, between them, have created the largest openly-licensed, structured machine-actionable corpus of classical Latin and Greek literature. It is also used by Das Deutsche Textarchiv, the neo-Latin Croatiae auctores Latini bibliotheca electronica (CroALa), the Arabic Kitab project, the Persian Digital Library, and the Sanskrit Digital Critical Edition of the Nyāyabhāṣya project.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:intro.3]</code></h2>
+<p class="textindent0" id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">To explain the fundamental concepts and applications of the framework, I have gathered a group of experts who work with the CITE architecture on a daily basis. Although I have had many real-world discussions with each participant, what follows is an entirely virtual discussion, written in a collaborative editing environment. I, Thomas Koentges, am an Assistant Professor in Digital Humanities at the University of Leipzig, Germany, and a Fellow for Historical Language Processing and Data Analysis at Harvard’s Center for Hellenic Studies. I am an associate of the Perseus Digital Library and have worked with Christopher Blackwell and Neel Smith on CITE microservices. My interlocutors, in alphabetical order, are: Christopher Blackwell, who is the Louis G. Forgione University Professor of Classics at Furman University and one of the two project architects of the <i>Homer Multitext Project</i> (HMT), the requirements of which were the original impetus for developing CITE; Gregory Crane, who is the Editor-in-Chief of the Perseus Digital Library, Professor in Classics at Tufts University, and has been working in the field that some call Digital Classics; Neel Smith, who is Professor of Classics at the College of the Holy Cross, faculty advisor to the Holy Cross Manuscripts, Inscriptions, and Documents Club, the other project architect of the HMT, and a founder of the CITE Architecture project; and last but not least, James Tauber, who is the CEO and founder of Eldarion, Inc., works as both a professional software developer and researcher in digital philology, is involved with the <i>Perseus Digital Library</i> and OGL, and led the development of the new Scaife Digital Library Viewer, which makes extensive use of CTS.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:intro.4]</code></h2>
+<p class="textindent0" id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">In addition to explaining the CITE architecture, this chapter is itself an example of a CTS-compliant text. Each logical passage of this text has a CTS URN. URN is short for Uniform Resource Name and describes an identifier that follows a URN scheme. These resource names are intended to serve as unique, persistent location-independent resource identifiers. CTS is short for Canonical Text Services and CTS URNs are the notation used in the CITE architecture to identify citable textual data. For example, the identifier for this introductory section prefacing the discussion is <code>urn:cts:scholarship:lod.discussion:intro</code>, and if we drill even deeper, then this paragraph is <code>urn:cts:scholarship:lod.discussion:intro.4</code>. If you were to send this second URN to a CTS text collection containing that passage, you would retrieve the textual data: that is, this exact paragraph.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:intro.5] </code></h2>
+<p class="textindent0" id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">An important feature of this way of referring to textual data is that it is medium independent; that is, the CTS URN refers to the textual information itself, rather than how it is displayed, regardless of whether it is split by medium-dependent borders (such as the pagination of a physical book or word-count based pagination of a visualization). For instance, imagine that you want to talk about this introduction with a myopic colleague in a seminar. Both of you print this text with a slightly different font size. In your version of the text, this paragraph is on page 1, while your colleague’s version has the paragraph on page 2. Because of the CTS URN, both of you can pinpoint this part of the discussion using <code>urn:cts:scholarship:lod.discussion:intro.5</code>, without any confusion about which page number to reference. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:intro.6]</code></h2>
+<p class="textindent0" id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">While this is, of course, an overly simple example, given that the introduction is obviously at the beginning, imagine that you want to discuss a passage in the middle of a long text or that this discussion will be reprinted with entirely different page numbers. You probably see where I am coming from, but still you might say “but traditional print publishing has ways of dealing with the latter” and I would answer “yes, that is true. But also imagine all the possible different forms in which this article <i>could</i> be published.” Whether that section of text is published on a blog, in a book, or read aloud, the textual information of that passage is always referenceable with the same URN. This is worth emphasizing: A CTS URN can cite a passage of text in a printed edition as easily as a passage in an electronic text. The way textual information is managed with CTS URNs moves beyond the page, beyond the book, beyond the webpage: even beyond publishing or visualization forms we haven’t yet imagined. The CTS URN points to the textual information itself. How you publish, display, voice, or visualize it is up to you.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:intro.7] </code></h2>
+<p class="textindent0" id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">Just as you can precisely reference textual data with CTS URNs, you can also reference non-textual data or metadata with CITE2 URNs. A CITE2 URN can identify a physical folio of a manuscript in Venice as easily as it can cite a data record in digital form. The principle is always the same: you have an identifier and you have information that is referenced by this identifier. Scholarship is created by connecting and analyzing information. By using the CITE architecture, you make your scholarship machine actionable and machine understandable. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:intro.8]</code></h2>
+<p class="textindent0" id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p8">But I am getting ahead of myself and have probably already used a lot of jargon that has not been properly explained. Thus, in order to unpack this complex topic and show what CTS/CITE is, I will turn to a group of experts to explain what it can and can’t do, and most importantly, how historical language researchers can use it to their advantage.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
+</section>
+<section id="qanda">
+<section id="question1">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.1]</code></h2>
+<p class="textindent0" id="p9" onmouseleave="document.getElementById('p9anchor').style.display='none';document.getElementById('p9anchor_label').style.display='none';" onmouseover="document.getElementById('p9anchor').style.display='';document.getElementById('p9anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p9"><b>Thomas Koentges:</b> Chris, Greg, Neel, James, thank you for joining me and for agreeing to this format. Given how important Plato is for our field, I hope the dialogue format is not too unorthodox. Firstly, to go back to the beginning, Chris and Neel, when and why did you create the CITE architecture?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p9" id="p9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p9</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.1]</code></h2>
+<p class="textindent0" id="p10" onmouseleave="document.getElementById('p10anchor').style.display='none';document.getElementById('p10anchor_label').style.display='none';" onmouseover="document.getElementById('p10anchor').style.display='';document.getElementById('p10anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p10"><b>Chris Blackwell &amp; Neel Smith: </b>Casey Dué, Mary Ebbott, and Gregory Nagy conceived a project to produce a 21st-century edition of the Homeric <i>Iliad</i>, an edition based on their understanding of the nature of that text as a product of a thousand-year evolution of a tradition of composition-in-performance. This edition would be a “multitext” rather than a critical edition; the goal would <i>not</i> be to analyze the surviving witnesses to the text and, when they differ on a line or passage, throw away all but a single, ostensibly “authentic” version. Rather, they see that in the transmission of the <i>Iliad</i> the various differing readings preserved in manuscripts and ancient commentaries reflect a fundamental aspect of the <i>Iliad</i>: that variation is an essential part of this poetry. When we were brought on to this project, we knew we would need to be able to talk precisely and imprecisely about many versions of the “same” text. Precisely, as in “Book 2, line 4 of the <i>Iliad</i> as preserved on the Venetus A manuscript”; imprecisely, as in “Book 10 of the <i>Iliad</i>, in all of its manifestations through its transmission history.” We also knew that this would be a long task, which motivated us to try to separate concerns as much as possible, on the assumption that generations of technologies would likely pass into obsolescence before we had a scholarly product. Canonical citation has worked as a linking mechanism for centuries, and CITE is just a machine-actionable update to that ancient technology.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p10" id="p10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p10</span></p>
+</section>
+<section id="question2">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.2]</code></h2>
+<p class="textindent0" id="p11" onmouseleave="document.getElementById('p11anchor').style.display='none';document.getElementById('p11anchor_label').style.display='none';" onmouseover="document.getElementById('p11anchor').style.display='';document.getElementById('p11anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p11"><b>TK: </b>So it was invented by philologists for philologists and as a result it has already been implemented in several edition projects. Who, then, can use the CITE architecture?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p11" id="p11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p11</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.2a]</code></h2>
+<p class="textindent0" id="p12" onmouseleave="document.getElementById('p12anchor').style.display='none';document.getElementById('p12anchor_label').style.display='none';" onmouseover="document.getElementById('p12anchor').style.display='';document.getElementById('p12anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p12"><b>CB &amp; NS: </b>Anyone with canonically citable texts or data. So what does that mean? We can start with texts as an example. If you have a text, and you can assign identifiers to “work-group,” “work,” and “version,” and you can assign a unique identifier to each of its parts (which may or may not be in a hierarchy), <i>and the contents of those parts is not going to change</i>, then you have a canonically citable text. This seems simple to us, but we have been surprised at how many electronic texts are put online without attention to their long-term status as objects of study. Scholars with unique texts, or texts with complicated histories, seem unwilling simply to assign an arbitrary identifier to a text-group (especially), or work, or version. There seems to be a perceived need for an identifier to be <i>descriptive</i>, and (with that mistake made), for the descriptive identifier to have the burden of saying everything about the text. This is an unhelpful attitude. A scholar with a newly edited papyrus, for example, can just define IDs in an independent namespace and proceed: <code>urn:cts:papyrins:02034.34.1:1</code> is a perfectly good URN. CTS URNs, after all, are generally going to be handled by machines. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p12" id="p12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p12</span></p>
+<p id="p13" onmouseleave="document.getElementById('p13anchor').style.display='none';document.getElementById('p13anchor_label').style.display='none';" onmouseover="document.getElementById('p13anchor').style.display='';document.getElementById('p13anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p13">Another stumbling block seems to be the necessity that a canonically citable text <i>not change</i>. Digital scholars love doing dynamic things. While a text-under-constant-editing (or a data-collection) may be a valuable locus of scholarly activity, it is not yet a published scholarly work. Publish a text citable by CTS URN, and if you edit it later, publish a new version. This is one of the important benefits of CTS, which allows many versions to be aligned.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p13" id="p13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p13</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.2b]</code></h2>
+<p class="textindent0" id="p14" onmouseleave="document.getElementById('p14anchor').style.display='none';document.getElementById('p14anchor_label').style.display='none';" onmouseover="document.getElementById('p14anchor').style.display='';document.getElementById('p14anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p14"><b>James Tauber: </b>In terms of usage, I think it’s worth considering not only the publishers of texts (and, as Chris points out, other citable data) but those consuming such texts or wanting to say something about those texts or passages within them. You don’t need to be publishing new works to benefit from CTS. On the consumption side, one application of CTS is in building reading environments like the Scaife Digital Library Viewer. Canonical references can be used for retrieval of texts from a repository to read, as bookmarks, for reading lists, and so on. Another is in text-processing tools that ingest machine-actionable texts. Being able to retrieve texts and text passages via a uniform identifier can help improve the reproducibility of text-processing tasks because you can record the CTS URNs of the exact passages of a particular version you retrieved and others can repeat the same. Finally, CTS URNs become a powerful identifier for those wanting to say something about a text, such as annotators or commentary writers. One can conceive of CTS-based citations servers which can be queried for known annotations or commentaries on a particular passage. In this way the publishers of texts, the readers of those texts, and the commentators on those texts can work without even knowing the others exist but things interoperate through common use of CTS URNs.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p14" id="p14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p14</span></p>
+</section>
+<section id="question3">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.3]</code></h2>
+<p class="textindent0" id="p15" onmouseleave="document.getElementById('p15anchor').style.display='none';document.getElementById('p15anchor_label').style.display='none';" onmouseover="document.getElementById('p15anchor').style.display='';document.getElementById('p15anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p15"><b>TK:</b> Thanks for mentioning the Scaife Digital Library Viewer (<a href="https://scaife.perseus.org">https://scaife.perseus.org</a>), James, which is the latest environment in which people can read the CTS-compatible text of OGL, including the Perseus Digital Library, which used the CITE architecture from early on. Greg, when and why did you move to CTS?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p15" id="p15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p15</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.3]</code></h2>
+<p class="textindent0" id="p16" onmouseleave="document.getElementById('p16anchor').style.display='none';document.getElementById('p16anchor_label').style.display='none';" onmouseover="document.getElementById('p16anchor').style.display='';document.getElementById('p16anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p16"><b>Gregory Crane:</b> It took me a long time to understand the significance of CTS. We have for many years been able to call up a particular chunk of a particular version of a particular text with a particular URL; that is, get me this precise span of words in the first Murray edition of Aeschylus’ <i>Agamemnon</i>. It took me a while before I really understood the difference between our functionality and a generalized API. We started to shift our data to CTS in 2012.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p16" id="p16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p16</span></p>
+</section>
+<section id="question4">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.4]</code></h2>
+<p class="textindent0" id="p17" onmouseleave="document.getElementById('p17anchor').style.display='none';document.getElementById('p17anchor_label').style.display='none';" onmouseover="document.getElementById('p17anchor').style.display='';document.getElementById('p17anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p17"><b>TK:</b> So it is used by large-scale projects, but can also be used by any individual researcher or programmer handling canonical text. However, when introducing CTS, I often encounter the argument: “Well, that might work for your text, but our text is special.” What do you think of this argument and do you know of any “special cases” that could not be expressed through the CITE architecture framework?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p17" id="p17anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p17anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p17</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.4]</code></h2>
+<p class="textindent0" id="p18" onmouseleave="document.getElementById('p18anchor').style.display='none';document.getElementById('p18anchor_label').style.display='none';" onmouseover="document.getElementById('p18anchor').style.display='';document.getElementById('p18anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p18"><b>CB &amp; NS:</b> There may well be some extraordinary texts that are incapable of being cited by a CTS URN. However, I have never actually seen one or heard one convincingly described. Were such a text to exist, it is hard to imagine how to pursue scholarly research on a text that cannot be cited. I have heard this claim many times, yet it always arises from one of three problems. Either the speaker actually has no text or does not understand the text, or the speaker is not content to let a citation consist of arbitrary identifiers but insists on overloading the CTS URN in an effort to turn it into a library catalog entry, or the speaker is trying to create an impossibly deep citation hierarchy (e.g., <code>urn:cts:sometexts:group.work.ed:1.3.45.2.6.78.note.123.4</code>). I would note that the texts people actually have cared about over the centuries have one-, two-, or at most three-level citation hierarchies. At Holy Cross, we surveyed every classical Greek text we could identify, and couldn’t find any that required more than three levels in their passage hierarchy.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p18" id="p18anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p18anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p18</span></p>
+</section>
+<section id="question5">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.5]</code></h2>
+<p class="textindent0" id="p19" onmouseleave="document.getElementById('p19anchor').style.display='none';document.getElementById('p19anchor_label').style.display='none';" onmouseover="document.getElementById('p19anchor').style.display='';document.getElementById('p19anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p19"><b>TK:</b> Yet, because some researchers still assume that their text cannot be expressed in CTS (whether or not that is a correct assumption), there is a push for another standard called DTS. What do you know about it and how does it differ from CTS?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p19" id="p19anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p19anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p19</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.5]</code></h2>
+<p class="textindent0" id="p20" onmouseleave="document.getElementById('p20anchor').style.display='none';document.getElementById('p20anchor_label').style.display='none';" onmouseover="document.getElementById('p20anchor').style.display='';document.getElementById('p20anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p20"><b>JT:</b> One non-technical difference between CTS and DTS is the way in which the specifications are being developed. There are two common approaches to writing standards: you either extract the details from a working system that’s already proven or you get a bunch of stakeholders and agree on how things should interoperate. Each has advantages and disadvantages. CTS takes the former approach, DTS the latter. On the technical side, one major difference is in the style of the protocol. The original CTS protocol is reminiscent of the kind developed in the late 1990s around XML-RPC and SOAP. DTS is being built with modern approaches to Web API design and relies more on existing specifications like Hydra and JSON-LD.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p20" id="p20anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p20anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p20</span></p>
+</section>
+<section id="question6">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.6]</code></h2>
+<p class="textindent0" id="p21" onmouseleave="document.getElementById('p21anchor').style.display='none';document.getElementById('p21anchor_label').style.display='none';" onmouseover="document.getElementById('p21anchor').style.display='';document.getElementById('p21anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p21"><b>TK: </b>It’s definitely a development one should keep in mind, although as Chris pointed out, CTS could be applicable to lots of use cases. Chris, for people who might assume that their text does not fit the requirements for a successful implementation of CTS, I would like to return to your comment that the text content of the CTS nodes cannot be changed. In my experience that is often misunderstood. Taking your example, I know that <code>urn:cts:papyrologyns:02034.34.1:1</code> contains specific unchangeable text, but one might argue that the same text in this node could be represented differently to emphasize different features. How does CTS deal with this?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p21" id="p21anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p21anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p21</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.6]</code></h2>
+<p class="textindent0" id="p22" onmouseleave="document.getElementById('p22anchor').style.display='none';document.getElementById('p22anchor_label').style.display='none';" onmouseover="document.getElementById('p22anchor').style.display='';document.getElementById('p22anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p22"><b>CB: </b>My grandfather was a Baptist minister and had many Bibles. He had at least two that were the King James translation. One of these was fancy, with small print, and had the words of Jesus printed in red. Another was a “large print” edition. It is easy to see that “John 3:16” in each of these contained the same text. It is equally easy to see that if my 98-year-old grandfather wanted to read that citable passage, it would really matter which of the two versions he picked up. The two versions differed, not in the text, but in the <i>markup</i> that presented that text. CTS is good for making distinctions like this <i>while preserving scholarly identity</i>. URNs to my grandfather’s two Bibles would share <i>textgroup</i> (“New Testament”), <i>work</i> (“John”), and <i>version</i> (“KJV”) components; they would also share a citation (“3.16”). But we would call each of these an <i>analytical exemplar</i>, a further level of the bibliographic hierarchy after version. For example:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p22" id="p22anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p22anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p22</span></p>
+<ul>
+<li><code>urn:cts:bibles:nt.john.kjv.rubricated:3.16</code></li>
+<li><code>urn:cts:bibles:nt.john.kjv.large:3.16</code></li>
+</ul>
+<p id="p23" onmouseleave="document.getElementById('p23anchor').style.display='none';document.getElementById('p23anchor_label').style.display='none';" onmouseover="document.getElementById('p23anchor').style.display='';document.getElementById('p23anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p23">The editors of the HMT have produced an edition of the Greek text of the Venetus A manuscript of the <i>Iliad</i>. The archival edition is a collection of TEI-XML documents. But we <i>publish</i> many <i>exemplars</i> of that edition, sub-versions derived from the edition according to defined analytical principles. One exemplar might be a plain-text version with all abbreviations expanded. Another exemplar might be normalized according to modern orthographic practices for Ancient Greek. All of these are “the text of the Venetus A manuscript,” and yet all of them are distinct, citable data. There may be other scholarly frameworks that also give this level of control over scholarly identity, but CTS and CITE have served our project very well.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p23" id="p23anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p23anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p23</span></p>
+</section>
+<section id="question7">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.7]</code></h2>
+<p class="textindent0" id="p24" onmouseleave="document.getElementById('p24anchor').style.display='none';document.getElementById('p24anchor_label').style.display='none';" onmouseover="document.getElementById('p24anchor').style.display='';document.getElementById('p24anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p24"><b>TK: </b>One has to point out though that everything is very text-focused. Chris and Neel, why did you make text objects first-class citizens in the CITE architecture?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p24" id="p24anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p24anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p24</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.7]</code></h2>
+<p class="textindent0" id="p25" onmouseleave="document.getElementById('p25anchor').style.display='none';document.getElementById('p25anchor_label').style.display='none';" onmouseover="document.getElementById('p25anchor').style.display='';document.getElementById('p25anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p25"><b>CB &amp; NS: </b>We are philologists, and we started with the <i>Iliad</i>. But more specifically, Neel gave a presentation (ca. 2002) at the Center for Hellenic Studies, “Toward a Text Server,” in which he articulated the basic requirements of machine-actionable canonical citation, and we went from there. In the early years we thought of these as a controlled set of parameters sent to a service; URNs came later.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p25" id="p25anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p25anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p25</span></p>
+</section>
+<section id="question8">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.8]</code></h2>
+<p class="textindent0" id="p26" onmouseleave="document.getElementById('p26anchor').style.display='none';document.getElementById('p26anchor_label').style.display='none';" onmouseover="document.getElementById('p26anchor').style.display='';document.getElementById('p26anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p26"><b>TK: </b>Speaking of which, I already mentioned above (in <code>urn:cts:scholarship:lod.discussion:intro.7</code>) that the CITE architecture differentiates between two types of URNs. What are they?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p26" id="p26anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p26anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p26</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.8]</code></h2>
+<p class="textindent0" id="p27" onmouseleave="document.getElementById('p27anchor').style.display='none';document.getElementById('p27anchor_label').style.display='none';" onmouseover="document.getElementById('p27anchor').style.display='';document.getElementById('p27anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p27"><b>CB &amp; NS: </b>CTS URNs are for identifying passages of text, where the “text” is an ordered hierarchy of citation objects in a bibliographic hierarchy of group, work, version, exemplar. CITE2 URNs are for citing discrete objects in a collection of objects sharing a similar structure—essentially, “everything else.”<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p27" id="p27anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p27anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p27</span></p>
+</section>
+<section id="question9">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.9]</code></h2>
+<p class="textindent0" id="p28" onmouseleave="document.getElementById('p28anchor').style.display='none';document.getElementById('p28anchor_label').style.display='none';" onmouseover="document.getElementById('p28anchor').style.display='';document.getElementById('p28anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p28"><b>TK: </b>So it all started with text and began just a few years after the invention of XML, the format preferred by the Text Encoding Initiative to encode textual editions. Speaking of TEI XML, I know that some people think that the CITE architecture is directly connected to XML, which is not quite correct. Could you clarify how the CITE architecture is related to (TEI) XML?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p28" id="p28anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p28anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p28</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.9a]</code></h2>
+<p class="textindent0" id="p29" onmouseleave="document.getElementById('p29anchor').style.display='none';document.getElementById('p29anchor_label').style.display='none';" onmouseover="document.getElementById('p29anchor').style.display='';document.getElementById('p29anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p29"><b>NS: </b>The CITE architecture is related to XML in much the same way that an inventory of food items in my kitchen is related to a container, such as my spice rack. Sometimes, there will be a mapping between the two (oregano is on the top left of the container/spice rack), but in other cases there will be no relation (coffee beans are in a different cabinet; milk is in the refrigerator).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p29" id="p29anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p29anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p29</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.9b]</code></h2>
+<p class="textindent0" id="p30" onmouseleave="document.getElementById('p30anchor').style.display='none';document.getElementById('p30anchor_label').style.display='none';" onmouseover="document.getElementById('p30anchor').style.display='';document.getElementById('p30anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p30"><b>CB:</b> CITE is a collection of protocols based on defined data models. Since you ask about TEI XML, and therefore textual things: CTS is based on a model of “text” that is an ordered hierarchy of citation objects. TEI XML is a markup vocabulary, <i>not a data model</i>. It is possible to create a text in TEI XML that is an ordered hierarchy of citation objects and thus valid for CTS, but it is also possible to create TEI XML documents that are not. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p30" id="p30anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p30anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p30</span></p>
+<p id="p31" onmouseleave="document.getElementById('p31anchor').style.display='none';document.getElementById('p31anchor_label').style.display='none';" onmouseover="document.getElementById('p31anchor').style.display='';document.getElementById('p31anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p31">I downloaded a TEI edition of Herodotus that had been online for years, and when I tried to process it for use in CTS I discovered that its citation-values were not unique; that is, there were two passages identified as “6.32.” So this was not valid as a CTS text, despite being perfectly valid TEI.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p31" id="p31anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p31anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p31</span></p>
+<p id="p32" onmouseleave="document.getElementById('p32anchor').style.display='none';document.getElementById('p32anchor_label').style.display='none';" onmouseover="document.getElementById('p32anchor').style.display='';document.getElementById('p32anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p32">For another example, take any large TEI XML edition of a text (Herodotus will serve), open it in a text editor, and scroll to some arbitrary point in the middle. Now, quickly, what passage are you looking at? Probably, you have some identifier on the paragraph or division that you see, but you would need to scroll around to figure out any higher-level citation values. In contrast, in any CTS environment, you will <i>never</i> see a passage of text without knowing its precise citation. It is of course quite possible to attach full citation-values to each citable passage in a TEI XML text. This would make it much, much easier to transform for CTS, and I wish more editors did so.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p32" id="p32anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p32anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p32</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.9c]</code></h2>
+<p class="textindent0" id="p33" onmouseleave="document.getElementById('p33anchor').style.display='none';document.getElementById('p33anchor_label').style.display='none';" onmouseover="document.getElementById('p33anchor').style.display='';document.getElementById('p33anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p33"><b>JT: </b>In many ways I view a CTS system as consisting of the same tripartite set of specification as the Web itself: an addressing scheme, a resource retrieval protocol, and a resource content format. TEI XML can definitely serve as the resource content format for a CTS system. As Chris points out, though, being a valid CTS text in TEI XML is a stricter condition than just being a valid TEI XML document. Crucial to making a TEI XML document compatible with CTS is a references declaration that says how to map a passage reference like 2.35 to the structure of the XML. Furthermore, as Chris also highlights, such references must be unique. This is not a burdensome requirement, however, and passage identifier uniqueness is worth testing on TEI XML documents whether you’re using CTS or not. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p33" id="p33anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p33anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p33</span></p>
+</section>
+<section id="question10">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.10]</code></h2>
+<p class="textindent0" id="p34" onmouseleave="document.getElementById('p34anchor').style.display='none';document.getElementById('p34anchor_label').style.display='none';" onmouseover="document.getElementById('p34anchor').style.display='';document.getElementById('p34anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p34"><b>TK: </b>Yes, I think it is very important to stress that CTS is not tied to XML and for a while now we have been searching for simpler formats that can be more easily adapted by edition projects and traditional scholars. Following workshop discussions at DH2016 in Krakow, Neel devised the flat tabular format 82XF and, from there, CEX was developed, a format that kept the simple approach but was extended to include all kinds of linked data. Without going into lengthy data format discussions, what do you see as the advantages of using CEX alongside or instead of XML? I know that the <i>Kitab </i>project team uses CEX while building their corpus because it is a flat format that is easier to maintain. Did such thinking influence you when concepting CEX?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p34" id="p34anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p34anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p34</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.10a]</code></h2>
+<p class="textindent0" id="p35" onmouseleave="document.getElementById('p35anchor').style.display='none';document.getElementById('p35anchor_label').style.display='none';" onmouseover="document.getElementById('p35anchor').style.display='';document.getElementById('p35anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p35"><b>CB &amp; NS: </b>With a flat, tabular format, aggregation, disaggregation, and transformation become incredibly easy, since we all have access to a body of Unix utilities, dating back to the 1960s, aimed precisely as these problems. Also, with CEX, we can aggregate any type of CTS or CITE data in a single file, as we do for HMT data-releases. I suppose that might be possible with some elaborate XML schema, but I would not want to try to work with it.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p35" id="p35anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p35anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p35</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.10b]</code></h2>
+<p class="textindent0" id="p36" onmouseleave="document.getElementById('p36anchor').style.display='none';document.getElementById('p36anchor_label').style.display='none';" onmouseover="document.getElementById('p36anchor').style.display='';document.getElementById('p36anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p36"><b>JT:</b> I’ve been working with flat, tabular formats that are easily processed by Unix utilities for 25 years but was also involved in the creation of the XML specification from the very beginning so am comfortable working with both approaches and they each have their strengths and weaknesses. There is no doubt that there are many orders of magnitude more texts in XML than in CEX, and I have not myself used CEX, but I can certainly appreciate the benefits of CEX-like formats both for certain applications as well as certain styles in which people want to work.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p36" id="p36anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p36anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p36</span></p>
+</section>
+<section id="question11">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.11]</code></h2>
+<p class="textindent0" id="p37" onmouseleave="document.getElementById('p37anchor').style.display='none';document.getElementById('p37anchor_label').style.display='none';" onmouseover="document.getElementById('p37anchor').style.display='';document.getElementById('p37anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p37"><b>TK: </b>Is it correct that CEX not only makes the textual library exchangeable for scholars, it also makes all linked data they have created shareable between research projects?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p37" id="p37anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p37anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p37</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.11]</code></h2>
+<p class="textindent0" id="p38" onmouseleave="document.getElementById('p38anchor').style.display='none';document.getElementById('p38anchor_label').style.display='none';" onmouseover="document.getElementById('p38anchor').style.display='';document.getElementById('p38anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p38"><b>CB &amp; NS: </b>Yes. I can hand you my whole text-library and 17 databases in a single human-readable text file. Better, I can hand you <i>portions</i> of my text-library and <i>slices</i> of my databases in a single text file. And you can validate and discover the contents of that text file computationally.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p38" id="p38anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p38anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p38</span></p>
+</section>
+<section id="question12">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.12]</code></h2>
+<p class="textindent0" id="p39" onmouseleave="document.getElementById('p39anchor').style.display='none';document.getElementById('p39anchor_label').style.display='none';" onmouseover="document.getElementById('p39anchor').style.display='';document.getElementById('p39anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p39"><b>TK: </b>Let’s talk a bit more about CEX. How is it structured precisely?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p39" id="p39anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p39anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p39</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.12]</code></h2>
+<p class="textindent0" id="p40" onmouseleave="document.getElementById('p40anchor').style.display='none';document.getElementById('p40anchor_label').style.display='none';" onmouseover="document.getElementById('p40anchor').style.display='';document.getElementById('p40anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p40"><b>CB &amp; NS: </b>It is probably easiest to point to the CEX specification (available at <a href="https://cite-architecture.github.io/citedx/CEX-spec-3.0.1">https://cite-architecture.github.io/citedx/CEX-spec-3.0.1</a>), but briefly, a CEX file is a plain-text file. Its contents are divided into <i>blocks</i>. Each block is introduced by an identifying line beginning with “<code>#!</code>”. The valid block labels are:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p40" id="p40anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p40anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p40</span></p>
+<ul>
+<li><code>#!cexversion</code></li>
+<li><code>#!citelibrary</code></li>
+<li><code>#!ctsdata</code></li>
+<li><code>#!ctscatalog</code></li>
+<li><code>#!citecollections</code></li>
+<li><code>#!citeproperties</code></li>
+<li><code>#!citedata</code></li>
+<li><code>#!imagedata</code></li>
+<li><code>#!relations</code></li>
+<li><code>#!datamodels</code></li>
+</ul>
+<p id="p41" onmouseleave="document.getElementById('p41anchor').style.display='none';document.getElementById('p41anchor_label').style.display='none';" onmouseover="document.getElementById('p41anchor').style.display='';document.getElementById('p41anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p41">The specified formatting of the contents of a block differs according to type. The contents of a <code>#!ctsdata</code> block, for example, consists of two fields separated by a delimiter; the default is “<code>#</code>” but this is configurable. The first field is the CTS URN for a passage of text, the second field is the contents of that passage. The order of records in a <code>#!ctsdata</code> block is significant. That sequence gives the “ordered” in “ordered hierarchy of citation objects”; the URNs themselves provide the “hierarchy.” <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p41" id="p41anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p41anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p41</span></p>
+</section>
+<section id="question13">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.13]</code></h2>
+<p class="textindent0" id="p42" onmouseleave="document.getElementById('p42anchor').style.display='none';document.getElementById('p42anchor_label').style.display='none';" onmouseover="document.getElementById('p42anchor').style.display='';document.getElementById('p42anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p42"><b>TK: </b>I would like to follow-up on the way CEX structures image data, which might make this the most technical question of this chapter. But given that images that one might want to use could be stored in different collections in different locations on the web, and given the push by cultural heritage organizations to share collections via the International Image Interoperability Framework (IIIF), I think that this is becoming an increasingly important issue, and so I will ask this technical question anyway. I could see that you specify base URLs in the <code>#imagedata</code> block. I assume that you structured it so that those base URLs, when combined with the CITE2 URN, retrieve the correct image. How do you deal with a collection that stems from multiple sources where you cannot control with which ID you retrieve an image? For example, the first folio of my manuscript is digitized by the Vatican and I have to use a IIIF string, while I can use a IIIF manifest of a different cultural heritage collection for the following five folia, and I have local Deep Zoom images for the rest. Is it possible to encode that?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p42" id="p42anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p42anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p42</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.13]</code></h2>
+<p class="textindent0" id="p43" onmouseleave="document.getElementById('p43anchor').style.display='none';document.getElementById('p43anchor_label').style.display='none';" onmouseover="document.getElementById('p43anchor').style.display='';document.getElementById('p43anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p43"><b>CB &amp; NS: </b>Binary image data is complicated because, naturally, there has to be a connection between the CITE collection (which is portable) and some real-world server. We can’t deliver binary image data in the CEX file itself. At present, there are two solutions.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p43" id="p43anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p43anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p43</span></p>
+<p id="p44" onmouseleave="document.getElementById('p44anchor').style.display='none';document.getElementById('p44anchor_label').style.display='none';" onmouseover="document.getElementById('p44anchor').style.display='';document.getElementById('p44anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p44">First, make two collections, one for the Vatican image, and one for the others.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p44" id="p44anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p44anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p44</span></p>
+<p id="p45" onmouseleave="document.getElementById('p45anchor').style.display='none';document.getElementById('p45anchor_label').style.display='none';" onmouseover="document.getElementById('p45anchor').style.display='';document.getElementById('p45anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p45">Second, make two <i>versions</i> of the same collection: <code>urn:cite2:myimages.vatican:1</code> and <code>urn:cite2:myimages.localdz:2</code>, <code>urn:cite2:myimages.localdz:3</code>, etc. By requesting objects at the collection-level (without specifying a version ID), you get all your images. But you can associate images with particular hosts by using ID-level URNs when documenting the <code>CiteBinaryImage</code> data model.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p45" id="p45anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p45anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p45</span></p>
+</section>
+<section id="question14">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.14]</code></h2>
+<p class="textindent0" id="p46" onmouseleave="document.getElementById('p46anchor').style.display='none';document.getElementById('p46anchor_label').style.display='none';" onmouseover="document.getElementById('p46anchor').style.display='';document.getElementById('p46anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p46"><b>TK: </b>Thanks, I think that is a sensible way forward. So there are plenty of advantages to implementing the CITE architecture: anyone working with canonical text can use it and it offers enough room for different exemplars or complex analyses of the text. It is also not tied to any data format, but can be expressed in flat formats that are easily understandable not only by machines, but also by humans. Beyond this, one of the biggest selling points, in my opinion, is that with implementation, one has direct access to a multitude of open-source libraries and tools. Which tools do you use and which stand out for you?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p46" id="p46anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p46anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p46</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.14a]</code></h2>
+<p class="textindent0" id="p47" onmouseleave="document.getElementById('p47anchor').style.display='none';document.getElementById('p47anchor_label').style.display='none';" onmouseover="document.getElementById('p47anchor').style.display='';document.getElementById('p47anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p47"><b>CB &amp; NS: </b>Now that we are by default serializing CITE data in the CEX format, much of my editorial work uses basic UNIX utilities and applications: cat, tab, nl, vim (Neel uses emacs, but we remain on speaking terms). After many years of developing code libraries in Groovy, we largely abandoned those about 18 months ago in favor of Scala. We have libraries, each with large and growing numbers of unit tests, for working with URNs, corpora of texts, collections of objects, images, JSON serializations, CEX serializations, and arbitrary relations among URNs. Scala seems very well suited to this kind of work, not least because, thanks to ScalaJS, we can use the same libraries to write command-line applications, server-side applications, and end-user web applications.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p47" id="p47anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p47anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p47</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.14b]</code></h2>
+<p class="textindent0" id="p48" onmouseleave="document.getElementById('p48anchor').style.display='none';document.getElementById('p48anchor_label').style.display='none';" onmouseover="document.getElementById('p48anchor').style.display='';document.getElementById('p48anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p48"><b>JT: </b>In building the Scaife Digital Library Viewer, we made extensive use of the CapiTainS suite for the Python programming language. The Nautilus server allowed us to serve up text passages via the CTS protocol and CapiTainS also provided a client library for Python code to request passages from Nautilus or any other CTS-protocol-compatible server.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p48" id="p48anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p48anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p48</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.14c]</code></h2>
+<p class="textindent0" id="p49" onmouseleave="document.getElementById('p49anchor').style.display='none';document.getElementById('p49anchor_label').style.display='none';" onmouseover="document.getElementById('p49anchor').style.display='';document.getElementById('p49anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p49"><b>TK: </b>If I may (and since I am the only Gopher in the group) I would like to refer, here, to the programming language Go, which I use in my tools and in which one of the CITE microservices is written, and for which I have written a library dealing with CTS and CITE URNs. In summary, it’s good to see that there is a growing list of tools and software libraries out there that users can employ to interact with and produce CTS data. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p49" id="p49anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p49anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p49</span></p>
+</section>
+<section id="question15">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:question.15]</code></h2>
+<p class="textindent0" id="p50" onmouseleave="document.getElementById('p50anchor').style.display='none';document.getElementById('p50anchor_label').style.display='none';" onmouseover="document.getElementById('p50anchor').style.display='';document.getElementById('p50anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p50"><b>TK: </b>Thank you for all the information. I have one final question: From a developer’s perspective, what are the strengths and shortfalls of the CITE architecture?<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p50" id="p50anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p50anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p50</span></p>
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:answer.15]</code></h2>
+<p class="textindent0" id="p51" onmouseleave="document.getElementById('p51anchor').style.display='none';document.getElementById('p51anchor_label').style.display='none';" onmouseover="document.getElementById('p51anchor').style.display='';document.getElementById('p51anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p51"><b>CB:</b> I am of course biased, since the evolution of the CITE architecture has to a great extent followed my own experiences and perceived needs as a developer. I find our current Scala libraries a pleasure to use, not least because of the pretty large, and growing, body of tests that accompany each one. I think the OHCO2 library, for CTS texts, offers a very, very rich body of methods; it is rare these days for me to find a manipulation of CTS data that is more than a one-liner away in Scala. Working with CITE collection data is necessarily more verbose. Necessarily, because CITE collections, by definition, each contain an arbitrary number of typed properties, to work with them generically, you have to discover those properties and their types before addressing objects and their particular property values. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p51" id="p51anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p51anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p51</span></p>
+<p id="p52" onmouseleave="document.getElementById('p52anchor').style.display='none';document.getElementById('p52anchor_label').style.display='none';" onmouseover="document.getElementById('p52anchor').style.display='';document.getElementById('p52anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p52">I am particularly excited at the potential of discoverable data models, which we are currently exploiting in published code for a Binary Image Model (connecting CITE collections to binary image data on real servers delivered according to different protocols), the Documented Scholarly Edition (DSE) model (a graph of text-bearing artifact, image, and transcription), and the Commentary Model (one citable object or text commenting on another). Data Models allow further compositions or elaborations on generically citable data. The model I am beginning to work on now is a “Typed String Property” model. CITE collections can have properties of specified types, but the types are limited to: boolean, number, CTS URN, CITE2 URN, or string. Each property of a collection, and each property of each object in a collection, is citable by a CITE2 URN. By declaring a Typed String Property model, we can, for example, list specific collection-properties that are not merely of type “string” but of type “Markdown” or “GeoJSON.” Any app or service is free to ignore that data model, and the properties will come through as strings. But an app or service that is aware of these data models can discover these “extended string properties” and handle them accordingly. We get much greater functionality that degrades gracefully. We can add specified string-types as we see fit, without altering the CITE protocol or breaking any existing implementations.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p52" id="p52anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p52anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p52</span></p>
+</section>
+</section>
+<section id="furtherreading">
+<h2 style="text-align:right"><code>[urn:cts:scholarship:lod.discussion:reading]</code></h2>
+<p class="textindent0" id="p53" onmouseleave="document.getElementById('p53anchor').style.display='none';document.getElementById('p53anchor_label').style.display='none';" onmouseover="document.getElementById('p53anchor').style.display='';document.getElementById('p53anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p53"><b>TK: </b>Thank you so much for answering all my questions so patiently. In case readers still have questions, we have put together a short list of further reading:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#p53" id="p53anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p53anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p53</span></p>
+ 
+
+<p class="work-cited" id="reference-1" onmouseleave="document.getElementById('reference-1anchor').style.display='none';document.getElementById('reference-1anchor_label').style.display='none';" onmouseover="document.getElementById('reference-1anchor').style.display='';document.getElementById('reference-1anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Blackwell, C., T. Koentges, and N. Smith (2018). “CITE Exchange Format (CEX): Simple, Plain-Text Interchange of Heterogeneous Datasets.” In <i>Digital Humanities 2018: Conference Abstracts</i>, 541–43 (Mexico City: Universidad Nacional Autónoma de México).</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#reference-1" id="reference-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-1</span></p>
+<p class="work-cited" id="reference-2" onmouseleave="document.getElementById('reference-2anchor').style.display='none';document.getElementById('reference-2anchor_label').style.display='none';" onmouseover="document.getElementById('reference-2anchor').style.display='';document.getElementById('reference-2anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Dué, C., M. Ebbott, C. Blackwell, N. Smith, D. Frame, L. Muellner, and G. Nagy (2016). “The Homer Multitext Project.” Available at: <a href="https://www.homermultitext.org/index.html">https://www.homermultitext.org/index.html</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#reference-2" id="reference-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-2</span></p>
+<p class="work-cited" id="reference-3" onmouseleave="document.getElementById('reference-3anchor').style.display='none';document.getElementById('reference-3anchor_label').style.display='none';" onmouseover="document.getElementById('reference-3anchor').style.display='';document.getElementById('reference-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Koentges, T., (2018, June 1). ThomasK81/gocite: Kite Surfer (Version 1.0.1). Zenodo. Available at: <a href="http://doi.org/10.5281/zenodo.1257467">http://doi.org/10.5281/zenodo.1257467</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#reference-3" id="reference-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-3</span></p>
+<p class="work-cited" id="reference-4" onmouseleave="document.getElementById('reference-4anchor').style.display='none';document.getElementById('reference-4anchor_label').style.display='none';" onmouseover="document.getElementById('reference-4anchor').style.display='';document.getElementById('reference-4anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Kuczera, A. (2016). “Digital Editions beyond {XML}—Graph-based Digital Editions.” In <i>Proceedings of the 3rd HistoInformatics Workshop on Computational History</i>, 37–46. Available at: <a href="http://ceur- ws.org/Vol-1632/paper\_5.pdf">http://ceur- ws.org/Vol-1632/paper\_5.pdf</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#reference-4" id="reference-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-4</span></p>
+<p class="work-cited" id="reference-5" onmouseleave="document.getElementById('reference-5anchor').style.display='none';document.getElementById('reference-5anchor_label').style.display='none';" onmouseover="document.getElementById('reference-5anchor').style.display='';document.getElementById('reference-5anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Smith, D. N. (2009). “Citation in Classical Studies.” <i>Digital Humanities Quarterly 3</i>, no. 1: 121–37.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-8/#reference-5" id="reference-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-5</span></p>
+</section>
+<footer>
+<p class="editorial-note"><a href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"><i>ISAW Papers</i></a> (ISSN 2164-1471) is a publication of the <a href="http://isaw.nyu.edu" property="dcterms:publisher" rel="dcterms:publisher">Institute for the Study of the Ancient World</a>, <a href="http://nyu.edu/">New York University</a>. This article was anonymously reviewed prior to publication.</p>
+<p class="copyright" style="margin-top:1em;text-align:center;color:gray">©2020 <span rel="cc:attributionName">Thomas Koentges, ???</span>. Distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/" rel="cc:license">Creative Commons Attribution 4.0 International</a> license.</p>
+</footer>
+</article>
+</body>
+</html>
