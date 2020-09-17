@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html lang="en" prefix="bibo: http://purl.org/ontology/bibo/
+ cc: http://creativecommons.org/ns#
+ dcmitype: http://purl.org/dc/dcmitype/
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ nm: http://nomisma.org/id/
+ owl:  http://www.w3.org/2002/07/owl#
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ rdfa: http://www.w3.org/ns/rdfa#
+ rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+ skos: http://www.w3.org/2004/02/skos/core#
+ " xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Linked Open Data for Ancient Names and People</title>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS"/>
+<meta content="Linked Open Data for Ancient Names and People" name="DC.title"/>
+<meta content="2020-??-00" name="DC.date"/>
+<meta content="application/xhtml+xml" name="DC.format"/>
+<meta content="Gabriel Bodard" name="DC.creator"/>
+<meta content="en" name="DC.language"/>
+<meta content="This chapter discusses the kinds of information that are recorded about persons and names from antiquity and other periods of pre-modern history, and the ways in which this information can usefully be modelled in Linked Open Data and integrated with the Linked Ancient World Data graph. It begins by introducing some key concepts, in particular the importance of understanding data ‘modelling,’ and limiting the scope of the discussion to fairly basic information about historical persons. The body of the paper summarises the main trends in recording and encoding prosopographical, onomastic and other personal data in previous and current scholarship, both traditional and digital. As an example of the use of Linked Open Data to encode person- and name-data, the recommendations of the SNAP:DRGN project are outlined, noting that these are designed only to represent a small set of disambiguation data to enable interoperability and cross-platform searching among projects, rather than the full richness of prosopographical and onomastic data. The chapter concludes by pointing out the limitations of the current model, and suggesting some areas for future work and development." name="DC.abstract"/>
+<meta content="Prosopography--Data processing" name="DC.subject"/>
+<meta content="Linked data" name="DC.subject"/>
+<meta content="Creative Commons Attribution 4.0 Unported (CC-BY)" name="DCTERMS.license"/>
+<meta content="Gabriel Bodard. 2020. Linked Open Data for Ancient Names and People. ISAW Papers 20.4." name="DCTERMS.bibliographicCitation"/>
+<meta content="ISAW Papers" name="DCTERMS.isPartOf"/>
+<meta content="TK" name="DCTERMS.identifier.URI"/>
+<link href="http://www.worldcat.org/oclc/756047783" rel="dcterms:isPartOf"/>
+<link href="urn:issn:2164-1471" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+
+<style>ul.none {
+  list-style: none; 
+  padding: 0;
+}
+@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
+}
+
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}
+
+.work_cited_links {
+  color:gray;
+ }
+
+.work_cited {
+  margin-left:.25in;
+  text-indent:-.25in
+ }
+ 
+.editorial_note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+*[xml|lang |= 'grc'] {
+font-family:"New Athena Unicode";
+}
+       
+*[xml|lang |= 'egyd'] {
+font-family:Umschrift_TTn;
+}
+       
+    *:lang(grc){font-family:"New Athena Unicode";}
+    *:lang(egyd){font-family:Umschrift_TTn;}
+ 
+
+*[xml|lang |= 'syr'] {
+   font-family:"Serto Urhoy"; 
+}
+
+xml:lang(syr) {
+ font-family:"Serto Urhoy";
+ }
+
+
+</style>
+<style></style></head>
+<body>
+<article>
+<header><div id="isaw_papers_header" style="text-align:justify; background:#aaa;margin:1em;padding:2em" xmlns="http://www.w3.org/1999/xhtml">
+<p class="textindent0">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/ as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website. </p>
+<p class="textindent0" style="text-align:justify;margin:1em">©2020 Gabriel Bodard; text and images distributed under the terms of the Creative Commons Attribution 4.0 International (CC-BY) license.<br/>
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/>
+</a>
+</p>
+<p style="text-align:center;margin-top:1em">This article can be downloaded as a <a download="isaw-papers-20-4" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/isaw-papers-20-4-offprint.xhtml">single file</a></p></div>
+<h2>ISAW Papers 20.4 (2020)</h2>
+<h1><span rel="dcterms:title">Linked Open Data for Ancient Names and People</span></h1>
+<h2><span rel="dcterms:creator"><a href="http://orcid.org/0000-0002-8566-6666" property="foaf:name" rel="dcterms:identifier">Gabriel Bodard</a></span>, Institute of Classical Studies, University of London</h2>
+<p class="textindent0 margintop15em" style="margin-left:2em;margin-right:2em">In: Sarah E. Bond, Paul Dilley, and Ryan Horne, eds. 2020. <a href="TK"><i>Linked Open Data for the Ancient Mediterranean: Structures, Practices, Prospects</i></a>. ISAW Papers 20.</p>
+<p class="doi">URI: <a href="TK" rel="dcterms:identifier">TK</a></p>
+<p class="abstract"><em>Abstract: </em><span id="abstract" property="dcterms:abstract">This chapter discusses the kinds of information that are recorded about persons and names from antiquity and other periods of pre-modern history, and the ways in which this information can usefully be modelled in Linked Open Data and integrated with the Linked Ancient World Data graph. It begins by introducing some key concepts, in particular the importance of understanding data ‘modelling,’ and limiting the scope of the discussion to fairly basic information about historical persons. The body of the paper summarises the main trends in recording and encoding prosopographical, onomastic and other personal data in previous and current scholarship, both traditional and digital. As an example of the use of Linked Open Data to encode person- and name-data, the recommendations of the SNAP:DRGN project are outlined, noting that these are designed only to represent a small set of disambiguation data to enable interoperability and cross-platform searching among projects, rather than the full richness of prosopographical and onomastic data. The chapter concludes by pointing out the limitations of the current model, and suggesting some areas for future work and development.</span></p>
+<p class="subjects"><em>Library of Congress Subjects:</em> <a href="http://id.loc.gov/authorities/subjects/sh86000287" rel="dcterms:subject">Prosopography--Data processing</a>; <a href="http://id.loc.gov/authorities/subjects/sh2013002090" rel="dcterms:subject">Linked data</a>.</p>
+<nav id="toc">
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#section1">Introduction</a></li>
+<li><a href="#section2">Modelling People and Names</a></li>
+<ul>
+<li><a href="#section2.1">Prosopographies</a></li>
+<li><a href="#section2.2">Factoid Model</a></li>
+<li><a href="#section2.3">Text Encoding</a></li>
+<li><a href="#section2.4">Catalogues</a></li>
+<li><a href="#section2.5">Onomastics</a></li>
+<li><a href="#section2.6">Disambiguating Person References</a></li>
+</ul>
+<li><a href="#section3">Modelling Person-Data in Linked Open Data</a></li>
+<ul>
+<li><a href="#section3.1">Required Fields</a></li>
+<li><a href="#section3.2">Recommended Fields</a></li>
+<li><a href="#section3.3">Optional Fields</a></li>
+</ul>
+<li><a href="#section4">Conclusions</a></li>
+<li><a href="#section5">Abbreviations and Databases</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#footnotes">Notes</a></li>
+</ul>
+</nav>
+</header>
+<section id="section1">
+<h2>Introduction</h2>
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">In this chapter I shall consider the kinds of information that are recorded about persons and names from antiquity, and the ways in which this information can usefully be modelled in Linked Open Data, and therefore integrated with the Linked Ancient World Data graph.<sup><a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">1</a></sup> I shall discuss the concrete recommendations of the <a href="https://snapdrgn.net/">SNAP:DRGN</a> project, although these are designed only to represent a small set of disambiguation data to enable interoperability and cross-platform searching across projects, rather than the full richness of prosopographical and onomastic data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">An essential starting point to this discussion will be the, perhaps evident, observation that persons and names from the ancient world are known through sources (such as literary texts, inscriptions and papyri, coins, personal seals), which themselves need to be read, recorded, interpreted, modelled and related to other sources, objects and data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">A historical source may contain a name, assuming that we are reasonably confident about a reading and interpretation of the characters – even the fairly secure presence of an illegible or incomplete name is often worthwhile evidence. We may make linguistic and onomastic observations about the name, among which its etymology, dating, gender assignment, relation to names in the same or other languages, religious or ethnic associations, sometimes even hints as to class or profession. With a greater degree of interpretive subjectivity, we may also associate the name with a particular individual from history, either known from other sources or only attested in this single text, but about whom one can adduce geographical, linguistic, dating, and other information, including perhaps relationships with other persons referenced in the same or other sources.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">There are also persons referenced in literary sources who are generally thought to be fictional, that is, not having a referent in the real historical world; or names that refer to religious or mythological entities that may or may not be thought to exist or have existed, but about whom dating and geographical statements are less commonly made. There are of course also explicitly expressed direct relationships between figures we would consider mythological and ahistorical (Aeneas, say) and figures we consider historical (Augustus, in this example), making the distinction between “real” and “unreal” persons rather less clear than we might like. Nevertheless, I do not intend to discuss the issue of fictional or mythological persons in this chapter, leaving them for discussion elsewhere. (See in the meantime: Lawrence 2007; Lawrence, Jewell and Rissen 2010; Bodard et al, 2017.)<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">Although this chapter focuses on ancient – and primarily ancient Mediterranean – historical persons, we should note that there are very few issues relating to the encoding or linking of classical person records that would not be equally applicable to discussions of prosopography relating to almost any other period of history or part of the world. The sources may differ in quality and quantity, types of person and degrees of certainty may be unique to some cultures, and even interpretations of the concepts of individuals, groups, relationships and mortality may be contingent, but the shape of a person database and the things a researcher may want to do with the data are not likely to be so different as to warrant a completely different discussion for each context. Substitute “ancient” with “historical” throughout this chapter, and a scholar of ancient China, Pre-Columbian Mesoamerica, or eighteenth-century Persia will find this discussion as useful as a historian of ancient Greece or Rome.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">Some distinctions should be noted, although will not be discussed at any length here. There is a significant difference in the needs of and modelling performed by scholars attempting to record modern and contemporary historical individuals and populations. The scarcity of data about ancient (and most historical) populations, which drives the historian’s interest in every scrap of information, fragmentary text, allusion, speculation and emendation, proves a qualitative difference from historical periods where census data and similar very rich sources survive at a much higher rate. A prosopographer is interested in the smallest piece of evidence for a person from, say, the fifth century BCE (even without an attested name), in the way that a similar datum would be trivial or irrelevant to most scholars of, for example, twentieth century CE history. If one adds to this the further issue of privacy and sensitivity toward persons who are living or whose immediate family are, it becomes clear that the interests and therefore the design of prosopographical and population databases for the modern period will be quite different in several significant ways.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+<p id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">A word about the types of database containing information about ancient persons, each of which provide somewhat different data, and therefore have implications on the way persons will need to be expressed as Linked Open Data. Most large datasets of ancient names or persons that I shall discuss in this chapter are not prosopographies in the technical sense – studies of historical populations and societies that collate and interpret genealogical, onomastic and demographic information on individuals and groups, with particular reference to primary sources and scholarly discussion (<i>cf.</i> Keats-Rohan 2007). All of these types of dataset are nonetheless extremely rich as records of people and their associated names and data, and offer different facets of information to express in LOD. Prosopographical datasets more properly include the <i>Prosopographia Imperii Romani</i> (PIR), <i>Prosopography of the Byzantine World</i> (PBW), and <i>Hellenistic Babylonia: Texts, Images, Names</i> (HBTIN), which tend to focus on specific and delimited time and place, language(s), and perhaps social class or categories of person. Equally valuable, and often orders of magnitude larger, are projects such as the <i>Lexicon of Greek Personal Names</i> (LGPN) or <i>Trismegistos People</i> (TM), which while they do not gather the richness of biographical and other information typical of a prosopography, do identify individuals and core information about them, including relationships with others, while often focusing principally on primary source citations and gathering onomastic data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
+<p id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p8">A third category that is also a source of very large numbers of names and person references is the institutional or collection catalogue: the <a href="http://catalog.perseus.org/">Perseus Catalog</a>, the British Museum person database, the <a href="https://viaf.org/">Virtual International Authority File</a> (VIAF), the <a href="https://zenon.dainst.org/">Zenon Catalogue</a> of the Deutsche Archäologische Institut library, or other authority lists of persons such as potters (<a href="http://kerameikos.org/">Kerameikos.org</a>) or coin issuers (<a href="http://nomisma.org/">Nomisma.org</a>). Datasets such as these are a very valuable source of disambiguation records, since librarians have historically put a lot of effort into creating authority records and adhering to interoperable standards as far as possible, but they usually contain very little or no contextual information such as dating, geography, onomastics and interpersonal relationships. While the geographical and chronological specificity of prosopographies and personal name databases means that the overlap in population between any two databases is likely to be very small, the presence of a Western canon means that the overlap in ancient persons between any two library catalogues is generally very large, even almost complete.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
+<p id="p9" onmouseleave="document.getElementById('p9anchor').style.display='none';document.getElementById('p9anchor_label').style.display='none';" onmouseover="document.getElementById('p9anchor').style.display='';document.getElementById('p9anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p9">One of the most interesting elements of collecting large bodies of person data is the relationships of various kinds that the entities therein bring with them. Persons are at the core of a large network of places (of birth, death, residence, travel), events (participated in, witnessed), objects (created, owned), texts (authored, copied, attested in), and other people (related to, interacted with, corresponded with, co-occurred in texts with). In fact most statements that can be made about a person in a biographical or prosopographical resource can helpfully be expressed through structured data as typed (and attributed, dated and otherwise qualified) relationships with and between other entities of various kinds – if there are identifiers for such entities that can be used to express these relationships.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p9" id="p9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p9</span></p>
+<p id="p10" onmouseleave="document.getElementById('p10anchor').style.display='none';document.getElementById('p10anchor_label').style.display='none';" onmouseover="document.getElementById('p10anchor').style.display='';document.getElementById('p10anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p10">In this chapter I am talking about “expressing” or “modelling” person-data as Linked Open Data (LOD), on which more in a moment. I should say a few words about the concept of modelling data, or turning organic knowledge into structured, consistent, and therefore limited information for processing – by computer or otherwise at scale. The body of information about any given person or collection of people is often expressed, or held in the scholar’s mind, as a fluid, more or less chronological narrative, or as a collection of events and statements given to us by sources and placed in a historical context. Adding structure, or applying a model, to this information inevitably means distorting it: forcing some kinds of information into controlled vocabularies or restrictive typologies, leaving out details or elements that don’t fit the model, making assumptions where required fields are missing from history. A model, although (and indeed because) structured, is always misleading, distorting, imperfect.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p10" id="p10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p10</span></p>
+<p id="p11" onmouseleave="document.getElementById('p11anchor').style.display='none';document.getElementById('p11anchor_label').style.display='none';" onmouseover="document.getElementById('p11anchor').style.display='';document.getElementById('p11anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p11">We have to mitigate this degrading of information by: assiduously documenting the model and the decisions made to fit our data into it; by supplementing the structured data with free-text descriptions for the human reader of features not expressed in LOD; by ensuring that the use we or a computer will make of the economies of scale or pattern detection made possible by implementing the model are worth the signal-loss; and by being explicit about the historical (and secondary) sources that feed into our data, so that a reader can go back to the start and check the raw data that we are thus perverting.<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup> In other words, if we extract information from a variety of sources to populate a uniform database record with names, dates, titles, relationships, and other data about a person, all of the sources, definitions, decisions and mechanisms for populating the individual fields should be preserved.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p11" id="p11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p11</span></p>
+<p id="p12" onmouseleave="document.getElementById('p12anchor').style.display='none';document.getElementById('p12anchor_label').style.display='none';" onmouseover="document.getElementById('p12anchor').style.display='';document.getElementById('p12anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p12">Having said this, the nature of person-data as involving relationships between entities, places, persons, and other sorts of data and vocabularies, means that once structured or modelled as described above, this data can be very conveniently and effectively expressed in LOD, using the conceptual language RDF. As its name suggests, <i>Linked</i> Open Data is all about modelling data in terms of relationships between entities (people, places, events, things), properties (things we can say about entities, qualifiers, relationship types), or classes (vocabularies of predicates or descriptors, such as occupations, types of settlement, etc.). RDF is formed of statements that have three parts: entity A → has relation or property B → with entity or predicate C (where A, B and C are explicitly referenced by identifiers). Two examples of this “triple” format might look like:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p12" id="p12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p12</span></p>
+<figure id="code1" onmouseleave="document.getElementById('code1anchor').style.display='none';document.getElementById('code1anchor_label').style.display='none';" onmouseover="document.getElementById('code1anchor').style.display='';document.getElementById('code1anchor_label').style.display='';"><pre><code>
+	<b>Aristophanes</b> (LGPN:V2-9254)
+			<b>is from</b> (SNAP:associatedPlace)
+					<b>Athens</b> (Pleiades:579885).
+					
+	<b>Lepcis Magna</b> (Pleiades:344448)
+			<b>has type</b> (PleiadOnt:hasFeatureType)
+					<b>settlement</b> (PleiadType:settlement).
+</code></pre></figure>
+<p id="p13" onmouseleave="document.getElementById('p13anchor').style.display='none';document.getElementById('p13anchor_label').style.display='none';" onmouseover="document.getElementById('p13anchor').style.display='';document.getElementById('p13anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p13">You will notice that all the entities (as well as properties and classes) are defined by identifiers; they would in practice be URLs, but I have abbreviated them for this example.<sup><a class="footnote-reference" href="#footnote-3" id="footnote-reference-3">3</a></sup> This means that for RDF to make a statement about people, places, or anything else, the entities first have to be defined, and a list of the identifiers for them should ideally exist online (the LGPN, SNAP and Pleiades websites in the example above). If there are also informative pages about the entity in question at the URL – i.e. if the identifiers are dereferenceable – this potentially enables the discovery of new resources via information on the web pages about these entities. Likewise, the properties and classes should be defined in vocabularies, thesauri or ontologies, which also assign to each one a unique identifier and a web address. This is where the “linked” in Linked Open Data gets its power: each RDF statement or triple makes a connection between entities and datasets, a link that can be followed back to sources, definitions, indexes, and collections of entities. This fits very nicely onto the definition of person-data I started with above.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p13" id="p13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p13</span></p>
+</section>
+<section id="section2">
+<h2>Modelling People And Names</h2>
+<section id="section2.1">
+<h3>Prosopographies</h3>
+<p class="textindent0" id="p14" onmouseleave="document.getElementById('p14anchor').style.display='none';document.getElementById('p14anchor_label').style.display='none';" onmouseover="document.getElementById('p14anchor').style.display='';document.getElementById('p14anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p14">Even traditional prosopographies and catalogues explicitly model person-data, which is to say, they do not simply recount all the known facts in an organic and unique way, but present a structured record, selecting certain elements of interest across the corpus or database, and conversely adding, in some cases quite speculatively, those required elements that are missing from the historical record for a given person. (See Varga 2017 for recent discussion of these issues.)<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p14" id="p14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p14</span></p>
+<p id="p15" onmouseleave="document.getElementById('p15anchor').style.display='none';document.getElementById('p15anchor_label').style.display='none';" onmouseover="document.getElementById('p15anchor').style.display='';document.getElementById('p15anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p15">One of the most widely cited prosopographical works relating to classical antiquity is the <i>Prosopographia Imperii Romani</i> (“prosopography of the Roman Empire”), the second edition of which was published in Berlin in fourteen fascicles between 1933 and 2015. In this work, the structured data about individual persons (which Verboven et al. 2007 call the “questionnaire”) are embedded in a paragraph of prose text (in Latin), and so the presence or absence of any given element is not clearly marked. For example, the entry for the second century proconsul Titianus (PIR² VIII.1, p. 76) reads:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p15" id="p15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p15</span></p>
+<blockquote id="blockquote1">
+<p>248  	 	 [–] TITIA[NVS], [proconsul?] (Cyprus) <i>saeculo secundo t. mutilus in tessera scriptus Salamini rep. I. Salamis 24.</i></p>
+<p> <i>Sed res valde incerta, cf. Thomasson, qui eum non in Laterculum suum recepit. Str</i></p>
+</blockquote>
+<p id="p16" onmouseleave="document.getElementById('p16anchor').style.display='none';document.getElementById('p16anchor_label').style.display='none';" onmouseover="document.getElementById('p16anchor').style.display='';document.getElementById('p16anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p16">Another huge prosopography, the<i> Prosopographie chrétienne du Bas-Empire</i> (PCBE), currently in six fascicles (organized by region) published between 1982 and 2013, also uses a prose-based approach (in a modern language – French – at least) to the “questionnaire” of each person record, but uses a certain amount of page formatting to make a few key fields easy to identify: date, bibliography and the like. A very brief example, the priest Pateras (Destephen 2008, p. 759) reads:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p16" id="p16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p16</span></p>
+<blockquote id="blockquote2">
+<p>PATÈRAS 2, prêtre de Savatra ? (Lycaonie)       IVe s.</p>
+<p>Il est mentionné avec son père, le personnage précédent (→ Patèras 1).</p>
+<p>W. M. Cᴀʟᴅᴇʀ et J. M. R. Cᴏʀᴍᴀᴄᴋ, <i>MAMA</i>, VIII, p. 46, no 253.</p>
+</blockquote>
+<p id="p17" onmouseleave="document.getElementById('p17anchor').style.display='none';document.getElementById('p17anchor_label').style.display='none';" onmouseover="document.getElementById('p17anchor').style.display='';document.getElementById('p17anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p17">Both examples list name, titulature, location (of residence/citizenship/office) and some indication of date; then gives some prose narrative of history or life, which may include primary and secondary bibliographic sources and cross-references to other persons in the same prosopography or not. These highly structured records, abbreviated and designed for reading by an (initiated) human, can of course be readily generated from structured data, but the reverse is not the case – in other words, they are not easily machine actionable data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p17" id="p17anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p17anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p17</span></p>
+</section>
+<section id="section2.2">
+<h3>Factoid Model</h3>
+<p class="textindent0" id="p18" onmouseleave="document.getElementById('p18anchor').style.display='none';document.getElementById('p18anchor_label').style.display='none';" onmouseover="document.getElementById('p18anchor').style.display='';document.getElementById('p18anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p18">Digital publications of prosopographies make use of databases for structuring, sorting and presenting data in an explicitly structured way, and of advanced search and faceted browsing for organization and filtering of records. Among the more popular recent approaches to this digital representation of prosopographical data, and most suitable for expressing as Linked Open Data, is the so-called “Factoid Model” (see Bradley &amp; Short 2005 and Bradley 2016). In this model, the core entity in the database, as in the study of historical persons discussed above, is the attestation or source – that is, the text in which an event, relationship, or trait of one or more people are mentioned. The attested event other piece of information (“factoid” rather than “fact” because counter-factual or internally inconsistent attestations are valid entities in a prosopographical dataset) is both the glue that links together persons, primary and secondary texts, places, dates, and the other tables of the database, and one of the building blocks from which all person records are built.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p18" id="p18anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p18anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p18</span></p>
+<p id="p19" onmouseleave="document.getElementById('p19anchor').style.display='none';document.getElementById('p19anchor_label').style.display='none';" onmouseover="document.getElementById('p19anchor').style.display='';document.getElementById('p19anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p19">For example, a factoid relating to a database of person information relating to ancient Lepcis Magna might be the funerary inscription of Publius Lucretius Crescens, which was set up by his father at some point in the Imperial period.<sup><a class="footnote-reference" href="#footnote-4" id="footnote-reference-4">4</a></sup> This source would then be linked from several places in the database: as source for the existence, name and (very rough) date of Crescens himself; as one of several sources for the existence, name etc. of P. Lucretius Rogatinus, the erector of the monument; and as source for the relationship between the two.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p19" id="p19anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p19anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p19</span></p>
+<p id="p20" onmouseleave="document.getElementById('p20anchor').style.display='none';document.getElementById('p20anchor_label').style.display='none';" onmouseover="document.getElementById('p20anchor').style.display='';document.getElementById('p20anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p20">One “factoid” may therefore be a component of several person records, and almost every person record will be made up of several such attestations. Their name, their family relationships, professions or titles, marriage, participation in battles, treaties, coronations, and other historical events, are only part of our person record because they are attested in one or more sources. This model is therefore not only intellectually rigorous, making sure that all claims about a person are backed up in primary sources or secondary scholarship, but admirably transparent in communicating these sources, and other bases for statements, to the reader. It is possible to browse the factoid database (see e.g. <i>PBW</i>) by any of the top-level entities, including – in addition to people – places, events, occupations, names, and indeed sources and factoids themselves.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p20" id="p20anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p20anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p20</span></p>
+</section>
+<section id="section2.3">
+<h3>Text Encoding</h3>
+<p class="textindent0" id="p21" onmouseleave="document.getElementById('p21anchor').style.display='none';document.getElementById('p21anchor_label').style.display='none';" onmouseover="document.getElementById('p21anchor').style.display='';document.getElementById('p21anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p21">A much simpler scheme for encoding information about historical persons – although one in which it is possible to model many of the same entities and relationships as I have been discussing above – would be in encoded text, for example in TEI (Text Encoding Initiative) XML. XML is a strictly hierarchical language, so a single <code><b>&lt;person&gt;</b></code> element must completely encompass those elements containing core information about that person: name, dates, occupations, locations, etc. However, the TEI content model also defines several attributes for linking to other elements or even external files, allowing the “stand-off” annotation of sections of text, or entities in a separate hierarchy from the person-list. A <code><b>&lt;person&gt;</b></code> element might be referenced from several <code><b>&lt;relation&gt;</b></code> elements, for example, which define family relationships with several other persons. Several <code><b>&lt;person&gt;</b></code> elements might all point to the same <code><b>&lt;event&gt;</b></code> element defining an event in which they all participated in some way.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p21" id="p21anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p21anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p21</span></p>
+<p id="p22" onmouseleave="document.getElementById('p22anchor').style.display='none';document.getElementById('p22anchor_label').style.display='none';" onmouseover="document.getElementById('p22anchor').style.display='';document.getElementById('p22anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p22">A simple person record (with external <code><b>&lt;relation&gt;</b></code> given for comparison) in TEI XML might look something like:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p22" id="p22anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p22anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p22</span></p>
+<figure id="code2" onmouseleave="document.getElementById('code2anchor').style.display='none';document.getElementById('code2anchor_label').style.display='none';" onmouseover="document.getElementById('code2anchor').style.display='';document.getElementById('code2anchor_label').style.display='';"><pre><code><b>
+	&lt;person xml:id="person7"&gt;
+	   &lt;persName xml:lang="grc"&gt;Εὐθήριος&lt;/persName&gt;
+	   &lt;floruit notBefore="0392" notAfter="0393"/&gt;
+	   &lt;occupation&gt;κόμης&lt;/occupation&gt;
+	   &lt;affiliation ref="pleiades.stoa.org/places/226564"&gt;Cherson&lt;/affiliation&gt;
+	&lt;/person&gt;
+	&lt;relation active="#person7" ref="snap:BrotherOf" passive="#person8"/&gt;
+</b></code></pre>
+</figure>
+<p id="p23" onmouseleave="document.getElementById('p23anchor').style.display='none';document.getElementById('p23anchor_label').style.display='none';" onmouseover="document.getElementById('p23anchor').style.display='';document.getElementById('p23anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p23">While this is a much flatter and more linear way of encoding person-data, it would probably be possible (if perhaps not the most efficient) to encode a basic factoid prosopography in this format.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p23" id="p23anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p23anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p23</span></p>
+</section>
+<section id="section2.4">
+<h3>Catalogues</h3>
+<p class="textindent0" id="p24" onmouseleave="document.getElementById('p24anchor').style.display='none';document.getElementById('p24anchor_label').style.display='none';" onmouseover="document.getElementById('p24anchor').style.display='';document.getElementById('p24anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p24">Although they typically contain less information about each person, another very useful source of lists of persons is the library catalogue, or similar authority list of persons involved in a bibliographical, archival, or museum item database. The catalogue may say very little more than each person’s name and a bare minimum of biographical data (life or work dates, language, genre, nationality), the purpose of the list is to be completely unambiguous and very clear about the identity of individual persons, so that a book (or item, or record, etc.) can be ascribed to the correct person no matter how many homonyms may exist. However the data itself is encoded, library catalogues also follow very strict metadata schemas and vocabularies, and often expose their identifiers for the purpose of cross-referencing with other libraries. It is useful to know that the Library of Congress’s record for Alexander of Aphrodisias has the same referent as records in the British Library, the Hellenic and Roman Library, or Zenon catalogues.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p24" id="p24anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p24anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p24</span></p>
+<p id="p25" onmouseleave="document.getElementById('p25anchor').style.display='none';document.getElementById('p25anchor_label').style.display='none';" onmouseover="document.getElementById('p25anchor').style.display='';document.getElementById('p25anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p25">The very useful task of collating the many library catalogue authority lists in use is performed by the Online Computer Library Center’s <i>Virtual Internet Authority File</i> (VIAF), which includes approximately 1,000 author records from the ancient world. VIAF and other authorities serve as the glue in the prosopographical data-space, rather than primarily as providers of new person and historical data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p25" id="p25anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p25anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p25</span></p>
+</section>
+<section id="section2.5">
+<h3>Onomastics</h3>
+<p class="textindent0" id="p26" onmouseleave="document.getElementById('p26anchor').style.display='none';document.getElementById('p26anchor_label').style.display='none';" onmouseover="document.getElementById('p26anchor').style.display='';document.getElementById('p26anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p26">Other databases contain authority information about names themselves, in addition to or instead of identification of individual persons. This onomastic data – listing of unique names along with philological and historical information such as etymology, geographic or religious significance, morphology and variant spellings or language and script versions – does not disambiguate between several persons all called Diomedes, but provides a record to which one can point to clarify that a name form “Diomedes,” “Diomède,” “Διομήδης,” “دیومدس” or “Диомед” (each with one or more language codes attached) is a variant form of a particular ancient name.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p26" id="p26anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p26anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p26</span></p>
+<p id="p27" onmouseleave="document.getElementById('p27anchor').style.display='none';document.getElementById('p27anchor_label').style.display='none';" onmouseover="document.getElementById('p27anchor').style.display='';document.getElementById('p27anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p27">Person data resources such as Trismegistos, the Lexicon of Greek Personal Names, and Celtic Personal Names of Roman Britain all list unique names as separate entities from the person data. As with persons, name records may be expressed as fields in a database record, elements in TEI XML, or RDF statements, and the more formalized the data and entities that are attached to each name, the easier it will be to connect these names to the web of open data, other projects, person and name records. Such onomastic data enriches and enables discovery in and interoperability between individual person-databases in a combined ecosystem.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p27" id="p27anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p27anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p27</span></p>
+</section>
+<section id="section2.6">
+<h3>Disambiguating Person References</h3>
+<p class="textindent0" id="p28" onmouseleave="document.getElementById('p28anchor').style.display='none';document.getElementById('p28anchor_label').style.display='none';" onmouseover="document.getElementById('p28anchor').style.display='';document.getElementById('p28anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p28">In many of the kinds of database discussed above, the process of compiling an unambiguous person authority often begins by disambiguating the many possible duplicate person references identified in a text or corpus. Each string of text that contains a personal name or other appellation refers directly or indirectly to a person. Identifying a person-reference is relatively unambiguous, but disambiguating the person or entity to whom it refers is an intellectual activity, and may involve uncertainty, the citation of evidence or argument, and be facilitated by the existence of a list of already known persons. For example, the Trismegistos database of text and person data from ancient Egypt, collects data in several related but separate databases.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p28" id="p28anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p28anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p28</span></p>
+<ol>
+<li>Texts (c. 680,000 records), the texts, mostly papyri, from ancient Egypt and the Nile valley; </li>
+<li>References (c. 500,000 records), listing each attestation of a person; will be duplicates even if, for example, the same person is clearly named twice in the same line of the same text; </li>
+<li>People (c. 370,000 records), listing individual persons once only, however many times they are attested; </li>
+<li>Names (c. 33,000 records), giving unique names, many of which are of course used by several different persons (there are also larger tables of name variants and declined name forms).</li>
+</ol>
+<p id="p29" onmouseleave="document.getElementById('p29anchor').style.display='none';document.getElementById('p29anchor_label').style.display='none';" onmouseover="document.getElementById('p29anchor').style.display='';document.getElementById('p29anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p29">This workflow results in an important collection of data that is both a reflection of the activity of moving from source texts to disambiguated name and person data, and a working tool that can be used in the process of further refining and adding new texts and person records to the database. Each of these database tables are exposed on the project website, and each record in them has a stable identifier that means all texts, attestations, persons and names can be used as an authority for disambiguating or relating from other internal or external data. Person records can be related to each other (or to those in LGPN, PIR or other databases), name variants can be used to expand the value of poorer records, and so forth. The person references in this model are an example of an entity broadly analogous to the “factoid” in the source-centered model discussed above.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p29" id="p29anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p29anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p29</span></p>
+</section>
+</section>
+<section id="section3">
+<h2>Modelling Person-Data in Linked Open Data</h2>
+<p class="textindent0" id="p30" onmouseleave="document.getElementById('p30anchor').style.display='none';document.getElementById('p30anchor_label').style.display='none';" onmouseover="document.getElementById('p30anchor').style.display='';document.getElementById('p30anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p30">As yet there is no single, widely accepted ontology for the representation of the full richness of prosopographical data in RDF. Indeed, as I discussed above, there is no single, widely accepted database format or even print-based approach to the representation of name and person information. Since the value of Linked Open Data is above all the massive interoperability between many discrete bodies of data with differing origins and structures, the development in the meantime of an ontology for interchange of the essential elements of person-data common to make such datasets would serve an important role.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p30" id="p30anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p30anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p30</span></p>
+<p id="p31" onmouseleave="document.getElementById('p31anchor').style.display='none';document.getElementById('p31anchor_label').style.display='none';" onmouseover="document.getElementById('p31anchor').style.display='';document.getElementById('p31anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p31">This was the premise of the Standards for Networking Ancient Prosopographies: Data and relations in Greco-Roman names (SNAP:DRGN) project, which in 2014 proposed an ontology and set of guidelines (the “SNAP Cookbook”) for representing core person disambiguation data in RDF (Bodard et al. 2014; <i>id.</i> 2017). The information represented in the SNAP Ontology is by design minimalist, the intention being to provide those data that would help a user disambiguate between the potentially thousands of persons with the same name in our records, and then to refer them to the original (digital) publication for the full prosopography or biography.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p31" id="p31anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p31anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p31</span></p>
+<p id="p32" onmouseleave="document.getElementById('p32anchor').style.display='none';document.getElementById('p32anchor_label').style.display='none';" onmouseover="document.getElementById('p32anchor').style.display='';document.getElementById('p32anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p32">The SNAP project recommends RDF representation of person-data by means of eleven categories of information: four are required for any meaningful person-record; two are strongly recommended, but may be impossible with some categories of data; five are optional, but of course the more information the greater the likelihood of successful disambiguation.<sup><a class="footnote-reference" href="#footnote-5" id="footnote-reference-5">5</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p32" id="p32anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p32anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p32</span></p>
+<section id="section3.1">
+<h3>Required Fields</h3>
+<ol>
+<li><b>URI</b>. Each person record needs to have a Uniform Resource Identifier, as discussed above. If the originating dataset does not provide a unique, stable and digital identifier (e.g. it is a print prosopography) then a digital surrogate will be needed to mint identifiers and serve as a target for links to point to. The URI is the <i>subject</i> node in all the RDF triples below.</li>
+ 
+<li><b>Type</b>. The RDF needs to be told that the URI refers to a person (or deity, monster, group, or other person-like entity or agent). The LAWD ontology provides a vocabulary for agent types that is used by SNAP.<sup><a class="footnote-reference" href="#footnote-6" id="footnote-reference-6">6</a></sup>
+<figure id="code3" onmouseleave="document.getElementById('code3anchor').style.display='none';document.getElementById('code3anchor_label').style.display='none';" onmouseover="document.getElementById('code3anchor').style.display='';document.getElementById('code3anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    rdf:type lawd:Person .
+</code></pre></figure>
+</li>
+<li><b>Citation</b>. The identifier that would be used to uniquely refer to this person entry in a traditional publication, given as a text string which may or may not be recognizably related to the URI. Need not be unique, but should be understood by and useful to a scholar in the field.<sup><a class="footnote-reference" href="#footnote-7" id="footnote-reference-7">7</a></sup>
+<figure id="code4" onmouseleave="document.getElementById('code4anchor').style.display='none';document.getElementById('code4anchor_label').style.display='none';" onmouseover="document.getElementById('code4anchor').style.display='';document.getElementById('code4anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    dct:bibliographicCitation "Leon 103" .
+</code></pre></figure>
+</li>
+<li><b>Publisher</b>. The identity (disambiguated by URI or web address) of the publisher or database responsible for providing the information herein about the person entity. Together with the citation, above, this should be enough to unambiguously identify the person record in an original digital or print resource.
+
+<figure id="code5" onmouseleave="document.getElementById('code5anchor').style.display='none';document.getElementById('code5anchor_label').style.display='none';" onmouseover="document.getElementById('code5anchor').style.display='';document.getElementById('code5anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    dct:isPartOf &lt;http://www.pbw.kcl.ac.uk/&gt; .
+</code></pre></figure>
+</li>
+</ol>
+</section>
+<section id="section3.2">
+<h3>Recommended Fields</h3>
+<ol start="5">
+<li><b>Name</b>. The name or names by which the person is known in the original sources, in scholarship, or any other useful context. Names may be expressed as simple text strings (ideally with a language code attached), or as a URI which points to further detailed information, such as multiple language-forms of the name, in RDF or in an originating database. This information would be required, but for the case of many prosopographies or databases that contain entries for anonymous persons.<sup><a class="footnote-reference" href="#footnote-8" id="footnote-reference-8">8</a></sup>
+<figure id="code6" onmouseleave="document.getElementById('code6anchor').style.display='none';document.getElementById('code6anchor_label').style.display='none';" onmouseover="document.getElementById('code6anchor').style.display='';document.getElementById('code6anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    foaf:name "κυρῶ Λέοντι"@grc .
+</code></pre></figure>
+</li>
+<li><b>Attestations</b>. A link to the specific information resource (publication, database record, inscription, etc.) in which the evidence for the existence of the historical person appears. This may be a digital resource, such as the “References” table in Trismegistos, as discussed above, or may be represented as a <b>Citation</b> in plain text, e.g. “IG IX (1)² (1) 145”. This is invaluable data for disambiguating homonymous persons in prosopographical data, but many person datasets, such as library catalogues, will not contain this sort of information.<sup><a class="footnote-reference" href="#footnote-9" id="footnote-reference-9">9</a></sup>
+<figure id="code7" onmouseleave="document.getElementById('code7anchor').style.display='none';document.getElementById('code7anchor_label').style.display='none';" onmouseover="document.getElementById('code7anchor').style.display='';document.getElementById('code7anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    lawd:hasAttestation
+		   &lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658#ref&gt; .
+		   
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658#personref&gt;
+	    lawd:hasCitation
+		   &lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/boulloterion/1688&gt; .
+		   
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/boulloterion/1688&gt;
+	    cnt:chars "Boulloterion 1688" .
+</code></pre></figure>
+</li>
+</ol>
+</section>
+<section id="section3.3">
+<h3>Optional Fields</h3>
+<ul class="none">
+<li>7-9. <b>Disambiguators</b>. While SNAP does not attempt to model the full prosopographical record for a person, some information is so useful for the purpose of disambiguating records, that it is modelled in simple form. This includes:</li>
+</ul>
+<ol start="7">
+<li><b>Associated place</b>. A link, ideally to a Pleiades or similar gazetteer place URI, indicating the primary geographical association of the person record (their home, city of citizenship, seat of their power, etc.). There may be more than one place associated with a person, for example a religious official who held different bishoprics over their career.<sup><a class="footnote-reference" href="#footnote-10" id="footnote-reference-10">10</a></sup>
+<figure id="code8" onmouseleave="document.getElementById('code8anchor').style.display='none';document.getElementById('code8anchor_label').style.display='none';" onmouseover="document.getElementById('code8anchor').style.display='';document.getElementById('code8anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    snap:associatedPlace
+		   &lt;http://www.geonames.org/729147/mesemvriya.html&gt; .
+</code></pre></figure>
+</li>
+<li><b>Associated date</b>. A simple (W3C formatted) date expression giving the best indicator available for the dates of the person – dates of reign, floruit, known or estimated birth and death dates, or simply the date of attestation, such as a “probably second century CE” inscription. More detailed dates and periods are possible in other ontologies, in many cases expressed as URIs, but SNAP currently requires only a simple delimiting range. This property is expressed as a single date or range in a text string, such as the example below which means “some time between 1067 CE and 1133 CE” (presumably “late 11th to early 12th century” in the original edition).
+
+<figure id="code9" onmouseleave="document.getElementById('code9anchor').style.display='none';document.getElementById('code9anchor_label').style.display='none';" onmouseover="document.getElementById('code9anchor').style.display='';document.getElementById('code9anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    snap:associatedDate "1067/1133" .
+</code></pre></figure>
+</li>
+<li><b>Occupation</b>. In the absence of a useful vocabulary of ancient titulature, a simple text string recording the title, occupation, or other epithet commonly attached to the person’s name, for purposes of disambiguating, for instance, Plato <i>philosophus</i> from Plato <i>dramaticus</i> in a library catalogue.
+
+<figure id="code10" onmouseleave="document.getElementById('code10anchor').style.display='none';document.getElementById('code10anchor_label').style.display='none';" onmouseover="document.getElementById('code10anchor').style.display='';document.getElementById('code10anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    snap:occupation "Protovestes" .
+</code></pre></figure>
+</li>
+</ol>
+<p class="textindent0" id="p33" onmouseleave="document.getElementById('p33anchor').style.display='none';document.getElementById('p33anchor_label').style.display='none';" onmouseover="document.getElementById('p33anchor').style.display='';document.getElementById('p33anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p33">Other disambiguating terms, or fields in a source database that do not distinguish between the above categories, may be indicated simply as “disambiguator,” the super-class to which all three belong.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p33" id="p33anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p33anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p33</span></p>
+<ol start="10">
+<li><b>Relationships</b>. Family relationships and other strong bonds with other persons in the historical record are expressed by the creation of a “bond,” which has properties including the two persons linked, and the type of the relationship, multi-classed to allow labels such as “foster,” “in-law,” “half” and similar qualifications. The SNAP ontology provides classes for the various kinds of (mostly family) relationships that were attested in our pilot datasets.<sup><a class="footnote-reference" href="#footnote-11" id="footnote-reference-11">11</a></sup>
+<figure id="code11" onmouseleave="document.getElementById('code11anchor').style.display='none';document.getElementById('code11anchor_label').style.display='none';" onmouseover="document.getElementById('code11anchor').style.display='';document.getElementById('code11anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    snap:hasBond pbw:cousin-107466 .	   
+	 pbw:cousin-107466 rdf:type snap:CousinOf ;
+	    snap:bond-with
+		   &lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107466&gt; ;
+	    rdfs:label "Cousin of Kale 102" .
+</code></pre></figure>
+</li>
+<li><b>Other identifiers</b>. If the person-record is annotated with a URI or other identifier from a common authority of vocabulary that is likely to help link the record with other instances of the person (VIAF, Wikidata, DBpedia, DNB), these should be included in the SNAP data.<sup><a class="footnote-reference" href="#footnote-12" id="footnote-reference-12">12</a></sup>
+<figure id="code12" onmouseleave="document.getElementById('code12anchor').style.display='none';document.getElementById('code12anchor_label').style.display='none';" onmouseover="document.getElementById('code12anchor').style.display='';document.getElementById('code12anchor_label').style.display='';"><pre><code>
+	&lt;http://db.pbw.kcl.ac.uk/pbw2011/entity/person/107658&gt;
+	    skos:exactMatch
+		   &lt;https://de.wikipedia.org/wiki/Leon_Diabatenos&gt; .
+</code></pre></figure>
+</li>
+</ol>
+</section>
+</section>
+<section id="section4">
+<h2>Conclusions</h2>
+<p class="textindent0" id="p34" onmouseleave="document.getElementById('p34anchor').style.display='none';document.getElementById('p34anchor_label').style.display='none';" onmouseover="document.getElementById('p34anchor').style.display='';document.getElementById('p34anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p34">The SNAP ontology is not suitable for encoding the full richness of prosopographical and onomastic data, nor was it ever designed to be. Nonetheless these recommendations may serve as a useful example of the use of RDF to represent certain elements of person and named data as Linked Open Data, using a mix of standard ontologies and new terms to capture the concepts as required. One can begin to imagine the extensions that would be required for representing other prosopographical, biographical or demographic data in similar ways.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p34" id="p34anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p34anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p34</span></p>
+<p id="p35" onmouseleave="document.getElementById('p35anchor').style.display='none';document.getElementById('p35anchor_label').style.display='none';" onmouseover="document.getElementById('p35anchor').style.display='';document.getElementById('p35anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p35">Much work remains to be done, both to build the specifications of LOD for person-data, and to populate datasets such as SNAP:DRGN with enough person records to make cross-project querying and comparison truly useful. Once a sizably body of data exists in such a compatible format, vast possibilities begin to open for new discovery and research across the dataset, detection and proposal of matching across records, new identifications, alignment, and annotation by scholarly and crowdsourcing communities. The linked onomastic data will also usefully serve as “gold standard” data for machine-assisted process such as named entity extraction, spell-checking, optical character recognition and the like.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p35" id="p35anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p35anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p35</span></p>
+<p id="p36" onmouseleave="document.getElementById('p36anchor').style.display='none';document.getElementById('p36anchor_label').style.display='none';" onmouseover="document.getElementById('p36anchor').style.display='';document.getElementById('p36anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p36">The integration of person-data will lead to a new aggregating dataset containing at least hundreds of thousands of new records, counting only those already in traditional prosopographies and databases recording people from the ancient world. Alongside already huge databases of person and place references, such as those collected by the Pelagios Project, events, dates and time periods, text and archaeological object records, the scale of the contribution to digital humanities research of a field of Linked Open Person-Data is almost unimaginable.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#p36" id="p36anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p36anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p36</span></p>
+</section>
+<section id="section5">
+<h2>Abbreviations and Databases</h2>
+<p class="work-cited">CPNRB (Celtic Personal Names of Roman Britain) – <a href="http://www.asnc.cam.ac.uk/personalnames/">http://www.asnc.cam.ac.uk/personalnames/</a></p>
+<p class="work-cited">DNB (Oxford Dictionary of National Biography) – <a href="http://www.oxforddnb.com/">http://www.oxforddnb.com/</a></p>
+<p class="work-cited">HBTIN (Hellenistic Babylonia: Texts, Images and Names University of California, Berkeley – <a href="http://oracc.museum.upenn.edu/hbtin/">http://oracc.museum.upenn.edu/hbtin/</a></p>
+<p class="work-cited">LAWD (Linking Ancient World Data) – <a href="http://lawd.info/">http://lawd.info/</a></p>
+<p class="work-cited">LGPN (<i>Lexicon of Greek Personal Names</i>, Oxford University) – <a href="http://www.lgpn.ox.ac.uk/">http://www.lgpn.ox.ac.uk/</a></p>
+<p class="work-cited">Kerameikos.org: an ontology for the intellectual concepts of pottery – <a href="http://kerameikos.org/">http://kerameikos.org/</a></p>
+<p class="work-cited">Nomisma.org: stable digital representations of numismatic concepts – <a href="http://nomisma.org/">http://nomisma.org/</a></p>
+<p class="work-cited">Perseus Catalog – <a href="http://catalog.perseus.org/">http://catalog.perseus.org/</a></p>
+<p class="work-cited">PIR (<i>Prosopographia Imperii Romani</i> second edition, Berlin, 1933-2015) – Information and name search: <a href="http://pir.bbaw.de/">http://pir.bbaw.de/</a></p>
+<p class="work-cited">PBW (Prosopography of the Byzantine World) – <a href="http://www.pbw.kcl.ac.uk/">http://www.pbw.kcl.ac.uk/</a></p>
+<p class="work-cited">RDF (Resource Description Framework) – <a href="https://www.w3.org/RDF/">https://www.w3.org/RDF/</a></p>
+<p class="work-cited">TEI (Text Encoding Initiative) – <a href="http://www.tei-c.org/index.xml">http://www.tei-c.org/index.xml</a></p>
+<p class="work-cited">TM (Trismegistos) – <a href="http://www.trismegistos.org/ref/index.php">http://www.trismegistos.org/ref/index.php</a></p>
+<p class="work-cited">VIAF (Virtual Internet Authority File) – <a href="https://viaf.org/">http:viaf.org/</a></p>
+<p class="work-cited">Zenon (Library catalogue of the Deutsches Archäologisches Institut) – <a href="https://zenon.dainst.org/">https://zenon.dainst.org/</a></p>
+</section>
+<section id="references">
+<h2>References</h2>
+<p class="work-cited" id="reference-1" onmouseleave="document.getElementById('reference-1anchor').style.display='none';document.getElementById('reference-1anchor_label').style.display='none';" onmouseover="document.getElementById('reference-1anchor').style.display='';document.getElementById('reference-1anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Bodard, G., Cayless, H., Depauw, M., Isaksen, I., Lawrence, K.F., Rahtz, S.P.Q. (2014). <i>SNAP:DRGN Cookbook</i>. Available: <a href="http://snapdrgn.net/cookbook/">http://snapdrgn.net/cookbook/</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-1" id="reference-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-1</span></p>
+<p class="work-cited" id="reference-2" onmouseleave="document.getElementById('reference-2anchor').style.display='none';document.getElementById('reference-2anchor_label').style.display='none';" onmouseover="document.getElementById('reference-2anchor').style.display='';document.getElementById('reference-2anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Bodard, G., Cayless, H., Depauw, M., Isaksen, I., Lawrence, K.F., Rahtz, S.P.Q. (2017). “Standards for Networking Ancient Person-data: Digital approaches to problems in prosopographical space.” <i>Digital Classics Online</i> 3.2. Available: <a href="http://dx.doi.org/10.11588/dco.2017.0.37975">http://dx.doi.org/10.11588/dco.2017.0.37975</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-2" id="reference-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-2</span></p>
+<p class="work-cited" id="reference-3" onmouseleave="document.getElementById('reference-3anchor').style.display='none';document.getElementById('reference-3anchor_label').style.display='none';" onmouseover="document.getElementById('reference-3anchor').style.display='';document.getElementById('reference-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Bradley, John &amp; Short, Harold (2005). “Texts into databases: the evolving field of new-style prosopography.” <i>Literary and Linguistic Computing</i> 20, Supplement. Pp. 3-24.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-3" id="reference-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-3</span></p>
+<p class="work-cited" id="reference-4" onmouseleave="document.getElementById('reference-4anchor').style.display='none';document.getElementById('reference-4anchor_label').style.display='none';" onmouseover="document.getElementById('reference-4anchor').style.display='';document.getElementById('reference-4anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Bradley, John (2016), <i>Factoids: A site that introduces Factoid Prosopography.</i> King’s College London. Available: <a href="http://factoid-dighum.kcl.ac.uk/">http://factoid-dighum.kcl.ac.uk/</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-4" id="reference-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-4</span></p>
+<p class="work-cited" id="reference-5" onmouseleave="document.getElementById('reference-5anchor').style.display='none';document.getElementById('reference-5anchor_label').style.display='none';" onmouseover="document.getElementById('reference-5anchor').style.display='';document.getElementById('reference-5anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Cameron, Averil, ed. (2003). <i>Fifty Years of Prosopography: The Later Roman Empire, Byzantium and Beyond</i>. Oxford: Oxford University Press.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-5" id="reference-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-5</span></p>
+<p class="work-cited" id="reference-6" onmouseleave="document.getElementById('reference-6anchor').style.display='none';document.getElementById('reference-6anchor_label').style.display='none';" onmouseover="document.getElementById('reference-6anchor').style.display='';document.getElementById('reference-6anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Depauw, Mark &amp; Van Beek, B. (2009). “People in Greek Documentary Papyri. First Results of a Research Project.” <i>Journal of Juristic Papyrology</i> 39. Pp. 31-47. Available: <a href="http://www.trismegistos.org/ref/depauw_vanbeek.pdf">http://www.trismegistos.org/ref/depauw_vanbeek.pdf</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-6" id="reference-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-6</span></p>
+<p class="work-cited" id="reference-7" onmouseleave="document.getElementById('reference-7anchor').style.display='none';document.getElementById('reference-7anchor_label').style.display='none';" onmouseover="document.getElementById('reference-7anchor').style.display='';document.getElementById('reference-7anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Destephen, Sylvain (2008). <i>Prosopographie chrétienne du Bas-Empire: 3. </i><i>Diocèse d’Asie (325-641)</i>. Paris: Association des amis du Centre d’histoire et civilisation de Byzance.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-7" id="reference-7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-7</span></p>
+<p class="work-cited" id="reference-8" onmouseleave="document.getElementById('reference-8anchor').style.display='none';document.getElementById('reference-8anchor_label').style.display='none';" onmouseover="document.getElementById('reference-8anchor').style.display='';document.getElementById('reference-8anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Eck, W., Matthäus Heil &amp; Johannes Heinrichs (2009), <i>Prosopographia Imperii Romani Saec. I. II. III.</i> Pars viii, Fasciculus 1. Berlin/New York: Walter de Gruyter.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-8" id="reference-8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-8</span></p>
+<p class="work-cited" id="reference-9" onmouseleave="document.getElementById('reference-9anchor').style.display='none';document.getElementById('reference-9anchor_label').style.display='none';" onmouseover="document.getElementById('reference-9anchor').style.display='';document.getElementById('reference-9anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Groag, Edmund &amp; Arturus Stein (1933), <i>Prosopographia Imperii Romani Saec. I. II. III.</i> Pars i. Berlin: Walter de Gruyter.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-9" id="reference-9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-9</span></p>
+<p class="work-cited" id="reference-10" onmouseleave="document.getElementById('reference-10anchor').style.display='none';document.getElementById('reference-10anchor_label').style.display='none';" onmouseover="document.getElementById('reference-10anchor').style.display='';document.getElementById('reference-10anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Lawrence, K. Faith, Jewell, M. O., Rissen, P. (2010). ‘OntoMedia: Telling Stories to Your Computer’, in <i>Proceedings of the First International AMICUS Workshop on Automated Motif Discovery in Cultural Heritage and Scientific Communication Texts</i>, Vienna, Austria. Available at: <a href="https://ilk.uvt.nl/amicus/amicus_ws2010_proceedings.html">https://ilk.uvt.nl/amicus/amicus_ws2010_proceedings.html</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-10" id="reference-10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-10</span></p>
+<p class="work-cited" id="reference-11" onmouseleave="document.getElementById('reference-11anchor').style.display='none';document.getElementById('reference-11anchor_label').style.display='none';" onmouseover="document.getElementById('reference-11anchor').style.display='';document.getElementById('reference-11anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Lawrence, K. Faith (2007). The Web of Community Trust – Amateur Fiction Online: A Case Study in Community Focused Design for the Semantic Web, Doctoral Thesis, University of Southampton. Available at: <a href="https://eprints.soton.ac.uk/264704/">https://eprints.soton.ac.uk/264704/</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-11" id="reference-11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-11</span></p>
+<p class="work-cited" id="reference-12" onmouseleave="document.getElementById('reference-12anchor').style.display='none';document.getElementById('reference-12anchor_label').style.display='none';" onmouseover="document.getElementById('reference-12anchor').style.display='';document.getElementById('reference-12anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Keats-Rohan, K.S.B (2007). “Biography, Identity and Names: Understanding the Pursuit of the Individual in Prosopography.” In Keats-Rohan (ed.) <i>Prosopography Approaches and Applications: A Handbook</i>. Oxford: Oxford University Press. Pp. 139–181.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-12" id="reference-12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-12</span></p>
+<p class="work-cited" id="reference-13" onmouseleave="document.getElementById('reference-13anchor').style.display='none';document.getElementById('reference-13anchor_label').style.display='none';" onmouseover="document.getElementById('reference-13anchor').style.display='';document.getElementById('reference-13anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">TEI-C (Text Encoding Initiative Consortium) (2016), “13.3 Biographical and Prosopographical Data”. TEI Guidelines, Chapter 13, Names, Dates, People and Places. Available: <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERS">http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERS</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-13" id="reference-13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-13</span></p>
+<p class="work-cited" id="reference-14" onmouseleave="document.getElementById('reference-14anchor').style.display='none';document.getElementById('reference-14anchor_label').style.display='none';" onmouseover="document.getElementById('reference-14anchor').style.display='';document.getElementById('reference-14anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Varga, Rada (2017). “Romans 1 by 1 v.1.1. New developments in the study of Roman population.” <i>Digital Classics Online</i> 3.2. Available: <a href="http://dx.doi.org/10.11588/dco.2017.0.35822">http://dx.doi.org/10.11588/dco.2017.0.35822</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-14" id="reference-14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-14</span></p>
+<p class="work-cited" id="reference-15" onmouseleave="document.getElementById('reference-15anchor').style.display='none';document.getElementById('reference-15anchor_label').style.display='none';" onmouseover="document.getElementById('reference-15anchor').style.display='';document.getElementById('reference-15anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Verboven, K., Carlier, M. &amp; Dumolyn, J. (2007). “A Short Manual to the Art of Prosopography.” In Keats-Rohan (ed.) <i>Prosopography Approaches and Applications: A Handbook</i>. Oxford: Oxford University Press. Pp. 35–69.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-15" id="reference-15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-15</span></p>
+<p class="work-cited" id="reference-16" onmouseleave="document.getElementById('reference-16anchor').style.display='none';document.getElementById('reference-16anchor_label').style.display='none';" onmouseover="document.getElementById('reference-16anchor').style.display='';document.getElementById('reference-16anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Vitale, V. (2016). “Transparent, Multivocal, Cross-disciplinary: The Use of Linked Open Data and a Community-developed RDF Ontology to Document and Enrich 3D Visualisation for Cultural Heritage.” In Bodard &amp; Romanello (eds.), <i>Digital Classics Outside the Echo-Chamber: Teaching, Knowledge Exchange &amp; Public Engagement</i>. London: Ubiquity Press. Pp. 147–168. Available: <a href="http://dx.doi.org/10.5334/bat.i">http://dx.doi.org/10.5334/bat.i</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#reference-16" id="reference-16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-16</span></p>
+</section>
+<section id="footnotes">
+<h2>Notes</h2>
+<p class="footnote" id="footnote-1" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';"><sup><a href="#footnote-reference-1">1</a></sup> The author would like to thank Hugh Cayless and K. Faith Lawrence for discussion at an early stage of this chapter, and Paula Granados García, Rada Varga and Valeria Vitale for invaluable feedback on the final text. All shortcomings of course remain my own.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-1" id="footnote-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-1</span></p>
+<p class="footnote" id="footnote-2" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';"><sup><a href="#footnote-reference-2">2</a></sup> On this argument applied to a different application of LOD, <i>cf.</i> Vitale 2016.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-2" id="footnote-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-2</span></p>
+<p class="footnote" id="footnote-3" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';"><sup><a href="#footnote-reference-3">3</a></sup> In this example of RDF notation, the <code>LGPN:</code> prefix expands to <a href="http://www.lgpn.ox.ac.uk/id/">http://www.lgpn.ox.ac.uk/id/</a>, the <code>SNAP:</code> prefix to <a href="http://data.snapdrgn.net/ontology/snap#">http://data.snapdrgn.net/ontology/snap#</a>, the <code>Pleiades:</code> prefix to <a href="http://pleiades.stoa.org/places/">http://pleiades.stoa.org/places/</a>, the <code>PleiadOnt:</code> prefix to <a href="https://pleiades.stoa.org/places/vocab#">https://pleiades.stoa.org/places/vocab#</a>, and the <code>PleiadType:</code> prefix to <a href="https://pleiades.stoa.org/vocabularies/place-types/">https://pleiades.stoa.org/vocabularies/place-types/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-3" id="footnote-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-3</span></p>
+<p class="footnote" id="footnote-4" onmouseleave="document.getElementById('footnote-4anchor').style.display='none';document.getElementById('footnote-4anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-4anchor').style.display='';document.getElementById('footnote-4anchor_label').style.display='';"><sup><a href="#footnote-reference-4">4</a></sup> This example loosely based on <i>Inscriptions of Roman Tripolitania</i> 720 (ed J.M. Reynolds, 2009 [1952]). Available: <a href="http://inslib.kcl.ac.uk/irt2009/IRT720.html">http://inslib.kcl.ac.uk/irt2009/IRT720.html</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-4" id="footnote-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-4</span></p>
+<p class="footnote" id="footnote-5" onmouseleave="document.getElementById('footnote-5anchor').style.display='none';document.getElementById('footnote-5anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-5anchor').style.display='';document.getElementById('footnote-5anchor_label').style.display='';"><sup><a href="#footnote-reference-5">5</a></sup> An example of a complete SNAP person record, imperfectly mocked-up for the Prosopography of the Byzantine World project, can be found at <a href="https://goo.gl/jG8Ly7">https://goo.gl/jG8Ly7</a>. The RDF examples given in this section are expressed in TTL (“turtle”) – the Terse RDF Triple Language; see <a href="https://www.w3.org/TR/turtle/">https://www.w3.org/TR/turtle/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-5" id="footnote-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-5</span></p>
+<p class="footnote" id="footnote-6" onmouseleave="document.getElementById('footnote-6anchor').style.display='none';document.getElementById('footnote-6anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-6anchor').style.display='';document.getElementById('footnote-6anchor_label').style.display='';"><sup><a href="#footnote-reference-6">6</a></sup> In the example below the <code>rdf:</code> prefix expands to <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-6" id="footnote-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-6</span></p>
+<p class="footnote" id="footnote-7" onmouseleave="document.getElementById('footnote-7anchor').style.display='none';document.getElementById('footnote-7anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-7anchor').style.display='';document.getElementById('footnote-7anchor_label').style.display='';"><sup><a href="#footnote-reference-7">7</a></sup> In this example and elsewhere the <code>dct:</code> prefix expands to <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-7" id="footnote-7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-7</span></p>
+<p class="footnote" id="footnote-8" onmouseleave="document.getElementById('footnote-8anchor').style.display='none';document.getElementById('footnote-8anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-8anchor').style.display='';document.getElementById('footnote-8anchor_label').style.display='';"><sup><a href="#footnote-reference-8">8</a></sup> In this example the <code>foaf:</code> prefix expands to <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-8" id="footnote-8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-8</span></p>
+<p class="footnote" id="footnote-9" onmouseleave="document.getElementById('footnote-9anchor').style.display='none';document.getElementById('footnote-9anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-9anchor').style.display='';document.getElementById('footnote-9anchor_label').style.display='';"><sup><a href="#footnote-reference-9">9</a></sup> In this example the <code>lawd:</code> prefix expands to <a href="http://lawd.info/ontology/">http://lawd.info/ontology/</a>, and the <code>cnt:</code> prefix to <a href="http://www.w3.org/2011/content#">http://www.w3.org/2011/content#</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-9" id="footnote-9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-9</span></p>
+<p class="footnote" id="footnote-10" onmouseleave="document.getElementById('footnote-10anchor').style.display='none';document.getElementById('footnote-10anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-10anchor').style.display='';document.getElementById('footnote-10anchor_label').style.display='';"><sup><a href="#footnote-reference-10">10</a></sup> The <code>snap:</code> prefix expands to <a href="http://data.snapdrgn.net/ontology/snap#">http://data.snapdrgn.net/ontology/snap#</a>, and <code>rdfs:</code> to <a href="http://www.w3.org/2000/01/rdf-schema#">http://www.w3.org/2000/01/rdf-schema#</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-10" id="footnote-10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-10</span></p>
+<p class="footnote" id="footnote-11" onmouseleave="document.getElementById('footnote-11anchor').style.display='none';document.getElementById('footnote-11anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-11anchor').style.display='';document.getElementById('footnote-11anchor_label').style.display='';"><sup><a href="#footnote-reference-11">11</a></sup> SNAP ontology described at <a href="https://snapdrgn.net/ontology">https://snapdrgn.net/ontology</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-11" id="footnote-11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-11</span></p>
+<p class="footnote" id="footnote-12" onmouseleave="document.getElementById('footnote-12anchor').style.display='none';document.getElementById('footnote-12anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-12anchor').style.display='';document.getElementById('footnote-12anchor_label').style.display='';"><sup><a href="#footnote-reference-12">12</a></sup> In this example the <code>skos:</code> prefix expands to <a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/#footnote-12" id="footnote-12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-12</span></p>
+</section>
+<footer>
+<p class="editorial-note"><a href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"><i>ISAW Papers</i></a> (ISSN 2164-1471) is a publication of the <a href="http://isaw.nyu.edu" property="dcterms:publisher" rel="dcterms:publisher">Institute for the Study of the Ancient World</a>, <a href="http://nyu.edu/">New York University</a>. This article was anonymously reviewed prior to publication.</p>
+<p class="copyright" style="margin-top:1em;text-align:center;color:gray">©2020 <span rel="cc:attributionName">Gabriel Bodard</span>. Distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/" rel="cc:license">Creative Commons Attribution 4.0 International</a> license.</p>
+</footer>
+</article>
+</body>
+</html>

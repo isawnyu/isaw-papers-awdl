@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html lang="en" prefix="bibo: http://purl.org/ontology/bibo/
+ cc: http://creativecommons.org/ns#
+ dcmitype: http://purl.org/dc/dcmitype/
+ dcterms: http://purl.org/dc/terms/
+ foaf: http://xmlns.com/foaf/0.1/
+ nm: http://nomisma.org/id/
+ owl:  http://www.w3.org/2002/07/owl#
+ rdfs: http://www.w3.org/2000/01/rdf-schema# 
+ rdfa: http://www.w3.org/ns/rdfa#
+ rdf:  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+ skos: http://www.w3.org/2004/02/skos/core#
+ " xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Linked Open Data for 3D Models and Environments</title>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS"/>
+<meta content="Linked Open Data for 3D Models and Environments" name="DC.title"/>
+<meta content="2020-??-00" name="DC.date"/>
+<meta content="application/xhtml+xml" name="DC.format"/>
+<meta content="Hannah Scates Kettler" name="DC.creator"/>
+<meta content="en" name="DC.language"/>
+<meta content="TK" name="DC.abstract"/>
+<meta content="Three-dimensional modeling" name="DC.subject"/>
+<meta content="Linked data" name="DC.subject"/>
+<meta content="Creative Commons Attribution 4.0 Unported (CC-BY)" name="DCTERMS.license"/>
+<meta content="Hannah Scates Kettler. 2020. Linked Open Data for 3D Models and Environments. ISAW Papers 20.5." name="DCTERMS.bibliographicCitation"/>
+<meta content="ISAW Papers" name="DCTERMS.isPartOf"/>
+<meta content="TK" name="DCTERMS.identifier.URI"/>
+<link href="http://www.worldcat.org/oclc/756047783" rel="dcterms:isPartOf"/>
+<link href="urn:issn:2164-1471" rel="dcterms:isPartOf"/>
+<link href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"/>
+
+<style>@media print {
+
+@page{ 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm }
+
+body {
+  width:100%;
+  margin:0 ;
+  font-size:smaller}
+
+figure {
+  page-break-inside: avoid;
+}
+
+ul {
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+img {
+  page-break-inside:avoid;
+  page-break-after:avoid;
+  max-width: 100% !important;
+}
+
+header:before {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+  content: "The original version of this work, which is the one that should be cited, can be found via &lt;http://isaw.nyu.edu/publications/isaw-papers&gt;."
+}
+
+#isaw_papers_header {
+  display: none;
+}
+}
+
+@media screen {
+
+body {
+  margin:auto;
+  width:70%;
+}
+}
+
+.work-cited {
+  text-align:left;
+  margin-top:.125em;
+  margin-left:.25in;
+  text-indent:-.25in
+}
+
+.abstract {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+}
+
+body {
+  margin:auto;
+  width:70%;
+}
+
+.edition-line {
+  tab-size: 8;
+}
+
+.editorial-note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+
+footer {
+  text-indent:0;
+  border-style-top:dotted;
+  margin-top:1em;
+}
+
+footer p {
+  text-indent:0;
+}
+
+#front {
+  margin-top:2em;
+}
+
+h1 {
+  font-size:1.5em;
+  text-align:center
+}
+
+h2 {
+  margin-top:1em;
+  margin-bottom:.2em;
+  font-size:1em;
+  font-weight:bold;
+  text-align:left;
+  padding:0;
+}
+
+h3,h4 {
+  margin-top:1em;
+  margin-bottom:0;
+  font-size:1em;
+  font-weight:normal;
+  font-style:italic;
+  text-align:left;
+  padding:0;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom:1em;
+}
+
+header > h2 {
+  text-align: center;
+}
+
+.keywords,#keywords {
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+li { 
+  text-align: justify 
+}
+
+.author,#author {
+  text-align:center;
+}
+
+p {
+  text-indent:1em;
+  padding:0;
+  margin: 0;
+  line-height:1.4em;
+  text-align: justify;
+  tab-size: 8;
+}
+
+.doi {
+  text-align:center;
+  padding: 10px;
+}
+
+.subjects,#subjects {
+  text-indent:0;
+  margin-left:3em;
+  margin-right:3em;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#tableofcontents {
+  margin-top:2em;
+  margin-bottom:2em;
+  margin-left:3em;
+  font-style:italic;
+}
+
+#tableofcontents li {
+  font-style:italic;
+  text-indent:0;
+  padding-left:0;
+  margin-top:.5em;
+}
+
+.textindent0 {
+  text-indent:0;
+}
+
+.margintop15em {
+  margin-top:1.5em;
+}
+
+.indentedblock {
+  text-indent:0;
+  margin:1.5em 2em 1em 2em;
+  padding:0;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+a {
+  border-bottom:thin dotted gray;
+  color:black;
+  text-decoration:none;
+}
+
+sup {
+  line-height:0;
+  color:black;
+}
+
+table
+{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+table caption {
+  margin-top:1em;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto
+}
+
+figcaption {
+  width:90%;
+  margin: 0 auto;
+  margin-top:.4em;
+  margin-bottom:.6em;
+  text-align:center
+}
+
+img {
+  display: block;
+  max-width:500px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img.img-wide {
+  max-width: 750px;
+  max-height: 750px;
+}
+
+.endnote,.footnote {
+  text-indent:0;
+  margin-top:.125em;
+}
+
+#works-cited a {
+  border-bottom:thin dotted gray;
+  color:gray;
+}
+
+.work-cited-links {
+  color:gray;
+}
+
+.work_cited_links {
+  color:gray;
+ }
+
+.work_cited {
+  margin-left:.25in;
+  text-indent:-.25in
+ }
+ 
+.editorial_note {
+  font-style:italic;
+  margin-top:5px;
+  margin-top:5px;
+}
+
+*[xml|lang |= 'grc'] {
+font-family:"New Athena Unicode";
+}
+       
+*[xml|lang |= 'egyd'] {
+font-family:Umschrift_TTn;
+}
+       
+    *:lang(grc){font-family:"New Athena Unicode";}
+    *:lang(egyd){font-family:Umschrift_TTn;}
+ 
+
+*[xml|lang |= 'syr'] {
+   font-family:"Serto Urhoy"; 
+}
+
+xml:lang(syr) {
+ font-family:"Serto Urhoy";
+ }
+
+
+</style></head>
+<body>
+<article>
+<header><div id="isaw_papers_header" style="text-align:justify; background:#aaa;margin:1em;padding:2em" xmlns="http://www.w3.org/1999/xhtml">
+<p class="textindent0">This article is available at the URI http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-4/ as part of the NYU Library's <a href="http://dlib.nyu.edu/awdl">Ancient World Digital Library</a> in partnership with the <a href="http://isaw.nyu.edu/">Institute for the Study of the Ancient World</a> (ISAW). More information about <i>ISAW Papers</i> is available on the <a href="http://isaw.nyu.edu/publications/isaw-papers">ISAW</a> website. </p>
+<p class="textindent0" style="text-align:justify;margin:1em">©2020 Hannah Scates Kettler; text and images distributed under the terms of the Creative Commons Attribution 4.0 International (CC-BY) license.<br/>
+<a href="http://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0;margin-top:1em;align:center"/>
+</a>
+</p>
+<p style="text-align:center;margin-top:1em">This article can be downloaded as a <a download="isaw-papers-20-5" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/isaw-papers-20-5-offprint.xhtml">single file</a></p></div>
+<h2>ISAW Papers 20.5 (2020)</h2>
+<h1><span rel="dcterms:title">Linked Open Data for 3D Models and Environments</span></h1>
+<h2><span rel="dcterms:creator"><a href="https://orcid.org/0000-0001-7706-713X" property="foaf:name" rel="dcterms:identifier">Hannah Scates Kettler</a></span>, Head of Digital Scholarship &amp; Initiatives, Iowa State University</h2>
+<p class="textindent0 margintop15em" style="margin-left:2em;margin-right:2em">In: Sarah E. Bond, Paul Dilley, and Ryan Horne, eds. 2020. <a href="TK"><i>Linked Open Data for the Ancient Mediterranean: Structures, Practices, Prospects</i></a>. ISAW Papers 20.</p>
+<p class="doi">URI: <a href="TK" rel="dcterms:identifier">TK</a></p>
+<p class="abstract"><em>Abstract: </em><span id="abstract" property="dcterms:abstract">TK</span></p>
+<p class="subjects"><em>Library of Congress Subjects:</em> <a href="http://id.loc.gov/authorities/subjects/sh2013001942" rel="dcterms:subject">Three-dimensional modeling</a>; <a href="http://id.loc.gov/authorities/subjects/sh2013002090" rel="dcterms:subject">Linked data</a>.</p>
+<nav id="toc">
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#section1">Introduction</a></li>
+<ul>
+<li><a href="#section1.1">Where We Are Now – Current Methods to LOD and 3D</a></li>
+</ul>
+<li><a href="#section2">Relevant Resources for 3D Data Creation and Record Keeping</a></li>
+<ul>
+<li><a href="#section2.1">London Charter</a></li>
+<li><a href="#section2.2">The Archaeological Data Service (ADS)</a></li>
+<li><a href="#section2.3">3DICONS</a></li>
+</ul>
+<li><a href="#section3">Moving Forward: Towards Linked Open 3D Data</a></li>
+<ul>
+<li><a href="#section3.1">Affordances Over Non-LOD 3D Data</a></li>
+<li><a href="#section3.2">Basic Steps to Follow</a></li>
+<li><a href="#section3.3">Setting the Stage for Linked Open Data</a></li>
+<ul>
+<li><a href="#section3.3.1">Building for Tomorrow: Collaborative Development of Sustainable Infrastructure for Architectural and Design Documentation</a></li>
+<li><a href="#section3.3.2">Developing Library Strategy for 3D and Virtual Reality Collection Development and Reuse (LIB3DVR)</a></li>
+<li><a href="#section3.3.3">Community Standards for 3D Data Preservation (CS3DP)</a></li>
+</ul>
+</ul>
+<li><a href="#references">References</a></li>
+<li><a href="#footnotes">Notes</a></li>
+</ul>
+</nav>
+</header>
+<section id="section1">
+<h2>Introduction</h2>
+<p class="textindent0" id="p1" onmouseleave="document.getElementById('p1anchor').style.display='none';document.getElementById('p1anchor_label').style.display='none';" onmouseover="document.getElementById('p1anchor').style.display='';document.getElementById('p1anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p1">Research in the third dimension has increased significantly in the last 20 years. Before, 3D scholarship was relegated to institutions with large amounts of funding, but as 3D technology becomes increasingly more economical, more and more institutions and researchers are conducting and producing their research as a 3D expression.<sup><a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">1</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p1" id="p1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p1</span></p>
+<p id="p2" onmouseleave="document.getElementById('p2anchor').style.display='none';document.getElementById('p2anchor_label').style.display='none';" onmouseover="document.getElementById('p2anchor').style.display='';document.getElementById('p2anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p2">As with many new kinds of research, the approaches and methodologies are tested in ways not anticipated before. New rules have to be created on the fly and new ways of sharing and distributing said research begin to pop up in unexpected and, generally, unorganized ways. As with many disciplines, structures emerge to support the maturing methodology and 3D is at the juncture of innovation and the necessity of structure. In order to support the continuation of 3D research, innovation and new knowledge creation is only possible if it can be shared, disseminated and ultimately, live beyond the velocity of technological obsolescence.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p2" id="p2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p2</span></p>
+<p id="p3" onmouseleave="document.getElementById('p3anchor').style.display='none';document.getElementById('p3anchor_label').style.display='none';" onmouseover="document.getElementById('p3anchor').style.display='';document.getElementById('p3anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p3">Recalling myriad museum exhibits utilizing 3D like “The Mourners: Medieval Tomb Sculptures from the Court of Burgundy,” which was a traveling exhibit between the Dallas Museum of Art and Musée des Beaux-Arts funded by the French Regional American Museum Exchange in 2010, or recall the impact of Adobe’s Flash platform and its impact on 3D animation,<sup><a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">2</a></sup> or the rapid turnover of augmented reality apps that contained 3D experiences.<sup><a class="footnote-reference" href="#footnote-3" id="footnote-reference-3">3</a></sup> Today, the majority of these projects and platforms are no longer supported or the technology has changed such that these platforms no longer function, leaving the 3D orphaned and unattainable and relegated to individual memory. If you’re anything like me, your memory, perhaps, is not the most reliable research methodology.<sup><a class="footnote-reference" href="#footnote-4" id="footnote-reference-4">4</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p3" id="p3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p3</span></p>
+<p id="p4" onmouseleave="document.getElementById('p4anchor').style.display='none';document.getElementById('p4anchor_label').style.display='none';" onmouseover="document.getElementById('p4anchor').style.display='';document.getElementById('p4anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p4">One need not rely on the lifespan of a piece of rendering software in order to interact with, or view 3D scholarship. The visualization of the data is not the only product that lends itself to Linked Open Data. 3D research need not be bound by the technology as it has been in the past. Linked Open Data has the potential to not only aid in the discovery of 3D research, but also aid in the creation of new relationships that provide context to 3D data, provide pathways for viewing and interaction (should appropriate metadata be captured) and therefore provide an extension on a much too short lifecycle for 3D by supporting reuse and revitalization of these data.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p4" id="p4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p4</span></p>
+<p id="p5" onmouseleave="document.getElementById('p5anchor').style.display='none';document.getElementById('p5anchor_label').style.display='none';" onmouseover="document.getElementById('p5anchor').style.display='';document.getElementById('p5anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p5">The potential and integrity of 3D research would be increased significantly if we think of these data as linked for the purposes of reuse and reimagining beyond (what typically turns out to be) a 2D rendering or video fly-through as the <i>de facto</i> final product for 3D research. The visualization of the data, while useful for presenting the culmination of research, is likely to continue to advance rapidly changing the resulting quality of the rendering. The product of 3D scholarship is not, in fact, the rendering of the 3D model, or the rotating virtual 3D object, but the data itself (the x, y, z coordinate, the color measures and bitmaps that reconstruct surface texture, the capture details – camera settings, etc. – and the measurements and decision trees made by the creators). These data are what make it possible to interrogate and regenerate the data. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p5" id="p5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p5</span></p>
+<p id="p6" onmouseleave="document.getElementById('p6anchor').style.display='none';document.getElementById('p6anchor_label').style.display='none';" onmouseover="document.getElementById('p6anchor').style.display='';document.getElementById('p6anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p6">It is important to understand that Linked Open Data (LOD) not only creates “access to data, but [provides] relationships among data...(as opposed to a sheer collection of datasets)” (“Linked Data”). Being able to find 3D scholarship is one hurdle, certainly, but being able to establish, leverage, and build upon existing relationships between cultural heritage data is essential to building context, conversation, and connection between one scholarly dataset and another. 3D has the history of existing on its own as a separate experience from contextual data (like a scholarly article or museum plaque) because of the limitations of technology. The benefit of incorporating LOD and 3D and leveraging the connections of datasets is that these connections between experience (3D) and context (traditional scholarly outputs – e.g. monographs) may be married such that there is a boon to both. It is important to remember that the connection between lived-in space, cultural identity, and information exchanged happened much more often in 3D space than it did (or does) in 2D. The possibilities inherent in Linked Open Data combined with the need for contextual, complex and diverse data for 3D research have the potential to develop into a robust way of interacting, teaching, and learning with 3D ancient scholarship that is provided in no other medium of research expression.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p6" id="p6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p6</span></p>
+<section id="section1.1">
+<h3>Where We Are Now – Current Methods to LOD and 3D</h3>
+<p class="textindent0" id="p7" onmouseleave="document.getElementById('p7anchor').style.display='none';document.getElementById('p7anchor_label').style.display='none';" onmouseover="document.getElementById('p7anchor').style.display='';document.getElementById('p7anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p7">At the moment, however, the development of cross-institution, cross-discipline use of Linked Open Data for 3D is still in the beginning stages. There are some foundational principles and examples that one can draw upon when approaching their 3D dataset for integration with linked open data requirements. Of particular note are projects like the Archaeological Data Service work on Digital Antiquity and the “Guides to Good Practice,” the 3DICONS project, that ADS draws heavily from and one that is especially relevant to European practices of data collection, the London Charter and, more recently, the <a href="https://www.parthenos-project.eu">PARTHENOS project</a>. To take these initiatives in turn may be the best way to understand where we are currently in supporting Linked Open Data for 3D research.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p7" id="p7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p7</span></p>
+<p id="p8" onmouseleave="document.getElementById('p8anchor').style.display='none';document.getElementById('p8anchor_label').style.display='none';" onmouseover="document.getElementById('p8anchor').style.display='';document.getElementById('p8anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p8">Details regarding specific recommendations for 3D data capture methodologies (3D photogrammetric scanning for example) are out of scope of this paper, as it would take a much longer paper to address the many modes of 3D data creation. This instead provides an overview of the state of 3D data and discuss the possibilities.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p8" id="p8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p8</span></p>
+</section>
+</section>
+<section id="section2">
+<h2>Relevant Resources for 3D Data Creation and Record Keeping</h2>
+<section id="section2.1">
+<h3>London Charter</h3>
+<p class="textindent0" id="p9" onmouseleave="document.getElementById('p9anchor').style.display='none';document.getElementById('p9anchor_label').style.display='none';" onmouseover="document.getElementById('p9anchor').style.display='';document.getElementById('p9anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p9">The <a href="http://www.londoncharter.org">London Charter</a> provides a set of high level principles that are meant to make not only the creation of 3D research data more accessible, but to facilitate the dissemination and access of these data for the purpose of supporting intellectual transparency and long term computer-based virtual cultural heritage research. The main purpose of these principles is to uphold the academic rigor in 3D research by providing benchmarks for academic or intellectual transparency by allowing others to see how a virtual representation or reconstruction was created. In order to situate the subsequent benchmarks, the London Charter provides this analogy for context: <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p9" id="p9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p9</span></p>
+<blockquote id="blockquote1">The challenge of the scholarly validation of heritage visualization can most simply be illustrated by considering how one evaluates scholarly print publications: authors are expected, as a minimum, to situate their questions and arguments in relation to prior scholarship; to present and assess their sources, duly referenced in footnotes and bibliographies; and to remain within a range of currently acceptable logical and stylistic norms. (The London Charter, <i>Commentary on The London Charter</i>, 2.1, paragraph 1)</blockquote>
+<p id="p10" onmouseleave="document.getElementById('p10anchor').style.display='none';document.getElementById('p10anchor_label').style.display='none';" onmouseover="document.getElementById('p10anchor').style.display='';document.getElementById('p10anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p10">Linked Open Data will allow a much more robust form of 3D research citation. In an ideal world accessible 3D research data may be integrated into other 3D research projects thereby contributing in a substantial way to 3D research more broadly. Linked Open Data will allow for the reflective and reciprocal use of project data to make reference to previous work, situate arguments in an ongoing dialogue of 3D scholarship that reflect the same kind of academic rigor print scholarship enjoys. This linking extends to non-3D research data – connecting 3D and 2D LOD – creating a connection that has been mainly achieved by proximity. By placing 3D research alongside 2D counterparts like a journal article,<sup><a class="footnote-reference" href="#footnote-5" id="footnote-reference-5">5</a></sup> for example, allows for a descriptive link between 3D and other scholarship through traditional text citation. In-text citation with accompanying 3D, though decentralizing the 3D, is the most used method of linking 3D scholarship.<sup><a class="footnote-reference" href="#footnote-6" id="footnote-reference-6">6</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p10" id="p10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p10</span></p>
+<p id="p11" onmouseleave="document.getElementById('p11anchor').style.display='none';document.getElementById('p11anchor_label').style.display='none';" onmouseover="document.getElementById('p11anchor').style.display='';document.getElementById('p11anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p11">The principles outlined in the London Charter are not specific to a type of virtual cultural heritage product or a certain methodology, which is extremely useful when conceptualizing how and why Linked Open Data may apply to 3D scholarship. The charter is built to be technologically agnostic. The charter falls short only in its intentional vagueness. The purpose of this work is to provide principles for the creation and application of virtual cultural heritage scholarship. It is, as mentioned, not focused on any methodology and data collection practice. As such, many find this to be too vague to put into practice whilst conducting 3D research. However, I would advocate for its use when planning a 3D research project as it sets a set of ground rules for data production and also sets the tone for data dissemination. Not only does it provide this grounding, it also is the most generalizable and relatively holistic guide that is currently available. Still, the London Charter sets the stage for the creation of Linked Open Data and 3D scholarship.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p11" id="p11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p11</span></p>
+<p id="p12" onmouseleave="document.getElementById('p12anchor').style.display='none';document.getElementById('p12anchor_label').style.display='none';" onmouseover="document.getElementById('p12anchor').style.display='';document.getElementById('p12anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p12">For reference, the <a href="http://www.londoncharter.org/principles.html">London Charter Principles</a> (as found on the Charter website) are:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p12" id="p12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p12</span></p>
+<ul>
+<li><u>Principle 1- Implementation</u>
+<ul><li>The principles of the London Charter are valid wherever computer-based visualisation is applied to the research or dissemination of cultural heritage. </li></ul></li>
+ 
+<li><u>Principle 2 - Aims and Methods</u>
+<ul><li>A computer-based visualisation method should normally be used only when it is the most appropriate available method for that purpose.</li></ul></li>
+ 
+<li><u>Principle 3 - Research Sources</u>
+<ul><li>In order to ensure the intellectual integrity of computer-based visualisation methods and outcomes, relevant research sources should be identified and evaluated in a structured and documented way. </li></ul></li>
+ 
+<li><u>Principle 4 - Documentation</u>
+<ul><li>Sufficient information should be documented and disseminated to allow computer-based visualisation methods and outcomes to be understood and evaluated in relation to the contexts and purposes for which they are deployed. </li></ul></li>
+ 
+<li><u>Principle 5 - Sustainability</u>
+<ul><li>Strategies should be planned and implemented to ensure the long-term sustainability of cultural heritage-related computer-based visualisation outcomes and documentation, in order to avoid loss of this growing part of human intellectual, social, economic and cultural heritage. </li></ul></li>
+ 
+<li><u>Principle 6 - Access</u>
+<ul><li>The creation and dissemination of computer-based visualisation should be planned in such a way as to ensure that maximum possible benefits are achieved for the study, understanding, interpretation, preservation and management of cultural heritage.</li></ul></li>
+</ul>
+<p id="p13" onmouseleave="document.getElementById('p13anchor').style.display='none';document.getElementById('p13anchor_label').style.display='none';" onmouseover="document.getElementById('p13anchor').style.display='';document.getElementById('p13anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p13">The Charter does not prescribe a method of capturing this data. Again, this was an intentional choice in order to be as adaptable as possible. As such, there are many ways one may approach cataloging this information or metadata. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p13" id="p13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p13</span></p>
+<p id="p14" onmouseleave="document.getElementById('p14anchor').style.display='none';document.getElementById('p14anchor_label').style.display='none';" onmouseover="document.getElementById('p14anchor').style.display='';document.getElementById('p14anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p14">One such way to record this information is a README text file that outlines the decision of the data creator and the connections between resources. Text files are a basic filetype that is easily migratable and therefore much more persistent than other proprietary file types like Microsoft’s Word files (.doc). These data may also be captured through spreadsheets with metadata fields (see below: <a href="#section3">Moving Forward: Towards Linked Open 3D Data</a>) and file paths or URIs to the data, or XML (eXtensible Markup Language), or other like hierarchical markup languages that is human and machine readable.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p14" id="p14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p14</span></p>
+</section>
+<section id="section2.2">
+<h3>The Archaeological Data Service (ADS)</h3>
+<p class="textindent0" id="p15" onmouseleave="document.getElementById('p15anchor').style.display='none';document.getElementById('p15anchor_label').style.display='none';" onmouseover="document.getElementById('p15anchor').style.display='';document.getElementById('p15anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p15">Though the Archaeological Data Service's (ADS) “Guides to Good Practice” is focused on the creation, use, and reuse of especially archaeological data, the principles therein are transferable to data preservation projects in other contexts. Even if the 3D research is not specifically archaeological, some of the workflows and methodologies can be used or re-tooled in order to effectively manage and organize these data so they can be used beyond their initial creation.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p15" id="p15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p15</span></p>
+<p id="p16" onmouseleave="document.getElementById('p16anchor').style.display='none';document.getElementById('p16anchor_label').style.display='none';" onmouseover="document.getElementById('p16anchor').style.display='';document.getElementById('p16anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p16">The assumption for ADS is that one is generating data in a number of different mediums typical in archaeology; databases, images, Computer Aided Design or CAD graphics, Geographical Information System (GIS) files, spreadsheets, and word-processed files. These file types are also rather typical in 3D research projects as CAD and GIS also have the capability to interface nicely with 3D technologies and have some built in 3D functionalities. Database structures are not only helpful in cataloging the data used or consulted to create 3D research, but also may be a product of the 3D modeling processes, and images, as you might imagine, also play a large role in provided reference and textures to 3D models and have been one of the ways to create a record of 3D research. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p16" id="p16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p16</span></p>
+<p id="p17" onmouseleave="document.getElementById('p17anchor').style.display='none';document.getElementById('p17anchor_label').style.display='none';" onmouseover="document.getElementById('p17anchor').style.display='';document.getElementById('p17anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p17">3D models are typically not only comprised of 3D data, the x, y, z’s that create the visualization. They are usually a combination of the aforementioned datatypes and resources. Linked Open Data would provide a mode to link these datatypes into a digital representation of the relations it takes to generate the research so that one can trace the research processes. As already mentioned, this has been a relatively informal process by “linking” the data to additional resources by proximity (i.e. journal article with downloadable 3D dataset) or in a README text file packaged with the 3D data. Being able to retrace the 3D research process allows for the evaluation and validation of the 3D product. Being able to preserve these ties and relations also aid preservation possibilities of these data so they can be discovered and used to further research. The more used a dataset is, the more likely it is to be perpetuated beyond initial publication. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p17" id="p17anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p17anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p17</span></p>
+<p id="p18" onmouseleave="document.getElementById('p18anchor').style.display='none';document.getElementById('p18anchor_label').style.display='none';" onmouseover="document.getElementById('p18anchor').style.display='';document.getElementById('p18anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p18">That said, one must have “an understanding of data capture methodology [which] is key to interpreting the final 3D product” (Trognitz et al., 1.2). With this, we can begin to set up 3D data in a way that can be more easily integrated into LOD practice. This is where the ADS “Guides to Good Practice” really helps with some concrete suggestions on best practices for integrated datasets that provide and require additional (albeit archaeological) context.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p18" id="p18anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p18anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p18</span></p>
+<p id="p19" onmouseleave="document.getElementById('p19anchor').style.display='none';document.getElementById('p19anchor_label').style.display='none';" onmouseover="document.getElementById('p19anchor').style.display='';document.getElementById('p19anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p19">Of use and relevance are the sections dedicated to “The Project Lifecycle” and “Data Analysis and Visualisation.” These sections provide an overview of various relevant topics including how to plan for the data your digital project will create, how to properly curate your data by selecting appropriate file formats, where and how to archive your data, and some specifics on how to collect and maintain 3D archaeological data (more specifics regarding 3D data will be addressed later in this paper).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p19" id="p19anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p19anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p19</span></p>
+</section>
+<section id="section2.3">
+<h3>3DICONS</h3>
+<p class="textindent0" id="p20" onmouseleave="document.getElementById('p20anchor').style.display='none';document.getElementById('p20anchor_label').style.display='none';" onmouseover="document.getElementById('p20anchor').style.display='';document.getElementById('p20anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p20">Established in 2012 as a joint effort funded by the European Commission, the three-year project culminated in 3DICONS, among others, to support the development of Europeana, the European digital library. 3DICONS is divided into two parts: guidelines and case studies of 3D scanning and remote sensing of cultural heritage sites and artifacts. The metadata schema that this methodology employs is <a href="http://pro.carare.eu/doku.php">CARARE</a> – a schema in service to monumental management and protection and integration into Europeana, the European digital library and predecessor to the United States’ Digital Public Library of America (DPLA) which has yet to accommodate 3D research data integration.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p20" id="p20anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p20anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p20</span></p>
+<p id="p21" onmouseleave="document.getElementById('p21anchor').style.display='none';document.getElementById('p21anchor_label').style.display='none';" onmouseover="document.getElementById('p21anchor').style.display='';document.getElementById('p21anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p21">3DICONS assumes a cultural heritage focus for 3D data but the data are not specifically archaeological. 3DICONS focuses on typical data capture methodologies including remote sensing and 3D scanning. Insofar as ancient 3D research is concerned, it is entirely possible that there will be some kind of 3D scanning or remote sensing involved in the final research product.<sup><a class="footnote-reference" href="#footnote-7" id="footnote-reference-7">7</a></sup> As was discussed in the consideration of ADS guidelines, 3DICONS is extremely helpful in setting up a 3D research project by clearly defining appropriate approaches to 3D data capture that will facilitate the use of any metadata for Linked Open Data applications.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p21" id="p21anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p21anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p21</span></p>
+<p id="p22" onmouseleave="document.getElementById('p22anchor').style.display='none';document.getElementById('p22anchor_label').style.display='none';" onmouseover="document.getElementById('p22anchor').style.display='';document.getElementById('p22anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p22">Researchers collaborating with scholars across Europe may find this resource particularly helpful when generating 3D research data that must interface with already established metadata records or repositories. Keep in mind that 3DICONS is intended for European monumental and archaeological sites, so 3D research on, say, the scanned remains of a Fayum mummy may not be easily captured if following these guidelines. Still, some considerations of 3D scanning methodologies and strategies, as well as documenting the process are useful elements from the 3DICONS guidelines to consider for any type of scanning project. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p22" id="p22anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p22anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p22</span></p>
+<p id="p23" onmouseleave="document.getElementById('p23anchor').style.display='none';document.getElementById('p23anchor_label').style.display='none';" onmouseover="document.getElementById('p23anchor').style.display='';document.getElementById('p23anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p23">At this stage, there is no one size fits all guideline for 3D data curation nor for distribution or linking. There are many types of 3D data creation methodologies that require many types of expertise that impact many different scholarly pursuits and disciplines which is why we see so many bespoke localized solutions for 3D data. With foundations provided by the London Charter, the Archaeological Data Service’s “Guides to Good Practice” and 3DICONS, additional work has been made to address the broad impact and application of 3D research by outlining a set of principles one should uphold when conducting said research. These principles and pursuits have implications for the application of Linked Open Data as well. As the following efforts progress, there will be opportunity for the creation of a standardized, broadly applicable system that will integrate 3D research with Linked Open Data. The endeavors below build upon the availability of the technology and the willingness to create standardization that will ultimately facilitate LOD and the proliferation of connected 3D scholarship that builds upon previous work, reduces duplicated efforts whether unknowingly or due to data loss or lack of access. The groundwork is there, we only need guidance.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p23" id="p23anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p23anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p23</span></p>
+</section>
+</section>
+<section id="section3">
+<h2>Moving Forward: Towards Linked Open 3D Data</h2>
+<p class="textindent0" id="p24" onmouseleave="document.getElementById('p24anchor').style.display='none';document.getElementById('p24anchor_label').style.display='none';" onmouseover="document.getElementById('p24anchor').style.display='';document.getElementById('p24anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p24">In 2016, PARTHENOS, a European consortium, produced a whitepaper outlining the major hurdles to 3D scholarship adaptation and dissemination. Concerns previously noted, such as quality assessment, repeatability, feedback and critique, nonlinearity, multimodality, scalability, registration, reliability, interoperability, and preservation are all surfaced again in the PARTHENOS whitepaper. The discussion of “linking” 3D data is relevant to our needs here (Alliez, p. 24) as it outlines where we currently are in terms of LOD and 3D research.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p24" id="p24anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p24anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p24</span></p>
+<p id="p25" onmouseleave="document.getElementById('p25anchor').style.display='none';document.getElementById('p25anchor_label').style.display='none';" onmouseover="document.getElementById('p25anchor').style.display='';document.getElementById('p25anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p25">Much of the discussion centers around annotation potentials using various technologies and visualization packages like <a href="http://3dhop.net">3DHOP</a> in order to build a more robust 3D reconstruction or representation by inserting relevant annotations to cite and expound upon sections of a 3D model in 3D space. 3D annotation allows researchers to clearly mark aspects of a 3D model for further expounding or as foci for users. The annotations have the potential to include links to other resources whether 2D or 3D and embed additional contextual prose. These are meant to provide a more academically robust 3D model by effectively providing in-situ citation. “Such links, through spatial correspondences, yields an information continuum between different media (3D, 2D)... where annotations could be performed just on one media/item and then propagated to many other media/items” (Alliez, p. 27).<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p25" id="p25anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p25anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p25</span></p>
+<p id="p26" onmouseleave="document.getElementById('p26anchor').style.display='none';document.getElementById('p26anchor_label').style.display='none';" onmouseover="document.getElementById('p26anchor').style.display='';document.getElementById('p26anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p26">Potential 3D annotation technologies that exist as a stop gap for LOD and 3D are (not exhaustive and currently an area of development):<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p26" id="p26anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p26anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p26</span></p>
+<ul>
+<li>3DHOP </li>
+<li>3D Semantic Annotation (3DSA) </li>
+<li>Agata </li>
+<li>Arrigo </li>
+<li>CityEngine, ESRI</li>
+<li>Cultlab3D </li>
+<li>ShapeAnnotator </li>
+<li>Sketchfab’s 3D web viewer </li>
+<li>VSim </li>
+</ul>
+<p id="p27" onmouseleave="document.getElementById('p27anchor').style.display='none';document.getElementById('p27anchor_label').style.display='none';" onmouseover="document.getElementById('p27anchor').style.display='';document.getElementById('p27anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p27">These technologies all have their own restrictions of use and limitations such as not being able to interface with other media types (like images) though such annotation may be essential to the point of the annotation or the relative clunkiness of the navigation and positioning of annotations in 3D space, but this is indeed progress. Though we “still lack the technical, institutional and cultural frameworks required to support such open data access” of 3D research, we should strive to avoid the inevitable “shortfall in the sharing of data by researchers” because we do not anticipate these data’s use and reuse beyond the immediate creation (“Data’s Shameful Neglect,” p. 145). Though the context of this quote is focused on scientific data creation, it is motivation for us to think more seriously about the potentials of LOD and 3D research.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p27" id="p27anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p27anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p27</span></p>
+<p id="p28" onmouseleave="document.getElementById('p28anchor').style.display='none';document.getElementById('p28anchor_label').style.display='none';" onmouseover="document.getElementById('p28anchor').style.display='';document.getElementById('p28anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p28">In order to begin supporting LOD creation in our work with 3D, there are several required data categories and datatypes outlined as part of the <a href="https://hal.inria.fr/hal-01526713">PARTHENOS 2016 whitepaper</a>. <a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p28" id="p28anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p28anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p28</span></p>
+<p id="p29" onmouseleave="document.getElementById('p29anchor').style.display='none';document.getElementById('p29anchor_label').style.display='none';" onmouseover="document.getElementById('p29anchor').style.display='';document.getElementById('p29anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p29">Different types of metadata relevant to the discussion of 3D research:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p29" id="p29anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p29anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p29</span></p>
+<ul>
+<li><u>Project level metadata</u> – the data about the project overall including the subject matter, the creators, dates etc. that would provide an overview of the 3D research product. This may include some provenance information regarding the “who” and “how” of 3D data creation. May also be referred to as “paradata.”</li>
+<li><u>Resource metadata</u> – data that focuses on the assets and resources used to create the 3D product including bibliographic records, photographs, GIS data – think of this as your citation record or bibliography of monographic and/or digital resources that support your 3D research.</li>
+<li><u>File level metadata</u> – this is the data associated with the 3D product files and any automated 3D model file types. These data are sometime generated automatically by 3D scanning processes and are something that communities are actively pursuing to integrate into 3D creation processes. File level metadata may also be referred to as “paradata” in some contexts. </li>
+</ul>
+<p id="p30" onmouseleave="document.getElementById('p30anchor').style.display='none';document.getElementById('p30anchor_label').style.display='none';" onmouseover="document.getElementById('p30anchor').style.display='';document.getElementById('p30anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p30">Data that should be also be collected to facilitate data reuse, recovery and dissemination are:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p30" id="p30anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p30anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p30</span></p>
+<ul>
+<li>Temporal data that reflects the date or timeline for the 3D product(s), or “the joint analysis of spatial and temporal data is clearly of particular importance for visualizing object histories, for conveying temporal distribution of categorized events, as well as for addressing spatiotemporal data distribution issues” (Alliez, p. 27). </li>
+<li>Provenance data which record the changes, migrations and permutations of the 3D research product as it moves from different technologies or versions. </li>
+<li>Authority record data fields identify the original creators and level of confidence or completeness of the 3D research product. </li>
+<li>Paradata (or data about data), which are also referred to as “project level metadata,” may encompass some of the provenance data genealogy and/or the file level metadata, as well as the automated 3D processes that generate a 3D model.</li>
+</ul>
+<p id="p31" onmouseleave="document.getElementById('p31anchor').style.display='none';document.getElementById('p31anchor_label').style.display='none';" onmouseover="document.getElementById('p31anchor').style.display='';document.getElementById('p31anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p31">In the past, these data were captured in articles and books, and typically lived in a word processing document. This mode of recording is useful, but not ideal. Instead, set up record keeping and metadata creation within a spreadsheet or database. This may feel foreign at first, but spreadsheets are the mode of metadata transfer for librarians and archivists and are industry practice. As the standards for 3D metadata emerge and are adopted, it will be much more efficient and therefore much more likely that your 3D research will be catalogued and preserved because of your efforts to generate your metadata records in a spreadsheet rather than a word processing document – or indeed in any other proprietary software.<sup><a class="footnote-reference" href="#footnote-8" id="footnote-reference-8">8</a></sup><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p31" id="p31anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p31anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p31</span></p>
+<p id="p32" onmouseleave="document.getElementById('p32anchor').style.display='none';document.getElementById('p32anchor_label').style.display='none';" onmouseover="document.getElementById('p32anchor').style.display='';document.getElementById('p32anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p32">At the time of writing, the metadata recommendations provided by ADS are the most succinct examples to follow. However, there is a more robust and discipline-agnostic set of recommendations currently being developed by a set of multi-institutional, international, and interdisciplinary experts in 3D to find a set of common needs across 3D research which you may find much more useful and applicable to your work – the <a href="https://cs3dp.org/">Community Standards for 3D Data Preservation</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p32" id="p32anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p32anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p32</span></p>
+<p id="p33" onmouseleave="document.getElementById('p33anchor').style.display='none';document.getElementById('p33anchor_label').style.display='none';" onmouseover="document.getElementById('p33anchor').style.display='';document.getElementById('p33anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p33">For the sake of providing a place to start, however, 3D metadata should capture the following:<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p33" id="p33anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p33anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p33</span></p>
+<table border="2" id="table1">
+<caption>Figure 1: ADS Project Metadata; (Table 1 from Niven, 2011).</caption>
+<colgroup>
+<col width="100"/>
+<col width="583"/>
+</colgroup>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Project Title</th>
+<td><p class="textindent0">The title (and any alternatives) for the dataset.</p></td>
+</tr>
+<tr>
+<th>Description</th>
+<td><p class="textindent0">A brief summary of the main aims and objectives of the research project (or alternative process) from which the data collection arose together with a brief summary description of the content of the dataset.</p></td>
+</tr>
+<tr>
+<th>Subject</th>
+<td><p class="textindent0">Keywords for the subject content of the dataset (qualified using e.g., the English Heritage NMR Monument Type Thesaurus or the MDA Object Type Thesaurus).</p></td>
+</tr>
+<tr>
+<th>Coverage</th>
+<td><p class="textindent0">This is both spatial and temporal coverage.</p>
+<p>For spatial coverage it should include the current and contemporary name(s) of the country, region, county, town or village covered by the data collection and, where possible, a standardised reference such as the <a href="http://www.getty.edu/research/tools/vocabularies/tgn">Getty Thesaurus of Geographic Names</a> should be used. If names or administrative units were different during the time period covered by the data they should be recorded separately. Site coordinates can also be entered as a National grid reference in a number of different ways e.g., as a point (useful to describe a small project area via a central coordinate); as a line (e.g., at least 2 coordinates to represent the linear limits of the site); as a polygon (for a more complex site area, 3 or more coordinates are used to describe the boundaries). If applicable, the full postal code for the site can be included.</p>
+<p>For temporal coverage it should include the dates/period covered by the dataset (using existing thesauri where possible such as the RCHME Period List).</p></td>
+</tr>
+<tr>
+<th>Creators</th>
+<td><p class="textindent0">Details of the creator(s), compiler(s), funding agencies, or other bodies or people intellectually responsible for the data collection. Information should include forename, surname, affiliation, address, phone, fax, email, or URL.</p></td>
+</tr>
+<tr>
+<th>Publisher</th>
+<td><p class="textindent0">Details about any organisation which has published this data.</p></td>
+</tr>
+<tr>
+<th>Contributors</th>
+<td><p class="textindent0">Other individuals or organisations who have contributed to the resource.</p></td>
+</tr>
+<tr>
+<th>Identifiers</th>
+<td><p class="textindent0">Project or reference numbers used to identify the dataset.</p></td>
+</tr>
+<tr>
+<th>Source</th>
+<td><p class="textindent0">Any important earlier work(s) from which this resource is derived.</p></td>
+</tr>
+<tr>
+<th>Dates</th>
+<td><p class="textindent0">Dates indicating when the dataset was created, when the archaeological project was carried out, processing dates, or computerisation dates as appropriate.</p></td>
+</tr>
+<tr>
+<th>Copyright</th>
+<td><p class="textindent0">The name of the copyright holder for the dataset. If the collection was created during work by an employee, the copyright holder will normally be the employer. If the material is covered by a specific copyright (e.g., Crown copyright) please indicate this.</p></td>
+</tr>
+<tr>
+<th>Relations</th>
+<td><p class="textindent0">If the data collection was derived in whole or in part from published or unpublished sources, whether printed or machine-readable, this element should include references to the original material, details of where the sources are held and how they are identified there (e.g., by accession number). If the collection is derived from other sources include an indication of whether the data represents a complete or partial transcription/copy and the methodology used for its digitisation. Also include full references to any publications about or based upon the data collection.</p></td>
+</tr>
+<tr>
+<th>Language</th>
+<td><p class="textindent0">Indication of which language(s) the dataset is in (e.g., English, French, Spanish).</p></td>
+</tr>
+<tr>
+<th>Resource Type</th>
+<td><p class="textindent0">Whether the dataset is best described as primary data, processed data, an interpretation of data, or a final report.</p></td>
+</tr>
+<tr>
+<th>Format</th>
+<td><p class="textindent0">The format the data is saved in (e.g., WordPerfect 5.1, HTML, AutoCAD).</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+ 
+
+<table border="2" id="table2">
+<caption>Figure 2: ADS File Level Metadata; (Table 3 from Trognitz et al., 2016).</caption>
+<colgroup>
+<col width="147"/>
+<col width="537"/>
+</colgroup>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Number of Vertices</th>
+<td><p class="textindent0">The number of vertices (points) in the model.</p></td>
+</tr>
+<tr>
+<th>Number of Triangles or Polygons</th>
+<td><p class="textindent0">The number of triangles or polygons in the model.</p></td>
+</tr>
+<tr>
+<th>Geometry Type</th>
+<td><p class="textindent0">The type of geometry used within the model (wire frame, parametric, CSG, B-Rep etc. if applicable).</p></td>
+</tr>
+<tr>
+<th>Scale</th>
+<td><p class="textindent0">What scale is existent, resp. what is represented by 1 unit. </p></td>
+</tr>
+<tr>
+<th>Coordinate System</th>
+<td><p class="textindent0">Does the model use a real world or arbitrary coordinate system?</p></td>
+</tr>
+<tr>
+<th>Master model or processed model</th>
+<td><p class="textindent0">Is the model the master model produced just after raw data processing, or is it a derived model produced from the master (e.g. after hole filling, simplification, smoothing, etc.)?</p></td>
+</tr>
+<tr>
+<th>Level of Detail (LOD); Resolution</th>
+<td><p class="textindent0">How detailed is the model, what is the resolution of the scan.</p></td>
+</tr>
+<tr>
+<th>Layers</th>
+<td><p class="textindent0">Does the model use layers? How many?</p></td>
+</tr>
+<tr>
+<th>Colour and Texture</th>
+<td><p class="textindent0">Does the model contain colour or texture information? How is this stored? If raster texture files are used then these have to be archived separately.</p></td>
+</tr>
+<tr>
+<th>Material</th>
+<td><p class="textindent0">Information about the material properties of the model and whether they match the physical properties of the actual object.</p></td>
+</tr>
+<tr>
+<th>Light Source(s)</th>
+<td><p class="textindent0">Number and accuracy of light sources used in the model.</p></td>
+</tr>
+<tr>
+<th>Shader</th>
+<td><p class="textindent0">Have special or extended shaders been used?</p></td>
+</tr>
+<tr>
+<th>Animation</th>
+<td><p class="textindent0">Whether animation is used in the model along with description of type (keyframe, motion capture).</p></td>
+</tr>
+<tr>
+<th>External Files</th>
+<td><p class="textindent0">List of external files that are required in order to correctly open the 3D model (e.g. texture or material files and images for OBJ files).</p></td>
+</tr>
+</tbody>
+</table>
+<p id="p34" onmouseleave="document.getElementById('p34anchor').style.display='none';document.getElementById('p34anchor_label').style.display='none';" onmouseover="document.getElementById('p34anchor').style.display='';document.getElementById('p34anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p34">These fields may most easily be captured and recorded via spreadsheets or Comma Separated Value (.csv) files. These file types are simple enough to be fairly persistent throughout the years and data migrations. The titles in the example above would correspond to a column in the spreadsheet and the values would be recorded below with a reference to the unique identifier for the digital object. You have the flexibility to record what fields are most relevant to you and your intended users.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p34" id="p34anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p34anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p34</span></p>
+<section id="section3.1">
+<h3>Affordances Over Non-LOD 3D Data</h3>
+<p class="textindent0" id="p35" onmouseleave="document.getElementById('p35anchor').style.display='none';document.getElementById('p35anchor_label').style.display='none';" onmouseover="document.getElementById('p35anchor').style.display='';document.getElementById('p35anchor_label').style.display='';" rel="dcterms:hasPart" resource="#p35">Linked Open Data will provide a platform for citation, creation, and integration of 3D research into a larger context of academic scholarship. As it is, 3D stands alone as a singular product of research of a particular state in time. The current state of 3D scholarship does not take advantage of what the rest of digital humanities research does by allowing citation, and linking to other projects and resources within the digital product such as TRISMEGISTOS,<sup><a class="footnote-reference" href="#footnote-9" id="footnote-reference-9">9</a></sup> or The Orlando Project<sup><a class="footnote-reference" href="#footnote-10" id="footnote-reference-10">10</a></sup> as examples which use multiple LOD resources to develop and supplement the project databases to make a holistic resource. As it is, much of that work is done outside of the 3D research product in a journal article or book – thereby translating a 3D research project into a 2D representation defeating the purpose of 3D in the first place. The most successful full-production adaptation of linking 3D to the scholarly counterparts is the <i>Journal of Digital Application in Archaeology and Cultural Heritage</i> but that linking is by proximity in publication and does not take advantage of LOD. Linked Open Data has the potential to free 3D research from its 2D constraints allowing for referential practices, the further development of 3D scholarship discourse and a more refined, transparent and robust scholastic product that can be evaluated and critiqued in a way analogous to a book review.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#p35" id="p35anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="p35anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#p35</span></p>
+</section>
+<section id="section3.2">
+<h3>Basic Steps to Follow</h3>
+<ul>
+<li><p class="textindent0"><b>Document the project planning and processes</b>, including decisions made that resulted in the 3D research product. As you probably already do with other projects, set up and maintain a project workflow. What may separate these processes is that you should document this project workflow to be included with the final product including details on file formats and relations between data. This extra step of documentation, if new to you, will help anyone coming to your project with fresh eyes to follow your logic, guiding principles, and explain the ultimate digital product. This work will also help anyone trying to migrate, reuse, or make available your data after you’ve moved on – think of your poor archivists and librarians!</p>
+<p>Maintain the ‘original’ or ‘raw’ data, that which is the first iteration or expression of the research be it the original unedited output of a 3D scanning process, the versions of a human modeled 3D asset, so that, if possible, the 3D creation process can be recreated for posterity. It is also a good idea to have a record of the final output be it, a set of still images or video as documentation. The final output 3D model is, contraire to what one might think, not as important to save as a “research product” than the data that are used to create it. Reproducibility and preservation for posterity are considered much more important than the pretty picture at the end, not only by cultural heritage and research stewards, but by those who will encounter your data and wish to make use of it – again, the data is the research product here. </p>
+<p>As the technology continues to develop, an entire 3D environment may change this idea because the final product may not be just a digital rendering of a complete model, but may include embedded annotations, multiple model states that represent multiple hypothesis, details related to degree of certainty of the 3D recreation or crowdsourced input that would change how we approach 3D research interaction and therefore preservation. As it is now, save the 3D data (recommended file formats listed below) and the associated metadata (as a spreadsheet, Comma Separated Value text file, JSON,  or XML file) so that, as the technology advances, so too will these data and your research.<sup><a class="footnote-reference" href="#footnote-11" id="footnote-reference-11">11</a></sup> Other relevant datatypes for preservation can be found at Library of Congress’ list of dataset formats (<a href="https://www.loc.gov/preservation/digital/formats/fdd/dataset_fdd.shtml">https://www.loc.gov/preservation/digital/formats/fdd/dataset_fdd.shtml</a>).</p>
+</li>
+ 
+<li><p class="textindent0"><b>Make a record of your work that will serve as a stand-in for your 3D research</b> until 3D preservation practices expand to include a more linked, nuanced, and complete way of archiving 3D research. These surrogates are typically in the form of a collection of file types including the ‘raw’ data (typically a .ply, .obj or .stl file), the versions of modified data files (again, probably one of those three aforementioned file types) and, at the very least, a documentation of data modification and provenance captured in a README .txt file or spreadsheet. Additional types of files to consider are still-images of your 3D model as TIFFs and JEPGs and/or video files .wav and .mp4 formats for preservation and access respectively.<sup><a class="footnote-reference" href="#footnote-12" id="footnote-reference-12">12</a></sup> This will allow any subsequent researcher to evaluate your methodologies and permutations of the 3D data and potentially reconstruct the processes if needed. Should they not have the appropriate software to view the data, at least they can see an image of what they are missing.</p></li>
+ 
+<li><p class="textindent0"><b>Involve data specialists, archivist and/or librarians</b> as you plan how to effectively capture and preserve your data. These experts will not only influence how you approach your own data, but will also allow for a smoother transition to LOD as workflows and methodologies develop from these communities for 3D research data. Additionally, there are many ways to transform your data and they will know how to most effectively access your data’s long term viability and integration with other datasets (PREMIS Editorial Committee).</p></li>
+</ul>
+</section>
+<section id="section3.3">
+<h3>Setting the Stage for LOD</h3>
+<p class="Normal">In addition to the projects already mentioned which have set the foundation for 3D research, there are additional initiatives including <i>Building for Tomorrow</i>, <i>LIB3DVR</i>, and <i>Community Standards for 3D Data Preservation</i>, that are attempting to push 3D research beyond simple creation to a more stable future underpinned by appropriate preservation practices. The research life cycle is not a linear process of creation and preservation, these are just two points in an ever-replicating wheel. Without preservation, there is no innovation, without innovation, there is no new research and so on and so on.</p>
+<p class="Normal">With that in mind, there are new initiatives that are specifically focused on the development of 3D research preservation so as to support the research life cycle. The impacts of these initiatives are multifold, they are focused on building a foundation for novel 3D research, but also working towards building an ecosystem that impacts and provides space for LOD as LOD has the potential to seriously impact the 3D research ecosystem.</p>
+<p class="Normal">In the spirit of LOD, all of these efforts are working together in order to not only solve their individual concerns, but to make sure that the outcomes are compatible across projects, and across discipline – which thus far has been one of the major hurdles to 3D preservation (Moore and Kettler).</p>
+<section id="section3.3.1">
+<h4><u>Building for Tomorrow: Collaborative Development of Sustainable Infrastructure for Architectural and Design Documentation</u></h4>
+<p class="Normal">The Building for Tomorrow project is concerned with the preservation of design and development project assets associated with architectural projects. With the shift towards digital project outcomes and electronic signatures, architectural practice is grappling with how to track and preserve their assets for the longer term. “To preserve the records of significant building projects completely, all of this digital information should be captured and linked or packaged together into a collection that can be easily searched, navigated, and preserved over time” (“Building for Tomorrow”).</p>
+<p class="Normal">The process of producing architectural plans necessitate the production of various types of outputs, like 3D CAD models, 2D drawings, photographs, communications between client and architect etc., yet the problems are not unique to the architectural discipline. Many virtual cultural heritage 3D research relies on the same types of information like ‘object’, ‘rights statements’, ‘creator’, etc. Following the outcomes of this project will inform the packaging and indeed the linking of these digital assets. Building upon the ideal of a Semantic Web and the necessity of Linked Open Data to support it, this project will help clarify the specific requirements for 3D data curation and data linking.</p>
+</section>
+<section id="section3.3.2">
+<h4><u>Developing Library Strategy for 3D and Virtual Reality Collection Development and Reuse (LIB3DVR)</u></h4>
+<p class="Normal">The Developing Library Strategy for 3D and Virtual Reality Collection Development and Reuse project focuses on how effectively and ably libraries and archives are able to adapt to 3D data preservation based on the outcomes of various 3D modeling and scanning methodologies. They are also focusing on how to effectively influence and inform industry of research needs and standards for data atomization of metadata collection during certain 3D creation processes. The people contributing to this project are mainly those from the industry building and promoting 3D technologies as well as a select number of representatives from the CS3DP project (see <a href="#section3.3.3">below</a>) and more established 3D repositories like <a href="https://core.tdar.org">tDAR</a> and <a href="https://www.morphosource.org">Morphosource</a>. This project anticipates creating a roadmap on how to make data collection and metadata creation much less of a burden to users (i.e. you).</p>
+</section>
+<section id="section3.3.3">
+<h4><u>Community Standards for 3D Data Preservation (CS3DP)</u></h4>
+<p class="Normal">The Community Standards for 3D Data Preservation project is specifically focused on the preservation of these data regardless of methodology or discipline. The impetus of this project is the realization that as the practice is currently, researchers and data professionals (should they not be the same person) have not been discussing the needs and asserting their workflows cross these professional boundaries. The community participants represent members from the aforementioned projects, as well as individuals from for and nonprofit organizations like the Walt Disney Company, CyArk, Library of Congress, and the Smithsonian as well as scholars from large and small universities and academic institutions.</p>
+<p class="Normal">Scholars generating 3D data, by and large, have not been in close collaboration with local librarians or archivists and as a result, scholars have been recording their data in ad hoc ways and libraries have created bespoke methods to cope with local needs for 3D research. The practice stands now as one that is not only reinventing infrastructures and technologies to support 3D research, but also building unintentional barriers to sharing these data, or making these data more discoverable. There are islands of 3D research data that cannot talk with each other, and researchers who knew nothing about what other research is out there because there is no common way to find, search, and share 3D data.</p>
+<p class="Normal">The CS3DP project is focused three objectives (Community Standards for 3D Data Preservation Team):</p>
+<ol>
+<li>Create a community of 3D researchers and data professionals thereby crossing the disciplinary and professional boundaries.</li>
+<li>Evaluate current 3D preservation practices that impact longevity of 3D data, sharing and discovery.</li>
+<li>Develop new practices and standards for 3D curation and preservation where they are lacking.</li>
+</ol>
+<p class="Normal">The point of this project, and of the others is to facilitate the development of shared understanding, goals and foundations for 3D data preservation. Once we have the necessary requirements of engaging with and lengthening the life of 3D research, we can build into these preservation systems and practices to support Linked Open Data and 3D research.</p>
+<p class="Normal">All this, for a world of connected 3D contexts that allow old and new scholars to immerse themselves in a time in space reconstructed again in three dimensions. It is not only the newest wave of research methodology, but it is also a new and equally important way of conveying scholarly information. The recipes may not have been worked out just yet, but there are people working on them. This work will provide for new learners so that they may interact and engage with scholarship that has been typically (and sometimes for these learners, cryptically) locked into a textual format. 3D and LOD frees the research to new modes of seeing and doing, teaching and learning. Can you imagine being greeted by the enigmatic smile of 3D scanned Bust of Nefertiti<sup><a class="footnote-reference" href="#footnote-13" id="footnote-reference-13">13</a></sup> and wanting to learn more. Luckily, that 3D image of her is linked via LOD to details on the possible workshop she was made in<sup><a class="footnote-reference" href="#footnote-14" id="footnote-reference-14">14</a></sup> and to relevant 3D reconstructions of one such workshop (with the bust <i>in situ</i>?!) which in turn is linked to other reconstructions or interactive museum exhibits or popular culture to examine how her bust, or Egyptian labor or spaces<sup><a class="footnote-reference" href="#footnote-15" id="footnote-reference-15">15</a></sup> has been represented over time. Now imagine someone playing the <i>Assassins Creed</i> video game, which encourages the player to learn more (as part of it’s new ‘educational mode’ to engage with scholarship around Egyptian space, moving from the video game back along the same LOD pipeline to the 3D bust of Nefertiti. This kind of research rabbit hole is one such exciting possibility for LOD – imagine others!</p>
+<p class="Normal">Acknowledging that LOD is not commonplace across academia, even given the connectedness many would like to see in their own work, these initiatives are still actively building the infrastructure to enable more projects to participate in this shift to digital research products. Not only would this work be a boon to discoverability of our work, but it provides greater access and transparency to the work that we do. As a bonus, it follows basic archival practice so it’s more likely to be preserved longer term so that it may be integrated into a much larger 3D LOD ecosystem. It allows for broader audiences to engage with their cultural heritage and our collective history. It’s an ideal, but an ideal worth chasing.</p>
+</section>
+</section>
+</section>
+<section id="references">
+<h2>References</h2>
+<p class="work-cited" id="reference-1" onmouseleave="document.getElementById('reference-1anchor').style.display='none';document.getElementById('reference-1anchor_label').style.display='none';" onmouseover="document.getElementById('reference-1anchor').style.display='';document.getElementById('reference-1anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">3DHOP. n.d. 3D Heritage Online Presenter. Accessed July 24, 2018. <a href="http://3dhop.net">http://3dhop.net</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-1" id="reference-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-1</span></p>
+<p class="work-cited" id="reference-2" onmouseleave="document.getElementById('reference-2anchor').style.display='none';document.getElementById('reference-2anchor_label').style.display='none';" onmouseover="document.getElementById('reference-2anchor').style.display='';document.getElementById('reference-2anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“3D Collection Strategies.” 2018. Virginia Tech University Libraries. Accessed June 23, 2018. <a href="https://lib.vt.edu/research-teaching/lib3dvr.html">https://lib.vt.edu/research-teaching/lib3dvr.html</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-2" id="reference-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-2</span></p>
+<p class="work-cited" id="reference-3" onmouseleave="document.getElementById('reference-3anchor').style.display='none';document.getElementById('reference-3anchor_label').style.display='none';" onmouseover="document.getElementById('reference-3anchor').style.display='';document.getElementById('reference-3anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“3D/VR Creation and Curation in Higher Education: A Colloquium to Explore Standards and Best Practices.” 2018. 3D/VR Creation and Curation in Higher Education. Accessed June 23, 2018. <a href="http://vrpreservation.oucreate.com/Colloquium">http://vrpreservation.oucreate.com/Colloquium</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-3" id="reference-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-3</span></p>
+<p class="work-cited" id="reference-4" onmouseleave="document.getElementById('reference-4anchor').style.display='none';document.getElementById('reference-4anchor_label').style.display='none';" onmouseover="document.getElementById('reference-4anchor').style.display='';document.getElementById('reference-4anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“About Smithsonian X 3D | 3d.si.edu.” n.d. Smithsonian 3D. Accessed June 23, 2018. <a href="https://3d.si.edu/about">https://3d.si.edu/about</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-4" id="reference-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-4</span></p>
+<p class="work-cited" id="reference-5" onmouseleave="document.getElementById('reference-5anchor').style.display='none';document.getElementById('reference-5anchor_label').style.display='none';" onmouseover="document.getElementById('reference-5anchor').style.display='';document.getElementById('reference-5anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Alliez, Pierre, Laurent Bergerot, Jean-François Bernard, Clotilde Boust, George Bruseker, Nicola Carboni, Mehdi Chayani, et al. 2017. “Digital 3D Objects in Art and Humanities: Challenges of Creation, Interoperability and Preservation. White Paper.” PARTHENOS. <a href="https://hal.inria.fr/hal-01526713">https://hal.inria.fr/hal-01526713</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-5" id="reference-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-5</span></p>
+<p class="work-cited" id="reference-6" onmouseleave="document.getElementById('reference-6anchor').style.display='none';document.getElementById('reference-6anchor_label').style.display='none';" onmouseover="document.getElementById('reference-6anchor').style.display='';document.getElementById('reference-6anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">d'Andrea, Andrea, and Kate Fernie. 2013. “3D-ICONS: D6.1-report on Metadata and Thesaurii.” Accessed June 23, 2018. <a href="https://doi.org/10.5281/zenodo.1311780">https://doi.org/10.5281/zenodo.1311780</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-6" id="reference-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-6</span></p>
+<p class="work-cited" id="reference-7" onmouseleave="document.getElementById('reference-7anchor').style.display='none';document.getElementById('reference-7anchor_label').style.display='none';" onmouseover="document.getElementById('reference-7anchor').style.display='';document.getElementById('reference-7anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">d’Andrea, Andrea, Christina Harlow, Julie Hardesty, and Jon Blundell. 2018. “Presentation Panel on Metadata Standards.” Presented at Community Standards for 3D Preservation (CS3DP), St. Louis, MO, February 5-7. DOI: <a href="https://doi.org/10.25820/jf6v-7y71">10.25820/jf6v-7y71</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-7" id="reference-7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-7</span></p>
+<p class="work-cited" id="reference-8" onmouseleave="document.getElementById('reference-8anchor').style.display='none';document.getElementById('reference-8anchor_label').style.display='none';" onmouseover="document.getElementById('reference-8anchor').style.display='';document.getElementById('reference-8anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“Building for Tomorrow.” n.d. Harvard University. Accessed July 23, 2018. <a href="https://projects.iq.harvard.edu/buildingtomorrow/home">https://projects.iq.harvard.edu/buildingtomorrow/home</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-8" id="reference-8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-8</span></p>
+<p class="work-cited" id="reference-9" onmouseleave="document.getElementById('reference-9anchor').style.display='none';document.getElementById('reference-9anchor_label').style.display='none';" onmouseover="document.getElementById('reference-9anchor').style.display='';document.getElementById('reference-9anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Community Standards for 3D Data Preservation Team. 2018. “Progress Update of Community Standards for 3D Data Preservation: Project Background and Forum 1 Summary.” University of Iowa: Community Standards for 3D Data Preservation. DOI: <a href="https://doi.org/10.25820/pv5r-ma93">10.25820/pv5r-ma93</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-9" id="reference-9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-9</span></p>
+<p class="work-cited" id="reference-10" onmouseleave="document.getElementById('reference-10anchor').style.display='none';document.getElementById('reference-10anchor_label').style.display='none';" onmouseover="document.getElementById('reference-10anchor').style.display='';document.getElementById('reference-10anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“Cultural Heritage Imaging.” 2012. Cultural Heritage Imaging. Accessed June 23, 2018. <a href="http://culturalheritageimaging.org">http://culturalheritageimaging.org</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-10" id="reference-10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-10</span></p>
+<p class="work-cited" id="reference-11" onmouseleave="document.getElementById('reference-11anchor').style.display='none';document.getElementById('reference-11anchor_label').style.display='none';" onmouseover="document.getElementById('reference-11anchor').style.display='';document.getElementById('reference-11anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“Data's Shameful Neglect.” 2009. <i>Nature</i>, 461 (7261): 145. DOI: <a href="https://doi.org/10.1038/461145a">10.1038/461145a</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-11" id="reference-11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-11</span></p>
+<p class="work-cited" id="reference-12" onmouseleave="document.getElementById('reference-12anchor').style.display='none';document.getElementById('reference-12anchor_label').style.display='none';" onmouseover="document.getElementById('reference-12anchor').style.display='';document.getElementById('reference-12anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Hudson-Vitale, Cynthia, Heidi Imker, Lisa R. Johnston, Jake Carlson, Wendy Kozlowski, Robert Olendorf, and Claire Stewart. 2017. <i>Data Curation</i>. SPEC Kit 354. Washington, DC: Association of Research Libraries. DOI: <a href="https://doi.org/10.29242/spec.354">10.29242/spec.354</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-12" id="reference-12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-12</span></p>
+<p class="work-cited" id="reference-13" onmouseleave="document.getElementById('reference-13anchor').style.display='none';document.getElementById('reference-13anchor_label').style.display='none';" onmouseover="document.getElementById('reference-13anchor').style.display='';document.getElementById('reference-13anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“Humanities Heritage 3D Visualization: Theory and Practice.” 2013. National Endowment for the Humanities. Accessed June 23, 2018. <a href="https://www.neh.gov/divisions/odh/institutes/humanities-heritage-3d-visualization-theory-and-practice">https://www.neh.gov/divisions/odh/institutes/humanities-heritage-3d-visualization-theory-and-practice</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-13" id="reference-13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-13</span></p>
+<p class="work-cited" id="reference-14" onmouseleave="document.getElementById('reference-14anchor').style.display='none';document.getElementById('reference-14anchor_label').style.display='none';" onmouseover="document.getElementById('reference-14anchor').style.display='';document.getElementById('reference-14anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“IIIF 3D Community Group.” n.d. IIIF - International Image Interoperability Framework. Accessed June 23, 2018. <a href="http://iiif.io/community/groups/3d/charter">http://iiif.io/community/groups/3d/charter/</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-14" id="reference-14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-14</span></p>
+<p class="work-cited" id="reference-15" onmouseleave="document.getElementById('reference-15anchor').style.display='none';document.getElementById('reference-15anchor_label').style.display='none';" onmouseover="document.getElementById('reference-15anchor').style.display='';document.getElementById('reference-15anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">“Linked Data.” 2015. W3C. Accessed July 18, 2018. <a href="http://www.w3.org/standards/semanticweb/data">http://www.w3.org/standards/semanticweb/data</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-15" id="reference-15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-15</span></p>
+<p class="work-cited" id="reference-16" onmouseleave="document.getElementById('reference-16anchor').style.display='none';document.getElementById('reference-16anchor_label').style.display='none';" onmouseover="document.getElementById('reference-16anchor').style.display='';document.getElementById('reference-16anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Moore, Jennifer, and Hannah Scates Kettler. 2018. “Who Cares About 3D Preservation?” <i> IASSIST Quarterly</i> 42 (1): 15. DOI: <a href="https://doi.org/10.29173/iq20">10.29173/iq20</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-16" id="reference-16anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-16anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-16</span></p>
+<p class="work-cited" id="reference-17" onmouseleave="document.getElementById('reference-17anchor').style.display='none';document.getElementById('reference-17anchor_label').style.display='none';" onmouseover="document.getElementById('reference-17anchor').style.display='';document.getElementById('reference-17anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Niven, Kieron. 2011. “Project Metadata.” In <i>Guides to Good Practice</i>, by Archaeology Data Service / Digital Antiquity. University of York, UK: Archaeology Data Service. <a href="https://guides.archaeologydataservice.ac.uk/g2gp/CreateData_1-2"> https://guides.archaeologydataservice.ac.uk/g2gp/CreateData_1-2</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-17" id="reference-17anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-17anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-17</span></p>
+<p class="work-cited" id="reference-18" onmouseleave="document.getElementById('reference-18anchor').style.display='none';document.getElementById('reference-18anchor_label').style.display='none';" onmouseover="document.getElementById('reference-18anchor').style.display='';document.getElementById('reference-18anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">PARTHENOS. 2016. “‘Digital 3D Objects in Art and Humanities’ Workshop.” PARTHENOS Project (blog). November 11, 2016. <a href="http://www.parthenos-project.eu/digital-3d-objects-in-art-and-humanities-workshop">http://www.parthenos-project.eu/digital-3d-objects-in-art-and-humanities-workshop</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-18" id="reference-18anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-18anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-18</span></p>
+<p class="work-cited" id="reference-19" onmouseleave="document.getElementById('reference-19anchor').style.display='none';document.getElementById('reference-19anchor_label').style.display='none';" onmouseover="document.getElementById('reference-19anchor').style.display='';document.getElementById('reference-19anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">PREMIS Editorial Committee. 2015. “PREMIS Data Dictionary for Preservation Metadata Version 3.0.” <a href="https://www.loc.gov/standards/premis/v3/premis-3-0-final.pdf">https://www.loc.gov/standards/premis/v3/premis-3-0-final.pdf</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-19" id="reference-19anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-19anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-19</span></p>
+<p class="work-cited" id="reference-20" onmouseleave="document.getElementById('reference-20anchor').style.display='none';document.getElementById('reference-20anchor_label').style.display='none';" onmouseover="document.getElementById('reference-20anchor').style.display='';document.getElementById('reference-20anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Smith, MacKenzie. 2008. “Future-Proofing Architectural Computer-Aided Design: MIT’s FACADE Project.” Editions InFolio. <a href="http://dspace.mit.edu/handle/1721.1/46329">http://dspace.mit.edu/handle/1721.1/46329</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-20" id="reference-20anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-20anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-20</span></p>
+<p class="work-cited" id="reference-21" onmouseleave="document.getElementById('reference-21anchor').style.display='none';document.getElementById('reference-21anchor_label').style.display='none';" onmouseover="document.getElementById('reference-21anchor').style.display='';document.getElementById('reference-21anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">The Digital Archaeological Record (tDAR). 2017. Accessed July 25, 2018. <a href="https://core.tdar.org/">https://core.tdar.org/</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-21" id="reference-21anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-21anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-21</span></p>
+<p class="work-cited" id="reference-22" onmouseleave="document.getElementById('reference-22anchor').style.display='none';document.getElementById('reference-22anchor_label').style.display='none';" onmouseover="document.getElementById('reference-22anchor').style.display='';document.getElementById('reference-22anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Trognitz, Martina, Kieron Niven, and Valentijn Gilissen. 2016. “3D Models in Archaeology: A Guide to Good Practice.” In <i>Guides to Good Practice</i>, by Archaeology Data Service / Digital Antiquity. University of York, UK: Archaeology Data Service. <a href="https://guides.archaeologydataservice.ac.uk/g2gp/3d_Toc">https://guides.archaeologydataservice.ac.uk/g2gp/3d_Toc</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-22" id="reference-22anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-22anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-22</span></p>
+<p class="work-cited" id="reference-23" onmouseleave="document.getElementById('reference-23anchor').style.display='none';document.getElementById('reference-23anchor_label').style.display='none';" onmouseover="document.getElementById('reference-23anchor').style.display='';document.getElementById('reference-23anchor_label').style.display='';" rel="dcterms:references" typeof="dcterms:BibliographicResource"><span property="dcterms:bibliographicCitation">Wittenberg, Jamie, Angel Nieves, and Narcisse Mbunzama. 2018. “Presentation Panel on Discoverability/Access.” Presented at Community Standards for 3D Preservation (CS3DP), St. Louis, MO, February 5-7. DOI: <a href="https://doi.org/10.25820/pde5-6k85">10.25820/pde5-6k85</a>.</span><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#reference-23" id="reference-23anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="reference-23anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#reference-23</span></p>
+</section>
+<section id="footnotes">
+<h2>Notes</h2>
+<p class="footnote" id="footnote-1" onmouseleave="document.getElementById('footnote-1anchor').style.display='none';document.getElementById('footnote-1anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-1anchor').style.display='';document.getElementById('footnote-1anchor_label').style.display='';"><sup><a href="#footnote-reference-1">1</a></sup> A collaborative, multi-institutional 3D visualization of a Roman villa; The Oplontis Project: <a href="http://www.oplontisproject.org/index.php/visualization">http://www.oplontisproject.org/index.php/visualization</a>; 3D publication of the multi-stage development of the Egyptian temple of Karnak by Elaine Sullivan; Digital Karnak: <a href="https://vsim.library.ucla.edu/xmlui/handle/20.500.11991/1012">https://vsim.library.ucla.edu/xmlui/handle/20.500.11991/1012</a>; an ongoing initiative to map apartheid history in Africa which includes the addition of 3D modeling; Apartheid Heritage: <a href="http://apartheidheritages.org">http://apartheidheritages.org</a>; 3D digitization effort to create a more accessible catalogue of museum artifacts; Smithsonian 3D: <a href="https://3d.si.edu">https://3d.si.edu</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-1" id="footnote-1anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-1anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-1</span></p>
+<p class="footnote" id="footnote-2" onmouseleave="document.getElementById('footnote-2anchor').style.display='none';document.getElementById('footnote-2anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-2anchor').style.display='';document.getElementById('footnote-2anchor_label').style.display='';"><sup><a href="#footnote-reference-2">2</a></sup> <a href="http://www.adobepress.com/articles/article.asp?p=1695974">http://www.adobepress.com/articles/article.asp?p=1695974</a><a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-2" id="footnote-2anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-2anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-2</span></p>
+<p class="footnote" id="footnote-3" onmouseleave="document.getElementById('footnote-3anchor').style.display='none';document.getElementById('footnote-3anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-3anchor').style.display='';document.getElementById('footnote-3anchor_label').style.display='';"><sup><a href="#footnote-reference-3">3</a></sup> Such as Junaio, Aurasma or Zappar of which only one still exits.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-3" id="footnote-3anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-3anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-3</span></p>
+<p class="footnote" id="footnote-4" onmouseleave="document.getElementById('footnote-4anchor').style.display='none';document.getElementById('footnote-4anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-4anchor').style.display='';document.getElementById('footnote-4anchor_label').style.display='';"><sup><a href="#footnote-reference-4">4</a></sup> Jason C. K. Chan and Jessica A. LaPaglia. 2013. <i>PNAS</i> 110 (23): 9309-9313. <a href="https://doi.org/10.1073/pnas.1218472110">https://doi.org/10.1073/pnas.1218472110</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-4" id="footnote-4anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-4anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-4</span></p>
+<p class="footnote" id="footnote-5" onmouseleave="document.getElementById('footnote-5anchor').style.display='none';document.getElementById('footnote-5anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-5anchor').style.display='';document.getElementById('footnote-5anchor_label').style.display='';"><sup><a href="#footnote-reference-5">5</a></sup> <i>Digital Applications in Archaeology and Cultural Heritage</i> (DAACH), ISSN: 2212-0548.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-5" id="footnote-5anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-5anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-5</span></p>
+<p class="footnote" id="footnote-6" onmouseleave="document.getElementById('footnote-6anchor').style.display='none';document.getElementById('footnote-6anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-6anchor').style.display='';document.getElementById('footnote-6anchor_label').style.display='';"><sup><a href="#footnote-reference-6">6</a></sup> Major strides in 3D annotation however, have the potential to radically change the landscape of 3D citation including the potential integration of LOD. Of particular interest is the IIIF 3D Community Group: <a href="https://iiif.io/community/groups/3d/charter/#rationale">https://iiif.io/community/groups/3d/charter/#rationale</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-6" id="footnote-6anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-6anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-6</span></p>
+<p class="footnote" id="footnote-7" onmouseleave="document.getElementById('footnote-7anchor').style.display='none';document.getElementById('footnote-7anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-7anchor').style.display='';document.getElementById('footnote-7anchor_label').style.display='';"><sup><a href="#footnote-reference-7">7</a></sup> CyArk: <a href="https://www.cyark.org">https://www.cyark.org</a>; Perot Museum “Being Human Hall” VR experience which states “The VR was created from laser scans of the cave, 3D images, and regular digital images.” <a href="https://www.perotmuseum.org/dinaledivr/index.html">https://www.perotmuseum.org/dinaledivr/index.html</a>; Virtual Reconstructions of Qumran and the Dead Sea Scrolls: Recent Advances and the Future of the Field, <a href="https://ir.uiowa.edu/thestudio_events/7">https://ir.uiowa.edu/thestudio_events/7</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-7" id="footnote-7anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-7anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-7</span></p>
+<p class="footnote" id="footnote-8" onmouseleave="document.getElementById('footnote-8anchor').style.display='none';document.getElementById('footnote-8anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-8anchor').style.display='';document.getElementById('footnote-8anchor_label').style.display='';"><sup><a href="#footnote-reference-8">8</a></sup> ESRI GIS, for example, populates XML files with its shapefile metadata. Yet when you add metadata within ESRI software, these data by default get buried in a proprietary format rather than in the XML unless you do a manual conversion process.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-8" id="footnote-8anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-8anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-8</span></p>
+<p class="footnote" id="footnote-9" onmouseleave="document.getElementById('footnote-9anchor').style.display='none';document.getElementById('footnote-9anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-9anchor').style.display='';document.getElementById('footnote-9anchor_label').style.display='';"><sup><a href="#footnote-reference-9">9</a></sup> A gazetteer of people mentioned in Ptolemaic Egypt papyri - <a href="https://www.trismegistos.org/index.php">https://www.trismegistos.org/index.php</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-9" id="footnote-9anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-9anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-9</span></p>
+<p class="footnote" id="footnote-10" onmouseleave="document.getElementById('footnote-10anchor').style.display='none';document.getElementById('footnote-10anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-10anchor').style.display='';document.getElementById('footnote-10anchor_label').style.display='';"><sup><a href="#footnote-reference-10">10</a></sup> A database of feminist literary history - <a href="http://www.artsrn.ualberta.ca/orlando">http://www.artsrn.ualberta.ca/orlando</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-10" id="footnote-10anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-10anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-10</span></p>
+<p class="footnote" id="footnote-11" onmouseleave="document.getElementById('footnote-11anchor').style.display='none';document.getElementById('footnote-11anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-11anchor').style.display='';document.getElementById('footnote-11anchor_label').style.display='';"><sup><a href="#footnote-reference-11">11</a></sup> See projects like VSim from UCLA, or the Virtual Research Environment for 3D Reconstructions from the Herder-Institut.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-11" id="footnote-11anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-11anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-11</span></p>
+<p class="footnote" id="footnote-12" onmouseleave="document.getElementById('footnote-12anchor').style.display='none';document.getElementById('footnote-12anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-12anchor').style.display='';document.getElementById('footnote-12anchor_label').style.display='';"><sup><a href="#footnote-reference-12">12</a></sup> Details on current standards and recommendations for preservation file types may be found at the Library of Congress’ “Sustainability of Digital Formats” website which includes file types and their descriptions. They’re currently working with the CS3DP community (<a href="https://cs3dp.org/">cs3dp.org</a>) to develop needs for 3D. Stay tuned. <a href="https://www.loc.gov/preservation/digital/formats/index.html">https://www.loc.gov/preservation/digital/formats/index.html</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-12" id="footnote-12anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-12anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-12</span></p>
+<p class="footnote" id="footnote-13" onmouseleave="document.getElementById('footnote-13anchor').style.display='none';document.getElementById('footnote-13anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-13anchor').style.display='';document.getElementById('footnote-13anchor_label').style.display='';"><sup><a href="#footnote-reference-13">13</a></sup> Interesting history regarding 3D scan data. <a href="https://www.livescience.com/nefertiti-bust-3d-scan-revealed.html">https://www.livescience.com/nefertiti-bust-3d-scan-revealed.html</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-13" id="footnote-13anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-13anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-13</span></p>
+<p class="footnote" id="footnote-14" onmouseleave="document.getElementById('footnote-14anchor').style.display='none';document.getElementById('footnote-14anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-14anchor').style.display='';document.getElementById('footnote-14anchor_label').style.display='';"><sup><a href="#footnote-reference-14">14</a></sup> Tyldesley, Joyce. 2018. <i>Nefertiti’s Face: The Creation of an Icon</i>. Cambridge, MA: Harvard University Press.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-14" id="footnote-14anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-14anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-14</span></p>
+<p class="footnote" id="footnote-15" onmouseleave="document.getElementById('footnote-15anchor').style.display='none';document.getElementById('footnote-15anchor_label').style.display='none';" onmouseover="document.getElementById('footnote-15anchor').style.display='';document.getElementById('footnote-15anchor_label').style.display='';"><sup><a href="#footnote-reference-15">15</a></sup> <i>Assassins Creed: Origins</i> is a video game from Ubisoft that is based on historical events and apparently historical fact in regards to its rendition of Egyptian space, language, and culture. <a href="https://www.ubisoft.com/en-gb/game/assassins-creed-origins">https://www.ubisoft.com/en-gb/game/assassins-creed-origins</a>.<a class="id_link" href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/20-5/#footnote-15" id="footnote-15anchor" style="color:#aaa;display:none">⬈</a><span class="id_label" id="footnote-15anchor_label" style="color:#aaa;display:none;position:fixed;right:0;bottom:50%">#footnote-15</span></p>
+</section>
+<footer>
+<p class="editorial-note"><a href="http://isaw.nyu.edu/publications/isaw-papers" rel="dcterms:isPartOf"><i>ISAW Papers</i></a> (ISSN 2164-1471) is a publication of the <a href="http://isaw.nyu.edu" property="dcterms:publisher" rel="dcterms:publisher">Institute for the Study of the Ancient World</a>, <a href="http://nyu.edu/">New York University</a>. This article was anonymously reviewed prior to publication.</p>
+<p class="copyright" style="margin-top:1em;text-align:center;color:gray">©2020 <span rel="cc:attributionName">Hannah Scates Kettler</span>. Distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/" rel="cc:license">Creative Commons Attribution 4.0 International</a> license. Additional rights holders and licenses for figures noted in captions as necessary.</p>
+</footer>
+</article>
+</body>
+</html>
