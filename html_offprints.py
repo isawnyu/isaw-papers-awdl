@@ -122,6 +122,7 @@ def header(head, soup, download_link):
     download_link.append("single file")
     download_message.append("This article can be downloaded as a ")
     download_message.append(download_link)
+    download_message.append(".")
     div_head = head.div
     div_head.append(download_message)
     soup.header.insert(0, div_head)
