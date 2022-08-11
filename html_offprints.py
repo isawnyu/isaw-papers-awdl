@@ -5,6 +5,7 @@ import shutil
 import re
 from wand.image import Image
 from wand.display import display
+import textwrap
 
 # ISAW PAPERS DIR
 
@@ -40,7 +41,11 @@ def image64(images, path, soup, *path_dlib) :
         else :
             images[i].wrap(soup.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+source))
 
-        images[i]["src"] = "data:image/png;base64,"+str(i64[i])
+        wrap_n = 80
+        string = str(i64[i])
+        i64_80 = '\n'.join([string[j:j+wrap_n] for j in range(0, len(string), wrap_n)])
+        images[i]["src"] = "data:image/png;base64,"+i64_80
+        #images[i]["src"] = "data:image/png;base64,"+str(i64[i]) # restore if necessary
         if os.path.isdir(str(j)+"/images"):
             shutil.rmtree(str(j)+"/images")
 
