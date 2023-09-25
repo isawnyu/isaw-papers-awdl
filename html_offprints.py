@@ -49,7 +49,7 @@ def image64(images, path, soup, *path_dlib) :
         if os.path.isdir(str(j)+"/images"):
             shutil.rmtree(str(j)+"/images")
 
-def css(soup) :
+def css(path, soup) :
     """Adds the content of extern file publication.css to the html file of an article
 
     :param soup: the whole article
@@ -57,7 +57,7 @@ def css(soup) :
     """
     css_link = soup.find("link", {"rel" : re.compile("stylesheet*")})
     css_link.decompose()
-    with open(ISAW_PAPERS_PREFIX + "isaw-papers/isaw-publications.css", "r") as css_file :
+    with open(ISAW_PAPERS_PREFIX + path + "isaw-publications.css", "r") as css_file :
             css = css_file.read()
     css = css.replace("<http://isaw.nyu.edu/publications/isaw-papers>", "&lt;http://isaw.nyu.edu/publications/isaw-papers&gt;")
     soup.head.append(soup.new_tag("style"))
@@ -169,7 +169,8 @@ def video(soup):
 papers_list = ['18','18-1','18-2','18-3','18-4','18-5','18-6','18-7','18-8','18-9','18-10','18-11','19']
 papers_list = ['20','20-1','20-2','20-3','20-4','20-5','20-6','20-7','20-8','20-9','20-10','20-11','20-12','20-13']
 
-papers_list = ['24']
+papers_list = ['22','22-7', '25']
+
 
 for j in papers_list :
     # Opening every article and creating a BeautifulSoup object with all the modifications
@@ -179,7 +180,7 @@ for j in papers_list :
     path = "isaw-papers/isaw-papers-"+str(j)+"/"
     
     image64(images, path, soup)
-    css(soup)
+    css(path, soup)
     js_p(soup)
     js_figures(soup)
     video(soup)
