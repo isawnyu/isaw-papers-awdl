@@ -169,7 +169,7 @@ def video(soup):
 papers_list = ['18','18-1','18-2','18-3','18-4','18-5','18-6','18-7','18-8','18-9','18-10','18-11','19']
 papers_list = ['20','20-1','20-2','20-3','20-4','20-5','20-6','20-7','20-8','20-9','20-10','20-11','20-12','20-13']
 
-papers_list = ['22', '22-6', '22-7']
+papers_list = ['25']
 
 
 for j in papers_list :
@@ -187,7 +187,7 @@ for j in papers_list :
 
     with open(str(j)+"/head.xml", "r") as head:
         head = BeautifulSoup(head, "html.parser")
-        download_link = head.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/isaw-papers-"+str(j)+"-offprint.xhtml")
+        download_link = head.new_tag("a", href="https://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/isaw-papers-"+str(j)+"-offprint.xhtml")
         download_link["download"] = "isaw-papers-"+str(j)
         header(head, soup, download_link)
 
