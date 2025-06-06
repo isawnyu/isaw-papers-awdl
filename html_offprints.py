@@ -26,6 +26,9 @@ def image64(images, path, soup, *path_dlib) :
         source = images[i]["src"]
         with Image(filename=str(ISAW_PAPERS_PREFIX+path)+str(source)) as imageFile:
             imageFile.transform('','1024x1024')
+            imageFile.format = 'jpeg' 
+            imageFile.compression_quality = 90 
+            imageFile.strip()
             if not os.path.isdir(str(j)+"/images"):
                 os.makedirs(str(j)+"/images")
             imageFile.save(filename=str(j)+"/"+str(source))
@@ -169,7 +172,7 @@ def video(soup):
 papers_list = ['18','18-1','18-2','18-3','18-4','18-5','18-6','18-7','18-8','18-9','18-10','18-11','19']
 papers_list = ['20','20-1','20-2','20-3','20-4','20-5','20-6','20-7','20-8','20-9','20-10','20-11','20-12','20-13']
 
-papers_list = ['28']
+papers_list = ['29','29-2', '29-3', '29-8']
 
 
 for j in papers_list :
