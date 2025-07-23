@@ -128,7 +128,7 @@ def header(head, soup, download_link):
     download_message = head.new_tag("p", style="text-align:center;margin-top:1em")
     
     download_link.append("single file")
-    download_message.append("This article can be downloaded as a ")
+    download_message.append("Download as a ")
     download_message.append(download_link)
     download_message.append(".")
     div_head = head.div
