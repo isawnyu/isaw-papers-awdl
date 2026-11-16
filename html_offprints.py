@@ -281,48 +281,6 @@ for j in papers_list :
         download_link["download"] = "isaw-papers-"+str(j)
         header(head, soup, download_link)
 
-    # Collection of articles ISAW Papers 7 (other numbers can be added if future articles are collections)
-    if j == 7 :
-        for element in os.listdir('isaw-papers/isaw-papers-'+str(j)):
-            if os.path.isdir('isaw-papers/isaw-papers-'+str(j)+ '/'+str(element)):
-                for el in os.listdir('isaw-papers/isaw-papers-'+ str(j)+ '/'+ str(element)):
-                    
-                    if re.match("isaw-papers-"+str(j)+"-*", str(el)):
-                        with open ('isaw-papers/isaw-papers-'+str(j)+'/'+ str(element) + '/'+ str(el), "r") as article :
-                            soup_7 = BeautifulSoup(article, "html.parser")
-                        dlib_path = "http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/"+str(element)+"/"
-
-                        if soup_7.img :
-                            images = soup_7.find_all("img")             
-                            path = "isaw-papers/isaw-papers-"+str(j)+"/"+str(element) + "/"
-                            image64(images, path, soup, dlib_path)
-                        el = el.replace('.xhtml', '')
-                        css(soup_7)
-                        js_figures(soup_7, dlib_path)
-                        js_p(soup_7, dlib_path)
-                        video(soup_7)
-                        with open(str(j)+'/'+ str(element) + "/head.xml", "r") as head:
-                            head = BeautifulSoup(head, "html.parser")
-                            download_link = head.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/"+str(element)+"/"+str(el)+"-offprint.xhtml")
-                            download_link["download"] = el
-                            header(head, soup_7, download_link)
-
-                        paragraphs_footer = soup_7.footer.find_all("p")
-
-                        for p in paragraphs_footer :
-                            p["style"] = "margin-top:1em;text-align:center;color:gray"
-                            links = p.find_all("a")
-                            for link in links :
-                                link["style"] = "color:gray"
-
-                        if not os.path.exists(str(j)+'/'+ str(element)):
-                            os.makedirs(str(j)+'/'+ str(element))
-                        print(el)
-                        with open (str(j)+'/'+ str(element) + '/'+ str(el)+"-offprint.xhtml", "w") as article :
-                            article.write(str(soup_7))
-                        with open (str(j)+'/'+ str(element) + "/index.xhtml", "w") as article :
-                            article.write(str(soup_7))
-
     # Creating the standalone xhtml files from the BeautifulSoup object
     with open(str(j)+"/isaw-papers-"+str(j)+"-offprint.xhtml", "w") as article :
         article.write(str(soup))
