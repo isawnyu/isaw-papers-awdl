@@ -1,4 +1,6 @@
+import argparse
 import base64
+import hashlib
 from bs4 import BeautifulSoup
 import os
 import shutil
@@ -11,8 +13,57 @@ import textwrap
 
 ISAW_PAPERS_PREFIX = "../"
 
-def image64(images, path, soup, *path_dlib) :
-    """ Encodes the images in base64 and replace the link to the images in the html by the encoded image
+def image_key(source):
+    """Fragment id used to link an image back to the article: its src without
+    "images/" and without its extension (e.g. "images/figure01.png" -> "figure01")."""
+    return source.replace("images/", "").replace(".png", "").replace(".jpg", "").replace(".gif", "")
+
+def mime_type(data):
+    """MIME type of image data, read from the file signature in its first bytes."""
+    if data.startswith(b"\xff\xd8\xff"):
+        return "image/jpeg"
+    if data.startswith(b"\x89PNG\r\n\x1a\n"):
+        return "image/png"
+    if data[:6] in (b"GIF87a", b"GIF89a"):
+        return "image/gif"
+    raise ValueError("unrecognised image data")
+
+def load_embedded_images(article_dir):
+    """Images embedded in this article's previous output (article_dir/index.xhtml),
+    keyed by image_key. Each entry holds the base64 text exactly as stored and the
+    data-source-sha256 recorded when it was encoded (None for older outputs).
+
+    :param article_dir: output directory of the article, e.g. "29-2"
+    :type article_dir: str
+    """
+    previous = os.path.join(article_dir, "index.xhtml")
+    found = {}
+    if not os.path.exists(previous):
+        return found
+    with open(previous, "r") as f:
+        old = BeautifulSoup(f, "html.parser")
+    for img in old.find_all("img", src=re.compile(r"^data:image/[a-z]+;base64,")):
+        link = img.parent
+        if link is None or link.name != "a" or "#" not in link.get("href", ""):
+            continue
+        key = link["href"].rsplit("#", 1)[1]
+        found.setdefault(key, {"b64": img["src"].split(",", 1)[1],
+                               "sha256": img.get("data-source-sha256")})
+    return found
+
+def image64(images, path, soup, *path_dlib, previous=None, fresh=False) :
+    """ Embeds the images in the html as base64 data and links each one to its place in the article.
+
+    An image already embedded in the previous output is reused unchanged, so that
+    regenerating an article does not re-encode its images. It is encoded from its
+    source file instead when:
+      - fresh is True (--fresh-images);
+      - the previous output has no image for it (a new image, or no previous output);
+      - the previous output recorded a data-source-sha256 that no longer matches the source file.
+    Encoded images carry data-source-sha256 (the hash of the source file they were
+    made from), so later runs can tell when a source image has changed. Images reused
+    from outputs made before this attribute existed are reported as unverified and
+    get no hash, since which source produced them is not known.
 
     :param images: list of images
     :type images: BeautifulSoup object
@@ -20,37 +71,62 @@ def image64(images, path, soup, *path_dlib) :
     :type path: str
     :param soup: the whole article
     :type soup: BeautifulSoup object
+    :param previous: images embedded in the previous output, from load_embedded_images()
+    :type previous: dict
+    :param fresh: re-encode every image from its source file
+    :type fresh: bool
     """
-    i64 = []
-    for i in range(0, len(images)):
-        source = images[i]["src"]
-        with Image(filename=str(ISAW_PAPERS_PREFIX+path)+str(source)) as imageFile:
-            imageFile.transform('','1024x1024')
-            imageFile.format = 'jpeg' 
-            imageFile.compression_quality = 90 
-            imageFile.strip()
-            if not os.path.isdir(str(j)+"/images"):
-                os.makedirs(str(j)+"/images")
-            imageFile.save(filename=str(j)+"/"+str(source))
-        
-        with open(str(j)+"/"+str(source), "rb") as image:
-            print(image)
-            im64 = base64.b64encode(image.read())
-            i64.append(str(im64).replace("b'", "").replace("'",""))
-        
-        source = source.replace("images/", "").replace(".png", "").replace(".jpg", "").replace(".gif", "")
-        if path_dlib :
-            images[i].wrap(soup.new_tag("a", href=path_dlib[0]+"#"+source))
-        else :
-            images[i].wrap(soup.new_tag("a", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+source))
+    previous = previous or {}
+    counts = {}
+    for img in images:
+        source = img["src"]
+        filename = str(ISAW_PAPERS_PREFIX + path) + str(source)
+        with open(filename, "rb") as f:
+            sha256 = hashlib.sha256(f.read()).hexdigest()
+        key = image_key(source)
+        old = previous.get(key)
 
-        wrap_n = 80
-        string = str(i64[i])
-        i64_80 = '\n'.join([string[j:j+wrap_n] for j in range(0, len(string), wrap_n)])
-        images[i]["src"] = "data:image/png;base64,"+i64_80
-        #images[i]["src"] = "data:image/png;base64,"+str(i64[i]) # restore if necessary
-        if os.path.isdir(str(j)+"/images"):
-            shutil.rmtree(str(j)+"/images")
+        if fresh:
+            outcome = "encoded (--fresh-images)"
+        elif old is None:
+            outcome = "encoded (not in previous output)"
+        elif old["sha256"] is not None and old["sha256"] != sha256:
+            outcome = "encoded (source changed)"
+        elif old["sha256"] is not None:
+            outcome = "reused (verified)"
+        else:
+            outcome = "reused (unverified)"
+        counts[outcome] = counts.get(outcome, 0) + 1
+
+        if outcome.startswith("reused"):
+            b64 = old["b64"]
+            head = base64.b64decode("".join(b64.split())[:16])
+        else:
+            with Image(filename=filename) as imageFile:
+                imageFile.transform('','1024x1024')
+                imageFile.format = 'jpeg'
+                imageFile.compression_quality = 90
+                imageFile.strip()
+                data = imageFile.make_blob()
+            flat = base64.b64encode(data).decode("ascii")
+            wrap_n = 80
+            b64 = '\n'.join(flat[k:k+wrap_n] for k in range(0, len(flat), wrap_n))
+            head = data[:16]
+
+        if path_dlib :
+            img.wrap(soup.new_tag("a", href=path_dlib[0]+"#"+key))
+        else :
+            img.wrap(soup.new_tag("a", href="https://awdl.dlib.nyu.edu/isaw/isaw-papers/"+str(j)+"/#"+key))
+
+        img["src"] = "data:" + mime_type(head) + ";base64," + b64
+        if outcome == "reused (unverified)":
+            if "data-source-sha256" in img.attrs:
+                del img["data-source-sha256"]
+        else:
+            img["data-source-sha256"] = sha256
+
+    summary = ", ".join("%d %s" % (n, outcome) for outcome, n in sorted(counts.items()))
+    print("%s: %d images%s" % (j, len(images), ": " + summary if summary else ""))
 
 def css(path, soup) :
     """Adds the content of extern file publication.css to the html file of an article
@@ -82,7 +158,7 @@ def js_figures(soup, *path_dlib):
             if path_dlib :
                 link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href=path_dlib[0]+"#"+ids)
             else :
-                link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+ids)
+                link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href="https://awdl.dlib.nyu.edu/isaw/isaw-papers/"+str(j)+"/#"+ids)
             link.append("⬈")
             span = soup.new_tag("span", id=ids+'anchor_label', style="color:#aaa;display:none;position:fixed;right:0;bottom:50%" )
             span.append("#"+ids)
@@ -105,7 +181,7 @@ def js_p(soup, *path_dlib) :
             if path_dlib :
                 link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href=path_dlib[0]+"#"+ids )
             else :
-                link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href="http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/#"+ids )
+                link = soup.new_tag("a", id=ids+"anchor", style="color:#aaa;display:none", href="https://awdl.dlib.nyu.edu/isaw/isaw-papers/"+str(j)+"/#"+ids )
 
             link["class"] = "id_link"
             link.append("⬈")
@@ -146,12 +222,12 @@ def video(soup):
         mp4s = soup.find_all("source", {"type" : "video/mp4"})
         for mp4 in mp4s :
             relative = mp4["src"]
-            absolute = "http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/"+relative
+            absolute = "https://awdl.dlib.nyu.edu/isaw/isaw-papers/"+str(j)+"/"+relative
             mp4["src"] = absolute
         webms = soup.find_all("source", {"type" : "video/webm"})
         for webm in webms :
             relative = webm["src"]
-            absolute = "http://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/"+relative
+            absolute = "https://awdl.dlib.nyu.edu/isaw/isaw-papers/"+str(j)+"/"+relative
             webm["src"] = absolute
 
 # Creating a global index file for the github siteweb
@@ -172,7 +248,18 @@ def video(soup):
 papers_list = ['18','18-1','18-2','18-3','18-4','18-5','18-6','18-7','18-8','18-9','18-10','18-11','19']
 papers_list = ['20','20-1','20-2','20-3','20-4','20-5','20-6','20-7','20-8','20-9','20-10','20-11','20-12','20-13']
 
-papers_list = ['29','29-2', '29-3', '29-4']
+papers_list = ['29-6']
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--articles", required=True,
+                    help="article ids to render, comma- or space-separated, "
+                         "e.g. --articles 29-6 or --articles '29-5,29-6'")
+parser.add_argument("--fresh-images", action="store_true",
+                    help="re-encode every image from its source file instead of "
+                         "reusing the images embedded in the previous output")
+args = parser.parse_args()
+if args.articles:
+    papers_list = args.articles.replace(",", " ").split()
 
 
 for j in papers_list :
@@ -182,7 +269,7 @@ for j in papers_list :
     images = soup.find_all("img", {"src" : re.compile("images/*")})
     path = "isaw-papers/isaw-papers-"+str(j)+"/"
     
-    image64(images, path, soup)
+    image64(images, path, soup, previous=load_embedded_images(str(j)), fresh=args.fresh_images)
     css(path, soup)
     js_p(soup)
     js_figures(soup)
@@ -190,7 +277,7 @@ for j in papers_list :
 
     with open(str(j)+"/head.xml", "r") as head:
         head = BeautifulSoup(head, "html.parser")
-        download_link = head.new_tag("a", href="https://dlib.nyu.edu/awdl/isaw/isaw-papers/"+str(j)+"/isaw-papers-"+str(j)+"-offprint.xhtml")
+        download_link = head.new_tag("a", href="https://awdl.dlib.nyu.edu/isaw/isaw-papers/"+str(j)+"/isaw-papers-"+str(j)+"-offprint.xhtml")
         download_link["download"] = "isaw-papers-"+str(j)
         header(head, soup, download_link)
 
